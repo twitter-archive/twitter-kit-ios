@@ -1,0 +1,14 @@
+//
+// OSX-App.xcconfig
+//
+// Copyright (c) 2016 Twitter. All rights reserved.
+//
+
+#include "AppTarget.xcconfig"
+
+ARCHS = $(ARCHS_STANDARD_32_64_BIT)
+CODE_SIGN_IDENTITY = -
+COMBINE_HIDPI_IMAGES = YES
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks
+SDKROOT = macosx
+SUPPORTED_PLATFORMS = macosx

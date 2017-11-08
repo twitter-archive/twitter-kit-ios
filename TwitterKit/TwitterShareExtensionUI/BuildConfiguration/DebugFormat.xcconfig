@@ -1,0 +1,19 @@
+//
+//  DebugFormat.xcconfig
+//  Frameworks
+//
+//  Created by Tanner Oakes on 7/10/17.
+//  Copyright (c) 2017 Twitter. All rights reserved.
+//
+
+// Change this to 'dwarf-with-dsym' locally when profiling
+// to allow Instruments access to symbol and line numbers.
+//
+// It is recommended that if you change this setting that
+// you both relaunch Xcode and also do a clean build.
+//
+// Note also that while most projects use xcconfigs, some
+// projects do not. Perform a workspace-wide search for
+// DEBUG_INFORMATION_FORMAT to see which projects have
+// this defined separately.
+DEBUG_INFORMATION_FORMAT = dwarf

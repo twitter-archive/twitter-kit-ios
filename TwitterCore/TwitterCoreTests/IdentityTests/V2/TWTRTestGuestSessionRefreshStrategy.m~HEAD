@@ -1,0 +1,32 @@
+//
+//  TWTRTestGuestSessionRefreshStrategy.m
+//  TwitterKit
+//
+//  Created by Kang Chen on 7/2/15.
+//  Copyright (c) 2015 Twitter. All rights reserved.
+//
+
+#import <TwitterCore/TWTRAPIErrorCode.h>
+#import <TwitterCore/TWTRAuthenticationConstants.h>
+#import <TwitterCore/TWTRGuestSession.h>
+#import "TWTRTestGuestSessionRefreshStrategy.h"
+
+@implementation TWTRTestGuestSessionRefreshStrategy
+
++ (BOOL)canSupportSessionClass:(Class)sessionClass
+{
+    return [TWTRGuestSession class] == sessionClass;
+}
+
++ (BOOL)isSessionExpiredBasedOnRequestResponse:(NSHTTPURLResponse *)response
+{
+    return response.statusCode == TWTRAPIErrorCodeInvalidOrExpiredToken || response.statusCode == TWTRAPIErrorCodeBadGuestToken;
+}
+
+- (void)refreshSession:(id)session URLSession:(NSURLSession *)URLSession completion:(TWTRSessionRefreshCompletion)completion
+{
+    TWTRGuestSession *guestSession = [[TWTRGuestSession alloc] initWithAccessToken:@"newAccessToken" guestToken:@"newGuestToken"];
+    completion(guestSession, nil);
+}
+
+@end

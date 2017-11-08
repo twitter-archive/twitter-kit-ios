@@ -1,0 +1,1046 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D12C6AB1EA4644600DB2B3A /* TSEWordRangeCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D12C6AA1EA4644600DB2B3A /* TSEWordRangeCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D12C6AC1EA4644600DB2B3A /* TSEWordRangeCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D12C6AA1EA4644600DB2B3A /* TSEWordRangeCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D12C6B91EA5428900DB2B3A /* TSEConfigurationSelectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E461DAEDA88004AF59F /* TSEConfigurationSelectionTableViewCell.m */; };
+		3D12C6BA1EA5428D00DB2B3A /* TSEConfigurationSelectionTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E451DAEDA88004AF59F /* TSEConfigurationSelectionTableViewCell.h */; };
+		3D12C6BB1EA5429F00DB2B3A /* TSETweetTextViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E481DAEDA88004AF59F /* TSETweetTextViewContainer.m */; };
+		3D12C6BC1EA542A300DB2B3A /* TSETweetTextViewContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E471DAEDA88004AF59F /* TSETweetTextViewContainer.h */; };
+		3D12C6CB1EA5E05800DB2B3A /* TSELocalizedResources.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D12C6CA1EA5E05800DB2B3A /* TSELocalizedResources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D12C6CC1EA5E05800DB2B3A /* TSELocalizedResources.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D12C6CA1EA5E05800DB2B3A /* TSELocalizedResources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D12C6E91EA6127100DB2B3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF92EBEF1DB835BE005EB2D7 /* Assets.xcassets */; };
+		3D23EEA41F71D65E00198641 /* TwitterShareExtensionUI-Library.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3D23EEA31F71D65E00198641 /* TwitterShareExtensionUI-Library.xcconfig */; };
+		3D23EEA61F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3D23EEA51F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig */; };
+		3D23EEB91F724C5B00198641 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D23EEB81F724C5B00198641 /* UIKit.framework */; };
+		3D23EEBB1F724C6E00198641 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D23EEBA1F724C6D00198641 /* CoreGraphics.framework */; };
+		3D23EEBD1F724C9B00198641 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D23EEBC1F724C9A00198641 /* MobileCoreServices.framework */; };
+		3D23EEBF1F724CB800198641 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D23EEBE1F724CB800198641 /* CoreLocation.framework */; };
+		3D23EEC01F724CC400198641 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8CF5D21DAD693C00686F66 /* MapKit.framework */; };
+		3D2FDCF71F6E30F400AE6380 /* TSESelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2FDCF61F6E30F400AE6380 /* TSESelectionTableViewController.m */; };
+		3D2FDCF81F6E30F400AE6380 /* TSESelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2FDCF61F6E30F400AE6380 /* TSESelectionTableViewController.m */; };
+		3D7BAA111F63682D003EC153 /* TSECardPreviewProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7BAA101F63682D003EC153 /* TSECardPreviewProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D7BAA121F636839003EC153 /* TSECardPreviewProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7BAA101F63682D003EC153 /* TSECardPreviewProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D8C232F1F2FEB4A00D6B650 /* TFSUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8C232E1F2FEB4A00D6B650 /* TFSUtilities.framework */; };
+		3D90DA271F7377E200B23064 /* TSEImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D90DA251F7377E200B23064 /* TSEImageProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D90DA281F7377E200B23064 /* TSEImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D90DA251F7377E200B23064 /* TSEImageProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D90DA291F7377E200B23064 /* TSEImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D90DA261F7377E200B23064 /* TSEImageProvider.m */; };
+		3D90DA2A1F7377E200B23064 /* TSEImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D90DA261F7377E200B23064 /* TSEImageProvider.m */; };
+		3DA8FB801EA05D3200E778C9 /* TSEScribe.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBC284D1E5E1E8B00595F01 /* TSEScribe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DA8FB811EA05D5900E778C9 /* TSETwitterUser.h in Headers */ = {isa = PBXBuildFile; fileRef = BFDCD0CF1E36A42000F0C726 /* TSETwitterUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DA8FB821EA05D5F00E778C9 /* TSEUIScribeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBC28531E5E265700595F01 /* TSEUIScribeEvent.m */; };
+		3DA8FB831EA05D6B00E778C9 /* TSETweetAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038EF61DAEF882004AF59F /* TSETweetAttachment.m */; };
+		3DDAF42F1F5E91D200A19B66 /* TSEFonts.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDAF42D1F5E91D200A19B66 /* TSEFonts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DDAF4301F5E91D200A19B66 /* TSEFonts.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDAF42D1F5E91D200A19B66 /* TSEFonts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DDAF4311F5E91D200A19B66 /* TSEFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAF42E1F5E91D200A19B66 /* TSEFonts.m */; };
+		3DDAF4321F5E91D200A19B66 /* TSEFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAF42E1F5E91D200A19B66 /* TSEFonts.m */; };
+		AA76AF421FB273A4008CE2D3 /* DebugFormat.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA76AF3B1FB273A4008CE2D3 /* DebugFormat.xcconfig */; };
+		AA76AF431FB273A4008CE2D3 /* FrameworkTests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA76AF3C1FB273A4008CE2D3 /* FrameworkTests.xcconfig */; };
+		AA76AF441FB273A4008CE2D3 /* Project.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA76AF3D1FB273A4008CE2D3 /* Project.xcconfig */; };
+		AA76AF451FB273A4008CE2D3 /* Project-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA76AF3E1FB273A4008CE2D3 /* Project-Release.xcconfig */; };
+		AA76AF461FB273A4008CE2D3 /* Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA76AF3F1FB273A4008CE2D3 /* Framework.xcconfig */; };
+		AA76AF471FB273A4008CE2D3 /* Project-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA76AF401FB273A4008CE2D3 /* Project-Debug.xcconfig */; };
+		AA76AF481FB273A4008CE2D3 /* Library.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA76AF411FB273A4008CE2D3 /* Library.xcconfig */; };
+		BF038E5E1DAEDA88004AF59F /* TSEAccountSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E401DAEDA88004AF59F /* TSEAccountSelectionTableViewController.m */; };
+		BF038E601DAEDA88004AF59F /* TSEAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E421DAEDA88004AF59F /* TSEAccountTableViewCell.m */; };
+		BF038E611DAEDA88004AF59F /* TSEConfigurationSelectionTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E451DAEDA88004AF59F /* TSEConfigurationSelectionTableViewCell.h */; };
+		BF038E621DAEDA88004AF59F /* TSEConfigurationSelectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E461DAEDA88004AF59F /* TSEConfigurationSelectionTableViewCell.m */; };
+		BF038E631DAEDA88004AF59F /* TSETweetTextViewContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E471DAEDA88004AF59F /* TSETweetTextViewContainer.h */; };
+		BF038E641DAEDA88004AF59F /* TSETweetTextViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E481DAEDA88004AF59F /* TSETweetTextViewContainer.m */; };
+		BF038E661DAEDA88004AF59F /* TSETweetComposerTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E4A1DAEDA88004AF59F /* TSETweetComposerTableViewDataSource.m */; };
+		BF038E681DAEDA88004AF59F /* TSETweetComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E4C1DAEDA88004AF59F /* TSETweetComposerViewController.m */; };
+		BF038E6A1DAEDA88004AF59F /* TSEFrameworkLazyLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E4F1DAEDA88004AF59F /* TSEFrameworkLazyLoading.m */; };
+		BF038E6C1DAEDA88004AF59F /* UIView+TSEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E511DAEDA88004AF59F /* UIView+TSEExtensions.m */; };
+		BF038E6E1DAEDA88004AF59F /* TSELoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E541DAEDA88004AF59F /* TSELoadingTableViewCell.m */; };
+		BF038E701DAEDA88004AF59F /* TSELocationMapTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E561DAEDA88004AF59F /* TSELocationMapTableViewHeaderView.m */; };
+		BF038E721DAEDA88004AF59F /* TSELocationSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E581DAEDA88004AF59F /* TSELocationSelectionTableViewController.m */; };
+		BF038E741DAEDA88004AF59F /* TSESheetPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E5A1DAEDA88004AF59F /* TSESheetPresentationController.m */; };
+		BF038E761DAEDA88004AF59F /* TSETweetShareNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E5C1DAEDA88004AF59F /* TSETweetShareNavigationController.m */; };
+		BF038EDB1DAEDFA0004AF59F /* TSEAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E331DAED9F8004AF59F /* TSEAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF038EDC1DAEDFA0004AF59F /* TSEGeoPlace.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E341DAED9F8004AF59F /* TSEGeoPlace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF038EDD1DAEDFA0004AF59F /* TSEGeoTagging.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E351DAED9F8004AF59F /* TSEGeoTagging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF038EDE1DAEDFA0004AF59F /* TSETweetShareViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E361DAED9F8004AF59F /* TSETweetShareViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF038EDF1DAEDFA0004AF59F /* TSETweetShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E371DAED9F8004AF59F /* TSETweetShareViewController.m */; };
+		BF038EEE1DAEE6EA004AF59F /* TSEAutoCompletion.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038EED1DAEE6EA004AF59F /* TSEAutoCompletion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF038EF11DAEECC4004AF59F /* TSETweet.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038EEF1DAEECC4004AF59F /* TSETweet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF038EF21DAEECC4004AF59F /* TSETweet.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038EF01DAEECC4004AF59F /* TSETweet.m */; };
+		BF038EF51DAEF85B004AF59F /* TSETweetAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038EF41DAEF859004AF59F /* TSETweetAttachment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF038EF81DAEF96A004AF59F /* TSETweetAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038EF61DAEF882004AF59F /* TSETweetAttachment.m */; };
+		BF038F0F1DAF034F004AF59F /* TSETweetAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038F0D1DAF034F004AF59F /* TSETweetAttachmentView.m */; };
+		BF038F131DAF035B004AF59F /* TSETweetImageAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038F111DAF035B004AF59F /* TSETweetImageAttachmentView.m */; };
+		BF038F171DAF0382004AF59F /* TSETweetURLAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038F151DAF0382004AF59F /* TSETweetURLAttachmentView.m */; };
+		BF038F1B1DAF03E8004AF59F /* TSETweetCustomCardAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038F191DAF03E8004AF59F /* TSETweetCustomCardAttachmentView.m */; };
+		BF2588EC1DB0301400D279C3 /* TSEAutoCompletionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2588EA1DB0301400D279C3 /* TSEAutoCompletionViewModel.m */; };
+		BF4BB8DE1DB55265009F0F92 /* TSEImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = BF4BB8DD1DB55265009F0F92 /* TSEImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF4BB8E71DB5895B009F0F92 /* TSETweetTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4BB8E51DB5895B009F0F92 /* TSETweetTextView.m */; };
+		BF4BB8F01DB59C9D009F0F92 /* TSENetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BF4BB8EF1DB59C98009F0F92 /* TSENetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF4BB8F31DB5A100009F0F92 /* TSELocalizedString.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4BB8F21DB5A100009F0F92 /* TSELocalizedString.m */; };
+		BF629FDC1DB6C33600189CBB /* TSETweetShareConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BF629FDB1DB6C33600189CBB /* TSETweetShareConfiguration.m */; };
+		BF629FDD1DB6C74000189CBB /* TSETweetShareConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = BF629FDA1DB6C22F00189CBB /* TSETweetShareConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF629FE01DB6CEA700189CBB /* TSETweetURLAttachmentMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = BF904F541DB6A45500B0BB73 /* TSETweetURLAttachmentMetadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF629FE21DB6DE6800189CBB /* TSETweetURLAttachmentMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = BF629FE11DB6DE6800189CBB /* TSETweetURLAttachmentMetadata.m */; };
+		BF904F4C1DB6996300B0BB73 /* TSETweetShareViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BF904F4B1DB6995F00B0BB73 /* TSETweetShareViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF904F501DB6A05600B0BB73 /* TSEBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF904F4E1DB6A05600B0BB73 /* TSEBaseTableViewCell.m */; };
+		BF92EBEE1DB83569005EB2D7 /* TSEFoursquareLogoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF92EBEC1DB83569005EB2D7 /* TSEFoursquareLogoTableViewCell.m */; };
+		BF92EBF01DB835BE005EB2D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF92EBEF1DB835BE005EB2D7 /* Assets.xcassets */; };
+		BF92EBF81DB83638005EB2D7 /* TSEUIBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = BF92EBF61DB83638005EB2D7 /* TSEUIBundle.m */; };
+		BF99413B1DE3ADE60045467C /* TSETweetCocoaItemProviderAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9941391DE3ADE60045467C /* TSETweetCocoaItemProviderAttachmentView.m */; };
+		BFBC284E1E5E1E9000595F01 /* TSEScribe.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBC284D1E5E1E8B00595F01 /* TSEScribe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBC28541E5E265700595F01 /* TSEUIScribeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBC28531E5E265700595F01 /* TSEUIScribeEvent.m */; };
+		BFBE02871E2450FF007A246A /* TSEAccountSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E401DAEDA88004AF59F /* TSEAccountSelectionTableViewController.m */; };
+		BFBE02881E2450FF007A246A /* TSEAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E421DAEDA88004AF59F /* TSEAccountTableViewCell.m */; };
+		BFBE02891E2450FF007A246A /* TSEAutoCompletionResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF212941DB1886A008B3257 /* TSEAutoCompletionResult.m */; };
+		BFBE028A1E2450FF007A246A /* TSEAutoCompletionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC1AEBE1DB022DA0065DEB7 /* TSEAutoCompletionTableViewController.m */; };
+		BFBE028B1E2450FF007A246A /* TSEAutoCompletionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2588EA1DB0301400D279C3 /* TSEAutoCompletionViewModel.m */; };
+		BFBE028C1E2450FF007A246A /* TSESimpleTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF212971DB19BB3008B3257 /* TSESimpleTextTableViewCell.m */; };
+		BFBE028D1E2450FF007A246A /* TSETweetAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038F0D1DAF034F004AF59F /* TSETweetAttachmentView.m */; };
+		BFBE028E1E2450FF007A246A /* TSETweetCocoaItemProviderAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9941391DE3ADE60045467C /* TSETweetCocoaItemProviderAttachmentView.m */; };
+		BFBE028F1E2450FF007A246A /* TSETweetCustomCardAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038F191DAF03E8004AF59F /* TSETweetCustomCardAttachmentView.m */; };
+		BFBE02901E2450FF007A246A /* TSETweetImageAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038F111DAF035B004AF59F /* TSETweetImageAttachmentView.m */; };
+		BFBE02911E2450FF007A246A /* TSETweetURLAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038F151DAF0382004AF59F /* TSETweetURLAttachmentView.m */; };
+		BFBE02921E2450FF007A246A /* TSETweetComposerTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E4A1DAEDA88004AF59F /* TSETweetComposerTableViewDataSource.m */; };
+		BFBE02931E2450FF007A246A /* TSETweetComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E4C1DAEDA88004AF59F /* TSETweetComposerViewController.m */; };
+		BFBE02951E2450FF007A246A /* TSETweetTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4BB8E51DB5895B009F0F92 /* TSETweetTextView.m */; };
+		BFBE02961E2450FF007A246A /* NSArray+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2128F1DB03DCF008B3257 /* NSArray+Helpers.m */; };
+		BFBE02971E2450FF007A246A /* TSEFrameworkLazyLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E4F1DAEDA88004AF59F /* TSEFrameworkLazyLoading.m */; };
+		BFBE02981E2450FF007A246A /* TSEThrottledProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF212891DB0356F008B3257 /* TSEThrottledProperty.m */; };
+		BFBE02991E2450FF007A246A /* UIView+TSEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E511DAEDA88004AF59F /* UIView+TSEExtensions.m */; };
+		BFBE029A1E2450FF007A246A /* TSEFoursquareLogoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF92EBEC1DB83569005EB2D7 /* TSEFoursquareLogoTableViewCell.m */; };
+		BFBE029B1E2450FF007A246A /* TSEGeoPlaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3CF8B01DBAB24400BA84F2 /* TSEGeoPlaceTableViewCell.m */; };
+		BFBE029C1E2450FF007A246A /* TSELoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E541DAEDA88004AF59F /* TSELoadingTableViewCell.m */; };
+		BFBE029D1E2450FF007A246A /* TSELocationMapTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E561DAEDA88004AF59F /* TSELocationMapTableViewHeaderView.m */; };
+		BFBE029E1E2450FF007A246A /* TSELocationSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E581DAEDA88004AF59F /* TSELocationSelectionTableViewController.m */; };
+		BFBE02A01E2450FF007A246A /* TSEBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF904F4E1DB6A05600B0BB73 /* TSEBaseTableViewCell.m */; };
+		BFBE02A11E2450FF007A246A /* TSEUIBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = BF92EBF61DB83638005EB2D7 /* TSEUIBundle.m */; };
+		BFBE02A21E2450FF007A246A /* TSELocalizedString.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4BB8F21DB5A100009F0F92 /* TSELocalizedString.m */; };
+		BFBE02A31E2450FF007A246A /* TSESheetPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E5A1DAEDA88004AF59F /* TSESheetPresentationController.m */; };
+		BFBE02A41E2450FF007A246A /* TSETweetShareNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E5C1DAEDA88004AF59F /* TSETweetShareNavigationController.m */; };
+		BFBE02A51E2450FF007A246A /* TSETweet.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038EF01DAEECC4004AF59F /* TSETweet.m */; };
+		BFBE02A61E2450FF007A246A /* TSETweetShareConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BF629FDB1DB6C33600189CBB /* TSETweetShareConfiguration.m */; };
+		BFBE02A71E2450FF007A246A /* TSETweetShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E371DAED9F8004AF59F /* TSETweetShareViewController.m */; };
+		BFBE02A81E2450FF007A246A /* TSETweetURLAttachmentMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = BF629FE11DB6DE6800189CBB /* TSETweetURLAttachmentMetadata.m */; };
+		BFBE02A91E245115007A246A /* TSEAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E331DAED9F8004AF59F /* TSEAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02AA1E245115007A246A /* TSEAutoCompletion.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038EED1DAEE6EA004AF59F /* TSEAutoCompletion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02AB1E245115007A246A /* TSEGeoPlace.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E341DAED9F8004AF59F /* TSEGeoPlace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02AC1E245115007A246A /* TSEGeoTagging.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E351DAED9F8004AF59F /* TSEGeoTagging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02AD1E245115007A246A /* TSEImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = BF4BB8DD1DB55265009F0F92 /* TSEImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02AE1E245115007A246A /* TSENetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BF4BB8EF1DB59C98009F0F92 /* TSENetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02AF1E245115007A246A /* TSETweet.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038EEF1DAEECC4004AF59F /* TSETweet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02B01E245115007A246A /* TSETweetAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038EF41DAEF859004AF59F /* TSETweetAttachment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02B11E245115007A246A /* TSETweetShareConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = BF629FDA1DB6C22F00189CBB /* TSETweetShareConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02B21E245115007A246A /* TSETweetShareViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E361DAED9F8004AF59F /* TSETweetShareViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02B31E245115007A246A /* TSETweetShareViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BF904F4B1DB6995F00B0BB73 /* TSETweetShareViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02B41E245115007A246A /* TSETweetURLAttachmentMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = BF904F541DB6A45500B0BB73 /* TSETweetURLAttachmentMetadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02B51E24511A007A246A /* TwitterShareExtensionUI.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE95FEF1DAC2E1B00638749 /* TwitterShareExtensionUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFC1AEC01DB022DA0065DEB7 /* TSEAutoCompletionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC1AEBE1DB022DA0065DEB7 /* TSEAutoCompletionTableViewController.m */; };
+		BFC1AEC21DB031590065DEB7 /* TSEAutoCompletionViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC1AEC11DB031590065DEB7 /* TSEAutoCompletionViewModelTests.m */; };
+		BFDCD0D01E36A42000F0C726 /* TSETwitterUser.h in Headers */ = {isa = PBXBuildFile; fileRef = BFDCD0CF1E36A42000F0C726 /* TSETwitterUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE95FF61DAC2E1B00638749 /* TwitterShareExtensionUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE95FEC1DAC2E1B00638749 /* TwitterShareExtensionUI.framework */; };
+		BFE95FFD1DAC2E1B00638749 /* TwitterShareExtensionUI.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE95FEF1DAC2E1B00638749 /* TwitterShareExtensionUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFF2128B1DB0356F008B3257 /* TSEThrottledProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF212891DB0356F008B3257 /* TSEThrottledProperty.m */; };
+		BFF212901DB03DCF008B3257 /* NSArray+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2128F1DB03DCF008B3257 /* NSArray+Helpers.m */; };
+		BFF212951DB1886A008B3257 /* TSEAutoCompletionResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF212941DB1886A008B3257 /* TSEAutoCompletionResult.m */; };
+		BFF212991DB19BB3008B3257 /* TSESimpleTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF212971DB19BB3008B3257 /* TSESimpleTextTableViewCell.m */; };
+		BFF2E31E1DBACCDD006081A5 /* TSEGeoPlaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3CF8B01DBAB24400BA84F2 /* TSEGeoPlaceTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D12C6E71EA6106C00DB2B3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFE95FE31DAC2E1B00638749 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D12C6E01EA6103D00DB2B3A;
+			remoteInfo = TwitterShareExtensionUIResources;
+		};
+		BFE95FF71DAC2E1B00638749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFE95FE31DAC2E1B00638749 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFE95FEB1DAC2E1B00638749;
+			remoteInfo = TwitterShareExtensionUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BFBE027A1E245036007A246A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		20D3B1F81F876162008B439C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		3D12C6AA1EA4644600DB2B3A /* TSEWordRangeCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEWordRangeCalculator.h; sourceTree = "<group>"; };
+		3D12C6CA1EA5E05800DB2B3A /* TSELocalizedResources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSELocalizedResources.h; sourceTree = "<group>"; };
+		3D12C6E11EA6103D00DB2B3A /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterShareExtensionUIResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D12C6E31EA6103E00DB2B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D23EEA31F71D65E00198641 /* TwitterShareExtensionUI-Library.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "TwitterShareExtensionUI-Library.xcconfig"; sourceTree = "<group>"; };
+		3D23EEA51F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = TwitterShareExtensionUIResources.xcconfig; sourceTree = "<group>"; };
+		3D23EEB61F724C3000198641 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D23EEB81F724C5B00198641 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3D23EEBA1F724C6D00198641 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3D23EEBC1F724C9A00198641 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3D23EEBE1F724CB800198641 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3D2FDCF31F6E30DC00AE6380 /* TSESelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSESelectionTableViewController.h; path = TwitterShareExtensionUI/Private/TSESelectionTableViewController.h; sourceTree = SOURCE_ROOT; };
+		3D2FDCF61F6E30F400AE6380 /* TSESelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSESelectionTableViewController.m; path = TwitterShareExtensionUI/Private/TSESelectionTableViewController.m; sourceTree = SOURCE_ROOT; };
+		3D7BAA101F63682D003EC153 /* TSECardPreviewProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSECardPreviewProvider.h; sourceTree = "<group>"; };
+		3D8C232E1F2FEB4A00D6B650 /* TFSUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TFSUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D90DA251F7377E200B23064 /* TSEImageProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSEImageProvider.h; sourceTree = "<group>"; };
+		3D90DA261F7377E200B23064 /* TSEImageProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSEImageProvider.m; sourceTree = "<group>"; };
+		3DDAF42D1F5E91D200A19B66 /* TSEFonts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSEFonts.h; sourceTree = "<group>"; };
+		3DDAF42E1F5E91D200A19B66 /* TSEFonts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSEFonts.m; sourceTree = "<group>"; };
+		AA76AF3B1FB273A4008CE2D3 /* DebugFormat.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugFormat.xcconfig; sourceTree = "<group>"; };
+		AA76AF3C1FB273A4008CE2D3 /* FrameworkTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = FrameworkTests.xcconfig; sourceTree = "<group>"; };
+		AA76AF3D1FB273A4008CE2D3 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		AA76AF3E1FB273A4008CE2D3 /* Project-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
+		AA76AF3F1FB273A4008CE2D3 /* Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		AA76AF401FB273A4008CE2D3 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
+		AA76AF411FB273A4008CE2D3 /* Library.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Library.xcconfig; sourceTree = "<group>"; };
+		BF038E331DAED9F8004AF59F /* TSEAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEAccount.h; sourceTree = "<group>"; };
+		BF038E341DAED9F8004AF59F /* TSEGeoPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEGeoPlace.h; sourceTree = "<group>"; };
+		BF038E351DAED9F8004AF59F /* TSEGeoTagging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEGeoTagging.h; sourceTree = "<group>"; };
+		BF038E361DAED9F8004AF59F /* TSETweetShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSETweetShareViewController.h; sourceTree = "<group>"; };
+		BF038E371DAED9F8004AF59F /* TSETweetShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSETweetShareViewController.m; sourceTree = "<group>"; };
+		BF038E3F1DAEDA88004AF59F /* TSEAccountSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEAccountSelectionTableViewController.h; sourceTree = "<group>"; };
+		BF038E401DAEDA88004AF59F /* TSEAccountSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSEAccountSelectionTableViewController.m; sourceTree = "<group>"; };
+		BF038E411DAEDA88004AF59F /* TSEAccountTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEAccountTableViewCell.h; sourceTree = "<group>"; };
+		BF038E421DAEDA88004AF59F /* TSEAccountTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSEAccountTableViewCell.m; sourceTree = "<group>"; };
+		BF038E451DAEDA88004AF59F /* TSEConfigurationSelectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEConfigurationSelectionTableViewCell.h; sourceTree = "<group>"; };
+		BF038E461DAEDA88004AF59F /* TSEConfigurationSelectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSEConfigurationSelectionTableViewCell.m; sourceTree = "<group>"; };
+		BF038E471DAEDA88004AF59F /* TSETweetTextViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSETweetTextViewContainer.h; sourceTree = "<group>"; };
+		BF038E481DAEDA88004AF59F /* TSETweetTextViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSETweetTextViewContainer.m; sourceTree = "<group>"; };
+		BF038E491DAEDA88004AF59F /* TSETweetComposerTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSETweetComposerTableViewDataSource.h; sourceTree = "<group>"; };
+		BF038E4A1DAEDA88004AF59F /* TSETweetComposerTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSETweetComposerTableViewDataSource.m; sourceTree = "<group>"; };
+		BF038E4B1DAEDA88004AF59F /* TSETweetComposerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSETweetComposerViewController.h; sourceTree = "<group>"; };
+		BF038E4C1DAEDA88004AF59F /* TSETweetComposerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSETweetComposerViewController.m; sourceTree = "<group>"; };
+		BF038E4E1DAEDA88004AF59F /* TSEFrameworkLazyLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEFrameworkLazyLoading.h; sourceTree = "<group>"; };
+		BF038E4F1DAEDA88004AF59F /* TSEFrameworkLazyLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSEFrameworkLazyLoading.m; sourceTree = "<group>"; };
+		BF038E501DAEDA88004AF59F /* UIView+TSEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TSEExtensions.h"; sourceTree = "<group>"; };
+		BF038E511DAEDA88004AF59F /* UIView+TSEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TSEExtensions.m"; sourceTree = "<group>"; };
+		BF038E531DAEDA88004AF59F /* TSELoadingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSELoadingTableViewCell.h; sourceTree = "<group>"; };
+		BF038E541DAEDA88004AF59F /* TSELoadingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSELoadingTableViewCell.m; sourceTree = "<group>"; };
+		BF038E551DAEDA88004AF59F /* TSELocationMapTableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSELocationMapTableViewHeaderView.h; sourceTree = "<group>"; };
+		BF038E561DAEDA88004AF59F /* TSELocationMapTableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSELocationMapTableViewHeaderView.m; sourceTree = "<group>"; };
+		BF038E571DAEDA88004AF59F /* TSELocationSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSELocationSelectionTableViewController.h; sourceTree = "<group>"; };
+		BF038E581DAEDA88004AF59F /* TSELocationSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSELocationSelectionTableViewController.m; sourceTree = "<group>"; };
+		BF038E591DAEDA88004AF59F /* TSESheetPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSESheetPresentationController.h; sourceTree = "<group>"; };
+		BF038E5A1DAEDA88004AF59F /* TSESheetPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSESheetPresentationController.m; sourceTree = "<group>"; };
+		BF038E5B1DAEDA88004AF59F /* TSETweetShareNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSETweetShareNavigationController.h; sourceTree = "<group>"; };
+		BF038E5C1DAEDA88004AF59F /* TSETweetShareNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSETweetShareNavigationController.m; sourceTree = "<group>"; };
+		BF038EED1DAEE6EA004AF59F /* TSEAutoCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEAutoCompletion.h; sourceTree = "<group>"; };
+		BF038EEF1DAEECC4004AF59F /* TSETweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSETweet.h; sourceTree = "<group>"; };
+		BF038EF01DAEECC4004AF59F /* TSETweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSETweet.m; sourceTree = "<group>"; };
+		BF038EF41DAEF859004AF59F /* TSETweetAttachment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSETweetAttachment.h; sourceTree = "<group>"; };
+		BF038EF61DAEF882004AF59F /* TSETweetAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSETweetAttachment.m; sourceTree = "<group>"; };
+		BF038F0C1DAF034F004AF59F /* TSETweetAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSETweetAttachmentView.h; sourceTree = "<group>"; };
+		BF038F0D1DAF034F004AF59F /* TSETweetAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSETweetAttachmentView.m; sourceTree = "<group>"; };
+		BF038F101DAF035B004AF59F /* TSETweetImageAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSETweetImageAttachmentView.h; sourceTree = "<group>"; };
+		BF038F111DAF035B004AF59F /* TSETweetImageAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSETweetImageAttachmentView.m; sourceTree = "<group>"; };
+		BF038F141DAF0382004AF59F /* TSETweetURLAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSETweetURLAttachmentView.h; sourceTree = "<group>"; };
+		BF038F151DAF0382004AF59F /* TSETweetURLAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSETweetURLAttachmentView.m; sourceTree = "<group>"; };
+		BF038F181DAF03E8004AF59F /* TSETweetCustomCardAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSETweetCustomCardAttachmentView.h; sourceTree = "<group>"; };
+		BF038F191DAF03E8004AF59F /* TSETweetCustomCardAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSETweetCustomCardAttachmentView.m; sourceTree = "<group>"; };
+		BF2588E91DB0301400D279C3 /* TSEAutoCompletionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSEAutoCompletionViewModel.h; path = "Auto Completion/TSEAutoCompletionViewModel.h"; sourceTree = "<group>"; };
+		BF2588EA1DB0301400D279C3 /* TSEAutoCompletionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSEAutoCompletionViewModel.m; path = "Auto Completion/TSEAutoCompletionViewModel.m"; sourceTree = "<group>"; };
+		BF3CF8AF1DBAB24400BA84F2 /* TSEGeoPlaceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEGeoPlaceTableViewCell.h; sourceTree = "<group>"; };
+		BF3CF8B01DBAB24400BA84F2 /* TSEGeoPlaceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSEGeoPlaceTableViewCell.m; sourceTree = "<group>"; };
+		BF4BB8DD1DB55265009F0F92 /* TSEImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEImageDownloader.h; sourceTree = "<group>"; };
+		BF4BB8E41DB5895B009F0F92 /* TSETweetTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSETweetTextView.h; sourceTree = "<group>"; };
+		BF4BB8E51DB5895B009F0F92 /* TSETweetTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSETweetTextView.m; sourceTree = "<group>"; };
+		BF4BB8EF1DB59C98009F0F92 /* TSENetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSENetworking.h; sourceTree = "<group>"; };
+		BF4BB8F11DB5A09E009F0F92 /* TSELocalizedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSELocalizedString.h; sourceTree = "<group>"; };
+		BF4BB8F21DB5A100009F0F92 /* TSELocalizedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSELocalizedString.m; sourceTree = "<group>"; };
+		BF629FDA1DB6C22F00189CBB /* TSETweetShareConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSETweetShareConfiguration.h; sourceTree = "<group>"; };
+		BF629FDB1DB6C33600189CBB /* TSETweetShareConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSETweetShareConfiguration.m; sourceTree = "<group>"; };
+		BF629FE11DB6DE6800189CBB /* TSETweetURLAttachmentMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSETweetURLAttachmentMetadata.m; sourceTree = "<group>"; };
+		BF8CF5D21DAD693C00686F66 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BF904F4B1DB6995F00B0BB73 /* TSETweetShareViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSETweetShareViewControllerDelegate.h; sourceTree = "<group>"; };
+		BF904F4D1DB6A05600B0BB73 /* TSEBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEBaseTableViewCell.h; sourceTree = "<group>"; };
+		BF904F4E1DB6A05600B0BB73 /* TSEBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSEBaseTableViewCell.m; sourceTree = "<group>"; };
+		BF904F541DB6A45500B0BB73 /* TSETweetURLAttachmentMetadata.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSETweetURLAttachmentMetadata.h; sourceTree = "<group>"; };
+		BF92EBE71DB8200A005EB2D7 /* TSEColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSEColors.h; sourceTree = "<group>"; };
+		BF92EBEB1DB83569005EB2D7 /* TSEFoursquareLogoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEFoursquareLogoTableViewCell.h; sourceTree = "<group>"; };
+		BF92EBEC1DB83569005EB2D7 /* TSEFoursquareLogoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSEFoursquareLogoTableViewCell.m; sourceTree = "<group>"; };
+		BF92EBEF1DB835BE005EB2D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF92EBF51DB83638005EB2D7 /* TSEUIBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEUIBundle.h; sourceTree = "<group>"; };
+		BF92EBF61DB83638005EB2D7 /* TSEUIBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSEUIBundle.m; sourceTree = "<group>"; };
+		BF9941381DE3ADE60045467C /* TSETweetCocoaItemProviderAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSETweetCocoaItemProviderAttachmentView.h; sourceTree = "<group>"; };
+		BF9941391DE3ADE60045467C /* TSETweetCocoaItemProviderAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSETweetCocoaItemProviderAttachmentView.m; sourceTree = "<group>"; };
+		BFBC284D1E5E1E8B00595F01 /* TSEScribe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSEScribe.h; sourceTree = "<group>"; };
+		BFBC28531E5E265700595F01 /* TSEUIScribeEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSEUIScribeEvent.m; sourceTree = "<group>"; };
+		BFBC28551E5E269300595F01 /* TSEUIScribeEvent+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TSEUIScribeEvent+Private.h"; sourceTree = "<group>"; };
+		BFBE027C1E245036007A246A /* libTwitterShareExtensionUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTwitterShareExtensionUI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC1AEBD1DB022DA0065DEB7 /* TSEAutoCompletionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSEAutoCompletionTableViewController.h; path = "Auto Completion/TSEAutoCompletionTableViewController.h"; sourceTree = "<group>"; };
+		BFC1AEBE1DB022DA0065DEB7 /* TSEAutoCompletionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSEAutoCompletionTableViewController.m; path = "Auto Completion/TSEAutoCompletionTableViewController.m"; sourceTree = "<group>"; };
+		BFC1AEC11DB031590065DEB7 /* TSEAutoCompletionViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSEAutoCompletionViewModelTests.m; sourceTree = "<group>"; };
+		BFDCD0CF1E36A42000F0C726 /* TSETwitterUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSETwitterUser.h; sourceTree = "<group>"; };
+		BFE95FEC1DAC2E1B00638749 /* TwitterShareExtensionUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TwitterShareExtensionUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE95FEF1DAC2E1B00638749 /* TwitterShareExtensionUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterShareExtensionUI.h; sourceTree = "<group>"; };
+		BFE95FF01DAC2E1B00638749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFE95FF51DAC2E1B00638749 /* TwitterShareExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterShareExtensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE95FFC1DAC2E1B00638749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFF212881DB0356F008B3257 /* TSEThrottledProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEThrottledProperty.h; sourceTree = "<group>"; };
+		BFF212891DB0356F008B3257 /* TSEThrottledProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSEThrottledProperty.m; sourceTree = "<group>"; };
+		BFF2128E1DB03D7F008B3257 /* NSArray+Helpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Helpers.h"; sourceTree = "<group>"; };
+		BFF2128F1DB03DCF008B3257 /* NSArray+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Helpers.m"; sourceTree = "<group>"; };
+		BFF212911DB18817008B3257 /* TSEAutoCompletionResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TSEAutoCompletionResult.h; path = "Auto Completion/TSEAutoCompletionResult.h"; sourceTree = "<group>"; };
+		BFF212941DB1886A008B3257 /* TSEAutoCompletionResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSEAutoCompletionResult.m; path = "Auto Completion/TSEAutoCompletionResult.m"; sourceTree = "<group>"; };
+		BFF212961DB19BB3008B3257 /* TSESimpleTextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSESimpleTextTableViewCell.h; path = "Auto Completion/TSESimpleTextTableViewCell.h"; sourceTree = "<group>"; };
+		BFF212971DB19BB3008B3257 /* TSESimpleTextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSESimpleTextTableViewCell.m; path = "Auto Completion/TSESimpleTextTableViewCell.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFBE02791E245036007A246A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE95FE81DAC2E1B00638749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D23EEBB1F724C6E00198641 /* CoreGraphics.framework in Frameworks */,
+				3D23EEBF1F724CB800198641 /* CoreLocation.framework in Frameworks */,
+				3D23EEC01F724CC400198641 /* MapKit.framework in Frameworks */,
+				3D23EEBD1F724C9B00198641 /* MobileCoreServices.framework in Frameworks */,
+				3D23EEB91F724C5B00198641 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE95FF21DAC2E1B00638749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D8C232F1F2FEB4A00D6B650 /* TFSUtilities.framework in Frameworks */,
+				BFE95FF61DAC2E1B00638749 /* TwitterShareExtensionUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D12C6E21EA6103E00DB2B3A /* TwitterShareExtensionUIResources */ = {
+			isa = PBXGroup;
+			children = (
+				3D12C6E31EA6103E00DB2B3A /* Info.plist */,
+			);
+			path = TwitterShareExtensionUIResources;
+			sourceTree = "<group>";
+		};
+		3D23EE961F71CC1900198641 /* BuildConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				AA76AF3B1FB273A4008CE2D3 /* DebugFormat.xcconfig */,
+				AA76AF3F1FB273A4008CE2D3 /* Framework.xcconfig */,
+				AA76AF3C1FB273A4008CE2D3 /* FrameworkTests.xcconfig */,
+				AA76AF411FB273A4008CE2D3 /* Library.xcconfig */,
+				AA76AF401FB273A4008CE2D3 /* Project-Debug.xcconfig */,
+				AA76AF3E1FB273A4008CE2D3 /* Project-Release.xcconfig */,
+				AA76AF3D1FB273A4008CE2D3 /* Project.xcconfig */,
+				3D23EEA31F71D65E00198641 /* TwitterShareExtensionUI-Library.xcconfig */,
+				3D23EEA51F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig */,
+			);
+			path = BuildConfiguration;
+			sourceTree = "<group>";
+		};
+		BF038E321DAED9F8004AF59F /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				BF038E331DAED9F8004AF59F /* TSEAccount.h */,
+				BF038EED1DAEE6EA004AF59F /* TSEAutoCompletion.h */,
+				3D7BAA101F63682D003EC153 /* TSECardPreviewProvider.h */,
+				3DDAF42D1F5E91D200A19B66 /* TSEFonts.h */,
+				3DDAF42E1F5E91D200A19B66 /* TSEFonts.m */,
+				BF038E341DAED9F8004AF59F /* TSEGeoPlace.h */,
+				BF038E351DAED9F8004AF59F /* TSEGeoTagging.h */,
+				BF4BB8DD1DB55265009F0F92 /* TSEImageDownloader.h */,
+				3D90DA251F7377E200B23064 /* TSEImageProvider.h */,
+				3D90DA261F7377E200B23064 /* TSEImageProvider.m */,
+				3D12C6CA1EA5E05800DB2B3A /* TSELocalizedResources.h */,
+				BF4BB8EF1DB59C98009F0F92 /* TSENetworking.h */,
+				BFBC284D1E5E1E8B00595F01 /* TSEScribe.h */,
+				BF038EEF1DAEECC4004AF59F /* TSETweet.h */,
+				BF038EF01DAEECC4004AF59F /* TSETweet.m */,
+				BF038EF41DAEF859004AF59F /* TSETweetAttachment.h */,
+				BF038EF61DAEF882004AF59F /* TSETweetAttachment.m */,
+				BF629FDA1DB6C22F00189CBB /* TSETweetShareConfiguration.h */,
+				BF629FDB1DB6C33600189CBB /* TSETweetShareConfiguration.m */,
+				BF038E361DAED9F8004AF59F /* TSETweetShareViewController.h */,
+				BF038E371DAED9F8004AF59F /* TSETweetShareViewController.m */,
+				BF904F4B1DB6995F00B0BB73 /* TSETweetShareViewControllerDelegate.h */,
+				BF904F541DB6A45500B0BB73 /* TSETweetURLAttachmentMetadata.h */,
+				BF629FE11DB6DE6800189CBB /* TSETweetURLAttachmentMetadata.m */,
+				BFDCD0CF1E36A42000F0C726 /* TSETwitterUser.h */,
+				BFBC28531E5E265700595F01 /* TSEUIScribeEvent.m */,
+				3D12C6AA1EA4644600DB2B3A /* TSEWordRangeCalculator.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		BF038E3D1DAEDA88004AF59F /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				BF038E3E1DAEDA88004AF59F /* Account Selection */,
+				BF038EF31DAEF3FC004AF59F /* Auto Completion */,
+				BF038E431DAEDA88004AF59F /* Composer */,
+				BF038E4D1DAEDA88004AF59F /* Extensions */,
+				BF038E521DAEDA88004AF59F /* Location Selection */,
+				BF904F4D1DB6A05600B0BB73 /* TSEBaseTableViewCell.h */,
+				BF904F4E1DB6A05600B0BB73 /* TSEBaseTableViewCell.m */,
+				BF92EBE71DB8200A005EB2D7 /* TSEColors.h */,
+				BF4BB8F11DB5A09E009F0F92 /* TSELocalizedString.h */,
+				BF4BB8F21DB5A100009F0F92 /* TSELocalizedString.m */,
+				BF038E591DAEDA88004AF59F /* TSESheetPresentationController.h */,
+				BF038E5A1DAEDA88004AF59F /* TSESheetPresentationController.m */,
+				3D2FDCF31F6E30DC00AE6380 /* TSESelectionTableViewController.h */,
+				3D2FDCF61F6E30F400AE6380 /* TSESelectionTableViewController.m */,
+				BF038E5B1DAEDA88004AF59F /* TSETweetShareNavigationController.h */,
+				BF038E5C1DAEDA88004AF59F /* TSETweetShareNavigationController.m */,
+				BF92EBF51DB83638005EB2D7 /* TSEUIBundle.h */,
+				BF92EBF61DB83638005EB2D7 /* TSEUIBundle.m */,
+				BFBC28551E5E269300595F01 /* TSEUIScribeEvent+Private.h */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		BF038E3E1DAEDA88004AF59F /* Account Selection */ = {
+			isa = PBXGroup;
+			children = (
+				BF038E3F1DAEDA88004AF59F /* TSEAccountSelectionTableViewController.h */,
+				BF038E401DAEDA88004AF59F /* TSEAccountSelectionTableViewController.m */,
+				BF038E411DAEDA88004AF59F /* TSEAccountTableViewCell.h */,
+				BF038E421DAEDA88004AF59F /* TSEAccountTableViewCell.m */,
+			);
+			path = "Account Selection";
+			sourceTree = "<group>";
+		};
+		BF038E431DAEDA88004AF59F /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+				BF038F0B1DAF034F004AF59F /* Attachment Views */,
+				BF038E451DAEDA88004AF59F /* TSEConfigurationSelectionTableViewCell.h */,
+				BF038E461DAEDA88004AF59F /* TSEConfigurationSelectionTableViewCell.m */,
+				BF038E491DAEDA88004AF59F /* TSETweetComposerTableViewDataSource.h */,
+				BF038E4A1DAEDA88004AF59F /* TSETweetComposerTableViewDataSource.m */,
+				BF038E4B1DAEDA88004AF59F /* TSETweetComposerViewController.h */,
+				BF038E4C1DAEDA88004AF59F /* TSETweetComposerViewController.m */,
+				BF4BB8E41DB5895B009F0F92 /* TSETweetTextView.h */,
+				BF4BB8E51DB5895B009F0F92 /* TSETweetTextView.m */,
+				BF038E471DAEDA88004AF59F /* TSETweetTextViewContainer.h */,
+				BF038E481DAEDA88004AF59F /* TSETweetTextViewContainer.m */,
+			);
+			path = Composer;
+			sourceTree = "<group>";
+		};
+		BF038E4D1DAEDA88004AF59F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BFF2128E1DB03D7F008B3257 /* NSArray+Helpers.h */,
+				BFF2128F1DB03DCF008B3257 /* NSArray+Helpers.m */,
+				BF038E4E1DAEDA88004AF59F /* TSEFrameworkLazyLoading.h */,
+				BF038E4F1DAEDA88004AF59F /* TSEFrameworkLazyLoading.m */,
+				BFF212881DB0356F008B3257 /* TSEThrottledProperty.h */,
+				BFF212891DB0356F008B3257 /* TSEThrottledProperty.m */,
+				BF038E501DAEDA88004AF59F /* UIView+TSEExtensions.h */,
+				BF038E511DAEDA88004AF59F /* UIView+TSEExtensions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF038E521DAEDA88004AF59F /* Location Selection */ = {
+			isa = PBXGroup;
+			children = (
+				BF3CF8AE1DBAB23900BA84F2 /* Cells */,
+				BF038E551DAEDA88004AF59F /* TSELocationMapTableViewHeaderView.h */,
+				BF038E561DAEDA88004AF59F /* TSELocationMapTableViewHeaderView.m */,
+				BF038E571DAEDA88004AF59F /* TSELocationSelectionTableViewController.h */,
+				BF038E581DAEDA88004AF59F /* TSELocationSelectionTableViewController.m */,
+			);
+			path = "Location Selection";
+			sourceTree = "<group>";
+		};
+		BF038EF31DAEF3FC004AF59F /* Auto Completion */ = {
+			isa = PBXGroup;
+			children = (
+				BFF212911DB18817008B3257 /* TSEAutoCompletionResult.h */,
+				BFF212941DB1886A008B3257 /* TSEAutoCompletionResult.m */,
+				BFC1AEBD1DB022DA0065DEB7 /* TSEAutoCompletionTableViewController.h */,
+				BFC1AEBE1DB022DA0065DEB7 /* TSEAutoCompletionTableViewController.m */,
+				BF2588E91DB0301400D279C3 /* TSEAutoCompletionViewModel.h */,
+				BF2588EA1DB0301400D279C3 /* TSEAutoCompletionViewModel.m */,
+				BFF212961DB19BB3008B3257 /* TSESimpleTextTableViewCell.h */,
+				BFF212971DB19BB3008B3257 /* TSESimpleTextTableViewCell.m */,
+			);
+			name = "Auto Completion";
+			sourceTree = "<group>";
+		};
+		BF038F0B1DAF034F004AF59F /* Attachment Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF038F0C1DAF034F004AF59F /* TSETweetAttachmentView.h */,
+				BF038F0D1DAF034F004AF59F /* TSETweetAttachmentView.m */,
+				BF9941381DE3ADE60045467C /* TSETweetCocoaItemProviderAttachmentView.h */,
+				BF9941391DE3ADE60045467C /* TSETweetCocoaItemProviderAttachmentView.m */,
+				BF038F181DAF03E8004AF59F /* TSETweetCustomCardAttachmentView.h */,
+				BF038F191DAF03E8004AF59F /* TSETweetCustomCardAttachmentView.m */,
+				BF038F101DAF035B004AF59F /* TSETweetImageAttachmentView.h */,
+				BF038F111DAF035B004AF59F /* TSETweetImageAttachmentView.m */,
+				BF038F141DAF0382004AF59F /* TSETweetURLAttachmentView.h */,
+				BF038F151DAF0382004AF59F /* TSETweetURLAttachmentView.m */,
+			);
+			path = "Attachment Views";
+			sourceTree = "<group>";
+		};
+		BF3CF8AE1DBAB23900BA84F2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BF92EBEB1DB83569005EB2D7 /* TSEFoursquareLogoTableViewCell.h */,
+				BF92EBEC1DB83569005EB2D7 /* TSEFoursquareLogoTableViewCell.m */,
+				BF3CF8AF1DBAB24400BA84F2 /* TSEGeoPlaceTableViewCell.h */,
+				BF3CF8B01DBAB24400BA84F2 /* TSEGeoPlaceTableViewCell.m */,
+				BF038E531DAEDA88004AF59F /* TSELoadingTableViewCell.h */,
+				BF038E541DAEDA88004AF59F /* TSELoadingTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		BF8CF5D11DAD693C00686F66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20D3B1F81F876162008B439C /* CoreFoundation.framework */,
+				3D23EEBE1F724CB800198641 /* CoreLocation.framework */,
+				3D23EEBC1F724C9A00198641 /* MobileCoreServices.framework */,
+				3D23EEBA1F724C6D00198641 /* CoreGraphics.framework */,
+				3D23EEB81F724C5B00198641 /* UIKit.framework */,
+				3D23EEB61F724C3000198641 /* Foundation.framework */,
+				3D8C232E1F2FEB4A00D6B650 /* TFSUtilities.framework */,
+				BF8CF5D21DAD693C00686F66 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFE95FE21DAC2E1B00638749 = {
+			isa = PBXGroup;
+			children = (
+				3D23EE961F71CC1900198641 /* BuildConfiguration */,
+				BFE95FEE1DAC2E1B00638749 /* TwitterShareExtensionUI */,
+				BFE95FF91DAC2E1B00638749 /* TwitterShareExtensionUITests */,
+				3D12C6E21EA6103E00DB2B3A /* TwitterShareExtensionUIResources */,
+				BFE95FED1DAC2E1B00638749 /* Products */,
+				BF8CF5D11DAD693C00686F66 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BFE95FED1DAC2E1B00638749 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFE95FEC1DAC2E1B00638749 /* TwitterShareExtensionUI.framework */,
+				BFE95FF51DAC2E1B00638749 /* TwitterShareExtensionUITests.xctest */,
+				BFBE027C1E245036007A246A /* libTwitterShareExtensionUI.a */,
+				3D12C6E11EA6103D00DB2B3A /* TwitterShareExtensionUIResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFE95FEE1DAC2E1B00638749 /* TwitterShareExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				BF92EBEF1DB835BE005EB2D7 /* Assets.xcassets */,
+				BFE95FF01DAC2E1B00638749 /* Info.plist */,
+				BF038E3D1DAEDA88004AF59F /* Private */,
+				BF038E321DAED9F8004AF59F /* Public */,
+				BFE95FEF1DAC2E1B00638749 /* TwitterShareExtensionUI.h */,
+			);
+			path = TwitterShareExtensionUI;
+			sourceTree = "<group>";
+		};
+		BFE95FF91DAC2E1B00638749 /* TwitterShareExtensionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFE95FFC1DAC2E1B00638749 /* Info.plist */,
+				BFC1AEC11DB031590065DEB7 /* TSEAutoCompletionViewModelTests.m */,
+			);
+			path = TwitterShareExtensionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BFBE02861E2450AB007A246A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBE02B01E245115007A246A /* TSETweetAttachment.h in Headers */,
+				BFBE02AA1E245115007A246A /* TSEAutoCompletion.h in Headers */,
+				BFBE02B51E24511A007A246A /* TwitterShareExtensionUI.h in Headers */,
+				BFBE02AE1E245115007A246A /* TSENetworking.h in Headers */,
+				BFBE02B41E245115007A246A /* TSETweetURLAttachmentMetadata.h in Headers */,
+				3DA8FB801EA05D3200E778C9 /* TSEScribe.h in Headers */,
+				BFBE02AD1E245115007A246A /* TSEImageDownloader.h in Headers */,
+				3D12C6CC1EA5E05800DB2B3A /* TSELocalizedResources.h in Headers */,
+				BFBE02B21E245115007A246A /* TSETweetShareViewController.h in Headers */,
+				BFBE02AC1E245115007A246A /* TSEGeoTagging.h in Headers */,
+				BFBE02A91E245115007A246A /* TSEAccount.h in Headers */,
+				3D7BAA121F636839003EC153 /* TSECardPreviewProvider.h in Headers */,
+				BFBE02B11E245115007A246A /* TSETweetShareConfiguration.h in Headers */,
+				3D12C6BA1EA5428D00DB2B3A /* TSEConfigurationSelectionTableViewCell.h in Headers */,
+				BFBE02AF1E245115007A246A /* TSETweet.h in Headers */,
+				3DA8FB811EA05D5900E778C9 /* TSETwitterUser.h in Headers */,
+				3D12C6AC1EA4644600DB2B3A /* TSEWordRangeCalculator.h in Headers */,
+				3D90DA281F7377E200B23064 /* TSEImageProvider.h in Headers */,
+				BFBE02B31E245115007A246A /* TSETweetShareViewControllerDelegate.h in Headers */,
+				3D12C6BC1EA542A300DB2B3A /* TSETweetTextViewContainer.h in Headers */,
+				3DDAF4301F5E91D200A19B66 /* TSEFonts.h in Headers */,
+				BFBE02AB1E245115007A246A /* TSEGeoPlace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE95FE91DAC2E1B00638749 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF904F4C1DB6996300B0BB73 /* TSETweetShareViewControllerDelegate.h in Headers */,
+				BF038EDE1DAEDFA0004AF59F /* TSETweetShareViewController.h in Headers */,
+				BF629FDD1DB6C74000189CBB /* TSETweetShareConfiguration.h in Headers */,
+				BF4BB8DE1DB55265009F0F92 /* TSEImageDownloader.h in Headers */,
+				BF038EEE1DAEE6EA004AF59F /* TSEAutoCompletion.h in Headers */,
+				BF038EF51DAEF85B004AF59F /* TSETweetAttachment.h in Headers */,
+				3D12C6AB1EA4644600DB2B3A /* TSEWordRangeCalculator.h in Headers */,
+				BFDCD0D01E36A42000F0C726 /* TSETwitterUser.h in Headers */,
+				BF038E611DAEDA88004AF59F /* TSEConfigurationSelectionTableViewCell.h in Headers */,
+				BF629FE01DB6CEA700189CBB /* TSETweetURLAttachmentMetadata.h in Headers */,
+				BF038EF11DAEECC4004AF59F /* TSETweet.h in Headers */,
+				3D7BAA111F63682D003EC153 /* TSECardPreviewProvider.h in Headers */,
+				BF4BB8F01DB59C9D009F0F92 /* TSENetworking.h in Headers */,
+				BF038EDB1DAEDFA0004AF59F /* TSEAccount.h in Headers */,
+				BF038E631DAEDA88004AF59F /* TSETweetTextViewContainer.h in Headers */,
+				3D12C6CB1EA5E05800DB2B3A /* TSELocalizedResources.h in Headers */,
+				BFBC284E1E5E1E9000595F01 /* TSEScribe.h in Headers */,
+				3D90DA271F7377E200B23064 /* TSEImageProvider.h in Headers */,
+				BF038EDD1DAEDFA0004AF59F /* TSEGeoTagging.h in Headers */,
+				BFE95FFD1DAC2E1B00638749 /* TwitterShareExtensionUI.h in Headers */,
+				3DDAF42F1F5E91D200A19B66 /* TSEFonts.h in Headers */,
+				BF038EDC1DAEDFA0004AF59F /* TSEGeoPlace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3D12C6E01EA6103D00DB2B3A /* TwitterShareExtensionUIResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D12C6E41EA6103E00DB2B3A /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUIResources" */;
+			buildPhases = (
+				3D12C6DF1EA6103D00DB2B3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitterShareExtensionUIResources;
+			productName = TwitterShareExtensionUIResources;
+			productReference = 3D12C6E11EA6103D00DB2B3A /* TwitterShareExtensionUIResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		BFBE027B1E245036007A246A /* TwitterShareExtensionUI-static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFBE02841E245036007A246A /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUI-static" */;
+			buildPhases = (
+				BFBE02781E245036007A246A /* Sources */,
+				BFBE02791E245036007A246A /* Frameworks */,
+				BFBE027A1E245036007A246A /* CopyFiles */,
+				BFBE02861E2450AB007A246A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D12C6E81EA6106C00DB2B3A /* PBXTargetDependency */,
+			);
+			name = "TwitterShareExtensionUI-static";
+			productName = "TwitterShareExtensionUI-static";
+			productReference = BFBE027C1E245036007A246A /* libTwitterShareExtensionUI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BFE95FEB1DAC2E1B00638749 /* TwitterShareExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE960001DAC2E1B00638749 /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUI" */;
+			buildPhases = (
+				BFE95FE71DAC2E1B00638749 /* Sources */,
+				BFE95FE81DAC2E1B00638749 /* Frameworks */,
+				BFE95FE91DAC2E1B00638749 /* Headers */,
+				BFE95FEA1DAC2E1B00638749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitterShareExtensionUI;
+			productName = TwitterShareExtensionUI;
+			productReference = BFE95FEC1DAC2E1B00638749 /* TwitterShareExtensionUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BFE95FF41DAC2E1B00638749 /* TwitterShareExtensionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE960031DAC2E1B00638749 /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUITests" */;
+			buildPhases = (
+				BFE95FF11DAC2E1B00638749 /* Sources */,
+				BFE95FF21DAC2E1B00638749 /* Frameworks */,
+				BFE95FF31DAC2E1B00638749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFE95FF81DAC2E1B00638749 /* PBXTargetDependency */,
+			);
+			name = TwitterShareExtensionUITests;
+			productName = TwitterShareExtensionUITests;
+			productReference = BFE95FF51DAC2E1B00638749 /* TwitterShareExtensionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFE95FE31DAC2E1B00638749 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Twitter;
+				TargetAttributes = {
+					3D12C6E01EA6103D00DB2B3A = {
+						CreatedOnToolsVersion = 8.3.1;
+					};
+					BFBE027B1E245036007A246A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					BFE95FEB1DAC2E1B00638749 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9YG77X724H;
+						ProvisioningStyle = Manual;
+					};
+					BFE95FF41DAC2E1B00638749 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9YG77X724H;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = BFE95FE61DAC2E1B00638749 /* Build configuration list for PBXProject "TwitterShareExtensionUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BFE95FE21DAC2E1B00638749;
+			productRefGroup = BFE95FED1DAC2E1B00638749 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFE95FEB1DAC2E1B00638749 /* TwitterShareExtensionUI */,
+				BFE95FF41DAC2E1B00638749 /* TwitterShareExtensionUITests */,
+				BFBE027B1E245036007A246A /* TwitterShareExtensionUI-static */,
+				3D12C6E01EA6103D00DB2B3A /* TwitterShareExtensionUIResources */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D12C6DF1EA6103D00DB2B3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D12C6E91EA6127100DB2B3A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE95FEA1DAC2E1B00638749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D23EEA61F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig in Resources */,
+				AA76AF451FB273A4008CE2D3 /* Project-Release.xcconfig in Resources */,
+				3D23EEA41F71D65E00198641 /* TwitterShareExtensionUI-Library.xcconfig in Resources */,
+				AA76AF431FB273A4008CE2D3 /* FrameworkTests.xcconfig in Resources */,
+				BF92EBF01DB835BE005EB2D7 /* Assets.xcassets in Resources */,
+				AA76AF441FB273A4008CE2D3 /* Project.xcconfig in Resources */,
+				AA76AF471FB273A4008CE2D3 /* Project-Debug.xcconfig in Resources */,
+				AA76AF421FB273A4008CE2D3 /* DebugFormat.xcconfig in Resources */,
+				AA76AF481FB273A4008CE2D3 /* Library.xcconfig in Resources */,
+				AA76AF461FB273A4008CE2D3 /* Framework.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE95FF31DAC2E1B00638749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFBE02781E245036007A246A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBE028A1E2450FF007A246A /* TSEAutoCompletionTableViewController.m in Sources */,
+				BFBE028C1E2450FF007A246A /* TSESimpleTextTableViewCell.m in Sources */,
+				3D12C6B91EA5428900DB2B3A /* TSEConfigurationSelectionTableViewCell.m in Sources */,
+				BFBE02951E2450FF007A246A /* TSETweetTextView.m in Sources */,
+				3D90DA2A1F7377E200B23064 /* TSEImageProvider.m in Sources */,
+				BFBE02A11E2450FF007A246A /* TSEUIBundle.m in Sources */,
+				BFBE02911E2450FF007A246A /* TSETweetURLAttachmentView.m in Sources */,
+				BFBE02A31E2450FF007A246A /* TSESheetPresentationController.m in Sources */,
+				BFBE029C1E2450FF007A246A /* TSELoadingTableViewCell.m in Sources */,
+				BFBE029A1E2450FF007A246A /* TSEFoursquareLogoTableViewCell.m in Sources */,
+				3D12C6BB1EA5429F00DB2B3A /* TSETweetTextViewContainer.m in Sources */,
+				3DA8FB831EA05D6B00E778C9 /* TSETweetAttachment.m in Sources */,
+				BFBE02901E2450FF007A246A /* TSETweetImageAttachmentView.m in Sources */,
+				BFBE02A61E2450FF007A246A /* TSETweetShareConfiguration.m in Sources */,
+				BFBE029D1E2450FF007A246A /* TSELocationMapTableViewHeaderView.m in Sources */,
+				BFBE02871E2450FF007A246A /* TSEAccountSelectionTableViewController.m in Sources */,
+				BFBE028D1E2450FF007A246A /* TSETweetAttachmentView.m in Sources */,
+				3DDAF4321F5E91D200A19B66 /* TSEFonts.m in Sources */,
+				BFBE02961E2450FF007A246A /* NSArray+Helpers.m in Sources */,
+				BFBE02A21E2450FF007A246A /* TSELocalizedString.m in Sources */,
+				BFBE02A41E2450FF007A246A /* TSETweetShareNavigationController.m in Sources */,
+				BFBE029E1E2450FF007A246A /* TSELocationSelectionTableViewController.m in Sources */,
+				BFBE02891E2450FF007A246A /* TSEAutoCompletionResult.m in Sources */,
+				BFBE02931E2450FF007A246A /* TSETweetComposerViewController.m in Sources */,
+				BFBE028E1E2450FF007A246A /* TSETweetCocoaItemProviderAttachmentView.m in Sources */,
+				BFBE02A81E2450FF007A246A /* TSETweetURLAttachmentMetadata.m in Sources */,
+				3DA8FB821EA05D5F00E778C9 /* TSEUIScribeEvent.m in Sources */,
+				BFBE02A71E2450FF007A246A /* TSETweetShareViewController.m in Sources */,
+				BFBE028B1E2450FF007A246A /* TSEAutoCompletionViewModel.m in Sources */,
+				BFBE02981E2450FF007A246A /* TSEThrottledProperty.m in Sources */,
+				BFBE02A01E2450FF007A246A /* TSEBaseTableViewCell.m in Sources */,
+				BFBE02921E2450FF007A246A /* TSETweetComposerTableViewDataSource.m in Sources */,
+				BFBE02A51E2450FF007A246A /* TSETweet.m in Sources */,
+				BFBE02881E2450FF007A246A /* TSEAccountTableViewCell.m in Sources */,
+				BFBE02991E2450FF007A246A /* UIView+TSEExtensions.m in Sources */,
+				BFBE02971E2450FF007A246A /* TSEFrameworkLazyLoading.m in Sources */,
+				BFBE029B1E2450FF007A246A /* TSEGeoPlaceTableViewCell.m in Sources */,
+				3D2FDCF81F6E30F400AE6380 /* TSESelectionTableViewController.m in Sources */,
+				BFBE028F1E2450FF007A246A /* TSETweetCustomCardAttachmentView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE95FE71DAC2E1B00638749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2588EC1DB0301400D279C3 /* TSEAutoCompletionViewModel.m in Sources */,
+				BF038E621DAEDA88004AF59F /* TSEConfigurationSelectionTableViewCell.m in Sources */,
+				BF038E701DAEDA88004AF59F /* TSELocationMapTableViewHeaderView.m in Sources */,
+				BF038E681DAEDA88004AF59F /* TSETweetComposerViewController.m in Sources */,
+				3D90DA291F7377E200B23064 /* TSEImageProvider.m in Sources */,
+				BF038E741DAEDA88004AF59F /* TSESheetPresentationController.m in Sources */,
+				BF038E761DAEDA88004AF59F /* TSETweetShareNavigationController.m in Sources */,
+				BF038E5E1DAEDA88004AF59F /* TSEAccountSelectionTableViewController.m in Sources */,
+				BFF2E31E1DBACCDD006081A5 /* TSEGeoPlaceTableViewCell.m in Sources */,
+				BFF2128B1DB0356F008B3257 /* TSEThrottledProperty.m in Sources */,
+				BF038F131DAF035B004AF59F /* TSETweetImageAttachmentView.m in Sources */,
+				BFF212901DB03DCF008B3257 /* NSArray+Helpers.m in Sources */,
+				BF4BB8E71DB5895B009F0F92 /* TSETweetTextView.m in Sources */,
+				BF038EF21DAEECC4004AF59F /* TSETweet.m in Sources */,
+				BF629FE21DB6DE6800189CBB /* TSETweetURLAttachmentMetadata.m in Sources */,
+				BF038E6A1DAEDA88004AF59F /* TSEFrameworkLazyLoading.m in Sources */,
+				BF038E6C1DAEDA88004AF59F /* UIView+TSEExtensions.m in Sources */,
+				BF4BB8F31DB5A100009F0F92 /* TSELocalizedString.m in Sources */,
+				3DDAF4311F5E91D200A19B66 /* TSEFonts.m in Sources */,
+				BF92EBF81DB83638005EB2D7 /* TSEUIBundle.m in Sources */,
+				BFC1AEC01DB022DA0065DEB7 /* TSEAutoCompletionTableViewController.m in Sources */,
+				BF99413B1DE3ADE60045467C /* TSETweetCocoaItemProviderAttachmentView.m in Sources */,
+				BF038F0F1DAF034F004AF59F /* TSETweetAttachmentView.m in Sources */,
+				BF038E661DAEDA88004AF59F /* TSETweetComposerTableViewDataSource.m in Sources */,
+				BF038E641DAEDA88004AF59F /* TSETweetTextViewContainer.m in Sources */,
+				BFBC28541E5E265700595F01 /* TSEUIScribeEvent.m in Sources */,
+				BFF212951DB1886A008B3257 /* TSEAutoCompletionResult.m in Sources */,
+				BF038E601DAEDA88004AF59F /* TSEAccountTableViewCell.m in Sources */,
+				BF038EDF1DAEDFA0004AF59F /* TSETweetShareViewController.m in Sources */,
+				BF904F501DB6A05600B0BB73 /* TSEBaseTableViewCell.m in Sources */,
+				BF038EF81DAEF96A004AF59F /* TSETweetAttachment.m in Sources */,
+				BFF212991DB19BB3008B3257 /* TSESimpleTextTableViewCell.m in Sources */,
+				BF629FDC1DB6C33600189CBB /* TSETweetShareConfiguration.m in Sources */,
+				BF038E721DAEDA88004AF59F /* TSELocationSelectionTableViewController.m in Sources */,
+				BF038E6E1DAEDA88004AF59F /* TSELoadingTableViewCell.m in Sources */,
+				BF038F171DAF0382004AF59F /* TSETweetURLAttachmentView.m in Sources */,
+				BF038F1B1DAF03E8004AF59F /* TSETweetCustomCardAttachmentView.m in Sources */,
+				3D2FDCF71F6E30F400AE6380 /* TSESelectionTableViewController.m in Sources */,
+				BF92EBEE1DB83569005EB2D7 /* TSEFoursquareLogoTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE95FF11DAC2E1B00638749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC1AEC21DB031590065DEB7 /* TSEAutoCompletionViewModelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D12C6E81EA6106C00DB2B3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D12C6E01EA6103D00DB2B3A /* TwitterShareExtensionUIResources */;
+			targetProxy = 3D12C6E71EA6106C00DB2B3A /* PBXContainerItemProxy */;
+		};
+		BFE95FF81DAC2E1B00638749 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFE95FEB1DAC2E1B00638749 /* TwitterShareExtensionUI */;
+			targetProxy = BFE95FF71DAC2E1B00638749 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3D12C6E51EA6103E00DB2B3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D23EEA51F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3D12C6E61EA6103E00DB2B3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D23EEA51F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		BFBE02821E245036007A246A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D23EEA31F71D65E00198641 /* TwitterShareExtensionUI-Library.xcconfig */;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_MODULES_AUTOLINK = YES;
+				ENABLE_BITCODE = YES;
+			};
+			name = Debug;
+		};
+		BFBE02831E245036007A246A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D23EEA31F71D65E00198641 /* TwitterShareExtensionUI-Library.xcconfig */;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_MODULES_AUTOLINK = YES;
+				ENABLE_BITCODE = YES;
+			};
+			name = Release;
+		};
+		BFE95FFE1DAC2E1B00638749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA76AF401FB273A4008CE2D3 /* Project-Debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+			};
+			name = Debug;
+		};
+		BFE95FFF1DAC2E1B00638749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA76AF3E1FB273A4008CE2D3 /* Project-Release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+			};
+			name = Release;
+		};
+		BFE960011DAC2E1B00638749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA76AF3F1FB273A4008CE2D3 /* Framework.xcconfig */;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+			};
+			name = Debug;
+		};
+		BFE960021DAC2E1B00638749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA76AF3F1FB273A4008CE2D3 /* Framework.xcconfig */;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+			};
+			name = Release;
+		};
+		BFE960041DAC2E1B00638749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA76AF3C1FB273A4008CE2D3 /* FrameworkTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		BFE960051DAC2E1B00638749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA76AF3C1FB273A4008CE2D3 /* FrameworkTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D12C6E41EA6103E00DB2B3A /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUIResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D12C6E51EA6103E00DB2B3A /* Debug */,
+				3D12C6E61EA6103E00DB2B3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFBE02841E245036007A246A /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUI-static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBE02821E245036007A246A /* Debug */,
+				BFBE02831E245036007A246A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE95FE61DAC2E1B00638749 /* Build configuration list for PBXProject "TwitterShareExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE95FFE1DAC2E1B00638749 /* Debug */,
+				BFE95FFF1DAC2E1B00638749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE960001DAC2E1B00638749 /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE960011DAC2E1B00638749 /* Debug */,
+				BFE960021DAC2E1B00638749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE960031DAC2E1B00638749 /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE960041DAC2E1B00638749 /* Debug */,
+				BFE960051DAC2E1B00638749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFE95FE31DAC2E1B00638749 /* Project object */;
+}

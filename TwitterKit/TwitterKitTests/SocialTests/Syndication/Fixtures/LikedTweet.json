@@ -1,0 +1,171 @@
+{
+    "created_at": "Fri Feb 12 22:33:20 +0000 2016",
+    "id": 698273708847161345,
+    "id_str": "698273708847161345",
+    "text": "\ud83d\udc40 this guy on the red carpet at @TheGRAMMYs on Monday!\n\n@AnquanBoldin and @Millerlite40 to introduce a performance.\ud83c\udf99 https:\/\/t.co\/MNDgRUzji5",
+    "source": "\u003ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 43403778,
+        "id_str": "43403778",
+        "name": "San Francisco 49ers",
+        "screen_name": "49ers",
+        "location": "Santa Clara, CA",
+        "description": "Official Twitter account of the five-time Super Bowl Champion San Francisco #49ers | SF49ers on Snapchat.",
+        "url": "https:\/\/t.co\/P8Rf0BzmKk",
+        "entities": {
+            "url": {
+                "urls": [{
+                         "url": "https:\/\/t.co\/P8Rf0BzmKk",
+                         "expanded_url": "http:\/\/49ers.com",
+                         "display_url": "49ers.com",
+                         "indices": [0, 23]
+                         }]
+            },
+            "description": {
+                "urls": []
+            }
+        },
+        "protected": false,
+        "followers_count": 1142672,
+        "friends_count": 129,
+        "listed_count": 8858,
+        "created_at": "Fri May 29 20:34:37 +0000 2009",
+        "favourites_count": 1369,
+        "utc_offset": -28800,
+        "time_zone": "Pacific Time (US & Canada)",
+        "geo_enabled": true,
+        "verified": true,
+        "statuses_count": 27097,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/540312093765824512\/HHv5rndA.jpeg",
+        "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/540312093765824512\/HHv5rndA.jpeg",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/643962727694647297\/n-FiKz5E_normal.jpg",
+        "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/643962727694647297\/n-FiKz5E_normal.jpg",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/43403778\/1445577472",
+        "profile_link_color": "AA0000",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "CCCCCC",
+        "profile_text_color": "000000",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 139,
+    "favorite_count": 274,
+    "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [{
+                          "screen_name": "TheGRAMMYs",
+                          "name": "The GRAMMYs",
+                          "id": 17243213,
+                          "id_str": "17243213",
+                          "indices": [32, 43]
+                          }, {
+                          "screen_name": "AnquanBoldin",
+                          "name": "Anquan Boldin",
+                          "id": 158843843,
+                          "id_str": "158843843",
+                          "indices": [56, 69]
+                          }, {
+                          "screen_name": "Millerlite40",
+                          "name": "Von Miller",
+                          "id": 1880281963,
+                          "id_str": "1880281963",
+                          "indices": [74, 87]
+                          }],
+        "urls": [],
+        "media": [{
+                  "id": 698273705772748800,
+                  "id_str": "698273705772748800",
+                  "indices": [117, 140],
+                  "media_url": "http:\/\/pbs.twimg.com\/media\/CbDEPFyUkAA0pvg.jpg",
+                  "media_url_https": "https:\/\/pbs.twimg.com\/media\/CbDEPFyUkAA0pvg.jpg",
+                  "url": "https:\/\/t.co\/MNDgRUzji5",
+                  "display_url": "pic.twitter.com\/MNDgRUzji5",
+                  "expanded_url": "http:\/\/twitter.com\/49ers\/status\/698273708847161345\/photo\/1",
+                  "type": "photo",
+                  "sizes": {
+                  "medium": {
+                  "w": 600,
+                  "h": 600,
+                  "resize": "fit"
+                  },
+                  "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                  },
+                  "small": {
+                  "w": 340,
+                  "h": 340,
+                  "resize": "fit"
+                  },
+                  "large": {
+                  "w": 1024,
+                  "h": 1024,
+                  "resize": "fit"
+                  }
+                  }
+                  }]
+    },
+    "extended_entities": {
+        "media": [{
+                  "id": 698273705772748800,
+                  "id_str": "698273705772748800",
+                  "indices": [117, 140],
+                  "media_url": "http:\/\/pbs.twimg.com\/media\/CbDEPFyUkAA0pvg.jpg",
+                  "media_url_https": "https:\/\/pbs.twimg.com\/media\/CbDEPFyUkAA0pvg.jpg",
+                  "url": "https:\/\/t.co\/MNDgRUzji5",
+                  "display_url": "pic.twitter.com\/MNDgRUzji5",
+                  "expanded_url": "http:\/\/twitter.com\/49ers\/status\/698273708847161345\/photo\/1",
+                  "type": "photo",
+                  "sizes": {
+                  "medium": {
+                  "w": 600,
+                  "h": 600,
+                  "resize": "fit"
+                  },
+                  "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                  },
+                  "small": {
+                  "w": 340,
+                  "h": 340,
+                  "resize": "fit"
+                  },
+                  "large": {
+                  "w": 1024,
+                  "h": 1024,
+                  "resize": "fit"
+                  }
+                  }
+                  }]
+    },
+    "favorited": true,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+}

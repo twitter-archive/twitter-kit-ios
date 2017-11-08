@@ -1,0 +1,112 @@
+"CANCEL_ACTION_LABEL" = "Batal";
+
+"COMPOSE_TEXT_VIEW_PLACEHOLDER" = "Apa yang Sedang Terjadi?";
+
+"COMPOSITION_SEND_TWEET_ERROR_LABEL" = "Tweet tidak terkirim";
+
+"LOCATION_SERVICES_ACCESS_DENIED_ALERT_MESSAGE" = "Buka Pengaturan iOS > Privasi > Layanan Lokasi untuk memungkinkan Twitter mengakses lokasi Anda.";
+
+"LOCATION_SERVICES_ACCESS_DENIED_ALERT_TITLE" = "Izinkan Twitter mengakses lokasi Anda";
+
+"LOCATION_SERVICES_ERROR_ALERT_MESSAGE" = "Tidak dapat menemukan lokasi Anda. Silakan coba lagi nanti.";
+
+"LOCATION_SERVICES_ERROR_ALERT_TITLE" = "Gagal mengakses lokasi";
+
+"OK_ACTION_LABEL" = "OK";
+
+"RETRY_ACTION_LABEL" = "Ulangi";
+
+"SEND_TWEET_ACTION_LABEL" = "Tweet";
+
+"SHARE_EXT_ACCOUNT" = "Akun";
+
+"SHARE_EXT_LOCATION" = "Lokasi";
+
+"SHARE_EXT_NONE_VALUE" = "Tidak ada";
+
+"SHARE_EXT_NO_ACCOUNTS_MESSAGE" = "Tidak ada akun Twitter yang dikonfigurasi. Anda dapat menambahkan atau membuat akun Twitter di Pengaturan.";
+
+"SHARE_EXT_NO_ACCOUNTS_SIGN_IN_MESSAGE" = "Tidak ada akun Twitter yang dikonfigurasi. Anda dapat membuat atau masuk ke akun di aplikasi Twitter.";
+
+"SHARE_EXT_NO_ACCOUNTS_TITLE" = "Tidak Ada Akun Twitter";
+
+"SHARE_EXT_TWEET_FAILED_TITLE" = "Tweet gagal dikirim.";
+
+"SHARE_EXT_TWITTER_TITLE" = "Twitter";
+
+"TIME_SHORT_DAYS_FORMAT" = "%dh";
+
+"TIME_SHORT_DAY_FORMAT" = "%dh";
+
+"TIME_SHORT_HOURS_FORMAT" = "%dj";
+
+"TIME_SHORT_HOUR_FORMAT" = "%dj";
+
+"TIME_SHORT_MINUTES_FORMAT" = "%dm";
+
+"TIME_SHORT_MINUTE_FORMAT" = "%dm";
+
+"TIME_SHORT_SECONDS_FORMAT" = "%dd";
+
+"TIME_SHORT_SECOND_FORMAT" = "%dd";
+
+"tw__card_compose_character_count" = "%td karakter tersisa";
+
+"tw__card_compose_close_hint" = "Sentuh dua kali untuk menyingkirkan penulis.";
+
+"tw__card_compose_install_preview" = "Pratinjau tombol pasang untuk %@";
+
+"tw__card_compose_profile_image" = "Profil %@";
+
+"tw__card_compose_tweet_hint" = "Sentuh dua kali untuk mengirim Tweet ini";
+
+"tw__card_composer_app_store" = "App Store";
+
+"tw__card_composer_install_button" = "Pasang";
+
+"tw__card_composer_tweet" = "Tweet";
+
+"tw__close_button" = "Tutup";
+
+"tw__composer_placeholder_text" = "Apa yang Sedang Terjadi?";
+
+"tw__email_share_detail_message_format" = "Dapatkan pembaruan dan informasi lainnya dari %@ bila Anda mengizinkan mereka untuk mengakses email Anda di akun Twitter @%@.";
+
+"tw__empty_timeline" = "Timeline kosong";
+
+"tw__image_viewer_done_button" = "Selesai";
+
+"tw__open_in_text" = "Buka di %@";
+
+"tw__privacy_information_button" = "Informasi privasi";
+
+"tw__share_tweet" = "Sebarkan Tweet";
+
+"tw__share_tweet_subject_format" = "Tweet dari %1$@ (@%2$@)";
+
+"tw__sign_in_with_twitter_button" = "Masuk dengan Twitter";
+
+"tw__single_image" = "Lampiran Gambar";
+
+"tw__test_string" = "Tes";
+
+"tw__tweet_image_accessibility" = "Lampiran";
+
+"tw__tweet_like_button" = "Suka";
+
+"tw__tweet_liked_state" = "Disukai";
+
+"tw__tweet_not_liked_state" = "Belum Disukai";
+
+"tw__tweet_profile_accessibility" = "Profil";
+
+"tw__tweet_retweeted_by_user" = "Di-retweet oleh %@";
+
+"tw__tweet_share_button" = "Sebarkan";
+
+"tw__user_content_image" = "Pratinjau Aplikasi";
+
+"tw__video_thumbnail" = "Lampiran Video";
+
+"tw__view_is_sponsored_ad" = "Ini adalah iklan yang disponsori";
+

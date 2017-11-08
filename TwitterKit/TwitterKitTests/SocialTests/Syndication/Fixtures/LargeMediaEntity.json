@@ -1,0 +1,33 @@
+{
+    "id": 701972537631051780,
+    "id_str": "701972537631051780",
+    "indices": [25, 48],
+    "media_url": "http:\/\/pbs.twimg.com\/media\/Cb3oTcOUEAQVPxx.jpg",
+    "media_url_https": "https:\/\/pbs.twimg.com\/media\/Cb3oTcOUEAQVPxx.jpg",
+    "url": "https:\/\/t.co\/gus8vxo3aD",
+    "display_url": "pic.twitter.com\/gus8vxo3aD",
+    "expanded_url": "http:\/\/twitter.com\/Lakers\/status\/701972560687140864\/photo\/1",
+    "type": "photo",
+    "sizes": {
+        "small": {
+            "w": 680,
+            "h": 453,
+            "resize": "fit"
+        },
+        "thumb": {
+            "w": 150,
+            "h": 150,
+            "resize": "crop"
+        },
+        "large": {
+            "w": 2048,
+            "h": 1364,
+            "resize": "fit"
+        },
+        "medium": {
+            "w": 1200,
+            "h": 799,
+            "resize": "fit"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+#
+# Matchfile
+#
+# This allows syncing of provisioning profiles for our sample app.
+#
+
+git_url "git@github.com:twitter-fabric/twitterkit-certificates.git"
+type "adhoc" # The default type, can be: appstore, adhoc or development
+
+# For all available options run `match --help`

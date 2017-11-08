@@ -1,0 +1,112 @@
+"CANCEL_ACTION_LABEL" = "Cancelar";
+
+"COMPOSE_TEXT_VIEW_PLACEHOLDER" = "¿Qué está pasando?";
+
+"COMPOSITION_SEND_TWEET_ERROR_LABEL" = "Tweet no enviado";
+
+"LOCATION_SERVICES_ACCESS_DENIED_ALERT_MESSAGE" = "Ve a la Configuración de iOS > Privacidad > Servicios de ubicación para permitir que Twitter acceda a tu ubicación.";
+
+"LOCATION_SERVICES_ACCESS_DENIED_ALERT_TITLE" = "Permite que Twitter acceda a tu ubicación";
+
+"LOCATION_SERVICES_ERROR_ALERT_MESSAGE" = "No se pudo encontrar tu ubicación. Inténtalo de nuevo más tarde.";
+
+"LOCATION_SERVICES_ERROR_ALERT_TITLE" = "No se pudo acceder a la ubicación";
+
+"OK_ACTION_LABEL" = "Aceptar";
+
+"RETRY_ACTION_LABEL" = "Reintentar";
+
+"SEND_TWEET_ACTION_LABEL" = "Tweet";
+
+"SHARE_EXT_ACCOUNT" = "Cuenta";
+
+"SHARE_EXT_LOCATION" = "Ubicación";
+
+"SHARE_EXT_NONE_VALUE" = "Ninguno";
+
+"SHARE_EXT_NO_ACCOUNTS_MESSAGE" = "No hay cuentas de Twitter configuradas. Para agregar o crear una cuenta de Twitter, ve a la Configuración.";
+
+"SHARE_EXT_NO_ACCOUNTS_SIGN_IN_MESSAGE" = "No hay cuentas de Twitter configuradas. Puedes crear o iniciar sesión en una cuenta en la app de Twitter.";
+
+"SHARE_EXT_NO_ACCOUNTS_TITLE" = "Sin cuenta de Twitter";
+
+"SHARE_EXT_TWEET_FAILED_TITLE" = "No se pudo enviar el Tweet.";
+
+"SHARE_EXT_TWITTER_TITLE" = "Twitter";
+
+"TIME_SHORT_DAYS_FORMAT" = "%dd";
+
+"TIME_SHORT_DAY_FORMAT" = "%dd";
+
+"TIME_SHORT_HOURS_FORMAT" = "%dh";
+
+"TIME_SHORT_HOUR_FORMAT" = "%dh";
+
+"TIME_SHORT_MINUTES_FORMAT" = "%dm";
+
+"TIME_SHORT_MINUTE_FORMAT" = "%dm";
+
+"TIME_SHORT_SECONDS_FORMAT" = "%ds";
+
+"TIME_SHORT_SECOND_FORMAT" = "%ds";
+
+"tw__card_compose_character_count" = "%td caracteres restantes";
+
+"tw__card_compose_close_hint" = "Pulsa dos veces para descartar el redactor.";
+
+"tw__card_compose_install_preview" = "Vista previa del botón de descarga de %@";
+
+"tw__card_compose_profile_image" = "Perfil de %@";
+
+"tw__card_compose_tweet_hint" = "Pulsa dos veces para publicar este Tweet";
+
+"tw__card_composer_app_store" = "App Store";
+
+"tw__card_composer_install_button" = "Instalar";
+
+"tw__card_composer_tweet" = "Twittear";
+
+"tw__close_button" = "Cerrar";
+
+"tw__composer_placeholder_text" = "¿Qué está pasando?";
+
+"tw__email_share_detail_message_format" = "Recibe actualizaciones y otra información de %@ cuando les permites acceso a tu correo electrónico en tu cuenta de Twitter @%@.";
+
+"tw__empty_timeline" = "La cronología está vacía";
+
+"tw__image_viewer_done_button" = "Listo";
+
+"tw__open_in_text" = "Abrir en %@";
+
+"tw__privacy_information_button" = "Información de privacidad";
+
+"tw__share_tweet" = "Compartir Tweet";
+
+"tw__share_tweet_subject_format" = "Tweet de %1$@ (@%2$@)";
+
+"tw__sign_in_with_twitter_button" = "Iniciar sesión con Twitter";
+
+"tw__single_image" = "Imagen adjunta";
+
+"tw__test_string" = "Prueba";
+
+"tw__tweet_image_accessibility" = "Adjunto";
+
+"tw__tweet_like_button" = "Me gusta";
+
+"tw__tweet_liked_state" = "Marcado como Me gusta";
+
+"tw__tweet_not_liked_state" = "No marcado como Me gusta";
+
+"tw__tweet_profile_accessibility" = "Perfil";
+
+"tw__tweet_retweeted_by_user" = "Retwitteado por %@";
+
+"tw__tweet_share_button" = "Compartir";
+
+"tw__user_content_image" = "Vista previa de la aplicación";
+
+"tw__video_thumbnail" = "Video adjunto";
+
+"tw__view_is_sponsored_ad" = "Este es un anuncio patrocinado";
+

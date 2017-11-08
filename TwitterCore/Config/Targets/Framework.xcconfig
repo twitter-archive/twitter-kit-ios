@@ -1,0 +1,28 @@
+//
+// Framework.xcconfig
+//
+// Copyright (c) 2015 Twitter. All rights reserved.
+//
+
+#include "Target.xcconfig"
+
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+
+DEFINES_MODULE = YES
+
+DYLIB_INSTALL_NAME_BASE = @rpath
+
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(DEVELOPER_FRAMEWORKS_DIR)
+
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+GCC_PREFIX_HEADER = $(PRODUCT_NAME)/$(PRODUCT_NAME)-Prefix.pch
+INFOPLIST_FILE = $(PRODUCT_NAME)/Info.plist
+
+INSTALL_PATH = $(LOCAL_LIBRARY_DIR)/Frameworks
+
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+
+VERSIONING_SYSTEM = apple-generic
+
+PRIVATE_HEADERS_FOLDER_PATH = $(CONTENTS_FOLDER_PATH)/PrivateHeaders
+PUBLIC_HEADERS_FOLDER_PATH = $(CONTENTS_FOLDER_PATH)/Headers

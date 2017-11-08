@@ -1,0 +1,14 @@
+//
+// tvOS-App.xcconfig
+//
+// Copyright (c) 2016 Twitter. All rights reserved.
+//
+
+#include "AppTarget.xcconfig"
+
+ARCHS = $(ARCHS_STANDARD)
+CODE_SIGN_IDENTITY = iPhone Developer
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks
+SDKROOT = appletvos
+SUPPORTED_PLATFORMS = appletvsimulator appletvos
+TARGETED_DEVICE_FAMILY = 3

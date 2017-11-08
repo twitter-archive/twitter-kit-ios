@@ -1,0 +1,74 @@
+"TIME_SHORT_DAYS_FORMAT" = "%d দিন";
+
+"TIME_SHORT_DAY_FORMAT" = "%d দিন";
+
+"TIME_SHORT_HOURS_FORMAT" = "%d ঘণ্টা";
+
+"TIME_SHORT_HOUR_FORMAT" = "%d ঘণ্টা";
+
+"TIME_SHORT_MINUTES_FORMAT" = "%d মিনিট";
+
+"TIME_SHORT_MINUTE_FORMAT" = "%d মিনিট";
+
+"TIME_SHORT_SECONDS_FORMAT" = "%d সেকেন্ড";
+
+"TIME_SHORT_SECOND_FORMAT" = "%d সেকেন্ড";
+
+"tw__card_compose_character_count" = "%tdটি অক্ষর বাকি আছে";
+
+"tw__card_compose_close_hint" = "রচয়িতা খারিজ করতে দুবার-আলতো চাপুন।";
+
+"tw__card_compose_install_preview" = "%@ এর জন্য ইনস্টল বোতামের পূর্বরূপ";
+
+"tw__card_compose_profile_image" = "%@এর প্রোফাইল";
+
+"tw__card_compose_tweet_hint" = "এই টুইটটি পোস্ট করতে দুবার-আলতো চাপুন";
+
+"tw__card_composer_app_store" = "অ্যাপ স্টোর";
+
+"tw__card_composer_install_button" = "ইনস্টল";
+
+"tw__card_composer_tweet" = "টুইট";
+
+"tw__composer_placeholder_text" = "কী হচ্ছে?";
+
+"tw__email_share_detail_message_format" = "আপনি আপনার @%@ টুইটার অ্যাকাউন্টে %@ কে আপনার ইমেইলে অ্যাক্সেস দিলে তাদের থেকে আপডেট এবং অন্যান্য তথ্য পান।";
+
+"tw__empty_timeline" = "সময়রেখা খালি";
+
+"tw__image_viewer_done_button" = "সম্পন্ন হয়েছে";
+
+"tw__open_in_text" = "%@-এ খুলুন";
+
+"tw__privacy_information_button" = "গোপনীয়তা তথ্য";
+
+"tw__share_tweet" = "টুইট শেয়ার করুন";
+
+"tw__share_tweet_subject_format" = "%1$@ (@%2$@) থেকে টুইট";
+
+"tw__sign_in_with_twitter_button" = "টুইটার দিয়ে লগ ইন করুন";
+
+"tw__single_image" = "চিত্র সংযুক্তি";
+
+"tw__test_string" = "পরীক্ষা";
+
+"tw__tweet_image_accessibility" = "সংযুক্তি";
+
+"tw__tweet_like_button" = "পছন্দ করুন";
+
+"tw__tweet_liked_state" = "পছন্দ করেছেন";
+
+"tw__tweet_not_liked_state" = "পছন্দ না";
+
+"tw__tweet_profile_accessibility" = "প্রোফাইল";
+
+"tw__tweet_retweeted_by_user" = "%@ পুনঃটুইট করেছেন";
+
+"tw__tweet_share_button" = "শেয়ার করুন";
+
+"tw__user_content_image" = "অ্যাপের পূর্বরূপ";
+
+"tw__video_thumbnail" = "ভিডিও সংযুক্তি";
+
+"tw__view_is_sponsored_ad" = "এই একটি প্রযোজিত বিজ্ঞাপন";
+

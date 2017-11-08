@@ -1,0 +1,12 @@
+//
+//  Project-Release.xcconfig
+//  Frameworks
+//
+//  Created by Tanner Oakes on 4/6/15.
+//  Copyright (c) 2015 Twitter. All rights reserved.
+//
+
+#include "Project.xcconfig"
+
+GCC_OPTIMIZATION_LEVEL = fast
+SWIFT_OPTIMIZATION_LEVEL = -Owholemodule

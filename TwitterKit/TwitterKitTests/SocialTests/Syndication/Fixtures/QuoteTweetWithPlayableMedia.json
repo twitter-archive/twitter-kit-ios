@@ -1,0 +1,312 @@
+{
+    "created_at": "Wed May 17 22:54:15 +0000 2017",
+    "id": 864977390941814784,
+    "id_str": "864977390941814784",
+    "full_text": "so excited. @NETFLIX https://t.co/4xwdyr79iK",
+    "truncated": false,
+    "display_text_range": [
+        0,
+        20
+    ],
+    "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [
+            {
+                "screen_name": "netflix",
+                "name": "Netflix US",
+                "id": 16573941,
+                "id_str": "16573941",
+                "indices": [
+                    12,
+                    20
+                ]
+            }
+        ],
+        "urls": [
+            {
+                "url": "https://t.co/4xwdyr79iK",
+                "expanded_url": "https://twitter.com/HouseofCards/status/864497141011554305",
+                "display_url": "twitter.com/HouseofCards/s…",
+                "indices": [
+                    21,
+                    44
+                ]
+            }
+        ]
+    },
+    "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 2294860146,
+        "id_str": "2294860146",
+        "name": "Kate🤷🏻\u200d♀️",
+        "screen_name": "katejaiheelee",
+        "location": "San Francisco, CA",
+        "description": "Software engineer @Twitter. Engage app and Twitter Kit iOS. @Cal from SoCal. Matt 6:33.",
+        "url": null,
+        "entities": {
+            "description": {
+                "urls": []
+            }
+        },
+        "protected": false,
+        "followers_count": 178,
+        "friends_count": 377,
+        "listed_count": 7,
+        "created_at": "Thu Jan 16 18:44:38 +0000 2014",
+        "favourites_count": 2034,
+        "utc_offset": -25200,
+        "time_zone": "Pacific Time (US & Canada)",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 605,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/636590836646477825/hpCIBs2Z_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/636590836646477825/hpCIBs2Z_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/2294860146/1457599560",
+        "profile_link_color": "981CEB",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null,
+        "translator_type": "regular"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": true,
+    "quoted_status_id": 864497141011554305,
+    "quoted_status_id_str": "864497141011554305",
+    "quoted_status": {
+        "created_at": "Tue May 16 15:05:54 +0000 2017",
+        "id": 864497141011554305,
+        "id_str": "864497141011554305",
+        "full_text": "I've been meaning to talk with you... https://t.co/XN14zVvNAV",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            37
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [],
+            "media": [
+                {
+                    "id": 864482757078110208,
+                    "id_str": "864482757078110208",
+                    "indices": [
+                        38,
+                        61
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/C_9C11cXUAIL-Dr.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/C_9C11cXUAIL-Dr.jpg",
+                    "url": "https://t.co/XN14zVvNAV",
+                    "display_url": "pic.twitter.com/XN14zVvNAV",
+                    "expanded_url": "https://twitter.com/HouseofCards/status/864497141011554305/video/1",
+                    "type": "photo",
+                    "sizes": {
+                        "small": {
+                            "w": 680,
+                            "h": 383,
+                            "resize": "fit"
+                        },
+                        "medium": {
+                            "w": 1200,
+                            "h": 675,
+                            "resize": "fit"
+                        },
+                        "large": {
+                            "w": 1280,
+                            "h": 720,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        }
+                    }
+                }
+            ]
+        },
+        "extended_entities": {
+            "media": [
+                {
+                    "id": 864482757078110208,
+                    "id_str": "864482757078110208",
+                    "indices": [
+                        38,
+                        61
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/C_9C11cXUAIL-Dr.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/C_9C11cXUAIL-Dr.jpg",
+                    "url": "https://t.co/XN14zVvNAV",
+                    "display_url": "pic.twitter.com/XN14zVvNAV",
+                    "expanded_url": "https://twitter.com/HouseofCards/status/864497141011554305/video/1",
+                    "type": "video",
+                    "sizes": {
+                        "small": {
+                            "w": 680,
+                            "h": 383,
+                            "resize": "fit"
+                        },
+                        "medium": {
+                            "w": 1200,
+                            "h": 675,
+                            "resize": "fit"
+                        },
+                        "large": {
+                            "w": 1280,
+                            "h": 720,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        }
+                    },
+                    "video_info": {
+                        "aspect_ratio": [
+                            16,
+                            9
+                        ],
+                        "duration_millis": 72114,
+                        "variants": [
+                            {
+                                "bitrate": 2176000,
+                                "content_type": "video/mp4",
+                                "url": "https://video.twimg.com/amplify_video/864482757078110208/vid/1280x720/cnfVBGdpFPT4MY9M.mp4"
+                            },
+                            {
+                                "bitrate": 320000,
+                                "content_type": "video/mp4",
+                                "url": "https://video.twimg.com/amplify_video/864482757078110208/vid/320x180/ntHX13h0RFRibOOW.mp4"
+                            },
+                            {
+                                "bitrate": 832000,
+                                "content_type": "video/mp4",
+                                "url": "https://video.twimg.com/amplify_video/864482757078110208/vid/640x360/GgoIsARGURYjNCLI.mp4"
+                            },
+                            {
+                                "content_type": "application/x-mpegURL",
+                                "url": "https://video.twimg.com/amplify_video/864482757078110208/pl/eIunfaTLZMxB91su.m3u8"
+                            }
+                        ]
+                    },
+                    "additional_media_info": {
+                        "title": "",
+                        "description": "",
+                        "embeddable": true,
+                        "monetizable": false
+                    }
+                }
+            ]
+        },
+        "source": "<a href=\"https://studio.twitter.com\" rel=\"nofollow\">Media Studio</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 1023096199,
+            "id_str": "1023096199",
+            "name": "House of Cards",
+            "screen_name": "HouseofCards",
+            "location": "Washington, D.C.",
+            "description": "Democracy is so overrated. A @Netflix Original Series, all episodes now streaming.",
+            "url": "https://t.co/NhXWNeBGVR",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "https://t.co/NhXWNeBGVR",
+                            "expanded_url": "http://netflix.com/houseofcards",
+                            "display_url": "netflix.com/houseofcards",
+                            "indices": [
+                                0,
+                                23
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 2071333,
+            "friends_count": 290,
+            "listed_count": 3921,
+            "created_at": "Wed Dec 19 23:17:17 +0000 2012",
+            "favourites_count": 6043,
+            "utc_offset": -25200,
+            "time_zone": "Pacific Time (US & Canada)",
+            "geo_enabled": true,
+            "verified": true,
+            "statuses_count": 31428,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "000000",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/567707620543188992/92jc9XT3.jpeg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/567707620543188992/92jc9XT3.jpeg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/859052510014844930/IrH6m6qd_normal.jpg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/859052510014844930/IrH6m6qd_normal.jpg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1023096199/1496144389",
+            "profile_link_color": "FF0000",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "DDEEF6",
+            "profile_text_color": "333333",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": null,
+            "follow_request_sent": null,
+            "notifications": null,
+            "translator_type": "regular"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 8783,
+        "favorite_count": 15135,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+    },
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+}

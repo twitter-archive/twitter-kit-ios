@@ -1,0 +1,136 @@
+/*
+ * Copyright (C) 2017 Twitter, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
+
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusShowURL;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusLookUpURL;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusUpdateURL;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFavoriteURL;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusUnfavoriteURL;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusRetweetURLWithFormat;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusDestroyURLWithFormat;
+
+// parameters
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusParamStatus;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusParamTrimUser;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusParamIncludeMyRetweet;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusParamIncludeEntities;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusParamMap;
+
+// Response field names
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldName;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldCreatedAt;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldDescription;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldUsername;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldLocation;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldPlace;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldFollowersCount;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldFriendsCount;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldStatusesCount;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldFavoritesCount;
+
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldMode;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldQuery;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldProfileImageUrl;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldProfileHeaderUrl;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldInReplyToUserIDString;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldInReplyToScreenName;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldInReplyToStatusIDString;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldRetweetCount;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldRetweetedStatus;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldQuotedStatus;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldFavoriteCount;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldReplyCount;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldViewCount;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldDescendentReplyCount;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldText;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldFullText;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldFavorited;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldRetweeted;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldSuspended;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldProtected;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldVerified;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldIsLifelineInstitution;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldGeoEnabled;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldCoordinates;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldUser;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldFollowing;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldFollowedBy;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldBlocking;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldCanDM;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldWantRetweets;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldLifelineFollowing;
+
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldMetadata;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldPromotedContent;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldSampleUsers;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldCurrentUserRetweet;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldTitle;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldScreenName;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldCardClassic;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldCardCurrent;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldVersion;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldWoeID;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldCountry;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldCountryCode;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldPossiblySensitive;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldIsEmergency;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldConfig;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldValue;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldLang;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldTranslatedLang;
+
+// Entity names
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldEntities;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldEntitiesUrls;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldEntitiesHashtags;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldEntitiesCashTags;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldEntitiesUserMentions;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldEntitiesMedia;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldEntitiesExtended;
+
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldIndices;
+FOUNDATION_EXPORT NSInteger const TWTRAPIConstantsStatusIndexDisplayStart;
+FOUNDATION_EXPORT NSInteger const TWTRAPIConstantsStatusIndexDisplayEnd;
+
+// Url Entity names
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldUrlEntitiyUrl;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldUrlEntityExpandedUrl;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldUrlEntityDisplayUrl;
+
+// Hashtag Entity names
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldHashtagEntityText;
+
+// Cashtag Entity names
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldCashtagEntityText;
+
+// Media Entity names
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldMediaEntityMediaID;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldMediaEntityMediaUrl;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldMediaEntityMediaUrlHttps;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldMediaEntityType;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldMediaEntitySizes;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldMediaEntityMedium;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldMediaEntityWidth;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldMediaEntityHeight;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldMediaEntityVideoInfo;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldMediaEntityEmbeddable;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldMediaEntityAdditionalMediaInfo;
+
+// User Mention Entity Names
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldUserMentionEntityUserID;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldUserMentionEntityName;
+FOUNDATION_EXPORT NSString *const TWTRAPIConstantsStatusFieldUserMentionEntityScreenName;

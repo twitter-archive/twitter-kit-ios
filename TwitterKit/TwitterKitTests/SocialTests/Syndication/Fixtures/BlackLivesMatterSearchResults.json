@@ -1,0 +1,1745 @@
+{
+    "statuses": [{
+                 "metadata": {
+                 "iso_language_code": "en",
+                 "result_type": "recent"
+                 },
+                 "created_at": "Tue Feb 10 00:48:08 +0000 2015",
+                 "id": 564948898058223616,
+                 "id_str": "564948898058223616",
+                 "text": "\u201c@C1TYofFL1NT: #BlackLIvesMatter is a #NGO #MEME\u201dsome1just said @cossa68\ud83d\udc48\"words R shit,actions...\" #the shit out of it,till it gets done...",
+                 "source": "\u003ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e",
+                 "truncated": false,
+                 "in_reply_to_status_id": 564947603906113536,
+                 "in_reply_to_status_id_str": "564947603906113536",
+                 "in_reply_to_user_id": 220262110,
+                 "in_reply_to_user_id_str": "220262110",
+                 "in_reply_to_screen_name": "C1TYofFL1NT",
+                 "user": {
+                 "id": 2702143669,
+                 "id_str": "2702143669",
+                 "name": "Lucy Black",
+                 "screen_name": "MedusasWeave",
+                 "location": "Lost Metropolis, CA ",
+                 "profile_location": null,
+                 "description": "Amicus Plato, sed magis amica veritas. Ego coniecto ego iustus sustine.",
+                 "url": null,
+                 "entities": {
+                 "description": {
+                 "urls": []
+                 }
+                 },
+                 "protected": false,
+                 "followers_count": 161,
+                 "friends_count": 93,
+                 "listed_count": 6,
+                 "created_at": "Sun Aug 03 00:34:17 +0000 2014",
+                 "favourites_count": 2798,
+                 "utc_offset": null,
+                 "time_zone": null,
+                 "geo_enabled": false,
+                 "verified": false,
+                 "statuses_count": 3447,
+                 "lang": "en",
+                 "contributors_enabled": false,
+                 "is_translator": false,
+                 "is_translation_enabled": false,
+                 "profile_background_color": "C0DEED",
+                 "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+                 "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+                 "profile_background_tile": false,
+                 "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/561057947649052672\/UUiGoLPD_normal.jpeg",
+                 "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/561057947649052672\/UUiGoLPD_normal.jpeg",
+                 "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/2702143669\/1422630068",
+                 "profile_link_color": "0084B4",
+                 "profile_sidebar_border_color": "C0DEED",
+                 "profile_sidebar_fill_color": "DDEEF6",
+                 "profile_text_color": "333333",
+                 "profile_use_background_image": true,
+                 "default_profile": true,
+                 "default_profile_image": false,
+                 "following": null,
+                 "follow_request_sent": null,
+                 "notifications": null
+                 },
+                 "geo": null,
+                 "coordinates": null,
+                 "place": null,
+                 "contributors": null,
+                 "retweet_count": 0,
+                 "favorite_count": 0,
+                 "entities": {
+                 "hashtags": [{
+                              "text": "BlackLIvesMatter",
+                              "indices": [15, 32]
+                              }, {
+                              "text": "NGO",
+                              "indices": [38, 42]
+                              }, {
+                              "text": "MEME",
+                              "indices": [43, 48]
+                              }, {
+                              "text": "the",
+                              "indices": [99, 103]
+                              }],
+                 "symbols": [],
+                 "user_mentions": [{
+                                   "screen_name": "C1TYofFL1NT",
+                                   "name": " eMinistry ",
+                                   "id": 220262110,
+                                   "id_str": "220262110",
+                                   "indices": [1, 13]
+                                   }, {
+                                   "screen_name": "cossa68",
+                                   "name": "Jack",
+                                   "id": 160504259,
+                                   "id_str": "160504259",
+                                   "indices": [64, 72]
+                                   }],
+                 "urls": []
+                 },
+                 "favorited": false,
+                 "retweeted": false,
+                 "lang": "en"
+                 }, {
+                 "metadata": {
+                 "iso_language_code": "en",
+                 "result_type": "recent"
+                 },
+                 "created_at": "Tue Feb 10 00:48:06 +0000 2015",
+                 "id": 564948889472466944,
+                 "id_str": "564948889472466944",
+                 "text": "If you're one of the people who writes #AllLivesMatter instead of #BlackLivesMatter then You. Just. Don't. Get. It.",
+                 "source": "\u003ca href=\"https:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter for Android Tablets\u003c\/a\u003e",
+                 "truncated": false,
+                 "in_reply_to_status_id": null,
+                 "in_reply_to_status_id_str": null,
+                 "in_reply_to_user_id": null,
+                 "in_reply_to_user_id_str": null,
+                 "in_reply_to_screen_name": null,
+                 "user": {
+                 "id": 410425658,
+                 "id_str": "410425658",
+                 "name": "Ariel Kennedy",
+                 "screen_name": "ariel_kennedy",
+                 "location": "undah dah sea",
+                 "profile_location": null,
+                 "description": "Kishi kaisei\u270c http:\/\/t.co\/isttHiw5BM",
+                 "url": "http:\/\/t.co\/knvt7slHce",
+                 "entities": {
+                 "url": {
+                 "urls": [{
+                          "url": "http:\/\/t.co\/knvt7slHce",
+                          "expanded_url": "http:\/\/www.youtube.com\/thewanderlustarchives",
+                          "display_url": "youtube.com\/thewanderlusta\u2026",
+                          "indices": [0, 22]
+                          }]
+                 },
+                 "description": {
+                 "urls": [{
+                          "url": "http:\/\/t.co\/isttHiw5BM",
+                          "expanded_url": "http:\/\/www.thewanderlustarchives.com\/",
+                          "display_url": "thewanderlustarchives.com",
+                          "indices": [14, 36]
+                          }]
+                 }
+                 },
+                 "protected": false,
+                 "followers_count": 266,
+                 "friends_count": 268,
+                 "listed_count": 1,
+                 "created_at": "Sat Nov 12 02:47:03 +0000 2011",
+                 "favourites_count": 1008,
+                 "utc_offset": -25200,
+                 "time_zone": "Mountain Time (US & Canada)",
+                 "geo_enabled": true,
+                 "verified": false,
+                 "statuses_count": 3881,
+                 "lang": "en",
+                 "contributors_enabled": false,
+                 "is_translator": false,
+                 "is_translation_enabled": false,
+                 "profile_background_color": "FFFFFF",
+                 "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/440767611635134465\/9sVbKIWX.jpeg",
+                 "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/440767611635134465\/9sVbKIWX.jpeg",
+                 "profile_background_tile": true,
+                 "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/544330187395964928\/hcn_3FZW_normal.jpeg",
+                 "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/544330187395964928\/hcn_3FZW_normal.jpeg",
+                 "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/410425658\/1420512809",
+                 "profile_link_color": "0E45EB",
+                 "profile_sidebar_border_color": "000000",
+                 "profile_sidebar_fill_color": "131B75",
+                 "profile_text_color": "2694BF",
+                 "profile_use_background_image": true,
+                 "default_profile": false,
+                 "default_profile_image": false,
+                 "following": null,
+                 "follow_request_sent": null,
+                 "notifications": null
+                 },
+                 "geo": null,
+                 "coordinates": null,
+                 "place": null,
+                 "contributors": null,
+                 "retweet_count": 0,
+                 "favorite_count": 0,
+                 "entities": {
+                 "hashtags": [{
+                              "text": "AllLivesMatter",
+                              "indices": [39, 54]
+                              }, {
+                              "text": "BlackLivesMatter",
+                              "indices": [66, 83]
+                              }],
+                 "symbols": [],
+                 "user_mentions": [],
+                 "urls": []
+                 },
+                 "favorited": false,
+                 "retweeted": false,
+                 "lang": "en"
+                 }, {
+                 "metadata": {
+                 "iso_language_code": "en",
+                 "result_type": "recent"
+                 },
+                 "created_at": "Tue Feb 10 00:48:05 +0000 2015",
+                 "id": 564948885487902720,
+                 "id_str": "564948885487902720",
+                 "text": "@SirJustinFromCA @heycorinne &gt;Has #BlackLivesMatter \n&gt;Is a white girl\nYou know she takes the BBC",
+                 "source": "\u003ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e",
+                 "truncated": false,
+                 "in_reply_to_status_id": 564947773876084736,
+                 "in_reply_to_status_id_str": "564947773876084736",
+                 "in_reply_to_user_id": 168741740,
+                 "in_reply_to_user_id_str": "168741740",
+                 "in_reply_to_screen_name": "SirJustinFromCA",
+                 "user": {
+                 "id": 587293195,
+                 "id_str": "587293195",
+                 "name": "Tampa Bay Padres",
+                 "screen_name": "SerrellUggs",
+                 "location": "Bandwagon, CT",
+                 "profile_location": null,
+                 "description": "@MetalMushin is my personal doormat. Member of the cult of 12s. I stay loyal through thick and thin to my sports teams unlike @Frank2372",
+                 "url": "https:\/\/t.co\/jOytm6VPcN",
+                 "entities": {
+                 "url": {
+                 "urls": [{
+                          "url": "https:\/\/t.co\/jOytm6VPcN",
+                          "expanded_url": "https:\/\/www.youtube.com\/watch?v=33QpzSxY2EU",
+                          "display_url": "youtube.com\/watch?v=33QpzS\u2026",
+                          "indices": [0, 23]
+                          }]
+                 },
+                 "description": {
+                 "urls": []
+                 }
+                 },
+                 "protected": false,
+                 "followers_count": 403,
+                 "friends_count": 306,
+                 "listed_count": 12,
+                 "created_at": "Tue May 22 09:35:18 +0000 2012",
+                 "favourites_count": 2167,
+                 "utc_offset": -28800,
+                 "time_zone": "Pacific Time (US & Canada)",
+                 "geo_enabled": false,
+                 "verified": false,
+                 "statuses_count": 48458,
+                 "lang": "en",
+                 "contributors_enabled": false,
+                 "is_translator": false,
+                 "is_translation_enabled": true,
+                 "profile_background_color": "C0DEED",
+                 "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/440564283391238144\/XJqwNKra.jpeg",
+                 "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/440564283391238144\/XJqwNKra.jpeg",
+                 "profile_background_tile": true,
+                 "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/564914292000952320\/sqt9X108_normal.jpeg",
+                 "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/564914292000952320\/sqt9X108_normal.jpeg",
+                 "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/587293195\/1423359939",
+                 "profile_link_color": "FA743E",
+                 "profile_sidebar_border_color": "FFFFFF",
+                 "profile_sidebar_fill_color": "DDEEF6",
+                 "profile_text_color": "333333",
+                 "profile_use_background_image": true,
+                 "default_profile": false,
+                 "default_profile_image": false,
+                 "following": null,
+                 "follow_request_sent": null,
+                 "notifications": null
+                 },
+                 "geo": null,
+                 "coordinates": null,
+                 "place": null,
+                 "contributors": null,
+                 "retweet_count": 0,
+                 "favorite_count": 0,
+                 "entities": {
+                 "hashtags": [{
+                              "text": "BlackLivesMatter",
+                              "indices": [37, 54]
+                              }],
+                 "symbols": [],
+                 "user_mentions": [{
+                                   "screen_name": "SirJustinFromCA",
+                                   "name": "#lumaismyfriend2015",
+                                   "id": 168741740,
+                                   "id_str": "168741740",
+                                   "indices": [0, 16]
+                                   }, {
+                                   "screen_name": "heycorinne",
+                                   "name": "corinne",
+                                   "id": 349317383,
+                                   "id_str": "349317383",
+                                   "indices": [17, 28]
+                                   }],
+                 "urls": []
+                 },
+                 "favorited": false,
+                 "retweeted": false,
+                 "lang": "en"
+                 }, {
+                 "metadata": {
+                 "iso_language_code": "und",
+                 "result_type": "recent"
+                 },
+                 "created_at": "Tue Feb 10 00:47:43 +0000 2015",
+                 "id": 564948795017142273,
+                 "id_str": "564948795017142273",
+                 "text": ". @IamJohnBurnett @blackrepublican #BlackLivesMatter",
+                 "source": "\u003ca href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter for Android\u003c\/a\u003e",
+                 "truncated": false,
+                 "in_reply_to_status_id": 564898849773584384,
+                 "in_reply_to_status_id_str": "564898849773584384",
+                 "in_reply_to_user_id": 1436555834,
+                 "in_reply_to_user_id_str": "1436555834",
+                 "in_reply_to_screen_name": "IamJohnBurnett",
+                 "user": {
+                 "id": 13924142,
+                 "id_str": "13924142",
+                 "name": "Kyle",
+                 "screen_name": "kyle_ricci",
+                 "location": "Massachusetts",
+                 "profile_location": null,
+                 "description": "Opinionated Masshole,  Pest, whiskey (bourbon) connoisseur. A RT either means you said something smart or profoundly stupid, you figure it out.",
+                 "url": null,
+                 "entities": {
+                 "description": {
+                 "urls": []
+                 }
+                 },
+                 "protected": false,
+                 "followers_count": 278,
+                 "friends_count": 1026,
+                 "listed_count": 4,
+                 "created_at": "Mon Feb 25 02:23:50 +0000 2008",
+                 "favourites_count": 4050,
+                 "utc_offset": -18000,
+                 "time_zone": "Eastern Time (US & Canada)",
+                 "geo_enabled": true,
+                 "verified": false,
+                 "statuses_count": 4866,
+                 "lang": "en",
+                 "contributors_enabled": false,
+                 "is_translator": false,
+                 "is_translation_enabled": false,
+                 "profile_background_color": "1A1B1F",
+                 "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme9\/bg.gif",
+                 "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme9\/bg.gif",
+                 "profile_background_tile": false,
+                 "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/559138223587622912\/TK5e8cy-_normal.jpeg",
+                 "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/559138223587622912\/TK5e8cy-_normal.jpeg",
+                 "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/13924142\/1366127314",
+                 "profile_link_color": "2FC2EF",
+                 "profile_sidebar_border_color": "181A1E",
+                 "profile_sidebar_fill_color": "252429",
+                 "profile_text_color": "666666",
+                 "profile_use_background_image": true,
+                 "default_profile": false,
+                 "default_profile_image": false,
+                 "following": null,
+                 "follow_request_sent": null,
+                 "notifications": null
+                 },
+                 "geo": null,
+                 "coordinates": null,
+                 "place": null,
+                 "contributors": null,
+                 "retweet_count": 0,
+                 "favorite_count": 0,
+                 "entities": {
+                 "hashtags": [{
+                              "text": "BlackLivesMatter",
+                              "indices": [35, 52]
+                              }],
+                 "symbols": [],
+                 "user_mentions": [{
+                                   "screen_name": "IamJohnBurnett",
+                                   "name": "John Burnett",
+                                   "id": 1436555834,
+                                   "id_str": "1436555834",
+                                   "indices": [2, 17]
+                                   }, {
+                                   "screen_name": "blackrepublican",
+                                   "name": "\u039e BLACK REPUBLICAN \u039e",
+                                   "id": 18294521,
+                                   "id_str": "18294521",
+                                   "indices": [18, 34]
+                                   }],
+                 "urls": []
+                 },
+                 "favorited": false,
+                 "retweeted": false,
+                 "lang": "und"
+                 }, {
+                 "metadata": {
+                 "iso_language_code": "und",
+                 "result_type": "recent"
+                 },
+                 "created_at": "Tue Feb 10 00:47:40 +0000 2015",
+                 "id": 564948780987187200,
+                 "id_str": "564948780987187200",
+                 "text": "@sofambro90 @Change https:\/\/t.co\/t1nce8Kg5U #JusticeforKJ #KendrickJohnson #BlackLivesMatter http:\/\/t.co\/JhcDX67mrx",
+                 "source": "\u003ca href=\"http:\/\/twitter.com\/#!\/download\/ipad\" rel=\"nofollow\"\u003eTwitter for iPad\u003c\/a\u003e",
+                 "truncated": false,
+                 "in_reply_to_status_id": 559105206475309056,
+                 "in_reply_to_status_id_str": "559105206475309056",
+                 "in_reply_to_user_id": 2779922975,
+                 "in_reply_to_user_id_str": "2779922975",
+                 "in_reply_to_screen_name": "sofambro90",
+                 "user": {
+                 "id": 236694675,
+                 "id_str": "236694675",
+                 "name": "PenelopePickles",
+                 "screen_name": "penelopepickles",
+                 "location": "Georgia",
+                 "profile_location": null,
+                 "description": "",
+                 "url": null,
+                 "entities": {
+                 "description": {
+                 "urls": []
+                 }
+                 },
+                 "protected": false,
+                 "followers_count": 819,
+                 "friends_count": 1931,
+                 "listed_count": 13,
+                 "created_at": "Tue Jan 11 04:47:48 +0000 2011",
+                 "favourites_count": 4092,
+                 "utc_offset": null,
+                 "time_zone": null,
+                 "geo_enabled": false,
+                 "verified": false,
+                 "statuses_count": 12956,
+                 "lang": "en",
+                 "contributors_enabled": false,
+                 "is_translator": false,
+                 "is_translation_enabled": false,
+                 "profile_background_color": "C0DEED",
+                 "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+                 "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+                 "profile_background_tile": false,
+                 "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/496848122090643456\/kzJN8bzq_normal.jpeg",
+                 "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/496848122090643456\/kzJN8bzq_normal.jpeg",
+                 "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/236694675\/1414270148",
+                 "profile_link_color": "0084B4",
+                 "profile_sidebar_border_color": "C0DEED",
+                 "profile_sidebar_fill_color": "DDEEF6",
+                 "profile_text_color": "333333",
+                 "profile_use_background_image": true,
+                 "default_profile": true,
+                 "default_profile_image": false,
+                 "following": null,
+                 "follow_request_sent": null,
+                 "notifications": null
+                 },
+                 "geo": null,
+                 "coordinates": null,
+                 "place": null,
+                 "contributors": null,
+                 "retweet_count": 0,
+                 "favorite_count": 0,
+                 "entities": {
+                 "hashtags": [{
+                              "text": "JusticeforKJ",
+                              "indices": [44, 57]
+                              }, {
+                              "text": "KendrickJohnson",
+                              "indices": [58, 74]
+                              }, {
+                              "text": "BlackLivesMatter",
+                              "indices": [75, 92]
+                              }],
+                 "symbols": [],
+                 "user_mentions": [{
+                                   "screen_name": "sofambro90",
+                                   "name": "S. MITCHELL-FAMBRO",
+                                   "id": 2779922975,
+                                   "id_str": "2779922975",
+                                   "indices": [0, 11]
+                                   }, {
+                                   "screen_name": "Change",
+                                   "name": "Change.org",
+                                   "id": 15947602,
+                                   "id_str": "15947602",
+                                   "indices": [12, 19]
+                                   }],
+                 "urls": [{
+                          "url": "https:\/\/t.co\/t1nce8Kg5U",
+                          "expanded_url": "https:\/\/vimeo.com\/116785075",
+                          "display_url": "vimeo.com\/116785075",
+                          "indices": [20, 43]
+                          }],
+                 "media": [{
+                           "id": 564948773898817536,
+                           "id_str": "564948773898817536",
+                           "indices": [93, 115],
+                           "media_url": "http:\/\/pbs.twimg.com\/media\/B9cZ6qiIEAAcxtX.jpg",
+                           "media_url_https": "https:\/\/pbs.twimg.com\/media\/B9cZ6qiIEAAcxtX.jpg",
+                           "url": "http:\/\/t.co\/JhcDX67mrx",
+                           "display_url": "pic.twitter.com\/JhcDX67mrx",
+                           "expanded_url": "http:\/\/twitter.com\/penelopepickles\/status\/564948780987187200\/photo\/1",
+                           "type": "photo",
+                           "sizes": {
+                           "small": {
+                           "w": 340,
+                           "h": 191,
+                           "resize": "fit"
+                           },
+                           "thumb": {
+                           "w": 150,
+                           "h": 150,
+                           "resize": "crop"
+                           },
+                           "medium": {
+                           "w": 600,
+                           "h": 337,
+                           "resize": "fit"
+                           },
+                           "large": {
+                           "w": 1024,
+                           "h": 576,
+                           "resize": "fit"
+                           }
+                           }
+                           }]
+                 },
+                 "favorited": false,
+                 "retweeted": false,
+                 "possibly_sensitive": false,
+                 "lang": "und"
+                 }, {
+                 "metadata": {
+                 "iso_language_code": "en",
+                 "result_type": "recent"
+                 },
+                 "created_at": "Tue Feb 10 00:47:22 +0000 2015",
+                 "id": 564948705078697984,
+                 "id_str": "564948705078697984",
+                 "text": "Excited about @SchottFound's work w black boys \/ men &amp; #education. Report coming Weds! https:\/\/t.co\/Hgm8O2IYFM #BlackLivesMatter",
+                 "source": "\u003ca href=\"https:\/\/about.twitter.com\/products\/tweetdeck\" rel=\"nofollow\"\u003eTweetDeck\u003c\/a\u003e",
+                 "truncated": false,
+                 "in_reply_to_status_id": null,
+                 "in_reply_to_status_id_str": null,
+                 "in_reply_to_user_id": null,
+                 "in_reply_to_user_id_str": null,
+                 "in_reply_to_screen_name": null,
+                 "user": {
+                 "id": 2610561296,
+                 "id_str": "2610561296",
+                 "name": "BridgeEd Strategies ",
+                 "screen_name": "BridgingEd",
+                 "location": "Brooklyn, NY",
+                 "profile_location": null,
+                 "description": "BridgeEd Strategies offers #highered #socialnetworkanalysis implementation, message development & #socialmedia training. Community starts with communication.",
+                 "url": "http:\/\/t.co\/dOhWIZVcHc",
+                 "entities": {
+                 "url": {
+                 "urls": [{
+                          "url": "http:\/\/t.co\/dOhWIZVcHc",
+                          "expanded_url": "http:\/\/bridgedstrategies.com",
+                          "display_url": "bridgedstrategies.com",
+                          "indices": [0, 22]
+                          }]
+                 },
+                 "description": {
+                 "urls": []
+                 }
+                 },
+                 "protected": false,
+                 "followers_count": 80,
+                 "friends_count": 326,
+                 "listed_count": 5,
+                 "created_at": "Mon Jul 07 22:19:17 +0000 2014",
+                 "favourites_count": 38,
+                 "utc_offset": -18000,
+                 "time_zone": "Eastern Time (US & Canada)",
+                 "geo_enabled": false,
+                 "verified": false,
+                 "statuses_count": 170,
+                 "lang": "en",
+                 "contributors_enabled": false,
+                 "is_translator": false,
+                 "is_translation_enabled": false,
+                 "profile_background_color": "3B94D9",
+                 "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+                 "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+                 "profile_background_tile": false,
+                 "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/558305372717318146\/7tABWnoC_normal.jpeg",
+                 "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/558305372717318146\/7tABWnoC_normal.jpeg",
+                 "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/2610561296\/1421945602",
+                 "profile_link_color": "FA743E",
+                 "profile_sidebar_border_color": "C0DEED",
+                 "profile_sidebar_fill_color": "DDEEF6",
+                 "profile_text_color": "333333",
+                 "profile_use_background_image": false,
+                 "default_profile": false,
+                 "default_profile_image": false,
+                 "following": null,
+                 "follow_request_sent": null,
+                 "notifications": null
+                 },
+                 "geo": null,
+                 "coordinates": null,
+                 "place": null,
+                 "contributors": null,
+                 "retweet_count": 0,
+                 "favorite_count": 0,
+                 "entities": {
+                 "hashtags": [{
+                              "text": "education",
+                              "indices": [59, 69]
+                              }, {
+                              "text": "BlackLivesMatter",
+                              "indices": [115, 132]
+                              }],
+                 "symbols": [],
+                 "user_mentions": [{
+                                   "screen_name": "SchottFound",
+                                   "name": "Schott Foundation",
+                                   "id": 3017985375,
+                                   "id_str": "3017985375",
+                                   "indices": [14, 26]
+                                   }],
+                 "urls": [{
+                          "url": "https:\/\/t.co\/Hgm8O2IYFM",
+                          "expanded_url": "https:\/\/www.youtube.com\/watch?v=ZDRB91izZ8w",
+                          "display_url": "youtube.com\/watch?v=ZDRB91\u2026",
+                          "indices": [91, 114]
+                          }]
+                 },
+                 "favorited": false,
+                 "retweeted": false,
+                 "possibly_sensitive": false,
+                 "lang": "en"
+                 }, {
+                 "metadata": {
+                 "iso_language_code": "en",
+                 "result_type": "recent"
+                 },
+                 "created_at": "Tue Feb 10 00:47:19 +0000 2015",
+                 "id": 564948694542196736,
+                 "id_str": "564948694542196736",
+                 "text": "Kendrick Lamar tackles why #BlackLivesMatter on his new track, 'The Blacker the Berry' \u2014 http:\/\/t.co\/MHxFtv9fze",
+                 "source": "\u003ca href=\"https:\/\/about.twitter.com\/products\/tweetdeck\" rel=\"nofollow\"\u003eTweetDeck\u003c\/a\u003e",
+                 "truncated": false,
+                 "in_reply_to_status_id": null,
+                 "in_reply_to_status_id_str": null,
+                 "in_reply_to_user_id": null,
+                 "in_reply_to_user_id_str": null,
+                 "in_reply_to_screen_name": null,
+                 "user": {
+                 "id": 153330351,
+                 "id_str": "153330351",
+                 "name": "Idalmy Carrera",
+                 "screen_name": "IdalmyCarrera",
+                 "location": "Chicago",
+                 "profile_location": null,
+                 "description": "Executive Editor, Sun Times Network",
+                 "url": null,
+                 "entities": {
+                 "description": {
+                 "urls": []
+                 }
+                 },
+                 "protected": false,
+                 "followers_count": 661,
+                 "friends_count": 542,
+                 "listed_count": 55,
+                 "created_at": "Tue Jun 08 07:50:48 +0000 2010",
+                 "favourites_count": 143,
+                 "utc_offset": -21600,
+                 "time_zone": "Central Time (US & Canada)",
+                 "geo_enabled": false,
+                 "verified": false,
+                 "statuses_count": 3589,
+                 "lang": "en",
+                 "contributors_enabled": false,
+                 "is_translator": false,
+                 "is_translation_enabled": false,
+                 "profile_background_color": "000000",
+                 "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme9\/bg.gif",
+                 "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme9\/bg.gif",
+                 "profile_background_tile": false,
+                 "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/546014527850967040\/V6w8S0y__normal.jpeg",
+                 "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/546014527850967040\/V6w8S0y__normal.jpeg",
+                 "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/153330351\/1414532946",
+                 "profile_link_color": "1B93D4",
+                 "profile_sidebar_border_color": "FFFFFF",
+                 "profile_sidebar_fill_color": "252429",
+                 "profile_text_color": "666666",
+                 "profile_use_background_image": false,
+                 "default_profile": false,
+                 "default_profile_image": false,
+                 "following": null,
+                 "follow_request_sent": null,
+                 "notifications": null
+                 },
+                 "geo": null,
+                 "coordinates": null,
+                 "place": null,
+                 "contributors": null,
+                 "retweet_count": 0,
+                 "favorite_count": 0,
+                 "entities": {
+                 "hashtags": [{
+                              "text": "BlackLivesMatter",
+                              "indices": [27, 44]
+                              }],
+                 "symbols": [],
+                 "user_mentions": [],
+                 "urls": [{
+                          "url": "http:\/\/t.co\/MHxFtv9fze",
+                          "expanded_url": "http:\/\/bit.ly\/1IGH7e9",
+                          "display_url": "bit.ly\/1IGH7e9",
+                          "indices": [89, 111]
+                          }]
+                 },
+                 "favorited": false,
+                 "retweeted": false,
+                 "possibly_sensitive": true,
+                 "lang": "en"
+                 }, {
+                 "metadata": {
+                 "iso_language_code": "en",
+                 "result_type": "recent"
+                 },
+                 "created_at": "Tue Feb 10 00:47:08 +0000 2015",
+                 "id": 564948647775698944,
+                 "id_str": "564948647775698944",
+                 "text": "@JenniferBadgley  It smeared itself, that's the reality. Common sense. http:\/\/t.co\/4i8vgJK7HL #BlackLivesMatter",
+                 "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e",
+                 "truncated": false,
+                 "in_reply_to_status_id": 564944633927827456,
+                 "in_reply_to_status_id_str": "564944633927827456",
+                 "in_reply_to_user_id": 40393746,
+                 "in_reply_to_user_id_str": "40393746",
+                 "in_reply_to_screen_name": "JenniferBadgley",
+                 "user": {
+                 "id": 244596934,
+                 "id_str": "244596934",
+                 "name": "Caseprojects",
+                 "screen_name": "thecase22",
+                 "location": "With you via Internet",
+                 "profile_location": null,
+                 "description": "Life is serious.",
+                 "url": null,
+                 "entities": {
+                 "description": {
+                 "urls": []
+                 }
+                 },
+                 "protected": false,
+                 "followers_count": 243,
+                 "friends_count": 400,
+                 "listed_count": 7,
+                 "created_at": "Sat Jan 29 17:42:01 +0000 2011",
+                 "favourites_count": 138,
+                 "utc_offset": -21600,
+                 "time_zone": "Central Time (US & Canada)",
+                 "geo_enabled": false,
+                 "verified": false,
+                 "statuses_count": 3181,
+                 "lang": "en",
+                 "contributors_enabled": false,
+                 "is_translator": false,
+                 "is_translation_enabled": false,
+                 "profile_background_color": "C0DEED",
+                 "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/199764527\/thought.jpg",
+                 "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/199764527\/thought.jpg",
+                 "profile_background_tile": true,
+                 "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/555432356115263488\/MY3RulN__normal.jpeg",
+                 "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/555432356115263488\/MY3RulN__normal.jpeg",
+                 "profile_link_color": "0084B4",
+                 "profile_sidebar_border_color": "C0DEED",
+                 "profile_sidebar_fill_color": "DDEEF6",
+                 "profile_text_color": "333333",
+                 "profile_use_background_image": true,
+                 "default_profile": false,
+                 "default_profile_image": false,
+                 "following": null,
+                 "follow_request_sent": null,
+                 "notifications": null
+                 },
+                 "geo": null,
+                 "coordinates": null,
+                 "place": null,
+                 "contributors": null,
+                 "retweet_count": 0,
+                 "favorite_count": 0,
+                 "entities": {
+                 "hashtags": [{
+                              "text": "BlackLivesMatter",
+                              "indices": [94, 111]
+                              }],
+                 "symbols": [],
+                 "user_mentions": [{
+                                   "screen_name": "JenniferBadgley",
+                                   "name": "Jennifer Badgley",
+                                   "id": 40393746,
+                                   "id_str": "40393746",
+                                   "indices": [0, 16]
+                                   }],
+                 "urls": [{
+                          "url": "http:\/\/t.co\/4i8vgJK7HL",
+                          "expanded_url": "http:\/\/www.thinkitin.com\/2014\/10\/a-new-renaissance.html",
+                          "display_url": "thinkitin.com\/2014\/10\/a-new-\u2026",
+                          "indices": [71, 93]
+                          }]
+                 },
+                 "favorited": false,
+                 "retweeted": false,
+                 "possibly_sensitive": false,
+                 "lang": "en"
+                 }, {
+                 "metadata": {
+                 "iso_language_code": "en",
+                 "result_type": "recent"
+                 },
+                 "created_at": "Tue Feb 10 00:46:59 +0000 2015",
+                 "id": 564948610362531841,
+                 "id_str": "564948610362531841",
+                 "text": "\"@OccupyWallStNYC: We are in Grand Central armed with love to remind all that #BlackLivesMatter http:\/\/t.co\/XlxRQIZqoj\" #HumanRights",
+                 "source": "\u003ca href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter for Android\u003c\/a\u003e",
+                 "truncated": false,
+                 "in_reply_to_status_id": null,
+                 "in_reply_to_status_id_str": null,
+                 "in_reply_to_user_id": null,
+                 "in_reply_to_user_id_str": null,
+                 "in_reply_to_screen_name": null,
+                 "user": {
+                 "id": 192477353,
+                 "id_str": "192477353",
+                 "name": "Jeannie Hartley",
+                 "screen_name": "Jeannie_Hartley",
+                 "location": "worldwide",
+                 "profile_location": null,
+                 "description": "Unprecedented change we bring by navigating a course uncharted #Equality will exist for #Humanity when all #HumanRights are honored AllPeopleAreOurPeople #apaop",
+                 "url": "http:\/\/t.co\/3FZBHyGIeB",
+                 "entities": {
+                 "url": {
+                 "urls": [{
+                          "url": "http:\/\/t.co\/3FZBHyGIeB",
+                          "expanded_url": "http:\/\/sacred2song.com",
+                          "display_url": "sacred2song.com",
+                          "indices": [0, 22]
+                          }]
+                 },
+                 "description": {
+                 "urls": []
+                 }
+                 },
+                 "protected": false,
+                 "followers_count": 14806,
+                 "friends_count": 16280,
+                 "listed_count": 542,
+                 "created_at": "Sun Sep 19 07:47:04 +0000 2010",
+                 "favourites_count": 14439,
+                 "utc_offset": -25200,
+                 "time_zone": "Mountain Time (US & Canada)",
+                 "geo_enabled": true,
+                 "verified": false,
+                 "statuses_count": 195303,
+                 "lang": "en",
+                 "contributors_enabled": false,
+                 "is_translator": false,
+                 "is_translation_enabled": false,
+                 "profile_background_color": "0FA5DB",
+                 "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/875673205\/6bf7b432bf043961bf6f4e2f1416c93d.jpeg",
+                 "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/875673205\/6bf7b432bf043961bf6f4e2f1416c93d.jpeg",
+                 "profile_background_tile": true,
+                 "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/544643164271681537\/i9Wpuu9p_normal.jpeg",
+                 "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/544643164271681537\/i9Wpuu9p_normal.jpeg",
+                 "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/192477353\/1376785706",
+                 "profile_link_color": "0EA0C4",
+                 "profile_sidebar_border_color": "000000",
+                 "profile_sidebar_fill_color": "95E8EC",
+                 "profile_text_color": "3C3940",
+                 "profile_use_background_image": true,
+                 "default_profile": false,
+                 "default_profile_image": false,
+                 "following": null,
+                 "follow_request_sent": null,
+                 "notifications": null
+                 },
+                 "geo": null,
+                 "coordinates": null,
+                 "place": null,
+                 "contributors": null,
+                 "retweet_count": 0,
+                 "favorite_count": 0,
+                 "entities": {
+                 "hashtags": [{
+                              "text": "BlackLivesMatter",
+                              "indices": [78, 95]
+                              }, {
+                              "text": "HumanRights",
+                              "indices": [120, 132]
+                              }],
+                 "symbols": [],
+                 "user_mentions": [{
+                                   "screen_name": "OccupyWallStNYC",
+                                   "name": "Occupy Wall Street",
+                                   "id": 335972576,
+                                   "id_str": "335972576",
+                                   "indices": [1, 17]
+                                   }],
+                 "urls": [],
+                 "media": [{
+                           "id": 564942310425624577,
+                           "id_str": "564942310425624577",
+                           "indices": [96, 118],
+                           "media_url": "http:\/\/pbs.twimg.com\/media\/B9cUCcOCAAEr15z.jpg",
+                           "media_url_https": "https:\/\/pbs.twimg.com\/media\/B9cUCcOCAAEr15z.jpg",
+                           "url": "http:\/\/t.co\/XlxRQIZqoj",
+                           "display_url": "pic.twitter.com\/XlxRQIZqoj",
+                           "expanded_url": "http:\/\/twitter.com\/OccupyWallStNYC\/status\/564942311193595904\/photo\/1",
+                           "type": "photo",
+                           "sizes": {
+                           "small": {
+                           "w": 340,
+                           "h": 255,
+                           "resize": "fit"
+                           },
+                           "medium": {
+                           "w": 600,
+                           "h": 450,
+                           "resize": "fit"
+                           },
+                           "thumb": {
+                           "w": 150,
+                           "h": 150,
+                           "resize": "crop"
+                           },
+                           "large": {
+                           "w": 1024,
+                           "h": 768,
+                           "resize": "fit"
+                           }
+                           },
+                           "source_status_id": 564942311193595904,
+                           "source_status_id_str": "564942311193595904",
+                           "source_user_id": 335972576,
+                           "source_user_id_str": "335972576"
+                           }]
+                 },
+                 "favorited": false,
+                 "retweeted": false,
+                 "possibly_sensitive": false,
+                 "lang": "en"
+                 }, {
+                 "metadata": {
+                 "iso_language_code": "en",
+                 "result_type": "recent"
+                 },
+                 "created_at": "Tue Feb 10 00:46:52 +0000 2015",
+                 "id": 564948582303027201,
+                 "id_str": "564948582303027201",
+                 "text": "The real MVP of The Grammy's. \ud83d\udc4f\ud83d\udc4f #BlackLivesMatter http:\/\/t.co\/dIwQZ8HMdk",
+                 "source": "\u003ca href=\"http:\/\/instagram.com\" rel=\"nofollow\"\u003eInstagram\u003c\/a\u003e",
+                 "truncated": false,
+                 "in_reply_to_status_id": null,
+                 "in_reply_to_status_id_str": null,
+                 "in_reply_to_user_id": null,
+                 "in_reply_to_user_id_str": null,
+                 "in_reply_to_screen_name": null,
+                 "user": {
+                 "id": 50300843,
+                 "id_str": "50300843",
+                 "name": "#ItWasACatch",
+                 "screen_name": "MalikaTika",
+                 "location": "Dallas \u2708 Port Arthur",
+                 "profile_location": null,
+                 "description": "God loving engineer.  Making my dreams reality. \u2728 Proud member of #PVNation  \nNot a ratchet, but don't push me.",
+                 "url": null,
+                 "entities": {
+                 "description": {
+                 "urls": []
+                 }
+                 },
+                 "protected": false,
+                 "followers_count": 374,
+                 "friends_count": 606,
+                 "listed_count": 6,
+                 "created_at": "Wed Jun 24 13:14:33 +0000 2009",
+                 "favourites_count": 214,
+                 "utc_offset": -21600,
+                 "time_zone": "Central Time (US & Canada)",
+                 "geo_enabled": false,
+                 "verified": false,
+                 "statuses_count": 40136,
+                 "lang": "en",
+                 "contributors_enabled": false,
+                 "is_translator": false,
+                 "is_translation_enabled": false,
+                 "profile_background_color": "642D8B",
+                 "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/106746103\/Kewl_Kidd_Malika.jpg",
+                 "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/106746103\/Kewl_Kidd_Malika.jpg",
+                 "profile_background_tile": true,
+                 "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/3101750172\/d51e9108b5302d3c361f3c5a55e6c3c0_normal.jpeg",
+                 "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/3101750172\/d51e9108b5302d3c361f3c5a55e6c3c0_normal.jpeg",
+                 "profile_link_color": "FF0000",
+                 "profile_sidebar_border_color": "65B0DA",
+                 "profile_sidebar_fill_color": "7AC3EE",
+                 "profile_text_color": "3D1957",
+                 "profile_use_background_image": true,
+                 "default_profile": false,
+                 "default_profile_image": false,
+                 "following": null,
+                 "follow_request_sent": null,
+                 "notifications": null
+                 },
+                 "geo": null,
+                 "coordinates": null,
+                 "place": null,
+                 "contributors": null,
+                 "retweet_count": 0,
+                 "favorite_count": 0,
+                 "entities": {
+                 "hashtags": [{
+                              "text": "BlackLivesMatter",
+                              "indices": [33, 50]
+                              }],
+                 "symbols": [],
+                 "user_mentions": [],
+                 "urls": [{
+                          "url": "http:\/\/t.co\/dIwQZ8HMdk",
+                          "expanded_url": "http:\/\/instagram.com\/p\/y5qvGdS_4H\/",
+                          "display_url": "instagram.com\/p\/y5qvGdS_4H\/",
+                          "indices": [51, 73]
+                          }]
+                 },
+                 "favorited": false,
+                 "retweeted": false,
+                 "possibly_sensitive": false,
+                 "lang": "en"
+                 }, {
+                 "metadata": {
+                 "iso_language_code": "en",
+                 "result_type": "recent"
+                 },
+                 "created_at": "Tue Feb 10 00:46:48 +0000 2015",
+                 "id": 564948562190929921,
+                 "id_str": "564948562190929921",
+                 "text": "\"@OccupyWallStNYC: We are in Grand Central armed with love to remind all that #BlackLivesMatter http:\/\/t.co\/XlxRQIZqoj\" #MikeBrown #NYC",
+                 "source": "\u003ca href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter for Android\u003c\/a\u003e",
+                 "truncated": false,
+                 "in_reply_to_status_id": null,
+                 "in_reply_to_status_id_str": null,
+                 "in_reply_to_user_id": null,
+                 "in_reply_to_user_id_str": null,
+                 "in_reply_to_screen_name": null,
+                 "user": {
+                 "id": 192477353,
+                 "id_str": "192477353",
+                 "name": "Jeannie Hartley",
+                 "screen_name": "Jeannie_Hartley",
+                 "location": "worldwide",
+                 "profile_location": null,
+                 "description": "Unprecedented change we bring by navigating a course uncharted #Equality will exist for #Humanity when all #HumanRights are honored AllPeopleAreOurPeople #apaop",
+                 "url": "http:\/\/t.co\/3FZBHyGIeB",
+                 "entities": {
+                 "url": {
+                 "urls": [{
+                          "url": "http:\/\/t.co\/3FZBHyGIeB",
+                          "expanded_url": "http:\/\/sacred2song.com",
+                          "display_url": "sacred2song.com",
+                          "indices": [0, 22]
+                          }]
+                 },
+                 "description": {
+                 "urls": []
+                 }
+                 },
+                 "protected": false,
+                 "followers_count": 14806,
+                 "friends_count": 16280,
+                 "listed_count": 542,
+                 "created_at": "Sun Sep 19 07:47:04 +0000 2010",
+                 "favourites_count": 14439,
+                 "utc_offset": -25200,
+                 "time_zone": "Mountain Time (US & Canada)",
+                 "geo_enabled": true,
+                 "verified": false,
+                 "statuses_count": 195303,
+                 "lang": "en",
+                 "contributors_enabled": false,
+                 "is_translator": false,
+                 "is_translation_enabled": false,
+                 "profile_background_color": "0FA5DB",
+                 "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/875673205\/6bf7b432bf043961bf6f4e2f1416c93d.jpeg",
+                 "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/875673205\/6bf7b432bf043961bf6f4e2f1416c93d.jpeg",
+                 "profile_background_tile": true,
+                 "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/544643164271681537\/i9Wpuu9p_normal.jpeg",
+                 "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/544643164271681537\/i9Wpuu9p_normal.jpeg",
+                 "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/192477353\/1376785706",
+                 "profile_link_color": "0EA0C4",
+                 "profile_sidebar_border_color": "000000",
+                 "profile_sidebar_fill_color": "95E8EC",
+                 "profile_text_color": "3C3940",
+                 "profile_use_background_image": true,
+                 "default_profile": false,
+                 "default_profile_image": false,
+                 "following": null,
+                 "follow_request_sent": null,
+                 "notifications": null
+                 },
+                 "geo": null,
+                 "coordinates": null,
+                 "place": null,
+                 "contributors": null,
+                 "retweet_count": 0,
+                 "favorite_count": 0,
+                 "entities": {
+                 "hashtags": [{
+                              "text": "BlackLivesMatter",
+                              "indices": [78, 95]
+                              }, {
+                              "text": "MikeBrown",
+                              "indices": [120, 130]
+                              }, {
+                              "text": "NYC",
+                              "indices": [131, 135]
+                              }],
+                 "symbols": [],
+                 "user_mentions": [{
+                                   "screen_name": "OccupyWallStNYC",
+                                   "name": "Occupy Wall Street",
+                                   "id": 335972576,
+                                   "id_str": "335972576",
+                                   "indices": [1, 17]
+                                   }],
+                 "urls": [],
+                 "media": [{
+                           "id": 564942310425624577,
+                           "id_str": "564942310425624577",
+                           "indices": [96, 118],
+                           "media_url": "http:\/\/pbs.twimg.com\/media\/B9cUCcOCAAEr15z.jpg",
+                           "media_url_https": "https:\/\/pbs.twimg.com\/media\/B9cUCcOCAAEr15z.jpg",
+                           "url": "http:\/\/t.co\/XlxRQIZqoj",
+                           "display_url": "pic.twitter.com\/XlxRQIZqoj",
+                           "expanded_url": "http:\/\/twitter.com\/OccupyWallStNYC\/status\/564942311193595904\/photo\/1",
+                           "type": "photo",
+                           "sizes": {
+                           "small": {
+                           "w": 340,
+                           "h": 255,
+                           "resize": "fit"
+                           },
+                           "medium": {
+                           "w": 600,
+                           "h": 450,
+                           "resize": "fit"
+                           },
+                           "thumb": {
+                           "w": 150,
+                           "h": 150,
+                           "resize": "crop"
+                           },
+                           "large": {
+                           "w": 1024,
+                           "h": 768,
+                           "resize": "fit"
+                           }
+                           },
+                           "source_status_id": 564942311193595904,
+                           "source_status_id_str": "564942311193595904",
+                           "source_user_id": 335972576,
+                           "source_user_id_str": "335972576"
+                           }]
+                 },
+                 "favorited": false,
+                 "retweeted": false,
+                 "possibly_sensitive": false,
+                 "lang": "en"
+                 }, {
+                 "metadata": {
+                 "iso_language_code": "en",
+                 "result_type": "recent"
+                 },
+                 "created_at": "Tue Feb 10 00:46:40 +0000 2015",
+                 "id": 564948531098963968,
+                 "id_str": "564948531098963968",
+                 "text": "Chants of \"#EricGarner! #MikeBrown! #ShutItDown! #ShutItDown!\" Happening in #GrandCentral NYC now. #BlackLivesMatter http:\/\/t.co\/8V8iwYIC67",
+                 "source": "\u003ca href=\"http:\/\/www.hootsuite.com\" rel=\"nofollow\"\u003eHootsuite\u003c\/a\u003e",
+                 "truncated": false,
+                 "in_reply_to_status_id": null,
+                 "in_reply_to_status_id_str": null,
+                 "in_reply_to_user_id": null,
+                 "in_reply_to_user_id_str": null,
+                 "in_reply_to_screen_name": null,
+                 "user": {
+                 "id": 335972576,
+                 "id_str": "335972576",
+                 "name": "Occupy Wall Street",
+                 "screen_name": "OccupyWallStNYC",
+                 "location": "Wall Street, NYC",
+                 "profile_location": null,
+                 "description": "Occupying Wall Street since Sep 17, 2011. Standing with the global #Occupy movement. We are the 99%. Donate to the Bail Fund: http:\/\/t.co\/hX9uIKSOQ1 #OWS",
+                 "url": "http:\/\/t.co\/5Qtmlqd2IP",
+                 "entities": {
+                 "url": {
+                 "urls": [{
+                          "url": "http:\/\/t.co\/5Qtmlqd2IP",
+                          "expanded_url": "http:\/\/www.occupywallstreet.net",
+                          "display_url": "occupywallstreet.net",
+                          "indices": [0, 22]
+                          }]
+                 },
+                 "description": {
+                 "urls": [{
+                          "url": "http:\/\/t.co\/hX9uIKSOQ1",
+                          "expanded_url": "http:\/\/bit.ly\/OWSBail",
+                          "display_url": "bit.ly\/OWSBail",
+                          "indices": [126, 148]
+                          }]
+                 }
+                 },
+                 "protected": false,
+                 "followers_count": 188910,
+                 "friends_count": 7033,
+                 "listed_count": 5124,
+                 "created_at": "Fri Jul 15 15:02:12 +0000 2011",
+                 "favourites_count": 1905,
+                 "utc_offset": -18000,
+                 "time_zone": "Eastern Time (US & Canada)",
+                 "geo_enabled": true,
+                 "verified": false,
+                 "statuses_count": 53478,
+                 "lang": "en",
+                 "contributors_enabled": false,
+                 "is_translator": false,
+                 "is_translation_enabled": false,
+                 "profile_background_color": "C0DEED",
+                 "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/358489711\/tumblr_ltyardwECJ1r4zznpo1_1280.jpg",
+                 "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/358489711\/tumblr_ltyardwECJ1r4zznpo1_1280.jpg",
+                 "profile_background_tile": true,
+                 "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/518842644928012288\/_4_AE-pI_normal.jpeg",
+                 "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/518842644928012288\/_4_AE-pI_normal.jpeg",
+                 "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/335972576\/1401554897",
+                 "profile_link_color": "0084B4",
+                 "profile_sidebar_border_color": "C0DEED",
+                 "profile_sidebar_fill_color": "DDEEF6",
+                 "profile_text_color": "333333",
+                 "profile_use_background_image": true,
+                 "default_profile": false,
+                 "default_profile_image": false,
+                 "following": null,
+                 "follow_request_sent": null,
+                 "notifications": null
+                 },
+                 "geo": null,
+                 "coordinates": null,
+                 "place": null,
+                 "contributors": null,
+                 "retweet_count": 10,
+                 "favorite_count": 3,
+                 "entities": {
+                 "hashtags": [{
+                              "text": "EricGarner",
+                              "indices": [11, 22]
+                              }, {
+                              "text": "MikeBrown",
+                              "indices": [24, 34]
+                              }, {
+                              "text": "ShutItDown",
+                              "indices": [36, 47]
+                              }, {
+                              "text": "ShutItDown",
+                              "indices": [49, 60]
+                              }, {
+                              "text": "GrandCentral",
+                              "indices": [76, 89]
+                              }, {
+                              "text": "BlackLivesMatter",
+                              "indices": [99, 116]
+                              }],
+                 "symbols": [],
+                 "user_mentions": [],
+                 "urls": [],
+                 "media": [{
+                           "id": 564942343099256832,
+                           "id_str": "564942343099256832",
+                           "indices": [117, 139],
+                           "media_url": "http:\/\/pbs.twimg.com\/ext_tw_video_thumb\/564942343099256832\/pu\/img\/5sw7WfSf3oaAE54b.jpg",
+                           "media_url_https": "https:\/\/pbs.twimg.com\/ext_tw_video_thumb\/564942343099256832\/pu\/img\/5sw7WfSf3oaAE54b.jpg",
+                           "url": "http:\/\/t.co\/8V8iwYIC67",
+                           "display_url": "pic.twitter.com\/8V8iwYIC67",
+                           "expanded_url": "http:\/\/twitter.com\/KeeganNYC\/status\/564942704451125249\/video\/1",
+                           "type": "photo",
+                           "sizes": {
+                           "large": {
+                           "w": 480,
+                           "h": 480,
+                           "resize": "fit"
+                           },
+                           "small": {
+                           "w": 340,
+                           "h": 340,
+                           "resize": "fit"
+                           },
+                           "thumb": {
+                           "w": 150,
+                           "h": 150,
+                           "resize": "crop"
+                           },
+                           "medium": {
+                           "w": 480,
+                           "h": 480,
+                           "resize": "fit"
+                           }
+                           },
+                           "source_status_id": 564942704451125249,
+                           "source_status_id_str": "564942704451125249",
+                           "source_user_id": 93879982,
+                           "source_user_id_str": "93879982"
+                           }]
+                 },
+                 "favorited": false,
+                 "retweeted": false,
+                 "possibly_sensitive": false,
+                 "lang": "en"
+                 }, {
+                 "metadata": {
+                 "iso_language_code": "en",
+                 "result_type": "recent"
+                 },
+                 "created_at": "Tue Feb 10 00:46:35 +0000 2015",
+                 "id": 564948507896082432,
+                 "id_str": "564948507896082432",
+                 "text": "As @clecitycouncil has been crashed by #SeaofBlue I'd like to remind the council that #BlackLivesMatter #organizeCLE http:\/\/t.co\/vUEOlbIYfO",
+                 "source": "\u003ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e",
+                 "truncated": false,
+                 "in_reply_to_status_id": null,
+                 "in_reply_to_status_id_str": null,
+                 "in_reply_to_user_id": null,
+                 "in_reply_to_user_id_str": null,
+                 "in_reply_to_screen_name": null,
+                 "user": {
+                 "id": 594522638,
+                 "id_str": "594522638",
+                 "name": "Rachology216",
+                 "screen_name": "rachology216",
+                 "location": "cleveland, ohio",
+                 "profile_location": null,
+                 "description": "#organizeCLE. mother, lover, student, activist, feminist, and general pain in the rear.",
+                 "url": "http:\/\/t.co\/0YS5cIF7Pm",
+                 "entities": {
+                 "url": {
+                 "urls": [{
+                          "url": "http:\/\/t.co\/0YS5cIF7Pm",
+                          "expanded_url": "http:\/\/rachology216.tumblr.com",
+                          "display_url": "rachology216.tumblr.com",
+                          "indices": [0, 22]
+                          }]
+                 },
+                 "description": {
+                 "urls": []
+                 }
+                 },
+                 "protected": false,
+                 "followers_count": 318,
+                 "friends_count": 438,
+                 "listed_count": 15,
+                 "created_at": "Wed May 30 11:31:10 +0000 2012",
+                 "favourites_count": 455,
+                 "utc_offset": null,
+                 "time_zone": null,
+                 "geo_enabled": true,
+                 "verified": false,
+                 "statuses_count": 3375,
+                 "lang": "en",
+                 "contributors_enabled": false,
+                 "is_translator": false,
+                 "is_translation_enabled": false,
+                 "profile_background_color": "ACDED6",
+                 "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+                 "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif",
+                 "profile_background_tile": false,
+                 "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/563545508589744129\/zPGn-Fab_normal.jpeg",
+                 "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/563545508589744129\/zPGn-Fab_normal.jpeg",
+                 "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/594522638\/1421861308",
+                 "profile_link_color": "038543",
+                 "profile_sidebar_border_color": "EEEEEE",
+                 "profile_sidebar_fill_color": "F6F6F6",
+                 "profile_text_color": "333333",
+                 "profile_use_background_image": true,
+                 "default_profile": false,
+                 "default_profile_image": false,
+                 "following": null,
+                 "follow_request_sent": null,
+                 "notifications": null
+                 },
+                 "geo": null,
+                 "coordinates": null,
+                 "place": null,
+                 "contributors": null,
+                 "retweet_count": 2,
+                 "favorite_count": 0,
+                 "entities": {
+                 "hashtags": [{
+                              "text": "SeaofBlue",
+                              "indices": [39, 49]
+                              }, {
+                              "text": "BlackLivesMatter",
+                              "indices": [86, 103]
+                              }, {
+                              "text": "organizeCLE",
+                              "indices": [104, 116]
+                              }],
+                 "symbols": [],
+                 "user_mentions": [{
+                                   "screen_name": "CleCityCouncil",
+                                   "name": "CleCityCouncil",
+                                   "id": 17322632,
+                                   "id_str": "17322632",
+                                   "indices": [3, 18]
+                                   }],
+                 "urls": [],
+                 "media": [{
+                           "id": 564948496160423936,
+                           "id_str": "564948496160423936",
+                           "indices": [117, 139],
+                           "media_url": "http:\/\/pbs.twimg.com\/media\/B9cZqf4IgAAEsoB.jpg",
+                           "media_url_https": "https:\/\/pbs.twimg.com\/media\/B9cZqf4IgAAEsoB.jpg",
+                           "url": "http:\/\/t.co\/vUEOlbIYfO",
+                           "display_url": "pic.twitter.com\/vUEOlbIYfO",
+                           "expanded_url": "http:\/\/twitter.com\/rachology216\/status\/564948507896082432\/photo\/1",
+                           "type": "photo",
+                           "sizes": {
+                           "small": {
+                           "w": 340,
+                           "h": 255,
+                           "resize": "fit"
+                           },
+                           "medium": {
+                           "w": 600,
+                           "h": 450,
+                           "resize": "fit"
+                           },
+                           "thumb": {
+                           "w": 150,
+                           "h": 150,
+                           "resize": "crop"
+                           },
+                           "large": {
+                           "w": 1024,
+                           "h": 768,
+                           "resize": "fit"
+                           }
+                           }
+                           }]
+                 },
+                 "favorited": false,
+                 "retweeted": false,
+                 "possibly_sensitive": false,
+                 "lang": "en"
+                 }, {
+                 "metadata": {
+                 "iso_language_code": "und",
+                 "result_type": "recent"
+                 },
+                 "created_at": "Tue Feb 10 00:46:19 +0000 2015",
+                 "id": 564948442087436288,
+                 "id_str": "564948442087436288",
+                 "text": "@pinkraye https:\/\/t.co\/t1nce8Kg5U #BlackLivesMatter #KendrickJohnson #JusticeforKJ #valdostastands4kj http:\/\/t.co\/fO6fgHYd5j",
+                 "source": "\u003ca href=\"http:\/\/twitter.com\/#!\/download\/ipad\" rel=\"nofollow\"\u003eTwitter for iPad\u003c\/a\u003e",
+                 "truncated": false,
+                 "in_reply_to_status_id": 559407291942727681,
+                 "in_reply_to_status_id_str": "559407291942727681",
+                 "in_reply_to_user_id": 261724547,
+                 "in_reply_to_user_id_str": "261724547",
+                 "in_reply_to_screen_name": "pinkraye",
+                 "user": {
+                 "id": 236694675,
+                 "id_str": "236694675",
+                 "name": "PenelopePickles",
+                 "screen_name": "penelopepickles",
+                 "location": "Georgia",
+                 "profile_location": null,
+                 "description": "",
+                 "url": null,
+                 "entities": {
+                 "description": {
+                 "urls": []
+                 }
+                 },
+                 "protected": false,
+                 "followers_count": 819,
+                 "friends_count": 1931,
+                 "listed_count": 13,
+                 "created_at": "Tue Jan 11 04:47:48 +0000 2011",
+                 "favourites_count": 4092,
+                 "utc_offset": null,
+                 "time_zone": null,
+                 "geo_enabled": false,
+                 "verified": false,
+                 "statuses_count": 12956,
+                 "lang": "en",
+                 "contributors_enabled": false,
+                 "is_translator": false,
+                 "is_translation_enabled": false,
+                 "profile_background_color": "C0DEED",
+                 "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+                 "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+                 "profile_background_tile": false,
+                 "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/496848122090643456\/kzJN8bzq_normal.jpeg",
+                 "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/496848122090643456\/kzJN8bzq_normal.jpeg",
+                 "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/236694675\/1414270148",
+                 "profile_link_color": "0084B4",
+                 "profile_sidebar_border_color": "C0DEED",
+                 "profile_sidebar_fill_color": "DDEEF6",
+                 "profile_text_color": "333333",
+                 "profile_use_background_image": true,
+                 "default_profile": true,
+                 "default_profile_image": false,
+                 "following": null,
+                 "follow_request_sent": null,
+                 "notifications": null
+                 },
+                 "geo": null,
+                 "coordinates": null,
+                 "place": null,
+                 "contributors": null,
+                 "retweet_count": 0,
+                 "favorite_count": 0,
+                 "entities": {
+                 "hashtags": [{
+                              "text": "BlackLivesMatter",
+                              "indices": [34, 51]
+                              }, {
+                              "text": "KendrickJohnson",
+                              "indices": [52, 68]
+                              }, {
+                              "text": "JusticeforKJ",
+                              "indices": [69, 82]
+                              }, {
+                              "text": "valdostastands4kj",
+                              "indices": [83, 101]
+                              }],
+                 "symbols": [],
+                 "user_mentions": [{
+                                   "screen_name": "pinkraye",
+                                   "name": "3|08",
+                                   "id": 261724547,
+                                   "id_str": "261724547",
+                                   "indices": [0, 9]
+                                   }],
+                 "urls": [{
+                          "url": "https:\/\/t.co\/t1nce8Kg5U",
+                          "expanded_url": "https:\/\/vimeo.com\/116785075",
+                          "display_url": "vimeo.com\/116785075",
+                          "indices": [10, 33]
+                          }],
+                 "media": [{
+                           "id": 564948435644993537,
+                           "id_str": "564948435644993537",
+                           "indices": [102, 124],
+                           "media_url": "http:\/\/pbs.twimg.com\/media\/B9cZm-cIUAEfihH.jpg",
+                           "media_url_https": "https:\/\/pbs.twimg.com\/media\/B9cZm-cIUAEfihH.jpg",
+                           "url": "http:\/\/t.co\/fO6fgHYd5j",
+                           "display_url": "pic.twitter.com\/fO6fgHYd5j",
+                           "expanded_url": "http:\/\/twitter.com\/penelopepickles\/status\/564948442087436288\/photo\/1",
+                           "type": "photo",
+                           "sizes": {
+                           "small": {
+                           "w": 340,
+                           "h": 191,
+                           "resize": "fit"
+                           },
+                           "thumb": {
+                           "w": 150,
+                           "h": 150,
+                           "resize": "crop"
+                           },
+                           "medium": {
+                           "w": 600,
+                           "h": 337,
+                           "resize": "fit"
+                           },
+                           "large": {
+                           "w": 1024,
+                           "h": 576,
+                           "resize": "fit"
+                           }
+                           }
+                           }]
+                 },
+                 "favorited": false,
+                 "retweeted": false,
+                 "possibly_sensitive": false,
+                 "lang": "und"
+                 }, {
+                 "metadata": {
+                 "iso_language_code": "en",
+                 "result_type": "recent"
+                 },
+                 "created_at": "Tue Feb 10 00:46:16 +0000 2015",
+                 "id": 564948430637002753,
+                 "id_str": "564948430637002753",
+                 "text": "#BlackLivesMatter protesters marching around Grand Central #NYC! #OpICantBreathe http:\/\/t.co\/1OMMM66uIi (@AshAgony)",
+                 "source": "\u003ca href=\"http:\/\/www.GroupTweet.com\" rel=\"nofollow\"\u003eGroupTweet\u003c\/a\u003e",
+                 "truncated": false,
+                 "in_reply_to_status_id": null,
+                 "in_reply_to_status_id_str": null,
+                 "in_reply_to_user_id": null,
+                 "in_reply_to_user_id_str": null,
+                 "in_reply_to_screen_name": null,
+                 "user": {
+                 "id": 2916179705,
+                 "id_str": "2916179705",
+                 "name": "#OpICantBreathe",
+                 "screen_name": "OpICantBreathe",
+                 "location": "Global Movement",
+                 "profile_location": null,
+                 "description": "**The Official Eric Garner Operations Page !** Raising Awareness On Police Brutality And Racism #ShutDownNYC #ThisStopsToday #ICantBreathe #BlackLivesMatter",
+                 "url": "http:\/\/t.co\/XQm8yZkdae",
+                 "entities": {
+                 "url": {
+                 "urls": [{
+                          "url": "http:\/\/t.co\/XQm8yZkdae",
+                          "expanded_url": "http:\/\/AnonHq.com",
+                          "display_url": "AnonHq.com",
+                          "indices": [0, 22]
+                          }]
+                 },
+                 "description": {
+                 "urls": []
+                 }
+                 },
+                 "protected": false,
+                 "followers_count": 4616,
+                 "friends_count": 242,
+                 "listed_count": 48,
+                 "created_at": "Thu Dec 11 20:29:52 +0000 2014",
+                 "favourites_count": 724,
+                 "utc_offset": null,
+                 "time_zone": null,
+                 "geo_enabled": false,
+                 "verified": false,
+                 "statuses_count": 3018,
+                 "lang": "en",
+                 "contributors_enabled": false,
+                 "is_translator": false,
+                 "is_translation_enabled": false,
+                 "profile_background_color": "C0DEED",
+                 "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/551761583643168768\/NjDVhayh.png",
+                 "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/551761583643168768\/NjDVhayh.png",
+                 "profile_background_tile": false,
+                 "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/544485014730448896\/HvMKdoMP_normal.jpeg",
+                 "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/544485014730448896\/HvMKdoMP_normal.jpeg",
+                 "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/2916179705\/1420952037",
+                 "profile_link_color": "0084B4",
+                 "profile_sidebar_border_color": "C0DEED",
+                 "profile_sidebar_fill_color": "DDEEF6",
+                 "profile_text_color": "333333",
+                 "profile_use_background_image": true,
+                 "default_profile": false,
+                 "default_profile_image": false,
+                 "following": null,
+                 "follow_request_sent": null,
+                 "notifications": null
+                 },
+                 "geo": null,
+                 "coordinates": null,
+                 "place": null,
+                 "contributors": null,
+                 "retweet_count": 2,
+                 "favorite_count": 1,
+                 "entities": {
+                 "hashtags": [{
+                              "text": "BlackLivesMatter",
+                              "indices": [0, 17]
+                              }, {
+                              "text": "NYC",
+                              "indices": [59, 63]
+                              }, {
+                              "text": "OpICantBreathe",
+                              "indices": [65, 80]
+                              }],
+                 "symbols": [],
+                 "user_mentions": [{
+                                   "screen_name": "AshAgony",
+                                   "name": "Ash J",
+                                   "id": 809115114,
+                                   "id_str": "809115114",
+                                   "indices": [105, 114]
+                                   }],
+                 "urls": [],
+                 "media": [{
+                           "id": 564948426782437377,
+                           "id_str": "564948426782437377",
+                           "indices": [81, 103],
+                           "media_url": "http:\/\/pbs.twimg.com\/media\/B9cZmdbIcAE-5v9.jpg",
+                           "media_url_https": "https:\/\/pbs.twimg.com\/media\/B9cZmdbIcAE-5v9.jpg",
+                           "url": "http:\/\/t.co\/1OMMM66uIi",
+                           "display_url": "pic.twitter.com\/1OMMM66uIi",
+                           "expanded_url": "http:\/\/twitter.com\/AshAgony\/status\/564948426857934848\/photo\/1",
+                           "type": "photo",
+                           "sizes": {
+                           "large": {
+                           "w": 960,
+                           "h": 720,
+                           "resize": "fit"
+                           },
+                           "small": {
+                           "w": 340,
+                           "h": 255,
+                           "resize": "fit"
+                           },
+                           "medium": {
+                           "w": 600,
+                           "h": 450,
+                           "resize": "fit"
+                           },
+                           "thumb": {
+                           "w": 150,
+                           "h": 150,
+                           "resize": "crop"
+                           }
+                           },
+                           "source_status_id": 564948426857934848,
+                           "source_status_id_str": "564948426857934848",
+                           "source_user_id": 809115114,
+                           "source_user_id_str": "809115114"
+                           }]
+                 },
+                 "favorited": false,
+                 "retweeted": false,
+                 "possibly_sensitive": false,
+                 "lang": "en"
+                 }],
+    "search_metadata": {
+        "completed_in": 0.13,
+        "max_id": 564948898058223616,
+        "max_id_str": "564948898058223616",
+        "next_results": "?max_id=564948430637002752&q=%23blacklivesmatter%20-filter%3Aretweets&include_entities=1",
+        "query": "%23blacklivesmatter+-filter%3Aretweets",
+        "refresh_url": "?since_id=564948898058223616&q=%23blacklivesmatter%20-filter%3Aretweets&include_entities=1",
+        "count": 15,
+        "since_id": 0,
+        "since_id_str": "0"
+    }
+}

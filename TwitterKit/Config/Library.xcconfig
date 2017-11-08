@@ -1,0 +1,27 @@
+//
+//  Library.xcconfig
+//  Frameworks
+//
+//  Copyright (c) 2015 Twitter. All rights reserved.
+//
+
+// Build Options
+APPLICATION_EXTENSION_API_ONLY = YES
+ENABLE_TESTABILITY = YES
+
+// Deployment
+IPHONEOS_DEPLOYMENT_TARGET = 9.0
+SKIP_INSTALL = YES
+
+// Linking
+OTHER_LDFLAGS = -ObjC $(inherited)
+
+// Packaging
+PRODUCT_NAME = $(TARGET_NAME)
+PUBLIC_HEADERS_FOLDER_PATH = include/${PRODUCT_NAME}
+
+// Search Paths
+HEADER_SEARCH_PATHS = $(inherited) $(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include
+
+// Static Analyzer - Analysis Policy
+RUN_CLANG_STATIC_ANALYZER = $(RUN_CLANG_STATIC_ANALYZER_FOR_$(PRODUCT_NAME))

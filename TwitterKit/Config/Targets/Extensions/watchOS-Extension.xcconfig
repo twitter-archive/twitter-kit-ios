@@ -1,0 +1,12 @@
+//
+// watchOS-Extension.xcconfig
+//
+// Copyright (c) 2016 Twitter. All rights reserved.
+//
+
+#include "ExtensionTarget.xcconfig"
+
+SUPPORTED_PLATFORMS = watchsimulator watchos
+SDKROOT = watchos
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @executable_path/../../Frameworks
+TARGETED_DEVICE_FAMILY = 4

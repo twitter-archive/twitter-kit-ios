@@ -1,0 +1,109 @@
+{
+    "contributors_enabled": false,
+    "created_at": "Mon Mar 05 22:08:25 +0000 2007",
+    "default_profile": false,
+    "default_profile_image": false,
+    "description": "This account is run by Organizing for Action staff. Tweets from the President are signed -bo.",
+    "entities": {
+        "description": {
+            "urls": []
+        },
+        "url": {
+            "urls": [
+                     {
+                     "display_url": "barackobama.com",
+                     "expanded_url": "http://www.barackobama.com",
+                     "indices": [
+                                 0,
+                                 22
+                                 ],
+                     "url": "http://t.co/O5Woad92z1"
+                     }
+                     ]
+        }
+    },
+    "favourites_count": 5,
+    "follow_request_sent": false,
+    "followers_count": 43818787,
+    "following": false,
+    "friends_count": 649880,
+    "geo_enabled": false,
+    "id": 813286,
+    "id_str": "813286",
+    "is_translation_enabled": true,
+    "is_translator": false,
+    "lang": "en",
+    "listed_count": 207851,
+    "location": "Washington, DC",
+    "name": "Barack Obama",
+    "notifications": false,
+    "profile_background_color": "77B0DC",
+    "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/451819093436268544/kLbRvwBg.png",
+    "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/451819093436268544/kLbRvwBg.png",
+    "profile_background_tile": false,
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/813286/1398357410",
+    "profile_image_url": "http://pbs.twimg.com/profile_images/451007105391022080/iu1f7brY_normal.png",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/451007105391022080/iu1f7brY_normal.png",
+    "profile_link_color": "2574AD",
+    "profile_sidebar_border_color": "FFFFFF",
+    "profile_sidebar_fill_color": "C2E0F6",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "protected": false,
+    "screen_name": "BarackObama",
+    "status": {
+        "contributors": null,
+        "coordinates": null,
+        "created_at": "Tue Jul 01 03:04:23 +0000 2014",
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "urls": [
+                     {
+                     "display_url": "ofa.bo/a03k",
+                     "expanded_url": "http://ofa.bo/a03k",
+                     "indices": [
+                                 118,
+                                 140
+                                 ],
+                     "url": "http://t.co/ioeWFrDmGr"
+                     }
+                     ],
+            "user_mentions": [
+                              {
+                              "id": 15667802,
+                              "id_str": "15667802",
+                              "indices": [
+                                          38,
+                                          42
+                                          ],
+                              "name": "OFA",
+                              "screen_name": "OFA"
+                              }
+                              ]
+        },
+        "favorite_count": 403,
+        "favorited": false,
+        "geo": null,
+        "id": 483808304247099392,
+        "id_str": "483808304247099392",
+        "in_reply_to_screen_name": null,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "lang": "en",
+        "place": null,
+        "possibly_sensitive": false,
+        "retweet_count": 177,
+        "retweeted": false,
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "text": "MIDNIGHT DEADLINE: Chip in to support @OFA and you'll be automatically entered to win a trip to celebrate in Chicago. http://t.co/ioeWFrDmGr",
+        "truncated": false
+    },
+    "statuses_count": 12023,
+    "time_zone": "Eastern Time (US & Canada)",
+    "url": "http://t.co/O5Woad92z1",
+    "utc_offset": -14400,
+    "verified": true
+}

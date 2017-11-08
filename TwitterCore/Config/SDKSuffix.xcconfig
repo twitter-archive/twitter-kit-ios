@@ -1,0 +1,16 @@
+//
+//  SDKSuffix.xcconfig
+//  CrashlyticsKit
+//
+//  Copyright © 2015 Twitter. All rights reserved.
+//
+
+//  This platform/sdk-based suffix is used in various places, like the bundle identifier and GCC_PREPROCESSOR_DEFINITIONS
+
+FAB_PRODUCT_BUNDLE_IDENTIFIER_SUFFIX[sdk=iphoneos*] = ios
+FAB_PRODUCT_BUNDLE_IDENTIFIER_SUFFIX[sdk=iphonesimulator*] = ios
+FAB_PRODUCT_BUNDLE_IDENTIFIER_SUFFIX[sdk=watchsimulator*] = watchos
+FAB_PRODUCT_BUNDLE_IDENTIFIER_SUFFIX[sdk=watchos*] = watchos
+FAB_PRODUCT_BUNDLE_IDENTIFIER_SUFFIX[sdk=appletvsimulator*] = tvos
+FAB_PRODUCT_BUNDLE_IDENTIFIER_SUFFIX[sdk=appletvos*] = tvos
+FAB_PRODUCT_BUNDLE_IDENTIFIER_SUFFIX[sdk=macosx*] = mac

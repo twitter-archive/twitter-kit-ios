@@ -1,0 +1,86 @@
+# Customise this file, documentation can be found here:
+# https://github.com/KrauseFx/fastlane/tree/master/docs
+# All available actions: https://github.com/KrauseFx/fastlane/blob/master/docs/Actions.md
+# can also be listed using the `fastlane actions` command
+
+# If you want to automatically update fastlane if a new version is available:
+#update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "1.25.0"
+
+default_platform :ios
+platform :ios do
+
+  desc 'Build a nightly version of our app'
+  lane :nightly do
+    match(type: "adhoc")
+
+    gym(
+      workspace: './FabricSampleApp.xcworkspace',
+      scheme: 'FabricSampleApp',
+      destination: 'generic/platform=iOS',
+    )
+  end
+
+  desc 'Integration Tests'
+  lane :integration do
+    scan(
+      workspace: './FabricSampleApp.xcworkspace',
+      scheme: 'Integration Tests',
+    )
+  end
+
+  desc 'Unit Tests'
+  lane :test do
+    xctest(
+      scheme: 'FabricSampleApp',
+      destination: 'name=iPhone 6s',
+    )
+  end
+
+  desc 'Add a new device to the Twitter Kit Apple ID'
+  lane :add_device do
+    register_devices(devices: {
+      # "Steven's iPhone 6S" => "e86e5c15b8d894397fc5ec09b4177d19827a5cb8"
+    })
+    match(type: "development", force: true)
+  end
+
+
+  # To Implement Later:
+
+  desc 'Generate screenshots'
+  lane :appledocs do
+    # Generate appledocs
+  end
+
+  desc 'Generate code coverage'
+  lane :coverage do
+    gym(
+      project: '../TwitterKit/TwitterKit.xcodeproj/',
+      scheme: 'TwitterKit',
+      build_directory: 'build',
+      xcargs: 'GCC_GENERATE_TEST_COVERAGE_FILES=YES',
+    )
+    slather(
+      project: '../TwitterKit/TwitterKit.xcodeproj/',
+      scheme: 'TwitterKit',
+      build_directory: 'build',
+    )
+  end
+
+  desc 'Run the sample app and take screenshots'
+  lane :screenshots do
+    snapshot
+    frameit
+  end
+
+  error do |lane, exception|
+    # slack(
+    #   message: exception.message,
+    #   success: false
+    # )
+  end
+end

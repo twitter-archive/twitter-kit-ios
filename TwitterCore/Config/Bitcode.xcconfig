@@ -1,0 +1,20 @@
+//
+//  Bitcode.xcconfig
+//
+//  Copyright © 2015 Twitter. All rights reserved.
+//
+
+ENABLE_BITCODE_watchos = YES
+ENABLE_BITCODE_iphoneos = YES
+ENABLE_BITCODE_appletvos = YES
+
+ENABLE_BITCODE_macosx = NO
+ENABLE_BITCODE_iphonesimulator = NO
+ENABLE_BITCODE_watchsimulator = NO
+ENABLE_BITCODE_appletvsimulator = NO
+
+ENABLE_BITCODE = $(ENABLE_BITCODE_$(PLATFORM_NAME))
+
+OTHER_CFLAGS[sdk=iphoneos*] = $(inherited) -fembed-bitcode -Wno-error=unused-command-line-argument
+OTHER_CFLAGS[sdk=watchos*] = $(inherited) -fembed-bitcode -Wno-error=unused-command-line-argument
+OTHER_CFLAGS[sdk=appletvos*] = $(inherited) -fembed-bitcode -Wno-error=unused-command-line-argument

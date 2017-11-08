@@ -1,0 +1,20 @@
+//
+//  CodeSigning.xcconfig
+//
+//  Copyright © 2015 Twitter. All rights reserved.
+//
+
+CODE_SIGN_IDENTITY_Debug[sdk=iphone*] = iPhone Developer
+CODE_SIGN_IDENTITY_Debug[sdk=macosx*] = Mac Developer
+CODE_SIGN_IDENTITY_Debug[sdk=watch*] = iPhone Developer
+CODE_SIGN_IDENTITY_Debug[sdk=appletv*] = iPhone Developer
+
+CODE_SIGN_IDENTITY_Release[sdk=iphone*] = iPhone Distribution
+CODE_SIGN_IDENTITY_Release[sdk=macosx*] = Developer ID Application
+CODE_SIGN_IDENTITY_Release[sdk=watch*] = iPhone Distribution
+CODE_SIGN_IDENTITY_Release[sdk=appletv*] = iPhone Developer
+
+CODE_SIGN_IDENTITY[sdk=iphone*] = $(CODE_SIGN_IDENTITY_$(CONFIGURATION))
+CODE_SIGN_IDENTITY[sdk=macosx*] = $(CODE_SIGN_IDENTITY_$(CONFIGURATION))
+CODE_SIGN_IDENTITY[sdk=watch*] = $(CODE_SIGN_IDENTITY_$(CONFIGURATION))
+CODE_SIGN_IDENTITY[sdk=appletv*] = $(CODE_SIGN_IDENTITY_$(CONFIGURATION))
