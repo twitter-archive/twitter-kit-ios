@@ -23,6 +23,8 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1023</string>
+	<key>CFBundleExecutable</key>
+	<string>TwitterCore</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright 2015 Twitter Inc.</string>
 </dict>
