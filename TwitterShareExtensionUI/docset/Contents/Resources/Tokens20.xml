@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRSETweetShareViewControllerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRSETweetShareViewControllerDelegate</TokenIdentifier>
+			<Abstract type="html">Methods invoked by TWTRSETweetShareViewController to notify about events occured in the UI.
+All of these methods are called in the main thread.</Abstract>
+			<DeclaredIn>TWTRSETweetShareViewControllerDelegate.h</DeclaredIn>
+            
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSETweetShareViewControllerDelegate/shareViewControllerDidFinishSendingTweet</TokenIdentifier>
+			<Abstract type="html">Called when the user has tapped on the tweet button and the request callback was called with .success or .willPostAsynchronously
+The view controller is not dismissed automatically, you must call dismissViewController.</Abstract>
+			<DeclaredIn>TWTRSETweetShareViewControllerDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)shareViewControllerDidFinishSendingTweet</Declaration>
+			
+			
+			<Anchor>//api/name/shareViewControllerDidFinishSendingTweet</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSETweetShareViewControllerDelegate/shareViewControllerWantsToCancelComposerWithPartiallyComposedTweet:</TokenIdentifier>
+			<Abstract type="html">Called when the user taps on the &quot;Cancel&quot; button on the composer.
+The view controller is not dismissed automatically, you must call dismissViewController.
+This gives you the oportunity to implement another behavior, like presenting a confirmation alert, or offer the option
+to safe a draft.</Abstract>
+			<DeclaredIn>TWTRSETweetShareViewControllerDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)shareViewControllerWantsToCancelComposerWithPartiallyComposedTweet:(TWTRSETweet *)partiallyComposedTweet</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>partiallyComposedTweet</Name>
+					<Abstract type="html">The contents of the Tweet up the moment the user cancelled. This can be used to be saved as a draft.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareViewControllerWantsToCancelComposerWithPartiallyComposedTweet:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSETweetShareViewControllerDelegate/shareViewControllerPresentedWithNoAccounts</TokenIdentifier>
+			<Abstract type="html">Called when the composer UI is presented passing an empty array of accounts.
+An alert is presented to the user informing them of this error.
+The view controller is not dismissed automatically, you must call dismissViewController when this method is called.</Abstract>
+			<DeclaredIn>TWTRSETweetShareViewControllerDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)shareViewControllerPresentedWithNoAccounts</Declaration>
+			
+			
+			<Anchor>//api/name/shareViewControllerPresentedWithNoAccounts</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSETweetShareViewControllerDelegate/shareViewControllerDidSelectAccount:</TokenIdentifier>
+			<Abstract type="html">Called when the user changes the currently selected account.</Abstract>
+			<DeclaredIn>TWTRSETweetShareViewControllerDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)shareViewControllerDidSelectAccount:(id&lt;TWTRSEAccount&gt;)account</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>account</Name>
+					<Abstract type="html">The account that the user selected. This will be one of the objects proviced when
+the controller was instantiated.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shareViewControllerDidSelectAccount:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

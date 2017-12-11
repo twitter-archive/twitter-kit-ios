@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRBaseSession.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRBaseSession</TokenIdentifier>
+			<Abstract type="html">The base session which all sessions must conform to.</Abstract>
+			<DeclaredIn>TWTRAuthSession.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

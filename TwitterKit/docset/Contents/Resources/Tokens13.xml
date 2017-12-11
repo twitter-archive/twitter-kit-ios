@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRTimelineViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRTimelineViewController</TokenIdentifier>
+			<Abstract type="html">This class is a UITableViewController subclass that displays TWTRTweetTableViewCell cells. It handles cell-reuse, cell-configuration, and loading more Tweets from the given timeline once the last cell is displayed.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineViewController/setDataSource:</TokenIdentifier>
+			<Abstract type="html">  The source of TWTRTweet objects for this TWTRTimelineViewController.
+  May be set to update the Tweets being shown by this table view. Must be set on the main thread.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) id&lt;TWTRTimelineDataSource&gt; dataSource</Declaration>
+			
+			
+			<Anchor>//api/name/dataSource</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineViewController/dataSource</TokenIdentifier>
+			<Abstract type="html">  The source of TWTRTweet objects for this TWTRTimelineViewController.
+  May be set to update the Tweets being shown by this table view. Must be set on the main thread.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) id&lt;TWTRTimelineDataSource&gt; dataSource</Declaration>
+			
+			
+			<Anchor>//api/name/dataSource</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTimelineViewController/dataSource</TokenIdentifier>
+			<Abstract type="html">  The source of TWTRTweet objects for this TWTRTimelineViewController.
+  May be set to update the Tweets being shown by this table view. Must be set on the main thread.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) id&lt;TWTRTimelineDataSource&gt; dataSource</Declaration>
+			
+			
+			<Anchor>//api/name/dataSource</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineViewController/setAdConfiguration:</TokenIdentifier>
+			<Abstract type="html">The configuration of MoPub ads to show in the timeline. You must
+link against the MoPub framework and provide this configuration in order
+for ads to be injected.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable) TWTRMoPubAdConfiguration *adConfiguration</Declaration>
+			
+			
+			<Anchor>//api/name/adConfiguration</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineViewController/adConfiguration</TokenIdentifier>
+			<Abstract type="html">The configuration of MoPub ads to show in the timeline. You must
+link against the MoPub framework and provide this configuration in order
+for ads to be injected.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable) TWTRMoPubAdConfiguration *adConfiguration</Declaration>
+			
+			
+			<Anchor>//api/name/adConfiguration</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTimelineViewController/adConfiguration</TokenIdentifier>
+			<Abstract type="html">The configuration of MoPub ads to show in the timeline. You must
+link against the MoPub framework and provide this configuration in order
+for ads to be injected.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable) TWTRMoPubAdConfiguration *adConfiguration</Declaration>
+			
+			
+			<Anchor>//api/name/adConfiguration</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineViewController/setShowTweetActions:</TokenIdentifier>
+			<Abstract type="html">Whether action buttons (Like, Share) should be shown on the TWTRTweetTableViewCells inside the tableview.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL showTweetActions</Declaration>
+			
+			
+			<Anchor>//api/name/showTweetActions</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineViewController/showTweetActions</TokenIdentifier>
+			<Abstract type="html">Whether action buttons (Like, Share) should be shown on the TWTRTweetTableViewCells inside the tableview.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL showTweetActions</Declaration>
+			
+			
+			<Anchor>//api/name/showTweetActions</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTimelineViewController/showTweetActions</TokenIdentifier>
+			<Abstract type="html">Whether action buttons (Like, Share) should be shown on the TWTRTweetTableViewCells inside the tableview.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL showTweetActions</Declaration>
+			
+			
+			<Anchor>//api/name/showTweetActions</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineViewController/setTweetViewDelegate:</TokenIdentifier>
+			<Abstract type="html">If set, this value will be passed to all TWTRTweetView instances in the timeline.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;TWTRTweetViewDelegate&gt; tweetViewDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/tweetViewDelegate</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineViewController/tweetViewDelegate</TokenIdentifier>
+			<Abstract type="html">If set, this value will be passed to all TWTRTweetView instances in the timeline.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;TWTRTweetViewDelegate&gt; tweetViewDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/tweetViewDelegate</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTimelineViewController/tweetViewDelegate</TokenIdentifier>
+			<Abstract type="html">If set, this value will be passed to all TWTRTweetView instances in the timeline.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;TWTRTweetViewDelegate&gt; tweetViewDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/tweetViewDelegate</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineViewController/setTimelineDelegate:</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate for the timeline.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;TWTRTimelineDelegate&gt; timelineDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/timelineDelegate</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineViewController/timelineDelegate</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate for the timeline.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;TWTRTimelineDelegate&gt; timelineDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/timelineDelegate</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTimelineViewController/timelineDelegate</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate for the timeline.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;TWTRTimelineDelegate&gt; timelineDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/timelineDelegate</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineViewController/initWithDataSource:</TokenIdentifier>
+			<Abstract type="html">Initializes a timeline view controller. Does not start loading tweets until
+viewWillAppear: is called.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithDataSource:(nullable id&lt;TWTRTimelineDataSource&gt;)dataSource</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dataSource</Name>
+					<Abstract type="html">A timeline data source object that conforms to the TWTRTimelineDataSource protocol.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A fully initialized TWTRTimelineViewController or nil if the data source is missing.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDataSource:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineViewController/initWithDataSource:adConfiguration:</TokenIdentifier>
+			<Abstract type="html">Initializes a timeline view controller with an optional ad configuration. Does not start loading Tweets until viewWillAppear: is called.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithDataSource:(nullable id&lt;TWTRTimelineDataSource&gt;)dataSource adConfiguration:(nullable TWTRMoPubAdConfiguration *)adConfiguration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dataSource</Name>
+					<Abstract type="html">A timeline data source object that conforms to the TWTRTimelineDataSource protocol.</Abstract>
+				</Parameter><Parameter>
+					<Name>adConfiguration</Name>
+					<Abstract type="html">Configuration for the type of MoPub ads to display. Ads will only load after
+the initial timeline is loaded. No ads will be displayed if nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A fully initialized TWTRTimelineViewController. Tweets will not be loaded if the data source is nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDataSource:adConfiguration:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineViewController/initWithStyle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithStyle:(UITableViewStyle)style</Declaration>
+			
+			
+			<Anchor>//api/name/initWithStyle:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineViewController/refresh</TokenIdentifier>
+			<Abstract type="html">Asynchronously refresh and replace all the data in the table view with the latest TWTRTweets.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)refresh</Declaration>
+			
+			
+			<Anchor>//api/name/refresh</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineViewController/countOfTweets</TokenIdentifier>
+			<Abstract type="html">Returns the number of Tweets that are currently displayed by the controller.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)countOfTweets</Declaration>
+			
+			
+			<Anchor>//api/name/countOfTweets</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineViewController/tweetAtIndex:</TokenIdentifier>
+			<Abstract type="html">Returns the Tweet at the given index.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>- (TWTRTweet *)tweetAtIndex:(NSInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/tweetAtIndex:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineViewController/snapshotTweets</TokenIdentifier>
+			<Abstract type="html">* Returns a copy of the Tweets at the time of calling this method.</Abstract>
+			<DeclaredIn>TWTRTimelineViewController.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)snapshotTweets</Declaration>
+			
+			
+			<Anchor>//api/name/snapshotTweets</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRTweetUrlEntity.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRTweetUrlEntity</TokenIdentifier>
+			<Abstract type="html">A Tweet entity which represents a URL</Abstract>
+			<DeclaredIn>TWTRTweetUrlEntity.h</DeclaredIn>
+            
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetUrlEntity/setDisplayUrl:</TokenIdentifier>
+			<Abstract type="html">The URL to display. This property may be truncated and may
+not be a valid URL.</Abstract>
+			<DeclaredIn>TWTRTweetUrlEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *displayUrl</Declaration>
+			
+			
+			<Anchor>//api/name/displayUrl</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetUrlEntity/displayUrl</TokenIdentifier>
+			<Abstract type="html">The URL to display. This property may be truncated and may
+not be a valid URL.</Abstract>
+			<DeclaredIn>TWTRTweetUrlEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *displayUrl</Declaration>
+			
+			
+			<Anchor>//api/name/displayUrl</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetUrlEntity/displayUrl</TokenIdentifier>
+			<Abstract type="html">The URL to display. This property may be truncated and may
+not be a valid URL.</Abstract>
+			<DeclaredIn>TWTRTweetUrlEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *displayUrl</Declaration>
+			
+			
+			<Anchor>//api/name/displayUrl</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetUrlEntity/setExpandedUrl:</TokenIdentifier>
+			<Abstract type="html">The expanded URL. This property will be a valid URL.</Abstract>
+			<DeclaredIn>TWTRTweetUrlEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *expandedUrl</Declaration>
+			
+			
+			<Anchor>//api/name/expandedUrl</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetUrlEntity/expandedUrl</TokenIdentifier>
+			<Abstract type="html">The expanded URL. This property will be a valid URL.</Abstract>
+			<DeclaredIn>TWTRTweetUrlEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *expandedUrl</Declaration>
+			
+			
+			<Anchor>//api/name/expandedUrl</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetUrlEntity/expandedUrl</TokenIdentifier>
+			<Abstract type="html">The expanded URL. This property will be a valid URL.</Abstract>
+			<DeclaredIn>TWTRTweetUrlEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *expandedUrl</Declaration>
+			
+			
+			<Anchor>//api/name/expandedUrl</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetUrlEntity/setUrl:</TokenIdentifier>
+			<Abstract type="html">The t.co link which will redirect to the original URL.</Abstract>
+			<DeclaredIn>TWTRTweetUrlEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetUrlEntity/url</TokenIdentifier>
+			<Abstract type="html">The t.co link which will redirect to the original URL.</Abstract>
+			<DeclaredIn>TWTRTweetUrlEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetUrlEntity/url</TokenIdentifier>
+			<Abstract type="html">The t.co link which will redirect to the original URL.</Abstract>
+			<DeclaredIn>TWTRTweetUrlEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

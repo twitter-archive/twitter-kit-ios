@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/TWTRNativeAdTheme.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/TWTRNativeAdTheme</TokenIdentifier>
+			<Abstract type="html">A default combination of colors for the native ads.</Abstract>
+			<DeclaredIn>TWTRMoPubNativeAdContainerView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="33"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRNativeAdThemeLight</TokenIdentifier>
+            <Abstract type="html">Official light theme.
+     </Abstract>
+            <Declaration>TWTRNativeAdThemeLight</Declaration>
+            
+            <DeclaredIn>TWTRMoPubNativeAdContainerView.h</DeclaredIn>
+            
+            <NodeRef refid="33"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRNativeAdThemeDark</TokenIdentifier>
+            <Abstract type="html">Official dark theme.
+     </Abstract>
+            <Declaration>TWTRNativeAdThemeDark</Declaration>
+            
+            <DeclaredIn>TWTRMoPubNativeAdContainerView.h</DeclaredIn>
+            
+            <NodeRef refid="33"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

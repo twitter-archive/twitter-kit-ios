@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRSETweetShareConfiguration.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRSETweetShareConfiguration</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/setAccounts:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSArray&lt;id&lt;TWTRSEAccount&gt; &gt; *accounts</Declaration>
+			
+			
+			<Anchor>//api/name/accounts</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/accounts</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSArray&lt;id&lt;TWTRSEAccount&gt; &gt; *accounts</Declaration>
+			
+			
+			<Anchor>//api/name/accounts</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetShareConfiguration/accounts</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSArray&lt;id&lt;TWTRSEAccount&gt; &gt; *accounts</Declaration>
+			
+			
+			<Anchor>//api/name/accounts</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/setInitiallySelectedAccount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) id&lt;TWTRSEAccount&gt; initiallySelectedAccount</Declaration>
+			
+			
+			<Anchor>//api/name/initiallySelectedAccount</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/initiallySelectedAccount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) id&lt;TWTRSEAccount&gt; initiallySelectedAccount</Declaration>
+			
+			
+			<Anchor>//api/name/initiallySelectedAccount</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetShareConfiguration/initiallySelectedAccount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) id&lt;TWTRSEAccount&gt; initiallySelectedAccount</Declaration>
+			
+			
+			<Anchor>//api/name/initiallySelectedAccount</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/setInitialTweet:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy, nullable) TWTRSETweet *initialTweet</Declaration>
+			
+			
+			<Anchor>//api/name/initialTweet</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/initialTweet</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy, nullable) TWTRSETweet *initialTweet</Declaration>
+			
+			
+			<Anchor>//api/name/initialTweet</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetShareConfiguration/initialTweet</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy, nullable) TWTRSETweet *initialTweet</Declaration>
+			
+			
+			<Anchor>//api/name/initialTweet</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/setGeoTagging:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) id&lt;TWTRSEGeoTagging&gt; geoTagging</Declaration>
+			
+			
+			<Anchor>//api/name/geoTagging</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/geoTagging</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) id&lt;TWTRSEGeoTagging&gt; geoTagging</Declaration>
+			
+			
+			<Anchor>//api/name/geoTagging</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetShareConfiguration/geoTagging</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) id&lt;TWTRSEGeoTagging&gt; geoTagging</Declaration>
+			
+			
+			<Anchor>//api/name/geoTagging</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/setAutoCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) id&lt;TWTRSEAutoCompletion&gt; autoCompletion</Declaration>
+			
+			
+			<Anchor>//api/name/autoCompletion</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/autoCompletion</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) id&lt;TWTRSEAutoCompletion&gt; autoCompletion</Declaration>
+			
+			
+			<Anchor>//api/name/autoCompletion</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetShareConfiguration/autoCompletion</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) id&lt;TWTRSEAutoCompletion&gt; autoCompletion</Declaration>
+			
+			
+			<Anchor>//api/name/autoCompletion</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/setCardPreviewProvider:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) id&lt;TWTRSECardPreviewProvider&gt; cardPreviewProvider</Declaration>
+			
+			
+			<Anchor>//api/name/cardPreviewProvider</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/cardPreviewProvider</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) id&lt;TWTRSECardPreviewProvider&gt; cardPreviewProvider</Declaration>
+			
+			
+			<Anchor>//api/name/cardPreviewProvider</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetShareConfiguration/cardPreviewProvider</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) id&lt;TWTRSECardPreviewProvider&gt; cardPreviewProvider</Declaration>
+			
+			
+			<Anchor>//api/name/cardPreviewProvider</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/setImageDownloader:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) id&lt;TWTRSEImageDownloader&gt; imageDownloader</Declaration>
+			
+			
+			<Anchor>//api/name/imageDownloader</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/imageDownloader</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) id&lt;TWTRSEImageDownloader&gt; imageDownloader</Declaration>
+			
+			
+			<Anchor>//api/name/imageDownloader</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetShareConfiguration/imageDownloader</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) id&lt;TWTRSEImageDownloader&gt; imageDownloader</Declaration>
+			
+			
+			<Anchor>//api/name/imageDownloader</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/setNetworking:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) id&lt;TWTRSENetworking&gt; networking</Declaration>
+			
+			
+			<Anchor>//api/name/networking</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/networking</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) id&lt;TWTRSENetworking&gt; networking</Declaration>
+			
+			
+			<Anchor>//api/name/networking</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetShareConfiguration/networking</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) id&lt;TWTRSENetworking&gt; networking</Declaration>
+			
+			
+			<Anchor>//api/name/networking</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/setScribe:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, readonly) id&lt;TWTRSEScribe&gt; scribe</Declaration>
+			
+			
+			<Anchor>//api/name/scribe</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/scribe</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, readonly) id&lt;TWTRSEScribe&gt; scribe</Declaration>
+			
+			
+			<Anchor>//api/name/scribe</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetShareConfiguration/scribe</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, readonly) id&lt;TWTRSEScribe&gt; scribe</Declaration>
+			
+			
+			<Anchor>//api/name/scribe</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/setWordRangeCalculator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) Class&lt;TWTRSEWordRangeCalculator&gt; wordRangeCalculator</Declaration>
+			
+			
+			<Anchor>//api/name/wordRangeCalculator</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/wordRangeCalculator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) Class&lt;TWTRSEWordRangeCalculator&gt; wordRangeCalculator</Declaration>
+			
+			
+			<Anchor>//api/name/wordRangeCalculator</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetShareConfiguration/wordRangeCalculator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) Class&lt;TWTRSEWordRangeCalculator&gt; wordRangeCalculator</Declaration>
+			
+			
+			<Anchor>//api/name/wordRangeCalculator</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, readonly, weak) id&lt;TWTRSETweetShareViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, readonly, weak) id&lt;TWTRSETweetShareViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetShareConfiguration/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, readonly, weak) id&lt;TWTRSETweetShareViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/initWithInitialTweet:accounts:initiallySelectedAccount:geoTagging:autoCompletion:cardPreviewProvider:imageDownloader:localizedResources:networking:twitterText:wordRangeCalculator:scribe:delegate:</TokenIdentifier>
+			<Abstract type="html">(optional): The details of the tweet to prepopulate.</Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithInitialTweet:(nullable TWTRSETweet *)initialTweet accounts:(NSArray&lt;id&lt;TWTRSEAccount&gt; &gt; *)accounts initiallySelectedAccount:(nullable id&lt;TWTRSEAccount&gt;)initiallySelectedAccount geoTagging:(nullable id&lt;TWTRSEGeoTagging&gt;)geoTagging autoCompletion:(nullable id&lt;TWTRSEAutoCompletion&gt;)autoCompletion cardPreviewProvider:(nullable id&lt;TWTRSECardPreviewProvider&gt;)cardPreviewProvider imageDownloader:(id&lt;TWTRSEImageDownloader&gt;)imageDownloader localizedResources:(Class&lt;TWTRSELocalizedResources&gt;)localizedResources networking:(id&lt;TWTRSENetworking&gt;)networking twitterText:(Class&lt;TwitterTextProtocol&gt;)twitterText wordRangeCalculator:(Class&lt;TWTRSEWordRangeCalculator&gt;)wordRangeCalculator scribe:(nullable id&lt;TWTRSEScribe&gt;)scribe delegate:(id&lt;TWTRSETweetShareViewControllerDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>initialTweet</Name>
+					<Abstract type="html">(optional): The details of the tweet to prepopulate.</Abstract>
+				</Parameter><Parameter>
+					<Name>accounts</Name>
+					<Abstract type="html">(required): The list of accounts to choose from which to tweet. If empty, the UI will present an alert with an error and not allow to use the composer.</Abstract>
+				</Parameter><Parameter>
+					<Name>initiallySelectedAccount</Name>
+					<Abstract type="html">(optional): The account to default the selection too. If nil, the first account in accounts is selected initially. If provided, this must be an object in accounts.</Abstract>
+				</Parameter><Parameter>
+					<Name>geoTagging</Name>
+					<Abstract type="html">(optional): An object that can provide places to geo-tag the tweet. If nil, the location option won&apos;t be present.</Abstract>
+				</Parameter><Parameter>
+					<Name>autoCompletion</Name>
+					<Abstract type="html">(optional): An object that can provide user and hashtag autoCompletion. If nil, the autoCompletion UI won&apos;t be shown.</Abstract>
+				</Parameter><Parameter>
+					<Name>cardPreviewProvider</Name>
+					<Abstract type="html">(optional): An object that can provide a card preview image. If nil, the cardPreview UI will rely on the itemProvider to retrieve an image</Abstract>
+				</Parameter><Parameter>
+					<Name>imageDownloader</Name>
+					<Abstract type="html">(required): An object that can download images (used to retrieve user avatars).</Abstract>
+				</Parameter><Parameter>
+					<Name>networking</Name>
+					<Abstract type="html">(required): An object that is able to make network requests on behalf of a Twitter user.</Abstract>
+				</Parameter><Parameter>
+					<Name>twitterText</Name>
+					<Abstract type="html">(required): the instantiator&apos;s version of TwitterText</Abstract>
+				</Parameter><Parameter>
+					<Name>wordRangeCalculator</Name>
+					<Abstract type="html">(required): the instantiator&apos;s version of code to calculate text ranges on strings</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">(required): An object that can respond to lifecycle events of this controller to be able to dismiss it when the user takes action on it.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithInitialTweet:accounts:initiallySelectedAccount:geoTagging:autoCompletion:cardPreviewProvider:imageDownloader:localizedResources:networking:twitterText:wordRangeCalculator:scribe:delegate:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareConfiguration/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareConfiguration.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

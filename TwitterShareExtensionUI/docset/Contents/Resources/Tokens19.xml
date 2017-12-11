@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRSETweetAttachmentCustomCardViewProvider.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRSETweetAttachmentCustomCardViewProvider</TokenIdentifier>
+			<Abstract type="html">An attachment that is able to render a custom view below a tweet.</Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+            
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSETweetAttachmentCustomCardViewProvider/setEmbeddedCardView:</TokenIdentifier>
+			<Abstract type="html">The view&apos;s -intrinsicContentSize property will be consulted to size this view, with some constraints
+for max width and height.</Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) UIView *embeddedCardView</Declaration>
+			
+			
+			<Anchor>//api/name/embeddedCardView</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSETweetAttachmentCustomCardViewProvider/embeddedCardView</TokenIdentifier>
+			<Abstract type="html">The view&apos;s -intrinsicContentSize property will be consulted to size this view, with some constraints
+for max width and height.</Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) UIView *embeddedCardView</Declaration>
+			
+			
+			<Anchor>//api/name/embeddedCardView</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/TWTRSETweetAttachmentCustomCardViewProvider/embeddedCardView</TokenIdentifier>
+			<Abstract type="html">The view&apos;s -intrinsicContentSize property will be consulted to size this view, with some constraints
+for max width and height.</Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) UIView *embeddedCardView</Declaration>
+			
+			
+			<Anchor>//api/name/embeddedCardView</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

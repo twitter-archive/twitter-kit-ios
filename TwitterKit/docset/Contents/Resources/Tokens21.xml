@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRTweetView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRTweetView</TokenIdentifier>
+			<Abstract type="html">TWTRTweetView displays a single Tweet to the user. It handles background taps and other actions displayed to the user.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/setTweet:</TokenIdentifier>
+			<Abstract type="html">The Tweet being displayed.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRTweet *tweet</Declaration>
+			
+			
+			<Anchor>//api/name/tweet</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/tweet</TokenIdentifier>
+			<Abstract type="html">The Tweet being displayed.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRTweet *tweet</Declaration>
+			
+			
+			<Anchor>//api/name/tweet</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetView/tweet</TokenIdentifier>
+			<Abstract type="html">The Tweet being displayed.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRTweet *tweet</Declaration>
+			
+			
+			<Anchor>//api/name/tweet</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/setBackgroundColor:</TokenIdentifier>
+			<Abstract type="html">Background color of the Tweet view and all text labels (fullname, username, Tweet text, timestamp).</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) UIColor *backgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundColor</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/backgroundColor</TokenIdentifier>
+			<Abstract type="html">Background color of the Tweet view and all text labels (fullname, username, Tweet text, timestamp).</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) UIColor *backgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundColor</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetView/backgroundColor</TokenIdentifier>
+			<Abstract type="html">Background color of the Tweet view and all text labels (fullname, username, Tweet text, timestamp).</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) UIColor *backgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundColor</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/setPrimaryTextColor:</TokenIdentifier>
+			<Abstract type="html">Color of Tweet text and full name.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) UIColor *primaryTextColor</Declaration>
+			
+			
+			<Anchor>//api/name/primaryTextColor</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/primaryTextColor</TokenIdentifier>
+			<Abstract type="html">Color of Tweet text and full name.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) UIColor *primaryTextColor</Declaration>
+			
+			
+			<Anchor>//api/name/primaryTextColor</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetView/primaryTextColor</TokenIdentifier>
+			<Abstract type="html">Color of Tweet text and full name.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) UIColor *primaryTextColor</Declaration>
+			
+			
+			<Anchor>//api/name/primaryTextColor</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/setLinkTextColor:</TokenIdentifier>
+			<Abstract type="html">Color of links in Tweet text.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) UIColor *linkTextColor</Declaration>
+			
+			
+			<Anchor>//api/name/linkTextColor</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/linkTextColor</TokenIdentifier>
+			<Abstract type="html">Color of links in Tweet text.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) UIColor *linkTextColor</Declaration>
+			
+			
+			<Anchor>//api/name/linkTextColor</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetView/linkTextColor</TokenIdentifier>
+			<Abstract type="html">Color of links in Tweet text.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) UIColor *linkTextColor</Declaration>
+			
+			
+			<Anchor>//api/name/linkTextColor</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/setShowBorder:</TokenIdentifier>
+			<Abstract type="html">Set whether the border should be shown.
+Defaults to YES.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL showBorder</Declaration>
+			
+			
+			<Anchor>//api/name/showBorder</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/showBorder</TokenIdentifier>
+			<Abstract type="html">Set whether the border should be shown.
+Defaults to YES.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL showBorder</Declaration>
+			
+			
+			<Anchor>//api/name/showBorder</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetView/showBorder</TokenIdentifier>
+			<Abstract type="html">Set whether the border should be shown.
+Defaults to YES.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL showBorder</Declaration>
+			
+			
+			<Anchor>//api/name/showBorder</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/setShouldPlayVideoMuted:</TokenIdentifier>
+			<Abstract type="html">Set whether or not videos playing inline should be muted.
+Defaults to NO.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldPlayVideoMuted</Declaration>
+			
+			
+			<Anchor>//api/name/shouldPlayVideoMuted</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/shouldPlayVideoMuted</TokenIdentifier>
+			<Abstract type="html">Set whether or not videos playing inline should be muted.
+Defaults to NO.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldPlayVideoMuted</Declaration>
+			
+			
+			<Anchor>//api/name/shouldPlayVideoMuted</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetView/shouldPlayVideoMuted</TokenIdentifier>
+			<Abstract type="html">Set whether or not videos playing inline should be muted.
+Defaults to NO.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldPlayVideoMuted</Declaration>
+			
+			
+			<Anchor>//api/name/shouldPlayVideoMuted</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/setShowActionButtons:</TokenIdentifier>
+			<Abstract type="html">Set whether the action buttons (Favorite, Share) should be shown. When toggled,
+both the visibility of the action buttons and the internal constraints are
+updated immediately. The layout will be updated the next layout pass that occurs.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL showActionButtons</Declaration>
+			
+			
+			<Anchor>//api/name/showActionButtons</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/showActionButtons</TokenIdentifier>
+			<Abstract type="html">Set whether the action buttons (Favorite, Share) should be shown. When toggled,
+both the visibility of the action buttons and the internal constraints are
+updated immediately. The layout will be updated the next layout pass that occurs.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL showActionButtons</Declaration>
+			
+			
+			<Anchor>//api/name/showActionButtons</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetView/showActionButtons</TokenIdentifier>
+			<Abstract type="html">Set whether the action buttons (Favorite, Share) should be shown. When toggled,
+both the visibility of the action buttons and the internal constraints are
+updated immediately. The layout will be updated the next layout pass that occurs.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL showActionButtons</Declaration>
+			
+			
+			<Anchor>//api/name/showActionButtons</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/setTheme:</TokenIdentifier>
+			<Abstract type="html">Setting the theme of the Tweet view will change the color properties accordingly.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) TWTRTweetViewTheme theme</Declaration>
+			
+			
+			<Anchor>//api/name/theme</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/theme</TokenIdentifier>
+			<Abstract type="html">Setting the theme of the Tweet view will change the color properties accordingly.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) TWTRTweetViewTheme theme</Declaration>
+			
+			
+			<Anchor>//api/name/theme</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetView/theme</TokenIdentifier>
+			<Abstract type="html">Setting the theme of the Tweet view will change the color properties accordingly.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) TWTRTweetViewTheme theme</Declaration>
+			
+			
+			<Anchor>//api/name/theme</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/setStyle:</TokenIdentifier>
+			<Abstract type="html">The style of the Tweet. i.e. TWTRTweetViewStyleRegular or TWTRTweetViewStyleCompact.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRTweetViewStyle style</Declaration>
+			
+			
+			<Anchor>//api/name/style</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/style</TokenIdentifier>
+			<Abstract type="html">The style of the Tweet. i.e. TWTRTweetViewStyleRegular or TWTRTweetViewStyleCompact.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRTweetViewStyle style</Declaration>
+			
+			
+			<Anchor>//api/name/style</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetView/style</TokenIdentifier>
+			<Abstract type="html">The style of the Tweet. i.e. TWTRTweetViewStyleRegular or TWTRTweetViewStyleCompact.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRTweetViewStyle style</Declaration>
+			
+			
+			<Anchor>//api/name/style</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/setDelegate:</TokenIdentifier>
+			<Abstract type="html">Optional delegate to receive notifications when certain actions happen</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) IBOutlet id&lt;TWTRTweetViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/delegate</TokenIdentifier>
+			<Abstract type="html">Optional delegate to receive notifications when certain actions happen</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) IBOutlet id&lt;TWTRTweetViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetView/delegate</TokenIdentifier>
+			<Abstract type="html">Optional delegate to receive notifications when certain actions happen</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) IBOutlet id&lt;TWTRTweetViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/setPresenterViewController:</TokenIdentifier>
+			<Abstract type="html">Optional property to set a UIViewController from which to present various new UI
+e.g. when presenting a Share sheet, presenting a login view controller for actions, etc</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) UIViewController *presenterViewController</Declaration>
+			
+			
+			<Anchor>//api/name/presenterViewController</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/presenterViewController</TokenIdentifier>
+			<Abstract type="html">Optional property to set a UIViewController from which to present various new UI
+e.g. when presenting a Share sheet, presenting a login view controller for actions, etc</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) UIViewController *presenterViewController</Declaration>
+			
+			
+			<Anchor>//api/name/presenterViewController</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetView/presenterViewController</TokenIdentifier>
+			<Abstract type="html">Optional property to set a UIViewController from which to present various new UI
+e.g. when presenting a Share sheet, presenting a login view controller for actions, etc</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) UIViewController *presenterViewController</Declaration>
+			
+			
+			<Anchor>//api/name/presenterViewController</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/initWithTweet:</TokenIdentifier>
+			<Abstract type="html">Convenience initializer to configure a compact style Tweet view.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithTweet:(nullable TWTRTweet *)tweet</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tweet</Name>
+					<Abstract type="html">The Tweet to display.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The fully-configured Tweet view.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTweet:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/initWithTweet:style:</TokenIdentifier>
+			<Abstract type="html">Designated initializer. Initializes view with both Tweet and style.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithTweet:(nullable TWTRTweet *)tweet style:(TWTRTweetViewStyle)style</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tweet</Name>
+					<Abstract type="html">The Tweet to display.</Abstract>
+				</Parameter><Parameter>
+					<Name>style</Name>
+					<Abstract type="html">The style of the Tweet view (regular or compact).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The fully configured Tweet view.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTweet:style:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/initWithFrame:</TokenIdentifier>
+			<Abstract type="html">Initialization with a frame parameter is not supported.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithFrame:(CGRect)frame</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrame:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/sizeThatFits:</TokenIdentifier>
+			<Abstract type="html">  Find the size that fits into a desired space. This is a system method on UIView but implemented on TWTRTweetView</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>- (CGSize)sizeThatFits:(CGSize)size</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>size</Name>
+					<Abstract type="html">The space available. Should generally leave one orientation unconstrained, and the minimum width supported is 200pts.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The size that will fit into the space available.</Abstract></ReturnValue>
+			<Anchor>//api/name/sizeThatFits:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/configureWithTweet:</TokenIdentifier>
+			<Abstract type="html">Update all images and label text to fully represent the given Tweet.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>- (void)configureWithTweet:(nullable TWTRTweet *)tweet</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tweet</Name>
+					<Abstract type="html">The Tweet to display.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/configureWithTweet:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/playVideo</TokenIdentifier>
+			<Abstract type="html">If the tweet contains playable media, calling this function will play the media. The media will also play if
+the user taps on the play button for the media.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>- (void)playVideo</Declaration>
+			
+			
+			<Anchor>//api/name/playVideo</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetView/pauseVideo</TokenIdentifier>
+			<Abstract type="html">If the tweet contains media that is currently playing, this function will pause the current video.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+			
+			<Declaration>- (void)pauseVideo</Declaration>
+			
+			
+			<Anchor>//api/name/pauseVideo</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

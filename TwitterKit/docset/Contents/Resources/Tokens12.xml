@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRTimelineFilter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRTimelineFilter</TokenIdentifier>
+			<Abstract type="html">Assigning this object to any data source that implements TWTRTimelineDataSource
+will filter the tweets on that timeline using the provided filter configuration.</Abstract>
+			<DeclaredIn>TWTRTimelineFilter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineFilter/setKeywords:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineFilter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSSet *keywords</Declaration>
+			
+			
+			<Anchor>//api/name/keywords</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineFilter/keywords</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineFilter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSSet *keywords</Declaration>
+			
+			
+			<Anchor>//api/name/keywords</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTimelineFilter/keywords</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineFilter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSSet *keywords</Declaration>
+			
+			
+			<Anchor>//api/name/keywords</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineFilter/setHashtags:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineFilter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSSet *hashtags</Declaration>
+			
+			
+			<Anchor>//api/name/hashtags</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineFilter/hashtags</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineFilter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSSet *hashtags</Declaration>
+			
+			
+			<Anchor>//api/name/hashtags</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTimelineFilter/hashtags</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineFilter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSSet *hashtags</Declaration>
+			
+			
+			<Anchor>//api/name/hashtags</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineFilter/setHandles:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineFilter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSSet *handles</Declaration>
+			
+			
+			<Anchor>//api/name/handles</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineFilter/handles</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineFilter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSSet *handles</Declaration>
+			
+			
+			<Anchor>//api/name/handles</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTimelineFilter/handles</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineFilter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSSet *handles</Declaration>
+			
+			
+			<Anchor>//api/name/handles</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineFilter/setUrls:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineFilter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSSet *urls</Declaration>
+			
+			
+			<Anchor>//api/name/urls</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineFilter/urls</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineFilter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSSet *urls</Declaration>
+			
+			
+			<Anchor>//api/name/urls</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTimelineFilter/urls</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineFilter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSSet *urls</Declaration>
+			
+			
+			<Anchor>//api/name/urls</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineFilter/initWithJSONDictionary:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineFilter.h</DeclaredIn>
+			
+			<Declaration>- (nullable instancetype)initWithJSONDictionary:(nonnull NSDictionary *)dictionary</Declaration>
+			
+			
+			<Anchor>//api/name/initWithJSONDictionary:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineFilter/new</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineFilter.h</DeclaredIn>
+			
+			<Declaration>- (nonnull instancetype)new</Declaration>
+			
+			
+			<Anchor>//api/name/new</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineFilter/filterCount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineFilter.h</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)filterCount</Declaration>
+			
+			
+			<Anchor>//api/name/filterCount</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRTweet.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRTweet</TokenIdentifier>
+			<Abstract type="html">TWTRTweet is an immutable representation of a Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+            
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setTweetID:</TokenIdentifier>
+			<Abstract type="html">The ID of the Twitter Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *tweetID</Declaration>
+			
+			
+			<Anchor>//api/name/tweetID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/tweetID</TokenIdentifier>
+			<Abstract type="html">The ID of the Twitter Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *tweetID</Declaration>
+			
+			
+			<Anchor>//api/name/tweetID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/tweetID</TokenIdentifier>
+			<Abstract type="html">The ID of the Twitter Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *tweetID</Declaration>
+			
+			
+			<Anchor>//api/name/tweetID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setCreatedAt:</TokenIdentifier>
+			<Abstract type="html">The date when this Tweet was created.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/createdAt</TokenIdentifier>
+			<Abstract type="html">The date when this Tweet was created.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/createdAt</TokenIdentifier>
+			<Abstract type="html">The date when this Tweet was created.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSDate *createdAt</Declaration>
+			
+			
+			<Anchor>//api/name/createdAt</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setText:</TokenIdentifier>
+			<Abstract type="html">The text of the Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/text</TokenIdentifier>
+			<Abstract type="html">The text of the Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/text</TokenIdentifier>
+			<Abstract type="html">The text of the Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setAuthor:</TokenIdentifier>
+			<Abstract type="html">The Author of the Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRUser *author</Declaration>
+			
+			
+			<Anchor>//api/name/author</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/author</TokenIdentifier>
+			<Abstract type="html">The Author of the Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRUser *author</Declaration>
+			
+			
+			<Anchor>//api/name/author</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/author</TokenIdentifier>
+			<Abstract type="html">The Author of the Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRUser *author</Declaration>
+			
+			
+			<Anchor>//api/name/author</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setPerspectivalUserID:</TokenIdentifier>
+			<Abstract type="html">ID of the authenticated Twitter user this Tweet was loaded for. Some Tweet properties e.g. isLiked
+can vary depending on the authenticated user. Nil means the Tweet was loaded from the perspective
+of a logged-out user or the authenticated user could not be determined.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) NSString *perspectivalUserID</Declaration>
+			
+			
+			<Anchor>//api/name/perspectivalUserID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/perspectivalUserID</TokenIdentifier>
+			<Abstract type="html">ID of the authenticated Twitter user this Tweet was loaded for. Some Tweet properties e.g. isLiked
+can vary depending on the authenticated user. Nil means the Tweet was loaded from the perspective
+of a logged-out user or the authenticated user could not be determined.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) NSString *perspectivalUserID</Declaration>
+			
+			
+			<Anchor>//api/name/perspectivalUserID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/perspectivalUserID</TokenIdentifier>
+			<Abstract type="html">ID of the authenticated Twitter user this Tweet was loaded for. Some Tweet properties e.g. isLiked
+can vary depending on the authenticated user. Nil means the Tweet was loaded from the perspective
+of a logged-out user or the authenticated user could not be determined.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) NSString *perspectivalUserID</Declaration>
+			
+			
+			<Anchor>//api/name/perspectivalUserID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setLikeCount:</TokenIdentifier>
+			<Abstract type="html">The number of times this Tweet was liked.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) long long likeCount</Declaration>
+			
+			
+			<Anchor>//api/name/likeCount</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/likeCount</TokenIdentifier>
+			<Abstract type="html">The number of times this Tweet was liked.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) long long likeCount</Declaration>
+			
+			
+			<Anchor>//api/name/likeCount</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/likeCount</TokenIdentifier>
+			<Abstract type="html">The number of times this Tweet was liked.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) long long likeCount</Declaration>
+			
+			
+			<Anchor>//api/name/likeCount</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setRetweetCount:</TokenIdentifier>
+			<Abstract type="html">The number of times this Tweet was retweeted.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) long long retweetCount</Declaration>
+			
+			
+			<Anchor>//api/name/retweetCount</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/retweetCount</TokenIdentifier>
+			<Abstract type="html">The number of times this Tweet was retweeted.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) long long retweetCount</Declaration>
+			
+			
+			<Anchor>//api/name/retweetCount</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/retweetCount</TokenIdentifier>
+			<Abstract type="html">The number of times this Tweet was retweeted.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) long long retweetCount</Declaration>
+			
+			
+			<Anchor>//api/name/retweetCount</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setLanguageCode:</TokenIdentifier>
+			<Abstract type="html">The language of the Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *languageCode</Declaration>
+			
+			
+			<Anchor>//api/name/languageCode</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/languageCode</TokenIdentifier>
+			<Abstract type="html">The language of the Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *languageCode</Declaration>
+			
+			
+			<Anchor>//api/name/languageCode</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/languageCode</TokenIdentifier>
+			<Abstract type="html">The language of the Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *languageCode</Declaration>
+			
+			
+			<Anchor>//api/name/languageCode</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setInReplyToTweetID:</TokenIdentifier>
+			<Abstract type="html">The Tweet this Tweet was a reply to.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *inReplyToTweetID</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToTweetID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/inReplyToTweetID</TokenIdentifier>
+			<Abstract type="html">The Tweet this Tweet was a reply to.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *inReplyToTweetID</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToTweetID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/inReplyToTweetID</TokenIdentifier>
+			<Abstract type="html">The Tweet this Tweet was a reply to.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *inReplyToTweetID</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToTweetID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setInReplyToUserID:</TokenIdentifier>
+			<Abstract type="html">The User ID this Tweet was a reply to.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *inReplyToUserID</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToUserID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/inReplyToUserID</TokenIdentifier>
+			<Abstract type="html">The User ID this Tweet was a reply to.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *inReplyToUserID</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToUserID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/inReplyToUserID</TokenIdentifier>
+			<Abstract type="html">The User ID this Tweet was a reply to.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *inReplyToUserID</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToUserID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setInReplyToScreenName:</TokenIdentifier>
+			<Abstract type="html">The screen name of the user this Tweet was a reply to.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *inReplyToScreenName</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToScreenName</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/inReplyToScreenName</TokenIdentifier>
+			<Abstract type="html">The screen name of the user this Tweet was a reply to.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *inReplyToScreenName</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToScreenName</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/inReplyToScreenName</TokenIdentifier>
+			<Abstract type="html">The screen name of the user this Tweet was a reply to.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *inReplyToScreenName</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToScreenName</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setPermalink:</TokenIdentifier>
+			<Abstract type="html">The permalink URL for this Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSURL *permalink</Declaration>
+			
+			
+			<Anchor>//api/name/permalink</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/permalink</TokenIdentifier>
+			<Abstract type="html">The permalink URL for this Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSURL *permalink</Declaration>
+			
+			
+			<Anchor>//api/name/permalink</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/permalink</TokenIdentifier>
+			<Abstract type="html">The permalink URL for this Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSURL *permalink</Declaration>
+			
+			
+			<Anchor>//api/name/permalink</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setIsLiked:</TokenIdentifier>
+			<Abstract type="html">Whether this Tweet was liked by the authenticated user.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isLiked</Declaration>
+			
+			
+			<Anchor>//api/name/isLiked</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/isLiked</TokenIdentifier>
+			<Abstract type="html">Whether this Tweet was liked by the authenticated user.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isLiked</Declaration>
+			
+			
+			<Anchor>//api/name/isLiked</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/isLiked</TokenIdentifier>
+			<Abstract type="html">Whether this Tweet was liked by the authenticated user.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isLiked</Declaration>
+			
+			
+			<Anchor>//api/name/isLiked</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setIsRetweeted:</TokenIdentifier>
+			<Abstract type="html">Whether this Tweet was retweeted by the authenticated user.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isRetweeted</Declaration>
+			
+			
+			<Anchor>//api/name/isRetweeted</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/isRetweeted</TokenIdentifier>
+			<Abstract type="html">Whether this Tweet was retweeted by the authenticated user.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isRetweeted</Declaration>
+			
+			
+			<Anchor>//api/name/isRetweeted</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/isRetweeted</TokenIdentifier>
+			<Abstract type="html">Whether this Tweet was retweeted by the authenticated user.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isRetweeted</Declaration>
+			
+			
+			<Anchor>//api/name/isRetweeted</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setRetweetID:</TokenIdentifier>
+			<Abstract type="html">The Tweet ID of the authenticated user&apos;s retweet of this Tweet. This will be nil if there is no
+authenticated user or the user has not retweeted this Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *retweetID</Declaration>
+			
+			
+			<Anchor>//api/name/retweetID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/retweetID</TokenIdentifier>
+			<Abstract type="html">The Tweet ID of the authenticated user&apos;s retweet of this Tweet. This will be nil if there is no
+authenticated user or the user has not retweeted this Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *retweetID</Declaration>
+			
+			
+			<Anchor>//api/name/retweetID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/retweetID</TokenIdentifier>
+			<Abstract type="html">The Tweet ID of the authenticated user&apos;s retweet of this Tweet. This will be nil if there is no
+authenticated user or the user has not retweeted this Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *retweetID</Declaration>
+			
+			
+			<Anchor>//api/name/retweetID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setRetweetedTweet:</TokenIdentifier>
+			<Abstract type="html">The original, fully-hydrated Tweet that was retweeted. This corresponds to the retweeted_status API field.
+This is nil unless self.isRetweet == YES.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) TWTRTweet *retweetedTweet</Declaration>
+			
+			
+			<Anchor>//api/name/retweetedTweet</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/retweetedTweet</TokenIdentifier>
+			<Abstract type="html">The original, fully-hydrated Tweet that was retweeted. This corresponds to the retweeted_status API field.
+This is nil unless self.isRetweet == YES.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) TWTRTweet *retweetedTweet</Declaration>
+			
+			
+			<Anchor>//api/name/retweetedTweet</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/retweetedTweet</TokenIdentifier>
+			<Abstract type="html">The original, fully-hydrated Tweet that was retweeted. This corresponds to the retweeted_status API field.
+This is nil unless self.isRetweet == YES.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) TWTRTweet *retweetedTweet</Declaration>
+			
+			
+			<Anchor>//api/name/retweetedTweet</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setIsRetweet:</TokenIdentifier>
+			<Abstract type="html">Indicates whether this Tweet is a retweet of another Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isRetweet</Declaration>
+			
+			
+			<Anchor>//api/name/isRetweet</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/isRetweet</TokenIdentifier>
+			<Abstract type="html">Indicates whether this Tweet is a retweet of another Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isRetweet</Declaration>
+			
+			
+			<Anchor>//api/name/isRetweet</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/isRetweet</TokenIdentifier>
+			<Abstract type="html">Indicates whether this Tweet is a retweet of another Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isRetweet</Declaration>
+			
+			
+			<Anchor>//api/name/isRetweet</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setIsQuoteTweet:</TokenIdentifier>
+			<Abstract type="html">Indicates whether this Tweet is a Quote Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isQuoteTweet</Declaration>
+			
+			
+			<Anchor>//api/name/isQuoteTweet</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/isQuoteTweet</TokenIdentifier>
+			<Abstract type="html">Indicates whether this Tweet is a Quote Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isQuoteTweet</Declaration>
+			
+			
+			<Anchor>//api/name/isQuoteTweet</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/isQuoteTweet</TokenIdentifier>
+			<Abstract type="html">Indicates whether this Tweet is a Quote Tweet.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isQuoteTweet</Declaration>
+			
+			
+			<Anchor>//api/name/isQuoteTweet</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/setQuotedTweet:</TokenIdentifier>
+			<Abstract type="html">The original, fully-hydrated Tweet that was quoted.
+This is nil unless self.isRetweet == YES.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) TWTRTweet *quotedTweet</Declaration>
+			
+			
+			<Anchor>//api/name/quotedTweet</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/quotedTweet</TokenIdentifier>
+			<Abstract type="html">The original, fully-hydrated Tweet that was quoted.
+This is nil unless self.isRetweet == YES.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) TWTRTweet *quotedTweet</Declaration>
+			
+			
+			<Anchor>//api/name/quotedTweet</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweet/quotedTweet</TokenIdentifier>
+			<Abstract type="html">The original, fully-hydrated Tweet that was quoted.
+This is nil unless self.isRetweet == YES.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) TWTRTweet *quotedTweet</Declaration>
+			
+			
+			<Anchor>//api/name/quotedTweet</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TWTRTweet/tweetsWithJSONArray:</TokenIdentifier>
+			<Abstract type="html">Creates an array of TWTRTweet instances from the array of Twitter API JSON response.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray *)tweetsWithJSONArray:(nullable NSArray *)array</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>array</Name>
+					<Abstract type="html">A parsed array of Tweet API JSON responses.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array of TWTRTweet instances.</Abstract></ReturnValue>
+			<Anchor>//api/name/tweetsWithJSONArray:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/tweetWithLikeToggled</TokenIdentifier>
+			<Abstract type="html">Creates a new Tweet instance with a new value for the isLiked boolean
+value which is the opposite of the current value.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>- (TWTRTweet *)tweetWithLikeToggled</Declaration>
+			
+			
+			<Anchor>//api/name/tweetWithLikeToggled</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweet/init</TokenIdentifier>
+			<Abstract type="html">Tweet objects should be hyrdrated from a valid JSON object. See TWTRJSONConvertible for more information.</Abstract>
+			<DeclaredIn>TWTRTweet.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

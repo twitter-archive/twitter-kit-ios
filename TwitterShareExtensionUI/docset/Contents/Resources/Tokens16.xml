@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRSENetworking.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRSENetworking</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSENetworking.h</DeclaredIn>
+            
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSENetworking/sendTweet:fromAccount:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSENetworking.h</DeclaredIn>
+			
+			<Declaration>- (void)sendTweet:(TWTRSETweet *)tweet fromAccount:(id&lt;TWTRSEAccount&gt;)account completion:(TWTRSENetworkingTweetSendCompletion)completion</Declaration>
+			
+			
+			<Anchor>//api/name/sendTweet:fromAccount:completion:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSENetworking/loadHydratedTwitterUserForAccount:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSENetworking.h</DeclaredIn>
+			
+			<Declaration>- (void)loadHydratedTwitterUserForAccount:(id&lt;TWTRSEAccount&gt;)account completion:(TWTRSENetworkingHydratedTwitterUserLoadCompletion)completion</Declaration>
+			
+			
+			<Anchor>//api/name/loadHydratedTwitterUserForAccount:completion:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

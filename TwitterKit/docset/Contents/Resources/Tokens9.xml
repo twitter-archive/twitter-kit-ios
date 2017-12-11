@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTROAuthSigning.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTROAuthSigning</TokenIdentifier>
+			<Abstract type="html">This class provides tools to generate OAuth signatures.</Abstract>
+			<DeclaredIn>TWTROAuthSigning.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTROAuthSigning/initWithAuthConfig:authSession:</TokenIdentifier>
+			<Abstract type="html">Instantiate a TWTROAuthSigning object with the parameters it needs to generate the OAuth signatures.</Abstract>
+			<DeclaredIn>TWTROAuthSigning.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig authSession:(TWTRSession *)authSession</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>authConfig</Name>
+					<Abstract type="html">(required) Encapsulates credentials required to authenticate a Twitter application.</Abstract>
+				</Parameter><Parameter>
+					<Name>authSession</Name>
+					<Abstract type="html">(required) Encapsulated credentials associated with a user session.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized TWTROAuthSigning object or nil if any of the parameters are missing.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAuthConfig:authSession:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTROAuthSigning/init</TokenIdentifier>
+			<Abstract type="html">Unavailable. Use initWithAuthConfig:authSession: instead.</Abstract>
+			<DeclaredIn>TWTROAuthSigning.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

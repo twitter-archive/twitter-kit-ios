@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRTimelineCursor.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRTimelineCursor</TokenIdentifier>
+			<Abstract type="html">This Model object is a generic type of Cursor to represent the range of Tweets
+which have already been loaded from the Twitter API. A dataset that supports
+&quot;cursoring&quot; splits of a set of results (or Tweets in our case) in pages. One
+page is loaded at a time, and the cursor from the previous request is used to
+calculated which set of Tweets should be requested.</Abstract>
+			<DeclaredIn>TWTRTimelineCursor.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineCursor/setMaxPosition:</TokenIdentifier>
+			<Abstract type="html">The ID of the Tweet highest up in a batch of Tweets received from a Timeline.
+Often this corresponds to the newest Tweet in terms of time.</Abstract>
+			<DeclaredIn>TWTRTimelineCursor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *maxPosition</Declaration>
+			
+			
+			<Anchor>//api/name/maxPosition</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineCursor/maxPosition</TokenIdentifier>
+			<Abstract type="html">The ID of the Tweet highest up in a batch of Tweets received from a Timeline.
+Often this corresponds to the newest Tweet in terms of time.</Abstract>
+			<DeclaredIn>TWTRTimelineCursor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *maxPosition</Declaration>
+			
+			
+			<Anchor>//api/name/maxPosition</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTimelineCursor/maxPosition</TokenIdentifier>
+			<Abstract type="html">The ID of the Tweet highest up in a batch of Tweets received from a Timeline.
+Often this corresponds to the newest Tweet in terms of time.</Abstract>
+			<DeclaredIn>TWTRTimelineCursor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *maxPosition</Declaration>
+			
+			
+			<Anchor>//api/name/maxPosition</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineCursor/setMinPosition:</TokenIdentifier>
+			<Abstract type="html">The ID of the Tweet lowest in a batch of Tweets received from a Timeline. This
+often corresponds to the oldest Tweet in terms of time.</Abstract>
+			<DeclaredIn>TWTRTimelineCursor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *minPosition</Declaration>
+			
+			
+			<Anchor>//api/name/minPosition</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineCursor/minPosition</TokenIdentifier>
+			<Abstract type="html">The ID of the Tweet lowest in a batch of Tweets received from a Timeline. This
+often corresponds to the oldest Tweet in terms of time.</Abstract>
+			<DeclaredIn>TWTRTimelineCursor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *minPosition</Declaration>
+			
+			
+			<Anchor>//api/name/minPosition</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTimelineCursor/minPosition</TokenIdentifier>
+			<Abstract type="html">The ID of the Tweet lowest in a batch of Tweets received from a Timeline. This
+often corresponds to the oldest Tweet in terms of time.</Abstract>
+			<DeclaredIn>TWTRTimelineCursor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *minPosition</Declaration>
+			
+			
+			<Anchor>//api/name/minPosition</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineCursor/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineCursor.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTimelineCursor/initWithMaxPosition:minPosition:</TokenIdentifier>
+			<Abstract type="html">Initialize a new cursor.</Abstract>
+			<DeclaredIn>TWTRTimelineCursor.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithMaxPosition:(NSString *)maxPosition minPosition:(NSString *)minPosition</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>maxPosition</Name>
+					<Abstract type="html">The highest (newest) Tweet ID received in this batch of Tweets.</Abstract>
+				</Parameter><Parameter>
+					<Name>minPosition</Name>
+					<Abstract type="html">The lowest (oldest) Tweet ID received in this batch of Tweets.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The initialized cursor to be passed back from a request for a Timeline from
+the Twitter API.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithMaxPosition:minPosition:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

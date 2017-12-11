@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRSETweetURLAttachmentMetadata.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRSETweetURLAttachmentMetadata</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetURLAttachmentMetadata.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetURLAttachmentMetadata/setURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetURLAttachmentMetadata.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetURLAttachmentMetadata/URL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetURLAttachmentMetadata.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetURLAttachmentMetadata/URL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetURLAttachmentMetadata.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetURLAttachmentMetadata/setURLTitle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetURLAttachmentMetadata.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *URLTitle</Declaration>
+			
+			
+			<Anchor>//api/name/URLTitle</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetURLAttachmentMetadata/URLTitle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetURLAttachmentMetadata.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *URLTitle</Declaration>
+			
+			
+			<Anchor>//api/name/URLTitle</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetURLAttachmentMetadata/URLTitle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetURLAttachmentMetadata.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *URLTitle</Declaration>
+			
+			
+			<Anchor>//api/name/URLTitle</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetURLAttachmentMetadata/setLinkPreview:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetURLAttachmentMetadata.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) UIImage *linkPreview</Declaration>
+			
+			
+			<Anchor>//api/name/linkPreview</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetURLAttachmentMetadata/linkPreview</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetURLAttachmentMetadata.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) UIImage *linkPreview</Declaration>
+			
+			
+			<Anchor>//api/name/linkPreview</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetURLAttachmentMetadata/linkPreview</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetURLAttachmentMetadata.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) UIImage *linkPreview</Declaration>
+			
+			
+			<Anchor>//api/name/linkPreview</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetURLAttachmentMetadata/initWithURL:title:linkPreview:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetURLAttachmentMetadata.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithURL:(NSURL *)URL title:(NSString *)URLTitle linkPreview:(nullable UIImage *)linkPreview</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:title:linkPreview:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetURLAttachmentMetadata/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetURLAttachmentMetadata.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

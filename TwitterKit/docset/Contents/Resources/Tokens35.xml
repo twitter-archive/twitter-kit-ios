@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/TWTRTweetViewStyle.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/TWTRTweetViewStyle</TokenIdentifier>
+			<Abstract type="html">The style for Tweet views.</Abstract>
+			<DeclaredIn>TWTRTweetView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRTweetViewStyleRegular</TokenIdentifier>
+            <Abstract type="html">A full-size Tweet view. Displays images if present.
+     </Abstract>
+            <Declaration>TWTRTweetViewStyleRegular</Declaration>
+            
+            <DeclaredIn>TWTRTweetView.h</DeclaredIn>
+            
+            <NodeRef refid="35"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRTweetViewStyleCompact</TokenIdentifier>
+            <Abstract type="html">A small Tweet view, primarily designed to be used in table views.
+     </Abstract>
+            <Declaration>TWTRTweetViewStyleCompact</Declaration>
+            
+            <DeclaredIn>TWTRTweetView.h</DeclaredIn>
+            
+            <NodeRef refid="35"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>TwitterShareExtensionUI</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+                
+				<Node>
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+				<Node>
+					<Name>Constants</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="24"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+                <Node>
+                    <Name>Blocks</Name>
+                    <Path>index.html</Path>
+                    <Subnodes>
+                        <NodeRef refid="25"/>
+                        <NodeRef refid="26"/>
+                        <NodeRef refid="27"/>
+                        <NodeRef refid="28"/>
+                        <NodeRef refid="29"/>
+                        <NodeRef refid="30"/>
+                        <NodeRef refid="31"/>
+                        
+                    </Subnodes>
+                </Node>
+                
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1" type="file" documentType="reference">
+            <Name>TWTRSEFonts</Name>
+            <Path>Classes/TWTRSEFonts.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TWTRSEFonts.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TWTRSEFonts.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSEFonts.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>TWTRSEImageProvider</Name>
+            <Path>Classes/TWTRSEImageProvider.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TWTRSEImageProvider.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TWTRSEImageProvider.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSEImageProvider.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSEImageProvider.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>TWTRSETweet</Name>
+            <Path>Classes/TWTRSETweet.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TWTRSETweet.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TWTRSETweet.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSETweet.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSETweet.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSETweet.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
+            <Name>TWTRSETweetAttachmentCocoaItemProvider</Name>
+            <Path>Classes/TWTRSETweetAttachmentCocoaItemProvider.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetAttachmentCocoaItemProvider.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetAttachmentCocoaItemProvider.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetAttachmentCocoaItemProvider.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetAttachmentCocoaItemProvider.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="5" type="file" documentType="reference">
+            <Name>TWTRSETweetAttachmentImage</Name>
+            <Path>Classes/TWTRSETweetAttachmentImage.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetAttachmentImage.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetAttachmentImage.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetAttachmentImage.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetAttachmentImage.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="6" type="file" documentType="reference">
+            <Name>TWTRSETweetAttachmentURL</Name>
+            <Path>Classes/TWTRSETweetAttachmentURL.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetAttachmentURL.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetAttachmentURL.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetAttachmentURL.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetAttachmentURL.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="7" type="file" documentType="reference">
+            <Name>TWTRSETweetShareConfiguration</Name>
+            <Path>Classes/TWTRSETweetShareConfiguration.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetShareConfiguration.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetShareConfiguration.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetShareConfiguration.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetShareConfiguration.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>TWTRSETweetShareViewController</Name>
+            <Path>Classes/TWTRSETweetShareViewController.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetShareViewController.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetShareViewController.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetShareViewController.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>TWTRSETweetURLAttachmentMetadata</Name>
+            <Path>Classes/TWTRSETweetURLAttachmentMetadata.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetURLAttachmentMetadata.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetURLAttachmentMetadata.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetURLAttachmentMetadata.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSETweetURLAttachmentMetadata.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>TWTRSEUIScribeEvent</Name>
+            <Path>Classes/TWTRSEUIScribeEvent.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TWTRSEUIScribeEvent.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TWTRSEUIScribeEvent.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/TWTRSEUIScribeEvent.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		
+		
+        <Node id="11" type="file" documentType="reference">
+            <Name>TWTRSEAccount</Name>
+            <Path>Protocols/TWTRSEAccount.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/TWTRSEAccount.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/TWTRSEAccount.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Protocols/TWTRSEAccount.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="12" type="file" documentType="reference">
+            <Name>TWTRSEAutoCompletion</Name>
+            <Path>Protocols/TWTRSEAutoCompletion.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/TWTRSEAutoCompletion.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/TWTRSEAutoCompletion.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/TWTRSEAutoCompletion.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="13" type="file" documentType="reference">
+            <Name>TWTRSECardPreviewProvider</Name>
+            <Path>Protocols/TWTRSECardPreviewProvider.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/TWTRSECardPreviewProvider.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/TWTRSECardPreviewProvider.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/TWTRSECardPreviewProvider.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="14" type="file" documentType="reference">
+            <Name>TWTRSEGeoPlace</Name>
+            <Path>Protocols/TWTRSEGeoPlace.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/TWTRSEGeoPlace.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/TWTRSEGeoPlace.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Protocols/TWTRSEGeoPlace.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="15" type="file" documentType="reference">
+            <Name>TWTRSELocalizedResources</Name>
+            <Path>Protocols/TWTRSELocalizedResources.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/TWTRSELocalizedResources.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/TWTRSELocalizedResources.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Protocols/TWTRSELocalizedResources.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="16" type="file" documentType="reference">
+            <Name>TWTRSENetworking</Name>
+            <Path>Protocols/TWTRSENetworking.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/TWTRSENetworking.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/TWTRSENetworking.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/TWTRSENetworking.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="17" type="file" documentType="reference">
+            <Name>TWTRSEScribe</Name>
+            <Path>Protocols/TWTRSEScribe.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/TWTRSEScribe.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/TWTRSEScribe.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/TWTRSEScribe.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="18" type="file" documentType="reference">
+            <Name>TWTRSETweetAttachment</Name>
+            <Path>Protocols/TWTRSETweetAttachment.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/TWTRSETweetAttachment.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/TWTRSETweetAttachment.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Protocols/TWTRSETweetAttachment.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="19" type="file" documentType="reference">
+            <Name>TWTRSETweetAttachmentCustomCardViewProvider</Name>
+            <Path>Protocols/TWTRSETweetAttachmentCustomCardViewProvider.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/TWTRSETweetAttachmentCustomCardViewProvider.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/TWTRSETweetAttachmentCustomCardViewProvider.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Protocols/TWTRSETweetAttachmentCustomCardViewProvider.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="20" type="file" documentType="reference">
+            <Name>TWTRSETweetShareViewControllerDelegate</Name>
+            <Path>Protocols/TWTRSETweetShareViewControllerDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/TWTRSETweetShareViewControllerDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/TWTRSETweetShareViewControllerDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/TWTRSETweetShareViewControllerDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="21" type="file" documentType="reference">
+            <Name>TWTRSETwitterUser</Name>
+            <Path>Protocols/TWTRSETwitterUser.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/TWTRSETwitterUser.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/TWTRSETwitterUser.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Protocols/TWTRSETwitterUser.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="22" type="file" documentType="reference">
+            <Name>TWTRSEWordRangeCalculator</Name>
+            <Path>Protocols/TWTRSEWordRangeCalculator.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/TWTRSEWordRangeCalculator.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/TWTRSEWordRangeCalculator.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/TWTRSEWordRangeCalculator.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="23" type="file" documentType="reference">
+            <Name>TwitterTextProtocol</Name>
+            <Path>Protocols/TwitterTextProtocol.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/TwitterTextProtocol.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/TwitterTextProtocol.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Protocols/TwitterTextProtocol.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		
+        <Node id="24" type="file" documentType="reference">
+            <Name>TWTRSENetworkingResult</Name>
+            <Path>Constants/TWTRSENetworkingResult.html</Path>
+            
+        </Node>
+		
+        <Node id="25" type="file" documentType="reference">
+            <Name>TWTRSEGeoTaggingCompletion</Name>
+            <Path>Blocks/TWTRSEGeoTaggingCompletion.html</Path>
+            
+        </Node>
+        <Node id="26" type="file" documentType="reference">
+            <Name>TWTRSEHashtagAutoCompletionCallback</Name>
+            <Path>Blocks/TWTRSEHashtagAutoCompletionCallback.html</Path>
+            
+        </Node>
+        <Node id="27" type="file" documentType="reference">
+            <Name>TWTRSEImageDownloadCompletion</Name>
+            <Path>Blocks/TWTRSEImageDownloadCompletion.html</Path>
+            
+        </Node>
+        <Node id="28" type="file" documentType="reference">
+            <Name>TWTRSEImageSuccessBlock</Name>
+            <Path>Blocks/TWTRSEImageSuccessBlock.html</Path>
+            
+        </Node>
+        <Node id="29" type="file" documentType="reference">
+            <Name>TWTRSENetworkingHydratedTwitterUserLoadCompletion</Name>
+            <Path>Blocks/TWTRSENetworkingHydratedTwitterUserLoadCompletion.html</Path>
+            
+        </Node>
+        <Node id="30" type="file" documentType="reference">
+            <Name>TWTRSENetworkingTweetSendCompletion</Name>
+            <Path>Blocks/TWTRSENetworkingTweetSendCompletion.html</Path>
+            
+        </Node>
+        <Node id="31" type="file" documentType="reference">
+            <Name>TWTRSETweetAttachmentAfterURLLoadBlock</Name>
+            <Path>Blocks/TWTRSETweetAttachmentAfterURLLoadBlock.html</Path>
+            
+        </Node>
+        
+	</Library>
+</DocSetNodes>

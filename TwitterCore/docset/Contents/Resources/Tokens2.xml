@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRAuthSession.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRAuthSession</TokenIdentifier>
+			<Abstract type="html">Encapsulates the authorization details of an OAuth Session.</Abstract>
+			<DeclaredIn>TWTRAuthSession.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRAuthSession/setAuthToken:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRAuthSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *authToken</Declaration>
+			
+			
+			<Anchor>//api/name/authToken</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRAuthSession/authToken</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRAuthSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *authToken</Declaration>
+			
+			
+			<Anchor>//api/name/authToken</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/TWTRAuthSession/authToken</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRAuthSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *authToken</Declaration>
+			
+			
+			<Anchor>//api/name/authToken</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRAuthSession/setAuthTokenSecret:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRAuthSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *authTokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/authTokenSecret</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRAuthSession/authTokenSecret</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRAuthSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *authTokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/authTokenSecret</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/TWTRAuthSession/authTokenSecret</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRAuthSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *authTokenSecret</Declaration>
+			
+			
+			<Anchor>//api/name/authTokenSecret</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRAuthSession/setUserID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRAuthSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRAuthSession/userID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRAuthSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/TWTRAuthSession/userID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRAuthSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

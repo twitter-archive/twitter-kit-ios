@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRAuthConfig.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRAuthConfig</TokenIdentifier>
+			<Abstract type="html">Authentication configuration details. Encapsulates credentials required to authenticate a Twitter application. You can obtain your credentials at https://apps.twitter.com/.</Abstract>
+			<DeclaredIn>TWTRAuthConfig.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRAuthConfig/setConsumerKey:</TokenIdentifier>
+			<Abstract type="html">The consumer key of the Twitter application.</Abstract>
+			<DeclaredIn>TWTRAuthConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *consumerKey</Declaration>
+			
+			
+			<Anchor>//api/name/consumerKey</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRAuthConfig/consumerKey</TokenIdentifier>
+			<Abstract type="html">The consumer key of the Twitter application.</Abstract>
+			<DeclaredIn>TWTRAuthConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *consumerKey</Declaration>
+			
+			
+			<Anchor>//api/name/consumerKey</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRAuthConfig/consumerKey</TokenIdentifier>
+			<Abstract type="html">The consumer key of the Twitter application.</Abstract>
+			<DeclaredIn>TWTRAuthConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *consumerKey</Declaration>
+			
+			
+			<Anchor>//api/name/consumerKey</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRAuthConfig/setConsumerSecret:</TokenIdentifier>
+			<Abstract type="html">The consumer secret of the Twitter application.</Abstract>
+			<DeclaredIn>TWTRAuthConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *consumerSecret</Declaration>
+			
+			
+			<Anchor>//api/name/consumerSecret</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRAuthConfig/consumerSecret</TokenIdentifier>
+			<Abstract type="html">The consumer secret of the Twitter application.</Abstract>
+			<DeclaredIn>TWTRAuthConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *consumerSecret</Declaration>
+			
+			
+			<Anchor>//api/name/consumerSecret</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRAuthConfig/consumerSecret</TokenIdentifier>
+			<Abstract type="html">The consumer secret of the Twitter application.</Abstract>
+			<DeclaredIn>TWTRAuthConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *consumerSecret</Declaration>
+			
+			
+			<Anchor>//api/name/consumerSecret</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRAuthConfig/initWithConsumerKey:consumerSecret:</TokenIdentifier>
+			<Abstract type="html">Returns an TWTRAuthConfig object initialized by copying the values from the consumer key and consumer secret.</Abstract>
+			<DeclaredIn>TWTRAuthConfig.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>consumerKey</Name>
+					<Abstract type="html">The consumer key.</Abstract>
+				</Parameter><Parameter>
+					<Name>consumerSecret</Name>
+					<Abstract type="html">The consumer secret.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithConsumerKey:consumerSecret:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRAuthConfig/init</TokenIdentifier>
+			<Abstract type="html">Unavailable. Use initWithConsumerKey:consumerSecret: instead.</Abstract>
+			<DeclaredIn>TWTRAuthConfig.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

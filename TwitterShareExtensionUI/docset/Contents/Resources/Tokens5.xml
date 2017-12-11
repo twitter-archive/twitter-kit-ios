@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRSETweetAttachmentImage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRSETweetAttachmentImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetAttachmentImage/setImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) UIImage *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetAttachmentImage/image</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) UIImage *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetAttachmentImage/image</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) UIImage *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetAttachmentImage/initWithImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithImage:(UIImage *)image</Declaration>
+			
+			
+			<Anchor>//api/name/initWithImage:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

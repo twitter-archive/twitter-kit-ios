@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRSETweetShareViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRSETweetShareViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareViewController/initWithNibName:bundle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareViewController.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNibName:bundle:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareViewController/initWithCoder:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareViewController.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithCoder:(NSCoder *)aDecoder</Declaration>
+			
+			
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareViewController/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetShareViewController.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetShareViewController/initWithConfiguration:</TokenIdentifier>
+			<Abstract type="html">Initialize a tweet composer controller to be presented modally.</Abstract>
+			<DeclaredIn>TWTRSETweetShareViewController.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithConfiguration:(TWTRSETweetShareConfiguration *)configuration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>configuration</Name>
+					<Abstract type="html">(required): A configuration object encapsulating the requirements to initialize this class.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithConfiguration:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

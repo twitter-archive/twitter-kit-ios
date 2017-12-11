@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRSELocalizedResources.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRSELocalizedResources</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSELocalizedResources.h</DeclaredIn>
+            
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSELocalizedResources/localizedString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSELocalizedResources.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)localizedString:(NSString *)string</Declaration>
+			
+			
+			<Anchor>//api/name/localizedString:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

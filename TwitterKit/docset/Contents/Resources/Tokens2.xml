@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRComposer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRComposer</TokenIdentifier>
+			<Abstract type="html">The TWTRComposer class presents a view to the user to compose a Tweet.</Abstract>
+			<DeclaredIn>TWTRComposer.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRComposer/setText:</TokenIdentifier>
+			<Abstract type="html">Sets the initial text for the Tweet composition prior to showing it.</Abstract>
+			<DeclaredIn>TWTRComposer.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)setText:(nullable NSString *)text</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>text</Name>
+					<Abstract type="html">The text to tweet.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">This will return NO if the receiver has already been presented (and therefore cannot be changed).</Abstract></ReturnValue>
+			<Anchor>//api/name/setText:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRComposer/setImage:</TokenIdentifier>
+			<Abstract type="html">Sets an image attachment.</Abstract>
+			<DeclaredIn>TWTRComposer.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)setImage:(nullable UIImage *)image</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">The image to attach.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">This will return NO if the receiver has already been presented (and therefore cannot be changed).</Abstract></ReturnValue>
+			<Anchor>//api/name/setImage:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRComposer/setURL:</TokenIdentifier>
+			<Abstract type="html">Adds a URL to the contents of the Tweet message.</Abstract>
+			<DeclaredIn>TWTRComposer.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)setURL:(nullable NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The URL.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">This will return NO if the receiver has already been presented (and therefore cannot be changed).</Abstract></ReturnValue>
+			<Anchor>//api/name/setURL:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRComposer/showFromViewController:completion:</TokenIdentifier>
+			<Abstract type="html">Presents the composer, with an optional completion handler from the specified view controller.</Abstract>
+			<DeclaredIn>TWTRComposer.h</DeclaredIn>
+			
+			<Declaration>- (void)showFromViewController:(UIViewController *)fromController completion:(nullable TWTRComposerCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fromController</Name>
+					<Abstract type="html">The controller in which to present the composer from.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">completion The completion handler, which has a single parameter indicating whether the user finished or cancelled the Tweet composition.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/showFromViewController:completion:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

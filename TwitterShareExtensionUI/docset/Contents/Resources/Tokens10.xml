@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRSEUIScribeEvent.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRSEUIScribeEvent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEScribe.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEUIScribeEvent/setUserID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEScribe.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSNumber *userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEUIScribeEvent/userID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEScribe.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSNumber *userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEUIScribeEvent/userID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEScribe.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSNumber *userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEUIScribeEvent/setElement:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEScribe.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *element</Declaration>
+			
+			
+			<Anchor>//api/name/element</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEUIScribeEvent/element</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEScribe.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *element</Declaration>
+			
+			
+			<Anchor>//api/name/element</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEUIScribeEvent/element</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEScribe.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *element</Declaration>
+			
+			
+			<Anchor>//api/name/element</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEUIScribeEvent/setAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEScribe.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *action</Declaration>
+			
+			
+			<Anchor>//api/name/action</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEUIScribeEvent/action</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEScribe.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *action</Declaration>
+			
+			
+			<Anchor>//api/name/action</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEUIScribeEvent/action</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEScribe.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *action</Declaration>
+			
+			
+			<Anchor>//api/name/action</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEUIScribeEvent/setParameters:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEScribe.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy, nullable) NSDictionary *parameters</Declaration>
+			
+			
+			<Anchor>//api/name/parameters</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEUIScribeEvent/parameters</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEScribe.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy, nullable) NSDictionary *parameters</Declaration>
+			
+			
+			<Anchor>//api/name/parameters</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEUIScribeEvent/parameters</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEScribe.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy, nullable) NSDictionary *parameters</Declaration>
+			
+			
+			<Anchor>//api/name/parameters</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

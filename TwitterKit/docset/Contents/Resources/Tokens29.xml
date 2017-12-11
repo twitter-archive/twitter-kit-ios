@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRTimelineDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRTimelineDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineDelegate.h</DeclaredIn>
+            
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRTimelineDelegate/timelineDidBeginLoading:</TokenIdentifier>
+			<Abstract type="html">The Timeline started loading new Tweets. This would be an
+appropriate place to begin showing a loading indicator.</Abstract>
+			<DeclaredIn>TWTRTimelineDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)timelineDidBeginLoading:(TWTRTimelineViewController *)timeline</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>timeline</Name>
+					<Abstract type="html">Timeline controller providing the updates</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/timelineDidBeginLoading:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRTimelineDelegate/timeline:didFinishLoadingTweets:error:</TokenIdentifier>
+			<Abstract type="html">The Timeline has finished loading more Tweets.</Abstract>
+			<DeclaredIn>TWTRTimelineDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)timeline:(TWTRTimelineViewController *)timeline didFinishLoadingTweets:(nullable NSArray *)tweets error:(nullable NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>timeline</Name>
+					<Abstract type="html">Timeline displaying loaded Tweets</Abstract>
+				</Parameter><Parameter>
+					<Name>tweets</Name>
+					<Abstract type="html">Tweet objects loaded from the network</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error object describing details of failure</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/timeline:didFinishLoadingTweets:error:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

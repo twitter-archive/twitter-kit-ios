@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRComposerViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRComposerViewController</TokenIdentifier>
+			<Abstract type="html">Composer interface to allow users to compose &amp;amp; send Tweets from
+inside an app.</Abstract>
+			<DeclaredIn>TWTRComposerViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRComposerViewController/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate for this composer view controller.</Abstract>
+			<DeclaredIn>TWTRComposerViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;TWTRComposerViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRComposerViewController/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate for this composer view controller.</Abstract>
+			<DeclaredIn>TWTRComposerViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;TWTRComposerViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRComposerViewController/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate for this composer view controller.</Abstract>
+			<DeclaredIn>TWTRComposerViewController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;TWTRComposerViewControllerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TWTRComposerViewController/emptyComposer</TokenIdentifier>
+			<Abstract type="html">Create an empty composer view controller. The developer must handle ensuring
+that a logged in Twitter user exists before creating this controller.</Abstract>
+			<DeclaredIn>TWTRComposerViewController.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)emptyComposer</Declaration>
+			
+			
+			<Anchor>//api/name/emptyComposer</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRComposerViewController/initWithInitialText:image:videoURL:</TokenIdentifier>
+			<Abstract type="html">Initialize a composer with pre-filled text and an image or video attachment.
+Requires a logged in Twitter user.</Abstract>
+			<DeclaredIn>TWTRComposerViewController.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithInitialText:(nullable NSString *)initialText image:(nullable UIImage *)image videoURL:(nullable NSURL *)videoURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>initialText</Name>
+					<Abstract type="html">(optional) Text with which to pre-fill the composer text.</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">(optional) Image to add as an attachment.</Abstract>
+				</Parameter><Parameter>
+					<Name>videoURL</Name>
+					<Abstract type="html">(optional) Video URL to add as an attachment. Of the form of assets-library.
+
+Note: Only one type of attachment (image or video) may be added.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithInitialText:image:videoURL:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRComposerViewController/initWithInitialText:image:videoData:</TokenIdentifier>
+			<Abstract type="html">Initialize a composer with pre-filled text and an image or video attachment.</Abstract>
+			<DeclaredIn>TWTRComposerViewController.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithInitialText:(nullable NSString *)initialText image:(nullable UIImage *)image videoData:(nullable NSData *)videoData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>initialText</Name>
+					<Abstract type="html">(optional) Text with which to pre-fill the composer text.</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">(required) Image (or preview image) to add as an attachment.</Abstract>
+				</Parameter><Parameter>
+					<Name>videoData</Name>
+					<Abstract type="html">(optional) NSData for video asset to add as an attachment.
+
+Note: Preview image is required if videoData parameter is passed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithInitialText:image:videoData:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRComposerViewController/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRComposerViewController.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

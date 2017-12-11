@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRSETweet.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRSETweet</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TWTRSETweet/setTwitterText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>+ (void)setTwitterText:(id&lt;TwitterTextProtocol&gt;)twitterText</Declaration>
+			
+			
+			<Anchor>//api/name/setTwitterText:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TWTRSETweet/twitterText</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>+ (Class&lt;TwitterTextProtocol&gt;)twitterText</Declaration>
+			
+			
+			<Anchor>//api/name/twitterText</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweet/setInReplyToTweetID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, copy) NSNumber *inReplyToTweetID</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToTweetID</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweet/inReplyToTweetID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, copy) NSNumber *inReplyToTweetID</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToTweetID</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweet/inReplyToTweetID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, copy) NSNumber *inReplyToTweetID</Declaration>
+			
+			
+			<Anchor>//api/name/inReplyToTweetID</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweet/setText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweet/text</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweet/text</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweet/setAttachment:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable) id&lt;TWTRSETweetAttachment&gt; attachment</Declaration>
+			
+			
+			<Anchor>//api/name/attachment</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweet/attachment</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable) id&lt;TWTRSETweetAttachment&gt; attachment</Declaration>
+			
+			
+			<Anchor>//api/name/attachment</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweet/attachment</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable) id&lt;TWTRSETweetAttachment&gt; attachment</Declaration>
+			
+			
+			<Anchor>//api/name/attachment</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweet/setPlace:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable) id&lt;TWTRSEGeoPlace&gt; place</Declaration>
+			
+			
+			<Anchor>//api/name/place</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweet/place</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable) id&lt;TWTRSEGeoPlace&gt; place</Declaration>
+			
+			
+			<Anchor>//api/name/place</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweet/place</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable) id&lt;TWTRSEGeoPlace&gt; place</Declaration>
+			
+			
+			<Anchor>//api/name/place</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweet/initWithInReplyToTweetID:text:attachment:place:usernames:hashtags:</TokenIdentifier>
+			<Abstract type="html">(Optional) The tweet ID this tweet is a reply of.</Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithInReplyToTweetID:(nullable NSNumber *)inReplyToTweetID text:(nullable NSString *)text attachment:(nullable id&lt;TWTRSETweetAttachment&gt;)attachment place:(nullable id&lt;TWTRSEGeoPlace&gt;)place usernames:(nullable NSArray&lt;NSString*&gt; *)usernames hashtags:(nullable NSArray&lt;NSString*&gt; *)hashtags</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>inReplyToTweetID</Name>
+					<Abstract type="html">(Optional) The tweet ID this tweet is a reply of.</Abstract>
+				</Parameter><Parameter>
+					<Name>text</Name>
+					<Abstract type="html">The text contents of the tweet, not counting prefixing screennames or hashtags.</Abstract>
+				</Parameter><Parameter>
+					<Name>attachment</Name>
+					<Abstract type="html">(Optional): See specific implementations of the TWTRSETweetAttachment protocol.</Abstract>
+				</Parameter><Parameter>
+					<Name>place</Name>
+					<Abstract type="html">(Optional): The place where this tweet is geo-tagged.</Abstract>
+				</Parameter><Parameter>
+					<Name>usernames</Name>
+					<Abstract type="html">(Optional): An array of usernames without leading &quot;@&quot; that are mentioned in this tweet.</Abstract>
+				</Parameter><Parameter>
+					<Name>hashtags</Name>
+					<Abstract type="html">(Optional): An array of hashtags without leading &quot;#&quot; that are included in this tweet.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithInReplyToTweetID:text:attachment:place:usernames:hashtags:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TWTRSETweet/emptyTweet</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>+ (TWTRSETweet *)emptyTweet</Declaration>
+			
+			
+			<Anchor>//api/name/emptyTweet</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweet/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweet/remainingCharacters</TokenIdentifier>
+			<Abstract type="html">This will be a negative number if the tweet is over the limit</Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweet/isWithinCharacterLimit</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSInteger)remainingCharacters</Declaration>
+			
+			
+			<Anchor>//api/name/remainingCharacters</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweet/isNearOrOverCharacterLimit</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isNearOrOverCharacterLimit</Declaration>
+			
+			
+			<Anchor>//api/name/isNearOrOverCharacterLimit</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweet/isWithinCharacterLimit</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isWithinCharacterLimit</Declaration>
+			
+			
+			<Anchor>//api/name/isWithinCharacterLimit</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/TWTRVideoPlaybackState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/TWTRVideoPlaybackState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRVideoPlaybackState.h</DeclaredIn>
+            
+			
+			<NodeRef refid="37"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRVideoPlaybackStatePaused</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TWTRVideoPlaybackStatePaused</Declaration>
+            
+            <DeclaredIn>TWTRVideoPlaybackState.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRVideoPlaybackStatePlaying</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TWTRVideoPlaybackStatePlaying</Declaration>
+            
+            <DeclaredIn>TWTRVideoPlaybackState.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRVideoPlaybackStateCompleted</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TWTRVideoPlaybackStateCompleted</Declaration>
+            
+            <DeclaredIn>TWTRVideoPlaybackState.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

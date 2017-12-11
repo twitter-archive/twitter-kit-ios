@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRListTimelineDataSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRListTimelineDataSource</TokenIdentifier>
+			<Abstract type="html">Data source representing a list of Tweets. These Tweets are ordered chronologically with the most recent first.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRListTimelineDataSource/setListID:</TokenIdentifier>
+			<Abstract type="html">The ID of the list to show Tweets for. Either the listID or the listSlug and listOwnerScreenName are required.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *listID</Declaration>
+			
+			
+			<Anchor>//api/name/listID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRListTimelineDataSource/listID</TokenIdentifier>
+			<Abstract type="html">The ID of the list to show Tweets for. Either the listID or the listSlug and listOwnerScreenName are required.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *listID</Declaration>
+			
+			
+			<Anchor>//api/name/listID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRListTimelineDataSource/listID</TokenIdentifier>
+			<Abstract type="html">The ID of the list to show Tweets for. Either the listID or the listSlug and listOwnerScreenName are required.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *listID</Declaration>
+			
+			
+			<Anchor>//api/name/listID</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRListTimelineDataSource/setListSlug:</TokenIdentifier>
+			<Abstract type="html">The slug of the list to show Tweets for. Either the listID or the listSlug and listOwnerScreenName are required.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *listSlug</Declaration>
+			
+			
+			<Anchor>//api/name/listSlug</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRListTimelineDataSource/listSlug</TokenIdentifier>
+			<Abstract type="html">The slug of the list to show Tweets for. Either the listID or the listSlug and listOwnerScreenName are required.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *listSlug</Declaration>
+			
+			
+			<Anchor>//api/name/listSlug</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRListTimelineDataSource/listSlug</TokenIdentifier>
+			<Abstract type="html">The slug of the list to show Tweets for. Either the listID or the listSlug and listOwnerScreenName are required.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *listSlug</Declaration>
+			
+			
+			<Anchor>//api/name/listSlug</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRListTimelineDataSource/setListOwnerScreenName:</TokenIdentifier>
+			<Abstract type="html">Screen name of the owner of the list as specified by the listSlug. Either the listID or the listSlug and listOwnerScreenName are required.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *listOwnerScreenName</Declaration>
+			
+			
+			<Anchor>//api/name/listOwnerScreenName</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRListTimelineDataSource/listOwnerScreenName</TokenIdentifier>
+			<Abstract type="html">Screen name of the owner of the list as specified by the listSlug. Either the listID or the listSlug and listOwnerScreenName are required.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *listOwnerScreenName</Declaration>
+			
+			
+			<Anchor>//api/name/listOwnerScreenName</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRListTimelineDataSource/listOwnerScreenName</TokenIdentifier>
+			<Abstract type="html">Screen name of the owner of the list as specified by the listSlug. Either the listID or the listSlug and listOwnerScreenName are required.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *listOwnerScreenName</Declaration>
+			
+			
+			<Anchor>//api/name/listOwnerScreenName</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRListTimelineDataSource/setMaxTweetsPerRequest:</TokenIdentifier>
+			<Abstract type="html">The number of Tweets to request in each query to the Twitter Timeline API when fetching the next batch of Tweets. Will request 30 Tweets by default. Setting this value to 0 will use the server default.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger maxTweetsPerRequest</Declaration>
+			
+			
+			<Anchor>//api/name/maxTweetsPerRequest</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRListTimelineDataSource/maxTweetsPerRequest</TokenIdentifier>
+			<Abstract type="html">The number of Tweets to request in each query to the Twitter Timeline API when fetching the next batch of Tweets. Will request 30 Tweets by default. Setting this value to 0 will use the server default.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger maxTweetsPerRequest</Declaration>
+			
+			
+			<Anchor>//api/name/maxTweetsPerRequest</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRListTimelineDataSource/maxTweetsPerRequest</TokenIdentifier>
+			<Abstract type="html">The number of Tweets to request in each query to the Twitter Timeline API when fetching the next batch of Tweets. Will request 30 Tweets by default. Setting this value to 0 will use the server default.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger maxTweetsPerRequest</Declaration>
+			
+			
+			<Anchor>//api/name/maxTweetsPerRequest</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRListTimelineDataSource/setIncludeRetweets:</TokenIdentifier>
+			<Abstract type="html">Whether to request retweets in the set of Tweets from the server.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL includeRetweets</Declaration>
+			
+			
+			<Anchor>//api/name/includeRetweets</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRListTimelineDataSource/includeRetweets</TokenIdentifier>
+			<Abstract type="html">Whether to request retweets in the set of Tweets from the server.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL includeRetweets</Declaration>
+			
+			
+			<Anchor>//api/name/includeRetweets</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRListTimelineDataSource/includeRetweets</TokenIdentifier>
+			<Abstract type="html">Whether to request retweets in the set of Tweets from the server.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL includeRetweets</Declaration>
+			
+			
+			<Anchor>//api/name/includeRetweets</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRListTimelineDataSource/setTimelineFilter:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) TWTRTimelineFilter *timelineFilter</Declaration>
+			
+			
+			<Anchor>//api/name/timelineFilter</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRListTimelineDataSource/timelineFilter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) TWTRTimelineFilter *timelineFilter</Declaration>
+			
+			
+			<Anchor>//api/name/timelineFilter</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRListTimelineDataSource/timelineFilter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) TWTRTimelineFilter *timelineFilter</Declaration>
+			
+			
+			<Anchor>//api/name/timelineFilter</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRListTimelineDataSource/initWithListID:APIClient:</TokenIdentifier>
+			<Abstract type="html">Convenience initializer. Uses default values for maxTweetsPerRequest and includeRetweets.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithListID:(NSString *)listID APIClient:(TWTRAPIClient *)client</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listID</Name>
+					<Abstract type="html">(required) The ID of the list.</Abstract>
+				</Parameter><Parameter>
+					<Name>client</Name>
+					<Abstract type="html">(required) The API client to use for making network requests.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A full initialized list timeline datasource.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithListID:APIClient:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRListTimelineDataSource/initWithListSlug:listOwnerScreenName:APIClient:</TokenIdentifier>
+			<Abstract type="html">Convenience initializer. Uses default values for maxTweetsPerRequest and includeRetweets.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithListSlug:(NSString *)listSlug listOwnerScreenName:(NSString *)listOwnerScreenName APIClient:(TWTRAPIClient *)client</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listSlug</Name>
+					<Abstract type="html">(required) The slug of the list.</Abstract>
+				</Parameter><Parameter>
+					<Name>listOwnerScreenName</Name>
+					<Abstract type="html">(required) The list owner&apos;s screen name.</Abstract>
+				</Parameter><Parameter>
+					<Name>client</Name>
+					<Abstract type="html">(required) The API client to use for making network requests.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A full initialized list timeline datasource.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithListSlug:listOwnerScreenName:APIClient:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRListTimelineDataSource/initWithListID:listSlug:listOwnerScreenName:APIClient:maxTweetsPerRequest:includeRetweets:</TokenIdentifier>
+			<Abstract type="html">Designated initializer for creating list timeline data sources taking all parameters.</Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithListID:(nullable NSString *)listID listSlug:(nullable NSString *)listSlug listOwnerScreenName:(nullable NSString *)listOwnerScreenName APIClient:(TWTRAPIClient *)client maxTweetsPerRequest:(NSUInteger)maxTweetsPerRequest includeRetweets:(BOOL)includeRetweets</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listID</Name>
+					<Abstract type="html">(optional) The ID of the list. Provide either the listID or listSlug and listOwnerScreenName.</Abstract>
+				</Parameter><Parameter>
+					<Name>listSlug</Name>
+					<Abstract type="html">(optional) The slug of the list. Provide either the listID or listSlug and listOwnerScreenName.</Abstract>
+				</Parameter><Parameter>
+					<Name>listOwnerScreenName</Name>
+					<Abstract type="html">(optional) The list owner&apos;s screen name. Provide either the listID or listSlug and listOwnerScreenName.</Abstract>
+				</Parameter><Parameter>
+					<Name>client</Name>
+					<Abstract type="html">(required) The API client to use for making networking requests</Abstract>
+				</Parameter><Parameter>
+					<Name>maxTweetsPerRequest</Name>
+					<Abstract type="html">(optional) The number of Tweets per batch to request. A value of 0 will use the server default.</Abstract>
+				</Parameter><Parameter>
+					<Name>includeRetweets</Name>
+					<Abstract type="html">(optional) Whether retweets should be requested.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A fully initialized list timeline datasource.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithListID:listSlug:listOwnerScreenName:APIClient:maxTweetsPerRequest:includeRetweets:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRListTimelineDataSource/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRListTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

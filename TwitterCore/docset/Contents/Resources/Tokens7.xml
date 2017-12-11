@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/TWTRLogInErrorCode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/TWTRLogInErrorCode</TokenIdentifier>
+			<Abstract type="html">Error codes surfaced by the Twitter SDK with the TWTRLogInErrorDomain error domain.</Abstract>
+			<DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRLogInErrorCodeUnknown</TokenIdentifier>
+            <Abstract type="html">Unknown error.
+     </Abstract>
+            <Declaration>TWTRLogInErrorCodeUnknown</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRLogInErrorCodeDenied</TokenIdentifier>
+            <Abstract type="html">User denied login.
+     </Abstract>
+            <Declaration>TWTRLogInErrorCodeDenied</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRLogInErrorCodeCancelled</TokenIdentifier>
+            <Abstract type="html">User canceled login.
+     </Abstract>
+            <Declaration>TWTRLogInErrorCodeCancelled</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRLogInErrorCodeNoAccounts</TokenIdentifier>
+            <Abstract type="html">No Twitter account found.
+     </Abstract>
+            <Declaration>TWTRLogInErrorCodeNoAccounts</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRLogInErrorCodeReverseAuthFailed</TokenIdentifier>
+            <Abstract type="html">Reverse auth with linked account failed.
+     </Abstract>
+            <Declaration>TWTRLogInErrorCodeReverseAuthFailed</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRLogInErrorCodeCannotRefreshSession</TokenIdentifier>
+            <Abstract type="html">Refreshing session tokens failed.
+     </Abstract>
+            <Declaration>TWTRLogInErrorCodeCannotRefreshSession</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRLogInErrorCodeSessionNotFound</TokenIdentifier>
+            <Abstract type="html">No such session or session is not tracked
+in the associated session store.
+     </Abstract>
+            <Declaration>TWTRLogInErrorCodeSessionNotFound</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRLogInErrorCodeFailed</TokenIdentifier>
+            <Abstract type="html">The login request failed.
+     </Abstract>
+            <Declaration>TWTRLogInErrorCodeFailed</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRLogInErrorCodeSystemAccountCredentialsInvalid</TokenIdentifier>
+            <Abstract type="html">The system account credentials are no longer valid and the
+user will need to update their credentials in the Settings app.
+     </Abstract>
+            <Declaration>TWTRLogInErrorCodeSystemAccountCredentialsInvalid</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRLoginErrorNoTwitterApp</TokenIdentifier>
+            <Abstract type="html">There was no Twitter iOS app installed to attemp
+the Mobile SSO flow.
+     </Abstract>
+            <Declaration>TWTRLoginErrorNoTwitterApp</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="7"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

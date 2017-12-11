@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRSEFonts.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRSEFonts</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setFontDictionary:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, class) NSDictionary&lt;NSString*NSDictionary&lt;NSString*id&gt; *&gt; *fontDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/fontDictionary</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/fontDictionary</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, class) NSDictionary&lt;NSString*NSDictionary&lt;NSString*id&gt; *&gt; *fontDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/fontDictionary</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/fontDictionary</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, class) NSDictionary&lt;NSString*NSDictionary&lt;NSString*id&gt; *&gt; *fontDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/fontDictionary</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setComposerTextFont:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *composerTextFont</Declaration>
+			
+			
+			<Anchor>//api/name/composerTextFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/composerTextFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *composerTextFont</Declaration>
+			
+			
+			<Anchor>//api/name/composerTextFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/composerTextFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *composerTextFont</Declaration>
+			
+			
+			<Anchor>//api/name/composerTextFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setComposerTextColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *composerTextColor</Declaration>
+			
+			
+			<Anchor>//api/name/composerTextColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/composerTextColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *composerTextColor</Declaration>
+			
+			
+			<Anchor>//api/name/composerTextColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/composerTextColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *composerTextColor</Declaration>
+			
+			
+			<Anchor>//api/name/composerTextColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setComposerPlaceholderFont:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *composerPlaceholderFont</Declaration>
+			
+			
+			<Anchor>//api/name/composerPlaceholderFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/composerPlaceholderFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *composerPlaceholderFont</Declaration>
+			
+			
+			<Anchor>//api/name/composerPlaceholderFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/composerPlaceholderFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *composerPlaceholderFont</Declaration>
+			
+			
+			<Anchor>//api/name/composerPlaceholderFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setComposerPlaceholderColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *composerPlaceholderColor</Declaration>
+			
+			
+			<Anchor>//api/name/composerPlaceholderColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/composerPlaceholderColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *composerPlaceholderColor</Declaration>
+			
+			
+			<Anchor>//api/name/composerPlaceholderColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/composerPlaceholderColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *composerPlaceholderColor</Declaration>
+			
+			
+			<Anchor>//api/name/composerPlaceholderColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setCharacterCountFont:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *characterCountFont</Declaration>
+			
+			
+			<Anchor>//api/name/characterCountFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/characterCountFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *characterCountFont</Declaration>
+			
+			
+			<Anchor>//api/name/characterCountFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/characterCountFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *characterCountFont</Declaration>
+			
+			
+			<Anchor>//api/name/characterCountFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setCharacterCountLimitColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *characterCountLimitColor</Declaration>
+			
+			
+			<Anchor>//api/name/characterCountLimitColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/characterCountLimitColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *characterCountLimitColor</Declaration>
+			
+			
+			<Anchor>//api/name/characterCountLimitColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/characterCountLimitColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *characterCountLimitColor</Declaration>
+			
+			
+			<Anchor>//api/name/characterCountLimitColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setCardTitleFont:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *cardTitleFont</Declaration>
+			
+			
+			<Anchor>//api/name/cardTitleFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/cardTitleFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *cardTitleFont</Declaration>
+			
+			
+			<Anchor>//api/name/cardTitleFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/cardTitleFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *cardTitleFont</Declaration>
+			
+			
+			<Anchor>//api/name/cardTitleFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setCardTitleColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *cardTitleColor</Declaration>
+			
+			
+			<Anchor>//api/name/cardTitleColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/cardTitleColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *cardTitleColor</Declaration>
+			
+			
+			<Anchor>//api/name/cardTitleColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/cardTitleColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *cardTitleColor</Declaration>
+			
+			
+			<Anchor>//api/name/cardTitleColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setCardSubtitleFont:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *cardSubtitleFont</Declaration>
+			
+			
+			<Anchor>//api/name/cardSubtitleFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/cardSubtitleFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *cardSubtitleFont</Declaration>
+			
+			
+			<Anchor>//api/name/cardSubtitleFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/cardSubtitleFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *cardSubtitleFont</Declaration>
+			
+			
+			<Anchor>//api/name/cardSubtitleFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setCardSubtitleColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *cardSubtitleColor</Declaration>
+			
+			
+			<Anchor>//api/name/cardSubtitleColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/cardSubtitleColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *cardSubtitleColor</Declaration>
+			
+			
+			<Anchor>//api/name/cardSubtitleColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/cardSubtitleColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *cardSubtitleColor</Declaration>
+			
+			
+			<Anchor>//api/name/cardSubtitleColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setUserFullNameFont:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *userFullNameFont</Declaration>
+			
+			
+			<Anchor>//api/name/userFullNameFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/userFullNameFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *userFullNameFont</Declaration>
+			
+			
+			<Anchor>//api/name/userFullNameFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/userFullNameFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *userFullNameFont</Declaration>
+			
+			
+			<Anchor>//api/name/userFullNameFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setUserFullNameColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *userFullNameColor</Declaration>
+			
+			
+			<Anchor>//api/name/userFullNameColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/userFullNameColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *userFullNameColor</Declaration>
+			
+			
+			<Anchor>//api/name/userFullNameColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/userFullNameColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *userFullNameColor</Declaration>
+			
+			
+			<Anchor>//api/name/userFullNameColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setUserUsernameFont:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *userUsernameFont</Declaration>
+			
+			
+			<Anchor>//api/name/userUsernameFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/userUsernameFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *userUsernameFont</Declaration>
+			
+			
+			<Anchor>//api/name/userUsernameFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/userUsernameFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *userUsernameFont</Declaration>
+			
+			
+			<Anchor>//api/name/userUsernameFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setUserUsernameColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *userUsernameColor</Declaration>
+			
+			
+			<Anchor>//api/name/userUsernameColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/userUsernameColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *userUsernameColor</Declaration>
+			
+			
+			<Anchor>//api/name/userUsernameColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/userUsernameColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *userUsernameColor</Declaration>
+			
+			
+			<Anchor>//api/name/userUsernameColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setPlaceNameFont:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *placeNameFont</Declaration>
+			
+			
+			<Anchor>//api/name/placeNameFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/placeNameFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *placeNameFont</Declaration>
+			
+			
+			<Anchor>//api/name/placeNameFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/placeNameFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *placeNameFont</Declaration>
+			
+			
+			<Anchor>//api/name/placeNameFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setPlaceNameColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *placeNameColor</Declaration>
+			
+			
+			<Anchor>//api/name/placeNameColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/placeNameColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *placeNameColor</Declaration>
+			
+			
+			<Anchor>//api/name/placeNameColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/placeNameColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *placeNameColor</Declaration>
+			
+			
+			<Anchor>//api/name/placeNameColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setPlaceAddressFont:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *placeAddressFont</Declaration>
+			
+			
+			<Anchor>//api/name/placeAddressFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/placeAddressFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *placeAddressFont</Declaration>
+			
+			
+			<Anchor>//api/name/placeAddressFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/placeAddressFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *placeAddressFont</Declaration>
+			
+			
+			<Anchor>//api/name/placeAddressFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setPlaceAddressColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *placeAddressColor</Declaration>
+			
+			
+			<Anchor>//api/name/placeAddressColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/placeAddressColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *placeAddressColor</Declaration>
+			
+			
+			<Anchor>//api/name/placeAddressColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/placeAddressColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *placeAddressColor</Declaration>
+			
+			
+			<Anchor>//api/name/placeAddressColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setNavigationButtonFont:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *navigationButtonFont</Declaration>
+			
+			
+			<Anchor>//api/name/navigationButtonFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/navigationButtonFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *navigationButtonFont</Declaration>
+			
+			
+			<Anchor>//api/name/navigationButtonFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/navigationButtonFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIFont *navigationButtonFont</Declaration>
+			
+			
+			<Anchor>//api/name/navigationButtonFont</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/setNavigationButtonColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *navigationButtonColor</Declaration>
+			
+			
+			<Anchor>//api/name/navigationButtonColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEFonts/navigationButtonColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *navigationButtonColor</Declaration>
+			
+			
+			<Anchor>//api/name/navigationButtonColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSEFonts/navigationButtonColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEFonts.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, nullable, readonly, class) UIColor *navigationButtonColor</Declaration>
+			
+			
+			<Anchor>//api/name/navigationButtonColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRSETwitterUser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRSETwitterUser</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETwitterUser.h</DeclaredIn>
+            
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSETwitterUser/setFullName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETwitterUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, readonly, copy) NSString *fullName</Declaration>
+			
+			
+			<Anchor>//api/name/fullName</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSETwitterUser/fullName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETwitterUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, readonly, copy) NSString *fullName</Declaration>
+			
+			
+			<Anchor>//api/name/fullName</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/TWTRSETwitterUser/fullName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETwitterUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, readonly, copy) NSString *fullName</Declaration>
+			
+			
+			<Anchor>//api/name/fullName</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSETwitterUser/setAvatarURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETwitterUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, readonly, copy) NSURL *avatarURL</Declaration>
+			
+			
+			<Anchor>//api/name/avatarURL</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSETwitterUser/avatarURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETwitterUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, readonly, copy) NSURL *avatarURL</Declaration>
+			
+			
+			<Anchor>//api/name/avatarURL</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/TWTRSETwitterUser/avatarURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETwitterUser.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, readonly, copy) NSURL *avatarURL</Declaration>
+			
+			
+			<Anchor>//api/name/avatarURL</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSETwitterUser/setVerified:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETwitterUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL verified</Declaration>
+			
+			
+			<Anchor>//api/name/verified</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSETwitterUser/verified</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETwitterUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL verified</Declaration>
+			
+			
+			<Anchor>//api/name/verified</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/TWTRSETwitterUser/verified</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETwitterUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL verified</Declaration>
+			
+			
+			<Anchor>//api/name/verified</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

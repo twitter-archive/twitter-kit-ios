@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRMediaEntitySize.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRMediaEntitySize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRMediaEntitySize.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRMediaEntitySize/setName:</TokenIdentifier>
+			<Abstract type="html">The name of the size. &apos;large&apos;, &apos;medium&apos;, etc.</Abstract>
+			<DeclaredIn>TWTRMediaEntitySize.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRMediaEntitySize/name</TokenIdentifier>
+			<Abstract type="html">The name of the size. &apos;large&apos;, &apos;medium&apos;, etc.</Abstract>
+			<DeclaredIn>TWTRMediaEntitySize.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRMediaEntitySize/name</TokenIdentifier>
+			<Abstract type="html">The name of the size. &apos;large&apos;, &apos;medium&apos;, etc.</Abstract>
+			<DeclaredIn>TWTRMediaEntitySize.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRMediaEntitySize/setResizingMode:</TokenIdentifier>
+			<Abstract type="html">Resize mode of the image size e.g. Fit, Crop.</Abstract>
+			<DeclaredIn>TWTRMediaEntitySize.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRMediaEntitySizeResizingMode resizingMode</Declaration>
+			
+			
+			<Anchor>//api/name/resizingMode</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRMediaEntitySize/resizingMode</TokenIdentifier>
+			<Abstract type="html">Resize mode of the image size e.g. Fit, Crop.</Abstract>
+			<DeclaredIn>TWTRMediaEntitySize.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRMediaEntitySizeResizingMode resizingMode</Declaration>
+			
+			
+			<Anchor>//api/name/resizingMode</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRMediaEntitySize/resizingMode</TokenIdentifier>
+			<Abstract type="html">Resize mode of the image size e.g. Fit, Crop.</Abstract>
+			<DeclaredIn>TWTRMediaEntitySize.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRMediaEntitySizeResizingMode resizingMode</Declaration>
+			
+			
+			<Anchor>//api/name/resizingMode</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRMediaEntitySize/setSize:</TokenIdentifier>
+			<Abstract type="html">The actual size.</Abstract>
+			<DeclaredIn>TWTRMediaEntitySize.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGSize size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRMediaEntitySize/size</TokenIdentifier>
+			<Abstract type="html">The actual size.</Abstract>
+			<DeclaredIn>TWTRMediaEntitySize.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGSize size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRMediaEntitySize/size</TokenIdentifier>
+			<Abstract type="html">The actual size.</Abstract>
+			<DeclaredIn>TWTRMediaEntitySize.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGSize size</Declaration>
+			
+			
+			<Anchor>//api/name/size</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRMediaEntitySize/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRMediaEntitySize.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRMediaEntitySize/initWithName:resizingMode:size:</TokenIdentifier>
+			<Abstract type="html">Designated initializer.</Abstract>
+			<DeclaredIn>TWTRMediaEntitySize.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithName:(NSString *)name resizingMode:(TWTRMediaEntitySizeResizingMode)resizingMode size:(CGSize)size</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the size. If nil will default to the empty string.</Abstract>
+				</Parameter><Parameter>
+					<Name>resizingMode</Name>
+					<Abstract type="html">The resizing mode of this entity size.</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">The size of the entity.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithName:resizingMode:size:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRMediaEntitySize/isEqualToMediaEntitySize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRMediaEntitySize.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqualToMediaEntitySize:(TWTRMediaEntitySize *)otherSize</Declaration>
+			
+			
+			<Anchor>//api/name/isEqualToMediaEntitySize:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TWTRMediaEntitySize/mediaEntitySizesWithJSONDictionary:</TokenIdentifier>
+			<Abstract type="html">Returns a dictionary of valid TWTRMediaEntitySize instances from the Twitter API response for media sizes.</Abstract>
+			<DeclaredIn>TWTRMediaEntitySize.h</DeclaredIn>
+			
+			<Declaration>+ (NSDictionary *)mediaEntitySizesWithJSONDictionary:(NSDictionary *)dictionary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dictionary</Name>
+					<Abstract type="html">A parsed dictionary of media sizes from the Twitter API response</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Dictionary of parsed TWTRMediaEntitySize instances keyed by size name.</Abstract></ReturnValue>
+			<Anchor>//api/name/mediaEntitySizesWithJSONDictionary:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRSEScribe.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRSEScribe</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEScribe.h</DeclaredIn>
+            
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSEScribe/scribeEvent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEScribe.h</DeclaredIn>
+			
+			<Declaration>- (void)scribeEvent:(TWTRSEUIScribeEvent *)event</Declaration>
+			
+			
+			<Anchor>//api/name/scribeEvent:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

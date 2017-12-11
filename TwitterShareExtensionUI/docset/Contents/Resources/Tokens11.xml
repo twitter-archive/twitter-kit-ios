@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRSEAccount.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRSEAccount</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEAccount.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSEAccount/setUserID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEAccount.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) long long userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSEAccount/userID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEAccount.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) long long userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/TWTRSEAccount/userID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEAccount.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) long long userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSEAccount/setUsername:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEAccount.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSEAccount/username</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEAccount.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/TWTRSEAccount/username</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEAccount.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

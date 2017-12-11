@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/TWTRTimelineType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/TWTRTimelineType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTimelineType.h</DeclaredIn>
+            
+			
+			<NodeRef refid="34"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRTimelineTypeUser</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TWTRTimelineTypeUser</Declaration>
+            
+            <DeclaredIn>TWTRTimelineType.h</DeclaredIn>
+            
+            <NodeRef refid="34"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRTimelineTypeSearch</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TWTRTimelineTypeSearch</Declaration>
+            
+            <DeclaredIn>TWTRTimelineType.h</DeclaredIn>
+            
+            <NodeRef refid="34"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRTimelineTypeCollection</TokenIdentifier>
+            <Abstract type="html">Collection Timeline
+     </Abstract>
+            <Declaration>TWTRTimelineTypeCollection</Declaration>
+            
+            <DeclaredIn>TWTRTimelineType.h</DeclaredIn>
+            
+            <NodeRef refid="34"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRTimelineTypeList</TokenIdentifier>
+            <Abstract type="html">List Timeline
+     </Abstract>
+            <Declaration>TWTRTimelineTypeList</Declaration>
+            
+            <DeclaredIn>TWTRTimelineType.h</DeclaredIn>
+            
+            <NodeRef refid="34"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>
