@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRTwitter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRTwitter</TokenIdentifier>
+			<Abstract type="html">The central class of the Twitter Kit.</Abstract>
+			<DeclaredIn>TWTRTwitter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TWTRTwitter/sharedInstance</TokenIdentifier>
+			<Abstract type="html">Returns the Twitter singleton.</Abstract>
+			<DeclaredIn>TWTRTwitter.h</DeclaredIn>
+			
+			<Declaration>+ (TWTRTwitter *)sharedInstance</Declaration>
+			
+			<ReturnValue><Abstract type="html">The Twitter singleton.</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedInstance</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTwitter/startWithConsumerKey:consumerSecret:</TokenIdentifier>
+			<Abstract type="html">Start Twitter with your consumer key and secret. These will override any credentials
+present in your applications Info.plist.</Abstract>
+			<DeclaredIn>TWTRTwitter.h</DeclaredIn>
+			
+			<Declaration>- (void)startWithConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>consumerKey</Name>
+					<Abstract type="html">Your Twitter application&apos;s consumer key.</Abstract>
+				</Parameter><Parameter>
+					<Name>consumerSecret</Name>
+					<Abstract type="html">Your Twitter application&apos;s consumer secret.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startWithConsumerKey:consumerSecret:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTwitter/startWithConsumerKey:consumerSecret:accessGroup:</TokenIdentifier>
+			<Abstract type="html">Start Twitter with a consumer key, secret, and keychain access group. See [TWTRTwitter startWithConsumerKey:consumerSecret:]</Abstract>
+			<DeclaredIn>TWTRTwitter.h</DeclaredIn>
+			
+			<Declaration>- (void)startWithConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret accessGroup:(nullable NSString *)accessGroup</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>consumerKey</Name>
+					<Abstract type="html">Your Twitter application&apos;s consumer key.</Abstract>
+				</Parameter><Parameter>
+					<Name>consumerSecret</Name>
+					<Abstract type="html">Your Twitter application&apos;s consumer secret.</Abstract>
+				</Parameter><Parameter>
+					<Name>accessGroup</Name>
+					<Abstract type="html">An optional keychain access group to apply to session objects stored in the keychain.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startWithConsumerKey:consumerSecret:accessGroup:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTwitter/setVersion:</TokenIdentifier>
+			<Abstract type="html">The current version of this kit.</Abstract>
+			<DeclaredIn>TWTRTwitter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *version</Declaration>
+			
+			
+			<Anchor>//api/name/version</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTwitter/version</TokenIdentifier>
+			<Abstract type="html">The current version of this kit.</Abstract>
+			<DeclaredIn>TWTRTwitter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *version</Declaration>
+			
+			
+			<Anchor>//api/name/version</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTwitter/version</TokenIdentifier>
+			<Abstract type="html">The current version of this kit.</Abstract>
+			<DeclaredIn>TWTRTwitter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *version</Declaration>
+			
+			
+			<Anchor>//api/name/version</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTwitter/setAuthConfig:</TokenIdentifier>
+			<Abstract type="html">Authentication configuration details. Encapsulates the consumerKey and consumerSecret credentials required to authenticate a Twitter application.</Abstract>
+			<DeclaredIn>TWTRTwitter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRAuthConfig *authConfig</Declaration>
+			
+			
+			<Anchor>//api/name/authConfig</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTwitter/authConfig</TokenIdentifier>
+			<Abstract type="html">Authentication configuration details. Encapsulates the consumerKey and consumerSecret credentials required to authenticate a Twitter application.</Abstract>
+			<DeclaredIn>TWTRTwitter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRAuthConfig *authConfig</Declaration>
+			
+			
+			<Anchor>//api/name/authConfig</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTwitter/authConfig</TokenIdentifier>
+			<Abstract type="html">Authentication configuration details. Encapsulates the consumerKey and consumerSecret credentials required to authenticate a Twitter application.</Abstract>
+			<DeclaredIn>TWTRTwitter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRAuthConfig *authConfig</Declaration>
+			
+			
+			<Anchor>//api/name/authConfig</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTwitter/setSessionStore:</TokenIdentifier>
+			<Abstract type="html">Session store exposing methods to fetch and manage active sessions. Applications that need to manage
+multiple users should use the session store to authenticate and log out users.</Abstract>
+			<DeclaredIn>TWTRTwitter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRSessionStore *sessionStore</Declaration>
+			
+			
+			<Anchor>//api/name/sessionStore</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTwitter/sessionStore</TokenIdentifier>
+			<Abstract type="html">Session store exposing methods to fetch and manage active sessions. Applications that need to manage
+multiple users should use the session store to authenticate and log out users.</Abstract>
+			<DeclaredIn>TWTRTwitter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRSessionStore *sessionStore</Declaration>
+			
+			
+			<Anchor>//api/name/sessionStore</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTwitter/sessionStore</TokenIdentifier>
+			<Abstract type="html">Session store exposing methods to fetch and manage active sessions. Applications that need to manage
+multiple users should use the session store to authenticate and log out users.</Abstract>
+			<DeclaredIn>TWTRTwitter.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRSessionStore *sessionStore</Declaration>
+			
+			
+			<Anchor>//api/name/sessionStore</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTwitter/logInWithCompletion:</TokenIdentifier>
+			<Abstract type="html">Triggers user authentication with Twitter.</Abstract>
+			<DeclaredIn>TWTRTwitter.h</DeclaredIn>
+			
+			<Declaration>- (void)logInWithCompletion:(TWTRLogInCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">The completion block will be called after authentication is successful or if there is an error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInWithCompletion:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTwitter/logInWithViewController:completion:</TokenIdentifier>
+			<Abstract type="html">Triggers user authentication with Twitter. Allows the developer to specify the presenting view controller.</Abstract>
+			<DeclaredIn>TWTRTwitter.h</DeclaredIn>
+			
+			<Declaration>- (void)logInWithViewController:(nullable UIViewController *)viewController completion:(TWTRLogInCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">The view controller that will be used to present the authentication view.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">The completion block will be called after authentication is successful or if there is an error.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logInWithViewController:completion:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTwitter/application:openURL:options:</TokenIdentifier>
+			<Abstract type="html">Finish the SFSafariViewController authentication loop. This method should
+be called from application:openURL:options inside the application delegate.</Abstract>
+			<DeclaredIn>TWTRTwitter.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>application</Name>
+					<Abstract type="html">The UIApplication instance received as a parameter.</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The NSURL instance received as a parameter.</Abstract>
+				</Parameter><Parameter>
+					<Name>options</Name>
+					<Abstract type="html">The options dictionary received as a parameter.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Boolean specifying whether this URL was handled
+by Twitter Kit or not.</Abstract></ReturnValue>
+			<Anchor>//api/name/application:openURL:options:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

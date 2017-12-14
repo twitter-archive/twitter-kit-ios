@@ -1,0 +1,112 @@
+"CANCEL_ACTION_LABEL" = "ביטול";
+
+"COMPOSE_TEXT_VIEW_PLACEHOLDER" = "מה קורה?";
+
+"COMPOSITION_SEND_TWEET_ERROR_LABEL" = "הציוץ לא נשלח";
+
+"LOCATION_SERVICES_ACCESS_DENIED_ALERT_MESSAGE" = "עבור אל הגדרות iOS > פרטיות > שירותי מיקום כדי לאפשר לטוויטר לגשת למיקום שלך.";
+
+"LOCATION_SERVICES_ACCESS_DENIED_ALERT_TITLE" = "תן לטוויטר הרשאה לגשת למיקום שלך";
+
+"LOCATION_SERVICES_ERROR_ALERT_MESSAGE" = "אי אפשר למצוא את המיקום שלך. נסה שוב מאוחר יותר.";
+
+"LOCATION_SERVICES_ERROR_ALERT_TITLE" = "ניסיון הגישה למיקום נכשל";
+
+"OK_ACTION_LABEL" = "אישור";
+
+"RETRY_ACTION_LABEL" = "נסה שוב";
+
+"SEND_TWEET_ACTION_LABEL" = "ציוץ";
+
+"SHARE_EXT_ACCOUNT" = "חשבון";
+
+"SHARE_EXT_LOCATION" = "מיקום";
+
+"SHARE_EXT_NONE_VALUE" = "ללא";
+
+"SHARE_EXT_NO_ACCOUNTS_MESSAGE" = "לא הוגדרו חשבונות טוויטר. אפשר להוסיף או ליצור חשבון טוויטר דרך ההגדרות.";
+
+"SHARE_EXT_NO_ACCOUNTS_SIGN_IN_MESSAGE" = "לא הוגדרו חשבונות טוויטר. אפשר ליצור חשבון או להיכנס לחשבון באמצעות היישום של טוויטר.";
+
+"SHARE_EXT_NO_ACCOUNTS_TITLE" = "אין חשבון טוויטר";
+
+"SHARE_EXT_TWEET_FAILED_TITLE" = "שליחת הציוץ נכשלה.";
+
+"SHARE_EXT_TWITTER_TITLE" = "טוויטר";
+
+"TIME_SHORT_DAYS_FORMAT" = "%d ימים";
+
+"TIME_SHORT_DAY_FORMAT" = "יום %d";
+
+"TIME_SHORT_HOURS_FORMAT" = "%d שעות";
+
+"TIME_SHORT_HOUR_FORMAT" = "שעה %d";
+
+"TIME_SHORT_MINUTES_FORMAT" = "%d דק'";
+
+"TIME_SHORT_MINUTE_FORMAT" = "דקה %d";
+
+"TIME_SHORT_SECONDS_FORMAT" = "%d שנ'";
+
+"TIME_SHORT_SECOND_FORMAT" = "שניה %d";
+
+"tw__card_compose_character_count" = "%td תווים נותרו";
+
+"tw__card_compose_close_hint" = "נגיעה כפולה כדי לסגור את העורך";
+
+"tw__card_compose_install_preview" = "תצוגה מקדימה של כפתור התקנה עבור %@";
+
+"tw__card_compose_profile_image" = "הפרופיל של %@";
+
+"tw__card_compose_tweet_hint" = "נגיעה כפולה כדי לשלוח את הציוץ הזה";
+
+"tw__card_composer_app_store" = "App Store";
+
+"tw__card_composer_install_button" = "התקנה";
+
+"tw__card_composer_tweet" = "ציוץ";
+
+"tw__close_button" = "סגור";
+
+"tw__composer_placeholder_text" = "מה קורה?";
+
+"tw__email_share_detail_message_format" = "קבל עדכונים ומידע נוסף מ-%@ לאחר שתאשר ליישום לגשת לכתובת הדואר האלקטרוני המצוינת בחשבון הטוויטר שלך @%@.";
+
+"tw__empty_timeline" = "ציר הזמן ריק";
+
+"tw__image_viewer_done_button" = "סיום";
+
+"tw__open_in_text" = "פתח ב-%@";
+
+"tw__privacy_information_button" = "מידע על פרטיות";
+
+"tw__share_tweet" = "שתף ציוץ";
+
+"tw__share_tweet_subject_format" = "ציוץ מאת %1$@ (‎@%2$@‎)";
+
+"tw__sign_in_with_twitter_button" = "כניסה באמצעות טוויטר";
+
+"tw__single_image" = "קובץ תמונה מצורף";
+
+"tw__test_string" = "בדיקה";
+
+"tw__tweet_image_accessibility" = "קובץ מצורף";
+
+"tw__tweet_like_button" = "אהבתי";
+
+"tw__tweet_liked_state" = "סומן כאהוב";
+
+"tw__tweet_not_liked_state" = "לא סומן כאהוב";
+
+"tw__tweet_profile_accessibility" = "פרופיל";
+
+"tw__tweet_retweeted_by_user" = "צויץ מחדש על-ידי %@";
+
+"tw__tweet_share_button" = "שתף";
+
+"tw__user_content_image" = "תצוגה מקדימה של יישום";
+
+"tw__video_thumbnail" = "קובץ וידאו מצורף";
+
+"tw__view_is_sponsored_ad" = "זוהי הודעת חסות";
+

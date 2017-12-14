@@ -1,0 +1,149 @@
+  {
+  "contributors_enabled": false,
+  "created_at": "Wed May 23 06:01:13 +0000 2007",
+  "default_profile": false,
+  "default_profile_image": false,
+  "description": "The Real Twitter API. I tweet about API changes, service issues and happily answer questions about Twitter and our API. Don't get an answer? It's on my website.",
+  "entities": {
+  "description": {
+  "urls": []
+  },
+  "url": {
+  "urls": [
+           {
+           "display_url": "dev.twitter.com",
+           "expanded_url": "http://dev.twitter.com",
+           "indices": [
+                       0,
+                       22
+                       ],
+           "url": "http://t.co/78pYTvWfJd"
+           }
+           ]
+  }
+  },
+  "favourites_count": 26,
+  "follow_request_sent": null,
+  "followers_count": 2245353,
+  "following": null,
+  "friends_count": 48,
+  "geo_enabled": true,
+  "id": 6253282,
+  "id_str": "6253282",
+  "is_translation_enabled": false,
+  "is_translator": false,
+  "lang": "en",
+  "listed_count": 12791,
+  "location": "San Francisco, CA",
+  "name": "Twitter API",
+  "notifications": null,
+  "profile_background_color": "C0DEED",
+  "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/656927849/miyt9dpjz77sc0w3d4vj.png",
+  "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/656927849/miyt9dpjz77sc0w3d4vj.png",
+  "profile_background_tile": true,
+  "profile_banner_url": "https://pbs.twimg.com/profile_banners/6253282/1347394302",
+  "profile_image_url": "http://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3_normal.png",
+  "profile_image_url_https": "https://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3_normal.png",
+  "profile_link_color": "0084B4",
+  "profile_sidebar_border_color": "C0DEED",
+  "profile_sidebar_fill_color": "DDEEF6",
+  "profile_text_color": "333333",
+  "profile_use_background_image": true,
+  "protected": false,
+  "screen_name": "twitterapi",
+  "status": {
+  "contributors": null,
+  "coordinates": null,
+  "created_at": "Wed Jul 16 19:58:47 +0000 2014",
+  "entities": {
+  "hashtags": [],
+  "symbols": [],
+  "urls": [
+           {
+           "display_url": "blog.twitter.com/2014/build-bet\u2026",
+           "expanded_url": "https://blog.twitter.com/2014/build-better-apps-with-crashlytics",
+           "indices": [
+                       139,
+                       140
+                       ],
+           "url": "https://t.co/t35pKS1qD8"
+           }
+           ],
+  "user_mentions": [
+                    {
+                    "id": 2244994945,
+                    "id_str": "2244994945",
+                    "indices": [
+                                3,
+                                14
+                                ],
+                    "name": "TwitterDev",
+                    "screen_name": "TwitterDev"
+                    }
+                    ]
+  },
+  "favorite_count": 0,
+  "favorited": false,
+  "geo": null,
+  "id": 489499407654879232,
+  "id_str": "489499407654879232",
+  "in_reply_to_screen_name": null,
+  "in_reply_to_status_id": null,
+  "in_reply_to_status_id_str": null,
+  "in_reply_to_user_id": null,
+  "in_reply_to_user_id_str": null,
+  "lang": "en",
+  "place": null,
+  "possibly_sensitive": false,
+  "retweet_count": 34,
+  "retweeted": false,
+  "retweeted_status": {
+  "contributors": null,
+  "coordinates": null,
+  "created_at": "Wed Jul 16 19:58:39 +0000 2014",
+  "entities": {
+  "hashtags": [],
+  "symbols": [],
+  "urls": [
+           {
+           "display_url": "blog.twitter.com/2014/build-bet\u2026",
+           "expanded_url": "https://blog.twitter.com/2014/build-better-apps-with-crashlytics",
+           "indices": [
+                       103,
+                       126
+                       ],
+           "url": "https://t.co/t35pKS1qD8"
+           }
+           ],
+  "user_mentions": []
+  },
+  "favorite_count": 27,
+  "favorited": false,
+  "geo": null,
+  "id": 489499371592228864,
+  "id_str": "489499371592228864",
+  "in_reply_to_screen_name": null,
+  "in_reply_to_status_id": null,
+  "in_reply_to_status_id_str": null,
+  "in_reply_to_user_id": null,
+  "in_reply_to_user_id_str": null,
+  "lang": "en",
+  "place": null,
+  "possibly_sensitive": false,
+  "retweet_count": 34,
+  "retweeted": false,
+  "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+  "text": "Now available, Answers by Crashlytics. Gain insight into your app\u2019s usage. Learn more and get started. https://t.co/t35pKS1qD8",
+  "truncated": false
+  },
+  "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+  "text": "RT @TwitterDev: Now available, Answers by Crashlytics. Gain insight into your app\u2019s usage. Learn more and get started. https://t.co/t35pKS1\u2026",
+  "truncated": false
+  },
+  "statuses_count": 3512,
+  "time_zone": "Pacific Time (US & Canada)",
+  "url": "http://t.co/78pYTvWfJd",
+  "utc_offset": -25200,
+  "verified": true,
+  "email": "foo@bar.com"
+  }

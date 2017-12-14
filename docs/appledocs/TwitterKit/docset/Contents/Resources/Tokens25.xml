@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRVideoMetaData.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRVideoMetaData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRVideoMetaData/setVideoURL:</TokenIdentifier>
+			<Abstract type="html">The URL of the video if the video is an mp4. This value is provided as a convenience
+method but user&apos;s should query the variants property to have finer grained control
+over which video they play.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) NSURL *videoURL</Declaration>
+			
+			
+			<Anchor>//api/name/videoURL</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRVideoMetaData/videoURL</TokenIdentifier>
+			<Abstract type="html">The URL of the video if the video is an mp4. This value is provided as a convenience
+method but user&apos;s should query the variants property to have finer grained control
+over which video they play.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) NSURL *videoURL</Declaration>
+			
+			
+			<Anchor>//api/name/videoURL</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRVideoMetaData/videoURL</TokenIdentifier>
+			<Abstract type="html">The URL of the video if the video is an mp4. This value is provided as a convenience
+method but user&apos;s should query the variants property to have finer grained control
+over which video they play.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable) NSURL *videoURL</Declaration>
+			
+			
+			<Anchor>//api/name/videoURL</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRVideoMetaData/setVariants:</TokenIdentifier>
+			<Abstract type="html">Returns the array of variants.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *variants</Declaration>
+			
+			
+			<Anchor>//api/name/variants</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRVideoMetaData/variants</TokenIdentifier>
+			<Abstract type="html">Returns the array of variants.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *variants</Declaration>
+			
+			
+			<Anchor>//api/name/variants</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRVideoMetaData/variants</TokenIdentifier>
+			<Abstract type="html">Returns the array of variants.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *variants</Declaration>
+			
+			
+			<Anchor>//api/name/variants</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRVideoMetaData/setAspectRatio:</TokenIdentifier>
+			<Abstract type="html">The video&apos;s aspect ratio.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat aspectRatio</Declaration>
+			
+			
+			<Anchor>//api/name/aspectRatio</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRVideoMetaData/aspectRatio</TokenIdentifier>
+			<Abstract type="html">The video&apos;s aspect ratio.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat aspectRatio</Declaration>
+			
+			
+			<Anchor>//api/name/aspectRatio</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRVideoMetaData/aspectRatio</TokenIdentifier>
+			<Abstract type="html">The video&apos;s aspect ratio.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat aspectRatio</Declaration>
+			
+			
+			<Anchor>//api/name/aspectRatio</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRVideoMetaData/setDuration:</TokenIdentifier>
+			<Abstract type="html">The video&apos;s duration in seconds.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSTimeInterval duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRVideoMetaData/duration</TokenIdentifier>
+			<Abstract type="html">The video&apos;s duration in seconds.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSTimeInterval duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRVideoMetaData/duration</TokenIdentifier>
+			<Abstract type="html">The video&apos;s duration in seconds.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSTimeInterval duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

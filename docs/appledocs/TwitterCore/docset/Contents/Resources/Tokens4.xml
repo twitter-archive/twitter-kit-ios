@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRCoreOAuthSigning.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRCoreOAuthSigning</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRCoreOAuthSigning.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRCoreOAuthSigning/OAuthEchoHeadersForRequestMethod:URLString:parameters:error:</TokenIdentifier>
+			<Abstract type="html">OAuth Echo is a means to securely delegate OAuth authorization to a third party while interacting with an API.
+For example, you may wish to verify a user&apos;s credentials from your app&apos;s server (the third party) rather than your app.
+This method provides you with the OAuth signature to add to the third party&apos;s request to URLString, as well as the formed
+URL with the query string to send that request to.
+This is equivalent to calling -URLRequestWithMethod:URL:parameters:error: and getting the URL and the Authorization HTTP header out of the request.</Abstract>
+			<DeclaredIn>TWTRCoreOAuthSigning.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)OAuthEchoHeadersForRequestMethod:(NSString *)method URLString:(NSString *)URLString parameters:(nullable NSDictionary *)parameters error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>method</Name>
+					<Abstract type="html">Request method, GET, POST, PUT, DELETE, etc.</Abstract>
+				</Parameter><Parameter>
+					<Name>URLString</Name>
+					<Abstract type="html">The full URL of the Twitter endpoint you plan to send a request to. E.g. https://api.twitter.com/1.1/account/verify_credentials.json</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">Request parameters.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error in the TWTRErrorDomain domain. The code will be TWTRErrorCodeInvalidURL if the URLString&apos;s host is not api.twitter.com</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">nil if there&apos;s an error or a missing required parameter, or a dictionary with the fully formed request URL under TWTROAuthEchoRequestURLStringKey (NSString), and the Authorization header in TWTROAuthEchoAuthorizationHeaderKey (NSString), to be used to sign the request.</Abstract></ReturnValue>
+			<Anchor>//api/name/OAuthEchoHeadersForRequestMethod:URLString:parameters:error:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRCoreOAuthSigning/OAuthEchoHeadersToVerifyCredentials</TokenIdentifier>
+			<Abstract type="html">This method provides you with the OAuth signature, as well as the formed URL with the query string, to send a request to verify_credentials.</Abstract>
+			<DeclaredIn>TWTRCoreOAuthSigning.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)OAuthEchoHeadersToVerifyCredentials</Declaration>
+			
+			<ReturnValue><Abstract type="html">A dictionary with the fully formed Request URL under TWTROAuthEchoRequestURLStringKey (NSString), and the Authorization header in TWTROAuthEchoAuthorizationHeaderKey (NSString), to be used to sign the request.</Abstract></ReturnValue>
+			<Anchor>//api/name/OAuthEchoHeadersToVerifyCredentials</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

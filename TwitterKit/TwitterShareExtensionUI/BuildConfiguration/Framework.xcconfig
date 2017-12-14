@@ -1,0 +1,39 @@
+//
+//  Framework.xcconfig
+//  Frameworks
+//
+//  Created by Tanner Oakes on 4/6/15.
+//  Copyright (c) 2015 Twitter. All rights reserved.
+//
+
+// Build Options
+APPLICATION_EXTENSION_API_ONLY = YES
+ENABLE_TESTABILITY = YES
+
+// Deployment
+IPHONEOS_DEPLOYMENT_TARGET = 9.0
+INSTALL_PATH = $(LOCAL_LIBRARY_DIR)/Frameworks
+SKIP_INSTALL = YES
+
+// Linking
+DYLIB_COMPATIBILITY_VERSION = 1
+DYLIB_CURRENT_VERSION = 1
+DYLIB_INSTALL_NAME_BASE = @rpath
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+
+// Packaging
+DEFINES_MODULE = YES
+INFOPLIST_FILE = $(TARGET_NAME)/Info.plist
+PRODUCT_BUNDLE_IDENTIFIER = com.twitter.${PRODUCT_NAME:rfc1034identifier}
+PRODUCT_NAME = $(TARGET_NAME)
+
+// Search Paths
+HEADER_SEARCH_PATHS = $(inherited) $(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include
+
+// Static Analyzer - Analysis Policy
+RUN_CLANG_STATIC_ANALYZER = $(RUN_CLANG_STATIC_ANALYZER_FOR_$(PRODUCT_NAME))
+
+// Swift Compiler - Version
+//  - for Xcode 8.3.1, this means 'xcrun swift -version' returns 3.1
+//  - for Xcode 8.2.1, this means 'xcrun swift -version' returns 3.0
+SWIFT_VERSION = 3.0

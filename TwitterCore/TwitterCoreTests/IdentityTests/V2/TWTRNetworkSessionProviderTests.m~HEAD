@@ -1,0 +1,189 @@
+//
+//  TWTRNetworkSessionProviderTests.m
+//  TwitterKit
+//
+//  Created by Kang Chen on 7/2/15.
+//  Copyright (c) 2015 Twitter. All rights reserved.
+//
+
+#import <TwitterCore/TWTRAPIServiceConfig.h>
+#import <TwitterCore/TWTRAppAuthProvider.h>
+#import <TwitterCore/TWTRAuthConfig.h>
+#import <TwitterCore/TWTRAuthenticationConstants.h>
+#import <TwitterCore/TWTRErrorLogger.h>
+#import <TwitterCore/TWTRGuestAuthProvider.h>
+#import <TwitterCore/TWTRGuestSession.h>
+#import "OCMock.h"
+#import "TWTRAppleSocialAuthenticaticationProvider.h"
+#import "TWTRNetworkSessionProvider.h"
+#import "TWTRSession.h"
+#import "TWTRTestCase.h"
+
+@interface TWTRNetworkSessionProviderTests : TWTRTestCase
+
+@property (nonatomic, readonly) id appleAuthProviderMock;
+@property (nonatomic, readonly) id appAuthProviderMock;
+@property (nonatomic, readonly) id guestAuthProviderMock;
+@property (nonatomic, readonly) TWTRAuthConfig *authConfig;
+@property (nonatomic, readonly) id<TWTRAPIServiceConfig> serviceConfig;
+@property (nonatomic, readonly) TWTRGuestSession *guestSession;
+@property (nonatomic, readonly) TWTRSession *userSession;
+@property (nonatomic, readonly) id<TWTRErrorLogger> errorLoggerMock;
+
+@property (nonatomic, readonly) NSDictionary *appAuthResponse;
+@property (nonatomic, readonly) NSDictionary *userAuthResponse;
+@property (nonatomic, readonly) NSDictionary *guestAuthResponse;
+
+@end
+
+@implementation TWTRNetworkSessionProviderTests
+
+- (void)setUp
+{
+    [super setUp];
+
+    // FIXME: clean this up when refactoring auth providers
+    _appleAuthProviderMock = OCMClassMock([TWTRAppleSocialAuthenticaticationProvider class]);
+    _appAuthProviderMock = OCMClassMock([TWTRAppAuthProvider class]);
+    _guestAuthProviderMock = OCMClassMock([TWTRGuestAuthProvider class]);
+    [@[_appleAuthProviderMock, _appAuthProviderMock, _guestAuthProviderMock] enumerateObjectsUsingBlock:^(id mockObj, NSUInteger idx, BOOL *stop) {
+        // mock class should return the mock instance
+        OCMStub([mockObj alloc]).andReturn(mockObj);
+    }];
+    [OCMStub([_appleAuthProviderMock initWithAuthConfig:OCMOCK_ANY apiServiceConfig:OCMOCK_ANY errorLogger:OCMOCK_ANY]) andReturn:_appleAuthProviderMock];
+    [OCMStub([_appAuthProviderMock initWithAuthConfig:OCMOCK_ANY apiServiceConfig:OCMOCK_ANY]) andReturn:_appAuthProviderMock];
+    [OCMStub([_guestAuthProviderMock initWithAuthConfig:OCMOCK_ANY apiServiceConfig:OCMOCK_ANY accessToken:OCMOCK_ANY]) andReturn:_guestAuthProviderMock];
+
+    _authConfig = [[TWTRAuthConfig alloc] initWithConsumerKey:@"consumerKey" consumerSecret:@"consumerSecret"];
+    _serviceConfig = OCMProtocolMock(@protocol(TWTRAPIServiceConfig));
+
+    _userAuthResponse = @{TWTRAuthOAuthTokenKey: @"token", TWTRAuthOAuthSecretKey: @"secret", TWTRAuthAppOAuthScreenNameKey: @"screenname", TWTRAuthAppOAuthUserIDKey: @"1"};
+    _userSession = [[TWTRSession alloc] initWithSessionDictionary:_userAuthResponse];
+    _appAuthResponse = @{TWTRAuthAppOAuthTokenKey: @"accessToken"};
+    _guestAuthResponse = @{TWTRAuthAppOAuthTokenKey: @"accessToken", TWTRGuestAuthOAuthTokenKey: @"guestToken"};
+    _guestSession = [[TWTRGuestSession alloc] initWithSessionDictionary:_guestAuthResponse];
+
+    _errorLoggerMock = OCMProtocolMock(@protocol(TWTRErrorLogger));
+}
+
+- (void)tearDown
+{
+    [self.appleAuthProviderMock stopMocking];
+    [self.appAuthProviderMock stopMocking];
+    [self.guestAuthProviderMock stopMocking];
+
+    [super tearDown];
+}
+
+- (void)testFetchUserSession_success
+{
+    [OCMExpect([self.appleAuthProviderMock authenticateWithCompletion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
+        TWTRAuthenticationProviderCompletion authCompletion;
+        [invocation getArgument:&authCompletion atIndex:invocation.methodSignature.numberOfArguments-1];
+        authCompletion(self.userAuthResponse, nil);
+    }];
+    [TWTRNetworkSessionProvider userSessionWithAuthConfig:self.authConfig APIServiceConfig:self.serviceConfig errorLogger:self.errorLoggerMock completion:^(TWTRSession *userSession, NSError *error) {
+        XCTAssertEqualObjects(userSession.userID, @"1");
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+}
+
+- (void)testFetchUserSession_failure
+{
+    [OCMExpect([self.appleAuthProviderMock authenticateWithCompletion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
+        NSError *error = [NSError errorWithDomain:@"domain" code:0 userInfo:@{}];
+        TWTRAuthenticationProviderCompletion authCompletion;
+        [invocation getArgument:&authCompletion atIndex:invocation.methodSignature.numberOfArguments-1];
+        authCompletion(nil, error);
+    }];
+    [TWTRNetworkSessionProvider userSessionWithAuthConfig:self.authConfig APIServiceConfig:self.serviceConfig errorLogger:self.errorLoggerMock completion:^(TWTRSession *userSession, NSError *error) {
+        XCTAssertNil(userSession);
+        XCTAssertNotNil(error);
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+    OCMVerifyAll(self.appleAuthProviderMock);
+}
+
+- (void)testFetchGuestSession_success
+{
+    [OCMStub([self.guestAuthProviderMock authenticateWithCompletion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
+        TWTRAuthenticationProviderCompletion authCompletion;
+        [invocation getArgument:&authCompletion atIndex:invocation.methodSignature.numberOfArguments-1];
+        authCompletion(self.guestAuthResponse, nil);
+    }];
+    [TWTRNetworkSessionProvider guestSessionWithAuthConfig:self.authConfig APIServiceConfig:self.serviceConfig URLSession:[NSURLSession sharedSession] accessToken:@"accessToken" completion:^(TWTRGuestSession *guestSession, NSError *error) {
+        XCTAssertEqualObjects(guestSession.accessToken, @"accessToken");
+        XCTAssertEqualObjects(guestSession.guestToken, @"guestToken");
+        XCTAssertNil(error);
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+    OCMVerifyAll(self.guestAuthProviderMock);
+}
+
+- (void)testFetchGuestSession_shouldNotPerformAppAuthIfAccessTokenProvided
+{
+    [[self.appAuthProviderMock reject] authenticateWithCompletion:OCMOCK_ANY];
+    [OCMStub([self.guestAuthProviderMock authenticateWithCompletion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
+        TWTRAuthenticationProviderCompletion authCompletion;
+        [invocation getArgument:&authCompletion atIndex:invocation.methodSignature.numberOfArguments-1];
+        authCompletion(self.guestAuthResponse, nil);
+    }];
+    [TWTRNetworkSessionProvider guestSessionWithAuthConfig:self.authConfig APIServiceConfig:self.serviceConfig URLSession:[NSURLSession sharedSession] accessToken:@"accessToken" completion:^(TWTRGuestSession *guestSession, NSError *error) {
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+    OCMVerifyAll(self.appAuthProviderMock);
+    OCMVerifyAll(self.guestAuthProviderMock);
+}
+
+- (void)testFetchGuestSession_failure
+{
+    [OCMStub([self.guestAuthProviderMock authenticateWithCompletion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
+        NSError *error = [NSError errorWithDomain:@"domain" code:0 userInfo:@{}];
+        TWTRAuthenticationProviderCompletion authCompletion;
+        [invocation getArgument:&authCompletion atIndex:invocation.methodSignature.numberOfArguments-1];
+        authCompletion(nil, error);
+    }];
+    [TWTRNetworkSessionProvider guestSessionWithAuthConfig:self.authConfig APIServiceConfig:self.serviceConfig URLSession:[NSURLSession sharedSession] accessToken:@"accessToken" completion:^(TWTRGuestSession *guestSession, NSError *error) {
+        XCTAssertNil(guestSession);
+        XCTAssertNotNil(error);
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+    OCMVerifyAll(self.guestAuthProviderMock);
+}
+
+- (void)testFetchGuestSession_performAppAuthAndGuestAuthIfNoAccessToken
+{
+    [OCMStub([self.appAuthProviderMock authenticateWithCompletion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
+        TWTRAuthenticationProviderCompletion appAuthCompletion;
+        [invocation getArgument:&appAuthCompletion atIndex:invocation.methodSignature.numberOfArguments-1];
+        appAuthCompletion(self.appAuthResponse, nil);
+    }];
+    [OCMStub([self.guestAuthProviderMock authenticateWithCompletion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
+        TWTRAuthenticationProviderCompletion guestAuthCompletion;
+        [invocation getArgument:&guestAuthCompletion atIndex:invocation.methodSignature.numberOfArguments-1];
+        guestAuthCompletion(self.guestAuthResponse, nil);
+    }];
+
+    [TWTRNetworkSessionProvider guestSessionWithAuthConfig:self.authConfig APIServiceConfig:self.serviceConfig URLSession:[NSURLSession sharedSession] accessToken:@"accessToken" completion:^(TWTRGuestSession *guestSession, NSError *error) {
+        XCTAssertEqualObjects(guestSession.accessToken, @"accessToken");
+        XCTAssertEqualObjects(guestSession.guestToken, @"guestToken");
+        XCTAssertNil(error);
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+    OCMVerifyAll(self.guestAuthProviderMock);
+    OCMVerifyAll(self.appAuthProviderMock);
+}
+
+@end

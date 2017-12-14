@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRVideoMetaDataVariant.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRVideoMetaDataVariant</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="26"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRVideoMetaDataVariant/setBitrate:</TokenIdentifier>
+			<Abstract type="html">The bitrate of the entitity</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger bitrate</Declaration>
+			
+			
+			<Anchor>//api/name/bitrate</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRVideoMetaDataVariant/bitrate</TokenIdentifier>
+			<Abstract type="html">The bitrate of the entitity</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger bitrate</Declaration>
+			
+			
+			<Anchor>//api/name/bitrate</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRVideoMetaDataVariant/bitrate</TokenIdentifier>
+			<Abstract type="html">The bitrate of the entitity</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger bitrate</Declaration>
+			
+			
+			<Anchor>//api/name/bitrate</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRVideoMetaDataVariant/setContentType:</TokenIdentifier>
+			<Abstract type="html">The content type of the video entity.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *contentType</Declaration>
+			
+			
+			<Anchor>//api/name/contentType</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRVideoMetaDataVariant/contentType</TokenIdentifier>
+			<Abstract type="html">The content type of the video entity.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *contentType</Declaration>
+			
+			
+			<Anchor>//api/name/contentType</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRVideoMetaDataVariant/contentType</TokenIdentifier>
+			<Abstract type="html">The content type of the video entity.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *contentType</Declaration>
+			
+			
+			<Anchor>//api/name/contentType</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRVideoMetaDataVariant/setURL:</TokenIdentifier>
+			<Abstract type="html">The URL for the entity.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRVideoMetaDataVariant/URL</TokenIdentifier>
+			<Abstract type="html">The URL for the entity.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRVideoMetaDataVariant/URL</TokenIdentifier>
+			<Abstract type="html">The URL for the entity.</Abstract>
+			<DeclaredIn>TWTRVideoMetaData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

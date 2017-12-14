@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TWTRAPIErrorCode Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">TwitterCore </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Twitter Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TWTRAPIErrorCode Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>TWTRAPIErrorCode.h</td>
+</tr><tr>
+	<th>References</th>
+	<td>https://dev.twitter.com/docs/error-codes-responses</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">TWTRAPIErrorCode</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>Error codes surfaced by the Twitter API.</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSUInteger, TWTRAPIErrorCode ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeCouldNotAuthenticate</a> = 32,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodePageNotExist</a> = 34,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeNotAuthorizedForEndpoint</a> = 37,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeInvalidParameter</a> = 44,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeAccountSuspended</a> = 64,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeAPIVersionRetired</a> = 68,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeRateLimitExceeded</a> = 88,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeInvalidOrExpiredToken</a> = 89,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeSSLInvalid</a> = 92,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeOverCapacity</a> = 130,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeInternalError</a> = 131,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeCouldNotAuthenticateTimestampOutOfRange</a> = 135,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeAlreadyFavorited</a> = 139,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeCannotFollowOverLimit</a> = 161,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeNotAuthorizedToSeeStatus</a> = 179,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeOverDailyStatusUpdateLimit</a> = 185,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeStatusIsDuplicate</a> = 187,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeBadAuthenticationData</a> = 215,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeRequestIsAutomated</a> = 226,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeUserMustVerifyLogin</a> = 231,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeChallengeCodeInvalid</a> = 236,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeBadGuestToken</a> = 239,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeLoginRateExceeded</a> = 245,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeEndpointRetired</a> = 251,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeApplicationCannotPerformWriteAction</a> = 261,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeCannotMuteSelf</a> = 271,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeCannotMuteSpecifiedUser</a> = 272,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeDeviceRegisterRateExceeded</a> = 299,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeDeviceCarrierNotSupported</a> = 286,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeAlreadyRetweeted</a> = 327,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRAPIErrorCodeTooManyRequests</a> = 429,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeCouldNotAuthenticate"></a><code>TWTRAPIErrorCodeCouldNotAuthenticate</code></dt>
+<dd>
+
+
+<p>Your call could not be completed as dialed.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodePageNotExist"></a><code>TWTRAPIErrorCodePageNotExist</code></dt>
+<dd>
+
+
+<p>Corresponds with an HTTP 404 - the specified resource was not found.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeNotAuthorizedForEndpoint"></a><code>TWTRAPIErrorCodeNotAuthorizedForEndpoint</code></dt>
+<dd>
+
+
+<p>Not authorized to use this endpoint.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeInvalidParameter"></a><code>TWTRAPIErrorCodeInvalidParameter</code></dt>
+<dd>
+
+
+<p>Generic API error code for invalid parameter</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeAccountSuspended"></a><code>TWTRAPIErrorCodeAccountSuspended</code></dt>
+<dd>
+
+
+<p>Corresponds with an HTTP 403 — the access token being used belongs to a suspended user and they can&rsquo;t complete the action you&rsquo;re trying to take</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeAPIVersionRetired"></a><code>TWTRAPIErrorCodeAPIVersionRetired</code></dt>
+<dd>
+
+
+<p>Corresponds to a HTTP request to a retired v1-era URL.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeRateLimitExceeded"></a><code>TWTRAPIErrorCodeRateLimitExceeded</code></dt>
+<dd>
+
+
+<p>The request limit for this resource has been reached for the current rate limit window.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeInvalidOrExpiredToken"></a><code>TWTRAPIErrorCodeInvalidOrExpiredToken</code></dt>
+<dd>
+
+
+<p>The access token used in the request is incorrect or has expired. Used in API v1.1.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeSSLInvalid"></a><code>TWTRAPIErrorCodeSSLInvalid</code></dt>
+<dd>
+
+
+<p>Only SSL connections are allowed in the API, you should update your request to a secure connection. See <a href="https://dev.twitter.com/docs/security/using-ssl">how to connect using SSL</a>.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeOverCapacity"></a><code>TWTRAPIErrorCodeOverCapacity</code></dt>
+<dd>
+
+
+<p>Corresponds with an HTTP 503 - Twitter is temporarily over capacity.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeInternalError"></a><code>TWTRAPIErrorCodeInternalError</code></dt>
+<dd>
+
+
+<p>Corresponds with an HTTP 500 - An unknown internal error occurred.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeCouldNotAuthenticateTimestampOutOfRange"></a><code>TWTRAPIErrorCodeCouldNotAuthenticateTimestampOutOfRange</code></dt>
+<dd>
+
+
+<p>Corresponds with a HTTP 401 - it means that your oauth_timestamp is either ahead or behind our acceptable range.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeAlreadyFavorited"></a><code>TWTRAPIErrorCodeAlreadyFavorited</code></dt>
+<dd>
+
+
+<p>You have already favorited this status.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeCannotFollowOverLimit"></a><code>TWTRAPIErrorCodeCannotFollowOverLimit</code></dt>
+<dd>
+
+
+<p>Corresponds with HTTP 403 — returned when a user cannot follow another user due to some kind of limit.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeNotAuthorizedToSeeStatus"></a><code>TWTRAPIErrorCodeNotAuthorizedToSeeStatus</code></dt>
+<dd>
+
+
+<p>Corresponds with HTTP 403 — returned when a Tweet cannot be viewed by the authenticating user, usually due to the Tweet&rsquo;s author having protected their Tweets.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeOverDailyStatusUpdateLimit"></a><code>TWTRAPIErrorCodeOverDailyStatusUpdateLimit</code></dt>
+<dd>
+
+
+<p>Corresponds with HTTP 403 — returned when a Tweet cannot be posted due to the user having no allowance remaining to post. Despite the text in the error message indicating that this error is only returned when a daily limit is reached, this error will be returned whenever a posting limitation has been reached. Posting allowances have roaming windows of time of unspecified duration.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeStatusIsDuplicate"></a><code>TWTRAPIErrorCodeStatusIsDuplicate</code></dt>
+<dd>
+
+
+<p>The status text has been Tweeted already by the authenticated account.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeBadAuthenticationData"></a><code>TWTRAPIErrorCodeBadAuthenticationData</code></dt>
+<dd>
+
+
+<p>Typically sent with 1.1 responses with HTTP code 400. The method requires authentication but it was not presented or was wholly invalid.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeRequestIsAutomated"></a><code>TWTRAPIErrorCodeRequestIsAutomated</code></dt>
+<dd>
+
+
+<p>We constantly monitor and adjust our filters to block spam and malicious activity on the Twitter platform. These systems are tuned in real-time. If you get this response our systems have flagged the Tweet or DM as possibly fitting this profile. If you feel that the Tweet or DM you attempted to create was flagged in error, please report the details around that to us by filing a ticket at <a href="https://support.twitter.com/forms/platform">https://support.twitter.com/forms/platform</a></p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeUserMustVerifyLogin"></a><code>TWTRAPIErrorCodeUserMustVerifyLogin</code></dt>
+<dd>
+
+
+<p>Returned as a challenge in xAuth when the user has login verification enabled on their account and needs to be directed to twitter.com to <a href="https://twitter.com/settings/applications">generate a temporary password</a>.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeChallengeCodeInvalid"></a><code>TWTRAPIErrorCodeChallengeCodeInvalid</code></dt>
+<dd>
+
+
+<p>Returned from server in digits sign-in flow if user provides wrong confirmation code</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeBadGuestToken"></a><code>TWTRAPIErrorCodeBadGuestToken</code></dt>
+<dd>
+
+
+<p>&ldquo;Bad guest token.&rdquo; The token has probably expired. Try calling <code>[TWTRTwitter logInGuestWithCompletion:]</code> again later.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeLoginRateExceeded"></a><code>TWTRAPIErrorCodeLoginRateExceeded</code></dt>
+<dd>
+
+
+<p>Rate limiting case for /1/sdk/login</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeEndpointRetired"></a><code>TWTRAPIErrorCodeEndpointRetired</code></dt>
+<dd>
+
+
+<p>Corresponds to a HTTP request to a retired URL.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeApplicationCannotPerformWriteAction"></a><code>TWTRAPIErrorCodeApplicationCannotPerformWriteAction</code></dt>
+<dd>
+
+
+<p>Corresponds with HTTP 403 — returned when the application is restricted from POST, PUT, or DELETE actions. See <a href="https://support.twitter.com/articles/72585">How to appeal application suspension and other disciplinary actions</a>.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeCannotMuteSelf"></a><code>TWTRAPIErrorCodeCannotMuteSelf</code></dt>
+<dd>
+
+
+<p>Corresponds with HTTP 403. The authenticated user account cannot mute itself.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeCannotMuteSpecifiedUser"></a><code>TWTRAPIErrorCodeCannotMuteSpecifiedUser</code></dt>
+<dd>
+
+
+<p>Corresponds with HTTP 403. The authenticated user account is not muting the account a call is attempting to unmute.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeDeviceRegisterRateExceeded"></a><code>TWTRAPIErrorCodeDeviceRegisterRateExceeded</code></dt>
+<dd>
+
+
+<p>Rate limiting case for /1.1/device/register.json endpint</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeDeviceCarrierNotSupported"></a><code>TWTRAPIErrorCodeDeviceCarrierNotSupported</code></dt>
+<dd>
+
+
+<p>Phone&rsquo;s carrier not suppported and we can not deliver the sms/make the voice call</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeAlreadyRetweeted"></a><code>TWTRAPIErrorCodeAlreadyRetweeted</code></dt>
+<dd>
+
+
+<p>You have already retweeted this tweet.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRAPIErrorCodeTooManyRequests"></a><code>TWTRAPIErrorCodeTooManyRequests</code></dt>
+<dd>
+
+
+<p>Returned in API v1.1 when a request cannot be served due to the application&rsquo;s rate limit having been exhausted for the resource. See <a href="https://dev.twitter.com/docs/rate-limiting/1.1">Rate Limiting in API v1.1</a>.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRAPIErrorCode.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+                    <div class="method-subsection see-also-section">
+                        <h4 class="method-subtitle">See Also</h4>
+                        <ul>
+                            
+                            <li><code><p><a href="https://dev.twitter.com/docs/error-codes-responses">https://dev.twitter.com/docs/error-codes-responses</a></p></code></li>
+                            
+                        </ul>
+                    </div>
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">TWTRAPIErrorCode.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Twitter Inc. All rights reserved. Updated: 2017-12-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

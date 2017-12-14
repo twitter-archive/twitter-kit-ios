@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TWTRTimelineViewController Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">TwitterKit </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Twitter Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/adConfiguration">adConfiguration</option>
+		
+		<option value="//api/name/dataSource">dataSource</option>
+		
+		<option value="//api/name/showTweetActions">showTweetActions</option>
+		
+		<option value="//api/name/timelineDelegate">timelineDelegate</option>
+		
+		<option value="//api/name/tweetViewDelegate">tweetViewDelegate</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/countOfTweets">- countOfTweets</option>
+		
+		<option value="//api/name/initWithDataSource:">- initWithDataSource:</option>
+		
+		<option value="//api/name/initWithDataSource:adConfiguration:">- initWithDataSource:adConfiguration:</option>
+		
+		<option value="//api/name/initWithStyle:">- initWithStyle:</option>
+		
+		<option value="//api/name/refresh">- refresh</option>
+		
+		<option value="//api/name/snapshotTweets">- snapshotTweets</option>
+		
+		<option value="//api/name/tweetAtIndex:">- tweetAtIndex:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TWTRTimelineViewController Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>UITableViewController</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TWTRTimelineViewController.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class is a <code>UITableViewController</code> subclass that displays <a href="../Classes/TWTRTweetTableViewCell.html"><code>TWTRTweetTableViewCell</code></a> cells. It handles cell-reuse, cell-configuration, and loading more Tweets from the given timeline once the last cell is displayed.</p>
+
+<h2>Usage</h2>
+
+<p>Initialize this class with any object that conforms to the <code>TWTRTimelineDataSource</code> protocol. We provide two such classes, <a href="../Classes/TWTRUserTimelineDataSource.html"><code>TWTRUserTimelineDataSource</code></a> and <a href="../Classes/TWTRSearchTimelineDataSource.html"><code>TWTRSearchTimelineDataSource</code></a>. These provide <a href="../Classes/TWTRTweet.html"><code>TWTRTweet</code></a> objects to this table view which then configures the instances of <a href="../Classes/TWTRTweetTableViewCell.html"><code>TWTRTweetTableViewCell</code></a>.</p>
+
+<pre><code>// Create the data source
+TWTRAPIClient *client = [[TWTRAPIClient alloc] init];
+TWTRUserTimelineDataSource *dataSource = [[TWTRUserTimelineDataSource alloc] initWithScreenName:@"jack" APIClient:client];
+
+// Create the timeline view controller
+TWTRTimelineViewController *timeline = [[TWTRTimelineViewController alloc] initWithDataSource:dataSource];
+</code></pre>
+
+<h2>Loading More</h2>
+
+<p>This class loads the first batch of <a href="../Classes/TWTRTweet.html"><code>TWTRTweet</code></a> objects from the Twitter API when <code>viewWillAppear:</code> is received. It also handles loading more tweets automatically once the last cell has been shown.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/dataSource" title="dataSource"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dataSource">&nbsp;&nbsp;dataSource</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  The source of <a href="../Classes/TWTRTweet.html"><code>TWTRTweet</code></a> objects for this <code>TWTRTimelineViewController</code>.
+  May be set to update the Tweets being shown by this table view. Must be set on the main thread.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) id&lt;TWTRTimelineDataSource&gt; dataSource</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRTimelineViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/adConfiguration" title="adConfiguration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/adConfiguration">&nbsp;&nbsp;adConfiguration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The configuration of MoPub ads to show in the timeline. You must
+link against the MoPub framework and provide this configuration in order
+for ads to be injected.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, nullable) TWTRMoPubAdConfiguration *adConfiguration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="note"><p><strong>Note:</strong> Changing this will force a reload of the timeline. You can only set this once. Must be set on the main thread.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRTimelineViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showTweetActions" title="showTweetActions"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showTweetActions">&nbsp;&nbsp;showTweetActions</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether action buttons (Like, Share) should be shown on the <a href="../Classes/TWTRTweetTableViewCell.html"><code>TWTRTweetTableViewCell</code></a>s inside the tableview.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL showTweetActions</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRTimelineViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tweetViewDelegate" title="tweetViewDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tweetViewDelegate">&nbsp;&nbsp;tweetViewDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If set, this value will be passed to all <a href="../Classes/TWTRTweetView.html">TWTRTweetView</a> instances in the timeline.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;TWTRTweetViewDelegate&gt; tweetViewDelegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRTimelineViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/timelineDelegate" title="timelineDelegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/timelineDelegate">&nbsp;&nbsp;timelineDelegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The object that acts as the delegate for the timeline.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;TWTRTimelineDelegate&gt; timelineDelegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRTimelineViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithDataSource:" title="initWithDataSource:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithDataSource:">&ndash;&nbsp;initWithDataSource:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes a timeline view controller. Does not start loading tweets until
+<code>viewWillAppear:</code> is called.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithDataSource:(nullable id&lt;TWTRTimelineDataSource&gt;)<em>dataSource</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dataSource</code></th>
+						<td><p>A timeline data source object that conforms to the <code>TWTRTimelineDataSource</code> protocol.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A fully initialized <code>TWTRTimelineViewController</code> or nil if the data source is missing.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method must be used to initialize this class. The <code>init</code> method is unavailable.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRTimelineViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithDataSource:adConfiguration:" title="initWithDataSource:adConfiguration:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithDataSource:adConfiguration:">&ndash;&nbsp;initWithDataSource:adConfiguration:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes a timeline view controller with an optional ad configuration. Does not start loading Tweets until <code>viewWillAppear:</code> is called.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithDataSource:(nullable id&lt;TWTRTimelineDataSource&gt;)<em>dataSource</em> adConfiguration:(nullable TWTRMoPubAdConfiguration *)<em>adConfiguration</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dataSource</code></th>
+						<td><p>A timeline data source object that conforms to the <code>TWTRTimelineDataSource</code> protocol.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>adConfiguration</code></th>
+						<td><p>Configuration for the type of MoPub ads to display. Ads will only load after
+the initial timeline is loaded. No ads will be displayed if nil.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A fully initialized <code>TWTRTimelineViewController</code>. Tweets will not be loaded if the data source is nil.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRTimelineViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithStyle:" title="initWithStyle:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithStyle:">&ndash;&nbsp;initWithStyle:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithStyle:(UITableViewStyle)<em>style</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/refresh" title="refresh"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refresh">&ndash;&nbsp;refresh</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Asynchronously refresh and replace all the data in the table view with the latest <a href="../Classes/TWTRTweet.html"><code>TWTRTweet</code></a>s.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)refresh</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRTimelineViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/countOfTweets" title="countOfTweets"></a>
+	<h3 class="method-title"><code><a href="#//api/name/countOfTweets">&ndash;&nbsp;countOfTweets</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the number of Tweets that are currently displayed by the controller.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSUInteger)countOfTweets</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRTimelineViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tweetAtIndex:" title="tweetAtIndex:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tweetAtIndex:">&ndash;&nbsp;tweetAtIndex:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the Tweet at the given index.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (TWTRTweet *)tweetAtIndex:(NSInteger)<em>index</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This method will throw an exception if the index is out of range of the count of Tweets.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRTimelineViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/snapshotTweets" title="snapshotTweets"></a>
+	<h3 class="method-title"><code><a href="#//api/name/snapshotTweets">&ndash;&nbsp;snapshotTweets</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>Returns a copy of the Tweets at the time of calling this method.</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)snapshotTweets</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>This method returns the copy of the current Tweets. The Tweets may change</li>
+<li>after this method is called.</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRTimelineViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Twitter Inc. All rights reserved. Updated: 2017-12-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

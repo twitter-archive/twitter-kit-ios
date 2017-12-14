@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TWTRTweetViewDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">TwitterKit </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Twitter Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/tweetView:didChangePlaybackState:">- tweetView:didChangePlaybackState:</option>
+		
+		<option value="//api/name/tweetView:didTapImage:withURL:">- tweetView:didTapImage:withURL:</option>
+		
+		<option value="//api/name/tweetView:didTapProfileImageForUser:">- tweetView:didTapProfileImageForUser:</option>
+		
+		<option value="//api/name/tweetView:didTapTweet:">- tweetView:didTapTweet:</option>
+		
+		<option value="//api/name/tweetView:didTapURL:">- tweetView:didTapURL:</option>
+		
+		<option value="//api/name/tweetView:didTapVideoWithURL:">- tweetView:didTapVideoWithURL:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TWTRTweetViewDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TWTRTweetViewDelegate.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Delegate for <a href="../Classes/TWTRTweetView.html"><code>TWTRTweetView</code></a> to receive updates on the user interacting with this particular Tweet view.</p>
+
+<pre><code>// Create the tweet view
+TWTRTweetView *tweetView = [[TWTRTweetView alloc] initWithTweet:tweet];
+// Set the delegate
+tweetView.delegate = self;
+</code></pre>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/tweetView:didTapImage:withURL:" title="tweetView:didTapImage:withURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tweetView:didTapImage:withURL:">&ndash;&nbsp;tweetView:didTapImage:withURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The tweet view image was tapped.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)tweetView:(TWTRTweetView *)<em>tweetView</em> didTapImage:(UIImage *)<em>image</em> withURL:(NSURL *)<em>imageURL</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tweetView</code></th>
+						<td><p>The Tweet view that was tapped.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>image</code></th>
+						<td><p>The exact UIImage data shown by the Tweet view.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>imageURL</code></th>
+						<td><p>The full URL of the image being shown.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRTweetViewDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tweetView:didTapVideoWithURL:" title="tweetView:didTapVideoWithURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tweetView:didTapVideoWithURL:">&ndash;&nbsp;tweetView:didTapVideoWithURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The Tweet view video was tapped.
+If this method is not implemented a video player will be presented.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)tweetView:(TWTRTweetView *)<em>tweetView</em> didTapVideoWithURL:(NSURL *)<em>videoURL</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tweetView</code></th>
+						<td><p>The Tweet view that was tapped.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoURL</code></th>
+						<td><p>The full URL of the video being shown.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRTweetViewDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tweetView:didTapURL:" title="tweetView:didTapURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tweetView:didTapURL:">&ndash;&nbsp;tweetView:didTapURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A URL in the text of a tweet was tapped. Implement to show your own webview rather than opening Safari.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)tweetView:(TWTRTweetView *)<em>tweetView</em> didTapURL:(NSURL *)<em>url</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tweetView</code></th>
+						<td><p>The Tweet view that was tapped.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The URL that was tapped.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRTweetViewDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tweetView:didTapProfileImageForUser:" title="tweetView:didTapProfileImageForUser:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tweetView:didTapProfileImageForUser:">&ndash;&nbsp;tweetView:didTapProfileImageForUser:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the user&rsquo;s profile image is tapped.
+If this method is not implemented, the default behavior is to deep link into Twitter application or twitter.com in a webview.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)tweetView:(TWTRTweetView *)<em>tweetView</em> didTapProfileImageForUser:(TWTRUser *)<em>user</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tweetView</code></th>
+						<td><p>The Tweet view that was tapped.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>The Twitter user.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRTweetViewDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tweetView:didTapTweet:" title="tweetView:didTapTweet:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tweetView:didTapTweet:">&ndash;&nbsp;tweetView:didTapTweet:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the Tweet is tapped.
+If this method is not implemented, the default behavior is to deep link into Twitter application or twitter.com in a webview.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)tweetView:(TWTRTweetView *)<em>tweetView</em> didTapTweet:(TWTRTweet *)<em>tweet</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tweetView</code></th>
+						<td><p>The Tweet view that was tapped.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tweet</code></th>
+						<td><p>The Tweet that user tapped.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRTweetViewDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tweetView:didChangePlaybackState:" title="tweetView:didChangePlaybackState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tweetView:didChangePlaybackState:">&ndash;&nbsp;tweetView:didChangePlaybackState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when video in the Tweet changes its state.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)tweetView:(TWTRTweetView *)<em>tweetView</em> didChangePlaybackState:(TWTRVideoPlaybackState)<em>newState</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tweetView</code></th>
+						<td><p>The Tweet view that was tapped.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newState</code></th>
+						<td><p>The state of the video. (TWTRVideoPlaybackStatePaused, TWTRVideoPlaybackStatePlaying, TWTRVideoPlaybackStateCompleted)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRTweetViewDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Twitter Inc. All rights reserved. Updated: 2017-12-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

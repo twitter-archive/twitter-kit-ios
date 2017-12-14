@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TWTRErrorCode Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">TwitterCore </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Twitter Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TWTRErrorCode Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>TWTRConstants.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">TWTRErrorCode</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>Error codes surfaced by the Twitter SDK.</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSInteger, TWTRErrorCode ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRErrorCodeUnknown</a> = -1,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRErrorCodeNoAuthentication</a> = 0,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRErrorCodeNotInitialized</a> = 1,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRErrorCodeUserDeclinedPermission</a> = 2,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRErrorCodeUserHasNoEmailAddress</a> = 3,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRErrorCodeInvalidResourceID</a> = 4,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRErrorCodeInvalidURL</a> = 5,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRErrorCodeMismatchedJSONType</a> = 6,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRErrorCodeKeychainSerializationFailure</a> = 7,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRErrorCodeDiskSerializationError</a> = 8,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRErrorCodeWebViewError</a> = 9,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TWTRErrorCodeMissingParameter</a> = 10,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="TWTRErrorCodeUnknown"></a><code>TWTRErrorCodeUnknown</code></dt>
+<dd>
+
+
+<p>Unknown error.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRErrorCodeNoAuthentication"></a><code>TWTRErrorCodeNoAuthentication</code></dt>
+<dd>
+
+
+<p>Authentication has not been set up yet. You must call [TWTRTwitter logInWithCompletion:] or [TWTRTwitter logInGuestWithCompletion:]</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRErrorCodeNotInitialized"></a><code>TWTRErrorCodeNotInitialized</code></dt>
+<dd>
+
+
+<p>Twitter has not been initialized yet. Call [Fabric with:@[TwitterKit]] or [TWTRTwitter startWithConsumerKey:consumerSecret:].</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRErrorCodeUserDeclinedPermission"></a><code>TWTRErrorCodeUserDeclinedPermission</code></dt>
+<dd>
+
+
+<p>User has declined to grant permission to information such as their email address.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRErrorCodeUserHasNoEmailAddress"></a><code>TWTRErrorCodeUserHasNoEmailAddress</code></dt>
+<dd>
+
+
+<p>User has granted permission to their email address but no address is associated with their account.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRErrorCodeInvalidResourceID"></a><code>TWTRErrorCodeInvalidResourceID</code></dt>
+<dd>
+
+
+<p>A resource has been requested by ID, but that ID was not found.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRErrorCodeInvalidURL"></a><code>TWTRErrorCodeInvalidURL</code></dt>
+<dd>
+
+
+<p>A request has been issued for an invalid URL.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRErrorCodeMismatchedJSONType"></a><code>TWTRErrorCodeMismatchedJSONType</code></dt>
+<dd>
+
+
+<p>Type mismatch in parsing JSON from the Twitter API.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRErrorCodeKeychainSerializationFailure"></a><code>TWTRErrorCodeKeychainSerializationFailure</code></dt>
+<dd>
+
+
+<p>Fail to save to keychain.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRErrorCodeDiskSerializationError"></a><code>TWTRErrorCodeDiskSerializationError</code></dt>
+<dd>
+
+
+<p>Fail to save to disk.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRErrorCodeWebViewError"></a><code>TWTRErrorCodeWebViewError</code></dt>
+<dd>
+
+
+<p>Error authenticating with the webview.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TWTRErrorCodeMissingParameter"></a><code>TWTRErrorCodeMissingParameter</code></dt>
+<dd>
+
+
+<p>A required parameter is missing.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TWTRConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">TWTRConstants.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Twitter Inc. All rights reserved. Updated: 2017-12-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

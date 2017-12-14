@@ -1,0 +1,117 @@
+//
+//  TWTRSessionRefreshStategyTests.m
+//  TwitterKit
+//
+//  Created by Kang Chen on 7/2/15.
+//  Copyright (c) 2015 Twitter. All rights reserved.
+//
+
+#import <TwitterCore/TWTRAPIErrorCode.h>
+#import <TwitterCore/TWTRAPIServiceConfig.h>
+#import <TwitterCore/TWTRAuthConfig.h>
+#import <TwitterCore/TWTRAuthenticationConstants.h>
+#import <TwitterCore/TWTRGuestSession.h>
+#import "OCMock.h"
+#import "TWTRNetworkSessionProvider.h"
+#import "TWTRSessionFixtureLoader.h"
+#import "TWTRSessionRefreshStrategy.h"
+#import "TWTRTestCase.h"
+
+@interface TWTRSessionRefreshStategyTests : TWTRTestCase
+
+@property (nonatomic, readonly) TWTRGuestSessionRefreshStrategy *guestRefreshStrategy;
+@property (nonatomic, readonly) TWTRAuthConfig *authConfig;
+@property (nonatomic, readonly) id<TWTRAPIServiceConfig> serviceConfig;
+@property (nonatomic, readonly) NSString *accessToken;
+@property (nonatomic, readonly) NSURL *url;
+@property (nonatomic, readonly) TWTRGuestSession *guestSession;
+
+@end
+
+@implementation TWTRSessionRefreshStategyTests
+
+- (void)setUp
+{
+    [super setUp];
+
+    _authConfig = [[TWTRAuthConfig alloc] initWithConsumerKey:@"consumerKey" consumerSecret:@"consumerSecret"];
+    _serviceConfig = OCMProtocolMock(@protocol(TWTRAPIServiceConfig));
+    _accessToken = @"accessToken";
+    _guestRefreshStrategy = [[TWTRGuestSessionRefreshStrategy alloc] initWithAuthConfig:_authConfig APIServiceConfig:_serviceConfig accessToken:_accessToken];
+    _url = [NSURL URLWithString:@"http://api.twitter.com"];
+    _guestSession = [TWTRSessionFixtureLoader twitterGuestSession];
+}
+
+- (void)testSupportsGuestSessionClass
+{
+    XCTAssertTrue([TWTRGuestSessionRefreshStrategy canSupportSessionClass:[TWTRGuestSession class]]);
+}
+
+- (void)testIsSessionExpiredbasedOnRequestResponse_appTokenExpired
+{
+    NSHTTPURLResponse *expiredResponse = [[NSHTTPURLResponse alloc] initWithURL:self.url statusCode:TWTRAPIErrorCodeInvalidOrExpiredToken HTTPVersion:@"1.1" headerFields:@{}];
+    XCTAssertTrue([TWTRGuestSessionRefreshStrategy isSessionExpiredBasedOnRequestResponse:expiredResponse]);
+}
+
+- (void)testIsSessionExpiredbasedOnRequestResponse_guestTokenExpired
+{
+    NSHTTPURLResponse *expiredResponse = [[NSHTTPURLResponse alloc] initWithURL:self.url statusCode:TWTRAPIErrorCodeBadGuestToken HTTPVersion:@"1.1" headerFields:@{}];
+    XCTAssertTrue([TWTRGuestSessionRefreshStrategy isSessionExpiredBasedOnRequestResponse:expiredResponse]);
+}
+
+- (void)testIsSessionExpiredbasedOnRequestResponse_notExpired403
+{
+    NSHTTPURLResponse *expiredResponse = [[NSHTTPURLResponse alloc] initWithURL:self.url statusCode:403 HTTPVersion:@"1.1" headerFields:@{}];
+    XCTAssertFalse([TWTRGuestSessionRefreshStrategy isSessionExpiredBasedOnRequestResponse:expiredResponse]);
+}
+
+- (void)testIsSessionExpiredbasedOnRequestResponse_notExpired200
+{
+    NSHTTPURLResponse *expiredResponse = [[NSHTTPURLResponse alloc] initWithURL:self.url statusCode:200 HTTPVersion:@"1.1" headerFields:@{}];
+    XCTAssertFalse([TWTRGuestSessionRefreshStrategy isSessionExpiredBasedOnRequestResponse:expiredResponse]);
+}
+
+- (void)testRefreshSession_success
+{
+    id TWTRNetworkSessionProviderMock = OCMClassMock([TWTRNetworkSessionProvider class]);
+    TWTRGuestSession *guestSession2 = [TWTRSessionFixtureLoader twitterGuestSessionWithGuestToken:@"guest_token_2"];
+    
+    [OCMExpect([TWTRNetworkSessionProviderMock guestSessionWithAuthConfig:OCMOCK_ANY APIServiceConfig:OCMOCK_ANY URLSession:OCMOCK_ANY accessToken:OCMOCK_ANY completion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
+        TWTRSessionRefreshCompletion refreshCompletion;
+        [invocation getArgument:&refreshCompletion atIndex:invocation.methodSignature.numberOfArguments - 1];
+        refreshCompletion(guestSession2, nil);
+    }];
+    [self.guestRefreshStrategy refreshSession:self.guestSession URLSession:[NSURLSession sharedSession] completion:^(TWTRGuestSession *refreshedSession, NSError *error) {
+        XCTAssertEqualObjects(refreshedSession.guestToken, guestSession2.guestToken);
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+
+    OCMVerifyAll(TWTRNetworkSessionProviderMock);
+
+    [TWTRNetworkSessionProviderMock stopMocking];
+}
+
+- (void)testRefreshSession_failure
+{
+    id TWTRNetworkSessionProviderMock = OCMClassMock([TWTRNetworkSessionProvider class]);
+    [OCMExpect([TWTRNetworkSessionProviderMock guestSessionWithAuthConfig:OCMOCK_ANY APIServiceConfig:OCMOCK_ANY URLSession:OCMOCK_ANY accessToken:OCMOCK_ANY completion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
+        NSError *error = [NSError errorWithDomain:@"domain" code:1 userInfo:@{}];
+        TWTRSessionRefreshCompletion refreshCompletion;
+        [invocation getArgument:&refreshCompletion atIndex:6];
+        refreshCompletion(nil, error);
+    }];
+    [self.guestRefreshStrategy refreshSession:self.guestSession URLSession:[NSURLSession sharedSession] completion:^(TWTRGuestSession *refreshedSession, NSError *error) {
+        XCTAssertNotNil(error);
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+
+    OCMVerifyAll(TWTRNetworkSessionProviderMock);
+
+    [TWTRNetworkSessionProviderMock stopMocking];
+}
+
+@end

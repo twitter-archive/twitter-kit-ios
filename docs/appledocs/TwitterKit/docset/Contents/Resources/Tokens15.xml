@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRTweetCashtagEntity.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRTweetCashtagEntity</TokenIdentifier>
+			<Abstract type="html">A Tweet entity which represents a Cashtag like &apos;$twtr&apos;</Abstract>
+			<DeclaredIn>TWTRTweetCashtagEntity.h</DeclaredIn>
+            
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetCashtagEntity/setText:</TokenIdentifier>
+			<Abstract type="html">The text represented by this entity.</Abstract>
+			<DeclaredIn>TWTRTweetCashtagEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetCashtagEntity/text</TokenIdentifier>
+			<Abstract type="html">The text represented by this entity.</Abstract>
+			<DeclaredIn>TWTRTweetCashtagEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetCashtagEntity/text</TokenIdentifier>
+			<Abstract type="html">The text represented by this entity.</Abstract>
+			<DeclaredIn>TWTRTweetCashtagEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

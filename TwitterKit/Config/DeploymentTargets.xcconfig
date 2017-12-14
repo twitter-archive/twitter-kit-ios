@@ -1,0 +1,14 @@
+//
+//  DeploymentTargets.xcconfig
+//  CrashlyticsKit
+//
+//  Copyright © 2015 Twitter. All rights reserved.
+//
+
+IPHONEOS_DEPLOYMENT_TARGET = 6.0
+
+MACOSX_DEPLOYMENT_TARGET = 10.7
+
+TVOS_DEPLOYMENT_TARGET = 9.0
+
+WATCHOS_DEPLOYMENT_TARGET = 2.0

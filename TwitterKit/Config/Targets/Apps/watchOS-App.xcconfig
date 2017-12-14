@@ -1,0 +1,13 @@
+//
+// watchOS-App.xcconfig
+//
+// Copyright (c) 2016 Twitter. All rights reserved.
+//
+
+#include "AppTarget.xcconfig"
+
+ARCHS = $(ARCHS_STANDARD)
+SDKROOT = watchos
+SUPPORTED_PLATFORMS = watchsimulator watchos
+SKIP_INSTALL = YES
+TARGETED_DEVICE_FAMILY = 4

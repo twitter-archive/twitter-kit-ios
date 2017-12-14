@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TWTRSessionStoreRefreshCompletion Block Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">TwitterCore </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Twitter Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TWTRSessionStoreRefreshCompletion Block Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>TWTRSessionStore.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    
+          
+          <a title="Block Definition" name="instance_methods"></a>
+          <h4 class="method-subtitle parameter-title">Block Definition</h4>
+          <h3 class="subsubtitle method-title">TWTRSessionStoreRefreshCompletion</h3>
+
+
+<div class="method-subsection brief-description">
+  <p>Completion block called when a session refresh succeeds or fails.</p>
+</div>
+
+
+
+<code>typedef void (^TWTRSessionStoreRefreshCompletion) (id _Nullable, refreshedSession ,, NSError *_Nullable, error ), ; @protocol, TWTRSessionRefreshingStore <, NSObject >, - (, void ), refreshSessionClass :, ( Class, ) sessionClass, sessionID :, ( nullable, NSString *), sessionID completion, : (, TWTRSessionStoreRefreshCompletion ), completion ;, - (, BOOL ), isExpiredSession :, ( id, ) session, response :, ( NSHTTPURLResponse, * ), response ;, - (, BOOL ), isExpiredSession :, ( id, ) session, error :, ( NSError, * ), error ;, @end #, pragma mark, - TWTRUserSessionStore, Protocol typedef, void (, ^ TWTRSessionStoreSaveCompletion, ) (, id <, TWTRAuthSession >, _Nullable session, NSError *_Nullable, error ), ; typedef, void (, ^ TWTRSessionStoreBatchFetchCompletion, ) (, NSArray *sessions, ) ;, typedef void, ( ^, TWTRSessionStoreDeleteCompletion ), ( id, < TWTRAuthSession, > _Nullable, session ), ; @protocol, TWTRUserSessionStore <, NSObject >, - (, void ), saveSession :, ( id, < TWTRAuthSession, > ), session completion, : (, TWTRSessionStoreSaveCompletion ), completion ;, - (, void ), saveSessionWithAuthToken :, ( NSString, * ), authToken authTokenSecret, : (, NSString *), authTokenSecret completion, : (, TWTRSessionStoreSaveCompletion ), completion ;, - (, nullable id, < TWTRAuthSession, > ), sessionForUserID :, ( NSString, * ), userID ;, - (, NSArray *), existingUserSessions ;, - (, BOOL ), hasLoggedInUsers ;, - (, nullable id, < TWTRAuthSession, > ), session ;, - (, void ), logOutUserID :, ( NSString, * ), userID ;, @end #, pragma mark, - TWTRGuestSessionStore, Protocol typedef, void (, ^ TWTRSessionGuestLogInCompletion, ) (, TWTRGuestSession *_Nullable, guestSession ,, NSError *_Nullable, error ), ; @protocol, TWTRGuestSessionStore <, NSObject >, - (, void ), fetchGuestSessionWithCompletion :, ( TWTRSessionGuestLogInCompletion, ) completion, ; @end, # pragma, mark -, Composite TWTRSessionStore, Protocol @protocol, TWTRSessionStore <, TWTRUserSessionStore ,, TWTRGuestSessionStore ,, TWTRSessionRefreshingStore >, @property (, nonatomic ,, readonly ), TWTRAuthConfig *authConfig, ; @end, # pragma, mark -, Concrete Session, Store Class, @interface TWTRSessionStore, : NSObject, < TWTRSessionStore, > -, ( instancetype, ) init, NS_UNAVAILABLE ;, - (, void ), reloadSessionStore ;, - (, void ), saveOauthToken :, ( NSString, * ), token ;, - (, BOOL ), isValidOauthToken :, ( NSString, * ), token ;, @end NS_ASSUME_NONNULL_END)</code>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="method-subsection declared-in-section">
+  <h4 class="method-subtitle">Declared In</h4>
+  <code class="declared-in-ref">TWTRSessionStore.h</code><br />
+  </div>
+  
+  
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Twitter Inc. All rights reserved. Updated: 2017-12-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

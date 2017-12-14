@@ -1,0 +1,12 @@
+//
+// StaticLibrary.xcconfig
+//
+// Copyright (c) 2015 Twitter. All rights reserved.
+//
+
+#include "Target.xcconfig"
+
+EXECUTABLE_PREFIX = lib
+
+PRIVATE_HEADERS_FOLDER_PATH = PrivateHeaders/${PRODUCT_NAME}
+PUBLIC_HEADERS_FOLDER_PATH = Headers/${PRODUCT_NAME}

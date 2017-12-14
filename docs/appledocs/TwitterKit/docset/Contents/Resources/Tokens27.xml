@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRComposerViewControllerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRComposerViewControllerDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRComposerViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRComposerViewControllerDelegate/composerDidCancel:</TokenIdentifier>
+			<Abstract type="html">Called when the user taps the cancel button. This method will be called after the view controller is dismissed.</Abstract>
+			<DeclaredIn>TWTRComposerViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)composerDidCancel:(TWTRComposerViewController *)controller</Declaration>
+			
+			
+			<Anchor>//api/name/composerDidCancel:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRComposerViewControllerDelegate/composerDidSucceed:withTweet:</TokenIdentifier>
+			<Abstract type="html">Called when the user successfully sends a Tweet. The resulting Tweet object is returned.
+This method is called after the view controller is dimsissed and the API response is
+received.</Abstract>
+			<DeclaredIn>TWTRComposerViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)composerDidSucceed:(TWTRComposerViewController *)controller withTweet:(TWTRTweet *)tweet</Declaration>
+			
+			
+			<Anchor>//api/name/composerDidSucceed:withTweet:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRComposerViewControllerDelegate/composerDidFail:withError:</TokenIdentifier>
+			<Abstract type="html">This method is called if the composer is not able to send the Tweet.
+The view controller will not be dismissed automatically if this method is called.</Abstract>
+			<DeclaredIn>TWTRComposerViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)composerDidFail:(TWTRComposerViewController *)controller withError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/composerDidFail:withError:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

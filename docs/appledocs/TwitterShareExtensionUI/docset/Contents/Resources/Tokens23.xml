@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TwitterTextProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TwitterTextProtocol</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+            
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TwitterTextProtocol/remainingCharacterCount:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>+ (NSInteger)remainingCharacterCount:(NSString *)text</Declaration>
+			
+			
+			<Anchor>//api/name/remainingCharacterCount:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TwitterTextProtocol/entitiesInText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray&lt;TwitterTextEntity*&gt; *)entitiesInText:(NSString *)text</Declaration>
+			
+			
+			<Anchor>//api/name/entitiesInText:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TwitterTextProtocol/URLsInText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray&lt;TwitterTextEntity*&gt; *)URLsInText:(NSString *)text</Declaration>
+			
+			
+			<Anchor>//api/name/URLsInText:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TwitterTextProtocol/mentionedScreenNamesInText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray&lt;TwitterTextEntity*&gt; *)mentionedScreenNamesInText:(NSString *)text</Declaration>
+			
+			
+			<Anchor>//api/name/mentionedScreenNamesInText:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TwitterTextProtocol/hashtagsInText:checkingURLOverlap:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweet.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray&lt;TwitterTextEntity*&gt; *)hashtagsInText:(NSString *)text checkingURLOverlap:(BOOL)checkingURLOverlap</Declaration>
+			
+			
+			<Anchor>//api/name/hashtagsInText:checkingURLOverlap:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,14 @@
+//
+//  LDFlags.xcconfig
+//  CrashlyticsKit
+//
+//  Copyright © 2015 Twitter. All rights reserved.
+//
+
+OTHER_LDFLAGS[sdk=iphoneos*] = $(inherited) -ObjC -framework UIKit -framework Foundation
+OTHER_LDFLAGS[sdk=iphonesimulator*] = $(inherited) -ObjC -framework UIKit -framework Foundation
+OTHER_LDFLAGS[sdk=macosx*] = $(inherited) -ObjC -framework Foundation
+OTHER_LDFLAGS[sdk=watchos*] = $(inherited) -ObjC -framework WatchKit -framework Foundation
+OTHER_LDFLAGS[sdk=watchsimulator*] = $(inherited) -ObjC -framework WatchKit -framework Foundation
+OTHER_LDFLAGS[sdk=appletvos*] = $(inherited) -ObjC -framework UIKit -framework Foundation
+OTHER_LDFLAGS[sdk=appletvsimulator*] = $(inherited) -ObjC -framework UIKit -framework Foundation

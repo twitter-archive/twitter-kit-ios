@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRTweetEntity.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRTweetEntity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRTweetEntity.h</DeclaredIn>
+            
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetEntity/setStartIndex:</TokenIdentifier>
+			<Abstract type="html">The start index of the entity in code points.</Abstract>
+			<DeclaredIn>TWTRTweetEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger startIndex</Declaration>
+			
+			
+			<Anchor>//api/name/startIndex</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetEntity/startIndex</TokenIdentifier>
+			<Abstract type="html">The start index of the entity in code points.</Abstract>
+			<DeclaredIn>TWTRTweetEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger startIndex</Declaration>
+			
+			
+			<Anchor>//api/name/startIndex</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetEntity/startIndex</TokenIdentifier>
+			<Abstract type="html">The start index of the entity in code points.</Abstract>
+			<DeclaredIn>TWTRTweetEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger startIndex</Declaration>
+			
+			
+			<Anchor>//api/name/startIndex</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetEntity/setEndIndex:</TokenIdentifier>
+			<Abstract type="html">The end index of the entity in code points.</Abstract>
+			<DeclaredIn>TWTRTweetEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger endIndex</Declaration>
+			
+			
+			<Anchor>//api/name/endIndex</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetEntity/endIndex</TokenIdentifier>
+			<Abstract type="html">The end index of the entity in code points.</Abstract>
+			<DeclaredIn>TWTRTweetEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger endIndex</Declaration>
+			
+			
+			<Anchor>//api/name/endIndex</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetEntity/endIndex</TokenIdentifier>
+			<Abstract type="html">The end index of the entity in code points.</Abstract>
+			<DeclaredIn>TWTRTweetEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger endIndex</Declaration>
+			
+			
+			<Anchor>//api/name/endIndex</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetEntity/initWithStartIndex:endIndex:</TokenIdentifier>
+			<Abstract type="html">Initializes the receiver with the given start index and end index.</Abstract>
+			<DeclaredIn>TWTRTweetEntity.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithStartIndex:(NSInteger)startIndex endIndex:(NSInteger)endIndex</Declaration>
+			
+			
+			<Anchor>//api/name/initWithStartIndex:endIndex:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetEntity/accessibilityValue</TokenIdentifier>
+			<Abstract type="html">Subclasses should override this method to provide an accessibility value
+which can be used inside of Tweets.</Abstract>
+			<DeclaredIn>TWTRTweetEntity.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)accessibilityValue</Declaration>
+			
+			
+			<Anchor>//api/name/accessibilityValue</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

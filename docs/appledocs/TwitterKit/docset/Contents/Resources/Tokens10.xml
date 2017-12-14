@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRSearchTimelineDataSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRSearchTimelineDataSource</TokenIdentifier>
+			<Abstract type="html">Data source representing a Search Timeline. Provides TWTRTweet objects to a TWTRTimelineViewController in pages determined by the TWTRTimelineCursor object passed in to the loadNext: and loadPrevious: methods.</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSearchTimelineDataSource/setSearchQuery:</TokenIdentifier>
+			<Abstract type="html">The search query. This matches what you would type into https://twitter.com/search</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *searchQuery</Declaration>
+			
+			
+			<Anchor>//api/name/searchQuery</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSearchTimelineDataSource/searchQuery</TokenIdentifier>
+			<Abstract type="html">The search query. This matches what you would type into https://twitter.com/search</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *searchQuery</Declaration>
+			
+			
+			<Anchor>//api/name/searchQuery</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSearchTimelineDataSource/searchQuery</TokenIdentifier>
+			<Abstract type="html">The search query. This matches what you would type into https://twitter.com/search</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *searchQuery</Declaration>
+			
+			
+			<Anchor>//api/name/searchQuery</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSearchTimelineDataSource/setLanguageCode:</TokenIdentifier>
+			<Abstract type="html">Restricts tweets returned to a given language, specified by its ISO 639-1 code (for example: en, es). Language detection is best-effort. The server defaults to returning Tweets in all languages.</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *languageCode</Declaration>
+			
+			
+			<Anchor>//api/name/languageCode</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSearchTimelineDataSource/languageCode</TokenIdentifier>
+			<Abstract type="html">Restricts tweets returned to a given language, specified by its ISO 639-1 code (for example: en, es). Language detection is best-effort. The server defaults to returning Tweets in all languages.</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *languageCode</Declaration>
+			
+			
+			<Anchor>//api/name/languageCode</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSearchTimelineDataSource/languageCode</TokenIdentifier>
+			<Abstract type="html">Restricts tweets returned to a given language, specified by its ISO 639-1 code (for example: en, es). Language detection is best-effort. The server defaults to returning Tweets in all languages.</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *languageCode</Declaration>
+			
+			
+			<Anchor>//api/name/languageCode</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSearchTimelineDataSource/setMaxTweetsPerRequest:</TokenIdentifier>
+			<Abstract type="html">The number of Tweets to request in each network request for more Tweets. By default requests 30 tweets. If set to 0 the parameter will not be set on the request and the Twitter API will use the default size for the endpoint.</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger maxTweetsPerRequest</Declaration>
+			
+			
+			<Anchor>//api/name/maxTweetsPerRequest</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSearchTimelineDataSource/maxTweetsPerRequest</TokenIdentifier>
+			<Abstract type="html">The number of Tweets to request in each network request for more Tweets. By default requests 30 tweets. If set to 0 the parameter will not be set on the request and the Twitter API will use the default size for the endpoint.</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger maxTweetsPerRequest</Declaration>
+			
+			
+			<Anchor>//api/name/maxTweetsPerRequest</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSearchTimelineDataSource/maxTweetsPerRequest</TokenIdentifier>
+			<Abstract type="html">The number of Tweets to request in each network request for more Tweets. By default requests 30 tweets. If set to 0 the parameter will not be set on the request and the Twitter API will use the default size for the endpoint.</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger maxTweetsPerRequest</Declaration>
+			
+			
+			<Anchor>//api/name/maxTweetsPerRequest</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSearchTimelineDataSource/setGeocodeSpecifier:</TokenIdentifier>
+			<Abstract type="html">The geocode details to narrow search results. The format is &quot;latitude,longitude,radius&quot; e.g. &quot;37.781157,-122.398720,1mi&quot;</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSString *geocodeSpecifier</Declaration>
+			
+			
+			<Anchor>//api/name/geocodeSpecifier</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSearchTimelineDataSource/geocodeSpecifier</TokenIdentifier>
+			<Abstract type="html">The geocode details to narrow search results. The format is &quot;latitude,longitude,radius&quot; e.g. &quot;37.781157,-122.398720,1mi&quot;</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSString *geocodeSpecifier</Declaration>
+			
+			
+			<Anchor>//api/name/geocodeSpecifier</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSearchTimelineDataSource/geocodeSpecifier</TokenIdentifier>
+			<Abstract type="html">The geocode details to narrow search results. The format is &quot;latitude,longitude,radius&quot; e.g. &quot;37.781157,-122.398720,1mi&quot;</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSString *geocodeSpecifier</Declaration>
+			
+			
+			<Anchor>//api/name/geocodeSpecifier</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSearchTimelineDataSource/setFilterSensitiveTweets:</TokenIdentifier>
+			<Abstract type="html">Filter out sensitive (containing nudity or violence) tweets.</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL filterSensitiveTweets</Declaration>
+			
+			
+			<Anchor>//api/name/filterSensitiveTweets</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSearchTimelineDataSource/filterSensitiveTweets</TokenIdentifier>
+			<Abstract type="html">Filter out sensitive (containing nudity or violence) tweets.</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL filterSensitiveTweets</Declaration>
+			
+			
+			<Anchor>//api/name/filterSensitiveTweets</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSearchTimelineDataSource/filterSensitiveTweets</TokenIdentifier>
+			<Abstract type="html">Filter out sensitive (containing nudity or violence) tweets.</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL filterSensitiveTweets</Declaration>
+			
+			
+			<Anchor>//api/name/filterSensitiveTweets</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSearchTimelineDataSource/setTimelineFilter:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) TWTRTimelineFilter *timelineFilter</Declaration>
+			
+			
+			<Anchor>//api/name/timelineFilter</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSearchTimelineDataSource/timelineFilter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) TWTRTimelineFilter *timelineFilter</Declaration>
+			
+			
+			<Anchor>//api/name/timelineFilter</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSearchTimelineDataSource/timelineFilter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) TWTRTimelineFilter *timelineFilter</Declaration>
+			
+			
+			<Anchor>//api/name/timelineFilter</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSearchTimelineDataSource/setResultType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSString *resultType</Declaration>
+			
+			
+			<Anchor>//api/name/resultType</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSearchTimelineDataSource/resultType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSString *resultType</Declaration>
+			
+			
+			<Anchor>//api/name/resultType</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSearchTimelineDataSource/resultType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) NSString *resultType</Declaration>
+			
+			
+			<Anchor>//api/name/resultType</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSearchTimelineDataSource/initWithSearchQuery:APIClient:</TokenIdentifier>
+			<Abstract type="html">Convenience initializer. Uses default values for languageCode and maxTweetsPerRequest.</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithSearchQuery:(NSString *)searchQuery APIClient:(TWTRAPIClient *)client</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>searchQuery</Name>
+					<Abstract type="html">(required) The query string that you would type into https://twitter.com/search</Abstract>
+				</Parameter><Parameter>
+					<Name>client</Name>
+					<Abstract type="html">(required) An instance of TWTRAPIClient with which API calls will be made.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A fully initialized search timeline datasource or nil if any of the required parameters are missing.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithSearchQuery:APIClient:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSearchTimelineDataSource/initWithSearchQuery:APIClient:languageCode:maxTweetsPerRequest:resultType:</TokenIdentifier>
+			<Abstract type="html">Create a new search timeline data source.</Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithSearchQuery:(NSString *)searchQuery APIClient:(TWTRAPIClient *)client languageCode:(nullable NSString *)languageCode maxTweetsPerRequest:(NSUInteger)maxTweetsPerRequest resultType:(nullable NSString *)resultType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>searchQuery</Name>
+					<Abstract type="html">(required) The query string that you would type into https://twitter.com/search</Abstract>
+				</Parameter><Parameter>
+					<Name>client</Name>
+					<Abstract type="html">(required) An instance of TWTRAPIClient with which API calls will be made.</Abstract>
+				</Parameter><Parameter>
+					<Name>languageCode</Name>
+					<Abstract type="html">(optional) The ISO 639-1 language code to restrict Tweets to. A nil value will not add the parameter to the server request and so use the server default.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxTweetsPerRequest</Name>
+					<Abstract type="html">(optional) The number of tweets to request in each query to the Twitter API. A value of 0 will not add to the parameters and thus use the server default.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultType</Name>
+					<Abstract type="html">(optional) The result type for timeline. It is default to &apos;mixed&apos; if not assigned.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A fully initialized search timeline datasource or nil if any of the required parameters are missing.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithSearchQuery:APIClient:languageCode:maxTweetsPerRequest:resultType:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSearchTimelineDataSource/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSearchTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

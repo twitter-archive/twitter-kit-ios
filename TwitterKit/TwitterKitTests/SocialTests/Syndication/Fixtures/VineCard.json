@@ -1,0 +1,164 @@
+{
+    "binding_values": {
+        "app_is_free": {
+            "string_value": "true",
+            "type": "STRING"
+        },
+        "app_name": {
+            "string_value": "Vine",
+            "type": "STRING"
+        },
+        "app_num_ratings": {
+            "string_value": "661",
+            "type": "STRING"
+        },
+        "app_price_amount": {
+            "string_value": "0.0",
+            "type": "STRING"
+        },
+        "app_price_currency": {
+            "string_value": "USD",
+            "type": "STRING"
+        },
+        "app_star_rating": {
+            "string_value": "3.5",
+            "type": "STRING"
+        },
+        "card_url": {
+            "scribe_key": "card_url",
+            "string_value": "https://t.co/KcqVd4U4AB",
+            "type": "STRING"
+        },
+        "description": {
+            "string_value": "Vine by warriors",
+            "type": "STRING"
+        },
+        "domain": {
+            "string_value": "vine.co",
+            "type": "STRING"
+        },
+        "player_height": {
+            "string_value": "535",
+            "type": "STRING"
+        },
+        "player_image": {
+            "image_value": {
+                "alt": null,
+                "height": 480,
+                "url": "https://o.twimg.com/2/proxy.jpg?t=HBiTAWh0dHBzOi8vdi5jZG4udmluZS5jby9yL3ZpZGVvcy8zRkZFMUUyMDA3MTI4MjYwODg2ODU2ODA1NTgwOF80ODZmMzM1MWJjZC40LjAuNjI0NDkwOTg0OTkxMjQyOTQ1Ny5tcDQuanBnP3ZlcnNpb25JZD1nTVRvZ2F6WG9TRFROTW1QbHcxR1k3bUxuUU5INk51cRTABxTABwAWABIA&s=GfB6XVj7OvsuKx-bj7qKnrykBB-esuQWgEE8opJX0DA",
+                "width": 480
+            },
+            "type": "IMAGE"
+        },
+        "player_stream_content_type": {
+            "string_value": "video/mp4; codecs=avc1.42E01E, mp4a.40.2",
+            "type": "STRING"
+        },
+        "player_stream_url": {
+            "string_value": "https://v.cdn.vine.co/r/videos_h264high/3FFE1E20071282608868568055808_486f3351bcd.4.0.6244909849912429457.mp4?versionId=HdRqgNrs8rQN70K9wqYgQLhaVKrMxgTb",
+            "type": "STRING"
+        },
+        "player_url": {
+            "string_value": "https://vine.co/v/iajXxLU0wtr/card",
+            "type": "STRING"
+        },
+        "player_width": {
+            "string_value": "535",
+            "type": "STRING"
+        },
+        "site": {
+            "scribe_key": "publisher_id",
+            "type": "USER",
+            "user_value": {
+                "id_str": "586671909",
+                "path": []
+            }
+        },
+        "title": {
+            "string_value": "Block and bucket. Andrew Bogut on CSNBA! #NBAvine",
+            "type": "STRING"
+        },
+        "vanity_url": {
+            "scribe_key": "vanity_url",
+            "string_value": "vine.co",
+            "type": "STRING"
+        }
+    },
+    "card_platform": {
+        "platform": {
+            "audience": {
+                "bucket": null,
+                "name": "production"
+            },
+            "device": {
+                "name": "TwitterKit",
+                "version": "13"
+            }
+        }
+    },
+    "card_type_url": "http://card-type-url-is-deprecated.invalid",
+    "name": "player",
+    "url": "https://t.co/KcqVd4U4AB",
+    "users": {
+        "586671909": {
+            "contributors_enabled": false,
+            "created_at": "Mon May 21 14:34:36 +0000 2012",
+            "default_profile": false,
+            "default_profile_image": false,
+            "description": "Vine is the entertainment network where the world\u2019s stories are watched and created. Tweet @vinehelp for support.",
+            "entities": {
+                "description": {
+                    "urls": []
+                },
+                "url": {
+                    "urls": [
+                             {
+                             "display_url": "vine.co",
+                             "expanded_url": "http://vine.co",
+                             "indices": [
+                                         0,
+                                         23
+                                         ],
+                             "url": "https://t.co/0uHapkOl1S"
+                             }
+                             ]
+                }
+            },
+            "favourites_count": 2588,
+            "follow_request_sent": false,
+            "followers_count": 16236557,
+            "following": false,
+            "friends_count": 1,
+            "geo_enabled": true,
+            "has_extended_profile": true,
+            "id": 586671909,
+            "id_str": "586671909",
+            "is_translation_enabled": false,
+            "is_translator": false,
+            "lang": "en",
+            "listed_count": 8811,
+            "location": "",
+            "name": "Vine",
+            "notifications": false,
+            "profile_background_color": "F1F1EC",
+            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme17/bg.gif",
+            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme17/bg.gif",
+            "profile_background_tile": false,
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/586671909/1454442428",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/694618322567053313/A5XWC_zL_normal.jpg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/694618322567053313/A5XWC_zL_normal.jpg",
+            "profile_link_color": "00BF8F",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "DDEEF6",
+            "profile_text_color": "333333",
+            "profile_use_background_image": false,
+            "protected": false,
+            "screen_name": "vine",
+            "statuses_count": 2202,
+            "time_zone": "Eastern Time (US & Canada)",
+            "url": "https://t.co/0uHapkOl1S",
+            "utc_offset": -14400,
+            "verified": true
+        }
+    }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRJSONConvertible.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRJSONConvertible</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRJSONConvertible.h</DeclaredIn>
+            
+			
+			<NodeRef refid="28"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRJSONConvertible/initWithJSONDictionary:</TokenIdentifier>
+			<Abstract type="html">Initialize the receiver with its JSON object representation.</Abstract>
+			<DeclaredIn>TWTRJSONConvertible.h</DeclaredIn>
+			
+			<Declaration>- (nullable instancetype)initWithJSONDictionary:(NSDictionary *)dictionary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dictionary</Name>
+					<Abstract type="html">the JSON object representing this object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the fully formed object or nil if the JSON is not valid.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithJSONDictionary:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

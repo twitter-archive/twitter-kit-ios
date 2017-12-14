@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRLogInButton.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRLogInButton</TokenIdentifier>
+			<Abstract type="html">A Button which launches the sign in to Twitter flow when tapped.</Abstract>
+			<DeclaredIn>TWTRLogInButton.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRLogInButton/setLogInCompletion:</TokenIdentifier>
+			<Abstract type="html">The completion block to be called with a TWTRSession if successful,
+and a NSError if logging in failed or was canceled.</Abstract>
+			<DeclaredIn>TWTRLogInButton.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) TWTRLogInCompletion logInCompletion</Declaration>
+			
+			
+			<Anchor>//api/name/logInCompletion</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRLogInButton/logInCompletion</TokenIdentifier>
+			<Abstract type="html">The completion block to be called with a TWTRSession if successful,
+and a NSError if logging in failed or was canceled.</Abstract>
+			<DeclaredIn>TWTRLogInButton.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) TWTRLogInCompletion logInCompletion</Declaration>
+			
+			
+			<Anchor>//api/name/logInCompletion</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRLogInButton/logInCompletion</TokenIdentifier>
+			<Abstract type="html">The completion block to be called with a TWTRSession if successful,
+and a NSError if logging in failed or was canceled.</Abstract>
+			<DeclaredIn>TWTRLogInButton.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) TWTRLogInCompletion logInCompletion</Declaration>
+			
+			
+			<Anchor>//api/name/logInCompletion</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TWTRLogInButton/buttonWithLogInCompletion:</TokenIdentifier>
+			<Abstract type="html">Returns a new log in button which launches Twitter log in when tapped and
+calls completion when logging in succeeds or fails.</Abstract>
+			<DeclaredIn>TWTRLogInButton.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)buttonWithLogInCompletion:(TWTRLogInCompletion)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">The completion to be called with a TWTRSession if successful,
+and a NSError if logging in failed or was canceled.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized TWTRLogInButton.</Abstract></ReturnValue>
+			<Anchor>//api/name/buttonWithLogInCompletion:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

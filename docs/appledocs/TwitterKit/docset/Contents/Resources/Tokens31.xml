@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/TWTRComposerResult.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/TWTRComposerResult</TokenIdentifier>
+			<Abstract type="html">Possible values for the &lt;i&gt;result&lt;/i&gt; parameter of the completionHandler property.</Abstract>
+			<DeclaredIn>TWTRComposer.h</DeclaredIn>
+            
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRComposerResultCancelled</TokenIdentifier>
+            <Abstract type="html">The composer is dismissed without sending the Tweet (i.e. the user selects Cancel, or the account is unavailable).
+     </Abstract>
+            <Declaration>TWTRComposerResultCancelled</Declaration>
+            
+            <DeclaredIn>TWTRComposer.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRComposerResultDone</TokenIdentifier>
+            <Abstract type="html">The composer is dismissed and the message is being sent in the background, after the user selects Done.
+     </Abstract>
+            <Declaration>TWTRComposerResultDone</Declaration>
+            
+            <DeclaredIn>TWTRComposer.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

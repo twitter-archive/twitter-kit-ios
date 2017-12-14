@@ -1,0 +1,7 @@
+//
+// ExtensionTarget.xcconfig
+//
+// Copyright (c) 2016 Twitter. All rights reserved.
+//
+
+#include "../Target.xcconfig"

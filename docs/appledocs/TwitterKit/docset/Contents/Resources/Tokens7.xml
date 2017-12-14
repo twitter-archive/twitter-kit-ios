@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRMoPubAdConfiguration.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRMoPubAdConfiguration</TokenIdentifier>
+			<Abstract type="html">Bridging class for configuring how to load your MoPub ad unit.</Abstract>
+			<DeclaredIn>TWTRMoPubAdConfiguration.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRMoPubAdConfiguration/setAdUnitID:</TokenIdentifier>
+			<Abstract type="html">Ad unit ID of the MoPub ad.</Abstract>
+			<DeclaredIn>TWTRMoPubAdConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *adUnitID</Declaration>
+			
+			
+			<Anchor>//api/name/adUnitID</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRMoPubAdConfiguration/adUnitID</TokenIdentifier>
+			<Abstract type="html">Ad unit ID of the MoPub ad.</Abstract>
+			<DeclaredIn>TWTRMoPubAdConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *adUnitID</Declaration>
+			
+			
+			<Anchor>//api/name/adUnitID</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRMoPubAdConfiguration/adUnitID</TokenIdentifier>
+			<Abstract type="html">Ad unit ID of the MoPub ad.</Abstract>
+			<DeclaredIn>TWTRMoPubAdConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *adUnitID</Declaration>
+			
+			
+			<Anchor>//api/name/adUnitID</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRMoPubAdConfiguration/setKeywords:</TokenIdentifier>
+			<Abstract type="html">Keywords specified in comma-separated key-value pairs to provide
+better targetting of the ads. e.g. &quot;marital:single,age:24&quot;</Abstract>
+			<DeclaredIn>TWTRMoPubAdConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *keywords</Declaration>
+			
+			
+			<Anchor>//api/name/keywords</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRMoPubAdConfiguration/keywords</TokenIdentifier>
+			<Abstract type="html">Keywords specified in comma-separated key-value pairs to provide
+better targetting of the ads. e.g. &quot;marital:single,age:24&quot;</Abstract>
+			<DeclaredIn>TWTRMoPubAdConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *keywords</Declaration>
+			
+			
+			<Anchor>//api/name/keywords</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRMoPubAdConfiguration/keywords</TokenIdentifier>
+			<Abstract type="html">Keywords specified in comma-separated key-value pairs to provide
+better targetting of the ads. e.g. &quot;marital:single,age:24&quot;</Abstract>
+			<DeclaredIn>TWTRMoPubAdConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly, nullable) NSString *keywords</Declaration>
+			
+			
+			<Anchor>//api/name/keywords</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRMoPubAdConfiguration/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRMoPubAdConfiguration.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRMoPubAdConfiguration/initWithAdUnitID:keywords:</TokenIdentifier>
+			<Abstract type="html">Initializes a new MoPub ad configuration.</Abstract>
+			<DeclaredIn>TWTRMoPubAdConfiguration.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithAdUnitID:(NSString *)adUnitID keywords:(nullable NSString *)keywords</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>adUnitID</Name>
+					<Abstract type="html">The ad unit ID as configured in the MoPub dashboard</Abstract>
+				</Parameter><Parameter>
+					<Name>keywords</Name>
+					<Abstract type="html">Keywords for better ad targeting</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Fully initialized ad configuration.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAdUnitID:keywords:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

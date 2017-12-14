@@ -1,0 +1,419 @@
+//
+//  TWTRSessionStoreTests.m
+//  TwitterKit
+//
+//  Created by Kang Chen on 7/2/15.
+//  Copyright (c) 2015 Twitter. All rights reserved.
+//
+
+#import <TwitterCore/TWTRAuthConfig.h>
+#import <TwitterCore/TWTRAuthenticationConstants.h>
+#import <TwitterCore/TWTRAPIServiceConfig.h>
+#import <TwitterCore/TWTRConstants.h>
+#import <TwitterCore/TWTRErrorLogger.h>
+#import <TwitterCore/TWTRGenericKeychainItem.h>
+#import <TwitterCore/TWTRGuestSession.h>
+#import <TwitterCore/TWTRSession.h>
+#import "TWTRFakeAPIServiceConfig.h"
+#import "TWTRMockURLSessionProtocol.h"
+#import "OCMock.h"
+#import "TWTRFakeAPIServiceConfig.h"
+#import "TWTRNetworkSessionProvider.h"
+#import "TWTRNilGuestSessionRefreshStrategy.h"
+#import "TWTRSession.h"
+#import "TWTRSessionFixtureLoader.h"
+#import "TWTRSessionRefreshStrategy.h"
+#import "TWTRSessionStore.h"
+#import "TWTRTestCase.h"
+#import "TWTRTestGuestSessionRefreshStrategy.h"
+#import "TWTRUserSessionStore_Private.h"
+
+@interface TWTRSessionStore ()
+
+/**
+ *  Exposing this here just for setting up tests.
+ */
+@property (nonatomic) TWTRGuestSession *guestSession;
+- (void)destroyAllSessions;
+
+// Exposed for testAccessGroupMigration
+- (void)saveKeychainItem:(TWTRGenericKeychainItem *)item;
+
+@end
+
+@interface TWTRSessionStoreTests : TWTRTestCase
+
+@property (nonatomic, readonly) TWTRAuthConfig *authConfig;
+@property (nonatomic, readonly) TWTRSessionStore *sessionStore;
+@property (nonatomic, readonly) TWTRSessionStore *noStrategyStore;
+@property (nonatomic, readonly) id<TWTRAPIServiceConfig> serviceConfig;
+@property (nonatomic, readonly) NSArray *refreshStrategies;
+@property (nonatomic, readonly) NSHTTPURLResponse *okResponse;
+@property (nonatomic, readonly) NSHTTPURLResponse *badAppTokenResponse;
+@property (nonatomic, readonly) NSHTTPURLResponse *badGuestTokenResponse;
+@property (nonatomic, readonly) TWTRGuestSession *guestSession;
+@property (nonatomic, readonly) TWTRSession *userSession;
+@property (nonatomic, readonly) id networkSessionProviderMock;
+@property (nonatomic, readonly) id<TWTRErrorLogger> errorLoggerMock;
+
+@end
+
+@implementation TWTRSessionStoreTests
+
+- (TWTRSessionStore *)instantiateSessionStore
+{
+    XCTAssertNotNil(self.authConfig);
+    XCTAssertNotNil(self.serviceConfig);
+    XCTAssertNotNil(self.refreshStrategies);
+    XCTAssertNotNil(self.errorLoggerMock);
+    return [[TWTRSessionStore alloc] initWithAuthConfig:self.authConfig APIServiceConfig:self.serviceConfig refreshStrategies:self.refreshStrategies URLSession:[NSURLSession sharedSession] errorLogger:self.errorLoggerMock];
+}
+
+- (void)setUp
+{
+    [super setUp];
+
+    [NSURLProtocol registerClass:[TWTRMockURLSessionProtocol class]];
+
+    _authConfig = [[TWTRAuthConfig alloc] initWithConsumerKey:@"consumerKey" consumerSecret:@"consumerSecret"];
+    _serviceConfig = [[TWTRFakeAPIServiceConfig alloc] init];
+    TWTRTestGuestSessionRefreshStrategy *strategy = [[TWTRTestGuestSessionRefreshStrategy alloc] init];
+    _refreshStrategies = @[strategy];
+    _errorLoggerMock = OCMProtocolMock(@protocol(TWTRErrorLogger));
+    _sessionStore = [self instantiateSessionStore];
+    _noStrategyStore = [[TWTRSessionStore alloc] initWithAuthConfig:_authConfig APIServiceConfig:_serviceConfig refreshStrategies:@[] URLSession:[NSURLSession sharedSession] errorLogger:_errorLoggerMock];
+
+    NSURL *url = [NSURL URLWithString:@"https://api.twitter.com"];
+    _okResponse = [[NSHTTPURLResponse alloc] initWithURL:url statusCode:200 HTTPVersion:@"1.1" headerFields:@{}];
+    _badAppTokenResponse = [[NSHTTPURLResponse alloc] initWithURL:url statusCode:89 HTTPVersion:@"1.1" headerFields:@{}];
+    _badGuestTokenResponse = [[NSHTTPURLResponse alloc] initWithURL:url statusCode:239 HTTPVersion:@"1.1" headerFields:@{}];
+    _guestSession = [TWTRSessionFixtureLoader twitterGuestSession];
+    _sessionStore.guestSession = _guestSession;
+    _noStrategyStore.guestSession = _guestSession;
+    _userSession = [[TWTRSession alloc] initWithSessionDictionary:@{TWTRAuthOAuthTokenKey: @"token", TWTRAuthOAuthSecretKey: @"secret", TWTRAuthAppOAuthScreenNameKey: @"screenname", TWTRAuthAppOAuthUserIDKey: @"1"}];
+    _networkSessionProviderMock = OCMClassMock([TWTRNetworkSessionProvider class]);
+    
+    [self.sessionStore destroyAllSessions];
+    [self.noStrategyStore destroyAllSessions];
+}
+
+- (void)tearDown
+{
+    XCTAssertTrue([TWTRMockURLSessionProtocol isEmpty]);
+    [NSURLProtocol unregisterClass:[TWTRMockURLSessionProtocol class]];
+    self.sessionStore.guestSession = nil;
+    [self.networkSessionProviderMock stopMocking];
+    
+    // clear all the sessions
+    [self.sessionStore destroyAllSessions];
+    [self.noStrategyStore destroyAllSessions];
+    
+    [super tearDown];
+}
+
+#pragma mark - TWTRUserSessionStore
+
+- (void)testSaveSession_succeess
+{
+    [TWTRMockURLSessionProtocol pushResponse:[TWTRMockURLResponse responseWithString:[TWTRSessionFixtureLoader twitterSessionDictionaryStringWithUserID:self.userSession.userID]]];
+
+    [self.sessionStore saveSession:self.userSession completion:^(id<TWTRAuthSession> session, NSError * error) {
+        [self.sessionStore sessionForUserID:session.userID completion:^(id<TWTRAuthSession> savedSession) {
+            XCTAssertNotNil(savedSession);
+            self.asyncComplete = YES;
+        }];
+    }];
+
+    [self waitForCompletion];
+}
+
+- (void)testSaveSession_verificationFails
+{
+    [TWTRMockURLSessionProtocol pushResponse:[TWTRMockURLResponse responseWithError:[NSError errorWithDomain:@"error" code:1 userInfo:@{}]]];
+
+    [self.sessionStore saveSession:self.userSession completion:^(id<TWTRAuthSession> session, NSError * error) {
+        XCTAssertNotNil(error);
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+}
+
+- (void)testSessionForUserID_nilIfNotFound
+{
+    [self.sessionStore sessionForUserID:@"-1" completion:^(id<TWTRAuthSession> session) {
+        XCTAssertNil(session);
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+}
+
+- (void)testSessionForUserID_returnsSessionIfSaved
+{
+    [TWTRMockURLSessionProtocol pushResponse:[TWTRMockURLResponse responseWithString:[TWTRSessionFixtureLoader twitterSessionDictionaryStringWithUserID:self.userSession.userID]]];
+
+    [self.sessionStore saveSession:self.userSession completion:^(id<TWTRAuthSession> session, NSError * error) {
+        [self.sessionStore sessionForUserID:session.userID completion:^(id<TWTRAuthSession> savedSession) {
+            XCTAssertNotNil(savedSession);
+            XCTAssertEqualObjects(session.userID, savedSession.userID);
+            self.asyncComplete = YES;
+        }];
+    }];
+
+    [self waitForCompletion];
+}
+
+- (void)testExistingSessions_returnsEmptyListIfNone
+{
+    NSArray *sessions = [self.sessionStore existingUserSessions];
+    XCTAssertEqual([sessions count], 0);
+}
+
+- (void)testExistingSessions_returnsListOfSavedSessions
+{
+    [TWTRMockURLSessionProtocol pushResponse:[TWTRMockURLResponse responseWithString:[TWTRSessionFixtureLoader twitterSessionDictionaryStringWithUserID:self.userSession.userID]]];
+    
+    [self.sessionStore saveSession:self.userSession completion:^(id<TWTRAuthSession> session, NSError *error) {
+        NSArray *sessions = [self.sessionStore existingUserSessions];
+        XCTAssertEqual([sessions count], 1);
+        TWTRSession *existingSession = sessions.firstObject;
+        XCTAssertEqualObjects(session.userID, existingSession.userID);
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+}
+
+- (void)testLogIn_success
+{
+    [OCMStub([self.networkSessionProviderMock userSessionWithAuthConfig:OCMOCK_ANY APIServiceConfig:OCMOCK_ANY errorLogger:OCMOCK_ANY completion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
+        TWTRSessionLogInCompletion loginCompletion;
+        [invocation getArgument:&loginCompletion atIndex:invocation.methodSignature.numberOfArguments-1];
+        loginCompletion(self.userSession, nil);
+    }];
+    [self.sessionStore logInWithCompletion:^(id<TWTRAuthSession> session, NSError *error) {
+        XCTAssertEqualObjects(session.userID, self.userSession.userID);
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+}
+
+- (void)testLogIn_failure
+{
+    [OCMStub([self.networkSessionProviderMock userSessionWithAuthConfig:OCMOCK_ANY APIServiceConfig:OCMOCK_ANY errorLogger:OCMOCK_ANY completion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
+        NSError *error = [NSError errorWithDomain:@"domain" code:0 userInfo:@{}];
+        TWTRSessionLogInCompletion loginCompletion;
+        [invocation getArgument:&loginCompletion atIndex:invocation.methodSignature.numberOfArguments-1];
+        loginCompletion(nil, error);
+    }];
+    [self.sessionStore logInWithCompletion:^(id<TWTRAuthSession> session, NSError *error) {
+        XCTAssertNotNil(error);
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+}
+
+- (void)testLogIn_doesNotPersistSessionIfLoginFails
+{
+    [OCMStub([self.networkSessionProviderMock userSessionWithAuthConfig:OCMOCK_ANY APIServiceConfig:OCMOCK_ANY errorLogger:OCMOCK_ANY completion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
+        NSError *error = [NSError errorWithDomain:@"domain" code:0 userInfo:@{}];
+        TWTRSessionLogInCompletion loginCompletion;
+        [invocation getArgument:&loginCompletion atIndex:invocation.methodSignature.numberOfArguments-1];
+        loginCompletion(nil, error);
+    }];
+    [self.sessionStore logInWithCompletion:^(id<TWTRAuthSession> session, NSError *error) {
+        NSArray *existingSessions = [self.sessionStore existingUserSessions];
+        XCTAssertEqual([existingSessions count], 0);
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+}
+
+- (void)testLogOut_noopIfBadUserID
+{
+    [self.sessionStore logOutUserID:@"-1"];
+    NSArray *sessions = [self.sessionStore existingUserSessions];
+    XCTAssertEqual([sessions count], 0);
+}
+
+- (void)testLogOut_threadSafeLogOut
+{
+    [TWTRMockURLSessionProtocol pushResponse:[TWTRMockURLResponse responseWithString:[TWTRSessionFixtureLoader twitterSessionDictionaryStringWithUserID:self.userSession.userID]]];
+    
+    [self.sessionStore saveSession:self.userSession completion:^(id<TWTRAuthSession> session, NSError *error) {
+        [self.sessionStore logOutUserID:session.userID];
+        NSArray *sessions = [self.sessionStore existingUserSessions];
+        XCTAssertEqual([sessions count], 0);
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+}
+
+#pragma mark - TWTRGuestSessionStore
+
+- (void)testFetchGuestSession_fetchNewAppAndGuestSession
+{
+    [OCMStub([self.networkSessionProviderMock guestSessionWithAuthConfig:OCMOCK_ANY APIServiceConfig:OCMOCK_ANY URLSession:OCMOCK_ANY accessToken:OCMOCK_ANY completion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
+        TWTRGuestSession *guestSession = [[TWTRGuestSession alloc] initWithAccessToken:@"newAccessToken" guestToken:@"newGuestToken"];
+        TWTRSessionRefreshCompletion refreshCompletion;
+        [invocation getArgument:&refreshCompletion atIndex:6];
+        refreshCompletion(guestSession, nil);
+    }];
+    [self.sessionStore fetchGuestSessionWithCompletion:^(TWTRGuestSession *guestSession, NSError *error) {
+        XCTAssertEqualObjects(guestSession.guestToken, @"newGuestToken");
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+}
+
+- (void)testFetchGuestSession_fetchNewAppAndGuestSessionError
+{
+    [OCMStub([self.networkSessionProviderMock guestSessionWithAuthConfig:OCMOCK_ANY APIServiceConfig:OCMOCK_ANY URLSession:OCMOCK_ANY accessToken:OCMOCK_ANY completion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
+        NSError *error = [NSError errorWithDomain:@"domain" code:0 userInfo:@{}];
+        TWTRSessionRefreshCompletion refreshCompletion;
+        [invocation getArgument:&refreshCompletion atIndex:6];
+        refreshCompletion(nil, error);
+    }];
+    [self.sessionStore fetchGuestSessionWithCompletion:^(TWTRGuestSession *guestSession, NSError *error) {
+        XCTAssertNotNil(error);
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+}
+
+#pragma mark - TWTRSessionRefreshingStore
+
+- (void)testIsExpiredSession_validResponseButNoStrategy_returnsNo
+{
+    XCTAssertFalse([self.noStrategyStore isExpiredSession:self.guestSession response:self.okResponse]);
+}
+
+- (void)testIsExpiredSession_badAppResponseButNoStrategy_returnsNo
+{
+    XCTAssertFalse([self.noStrategyStore isExpiredSession:self.guestSession response:self.badAppTokenResponse]);
+}
+
+- (void)testIsExpiredSession_badGuestResponseButNoStrategy_returnsNo
+{
+    XCTAssertFalse([self.noStrategyStore isExpiredSession:self.guestSession response:self.badGuestTokenResponse]);
+}
+
+- (void)testIsExpiredSession_validResponseWithStrategy_returnsNo
+{
+    XCTAssertFalse([self.sessionStore isExpiredSession:self.guestSession response:self.okResponse]);
+}
+
+- (void)testIsExpiredSession_badAppResponseWithStrategy_returnsYes
+{
+    XCTAssertTrue([self.sessionStore isExpiredSession:self.guestSession response:self.badAppTokenResponse]);
+}
+
+- (void)testIsExpiredSession_badGuestResponseWithStrategy_returnsYes
+{
+    XCTAssertTrue([self.sessionStore isExpiredSession:self.guestSession response:self.badGuestTokenResponse]);
+}
+
+- (void)testRefreshOAuth1aSession_cannotRefreshUserSessions
+{
+    TWTRSession *userSession = [[TWTRSession alloc] initWithSessionDictionary:@{TWTRAuthOAuthTokenKey: @"accessToken", TWTRAuthOAuthSecretKey: @"accessTokenSecret", TWTRAuthAppOAuthScreenNameKey: @"screenname", TWTRAuthAppOAuthUserIDKey: @"123"}];
+    [self.sessionStore refreshSessionClass:[userSession class] sessionID:userSession.userID completion:^(TWTRSession *session, NSError *error) {
+        XCTAssertNotNil(error);
+        XCTAssertEqualObjects(error.domain, TWTRLogInErrorDomain);
+        XCTAssertEqual(error.code, TWTRLogInErrorCodeCannotRefreshSession);
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+}
+
+- (void)testRefreshGuestSession_succeeds
+{
+    [self.sessionStore refreshSessionClass:[self.guestSession class] sessionID:self.guestSession.guestToken completion:^(TWTRGuestSession *refreshedSession, NSError *error) {
+        XCTAssertEqualObjects(refreshedSession.guestToken, @"newGuestToken");
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+}
+
+- (void)testRefreshGuestSession_fails
+{
+    id<TWTRSessionRefreshStrategy> cannotRefreshGuestStrategy = [[TWTRNilGuestSessionRefreshStrategy alloc] init];
+    TWTRSessionStore *cannotRefreshGuestSessionsStore = [[TWTRSessionStore alloc] initWithAuthConfig:self.authConfig APIServiceConfig:self.serviceConfig refreshStrategies:@[cannotRefreshGuestStrategy] URLSession:[NSURLSession sharedSession] errorLogger:self.errorLoggerMock];
+
+    cannotRefreshGuestSessionsStore.guestSession = self.guestSession;
+    [cannotRefreshGuestSessionsStore refreshSessionClass:[self.guestSession class] sessionID:self.guestSession.guestToken completion:^(TWTRGuestSession *refreshedSession, NSError *error) {
+        XCTAssertNotNil(error);
+        self.asyncComplete = YES;
+    }];
+
+    [self waitForCompletion];
+}
+
+#pragma mark - Keychain Tests
+- (void)testGuestSession_succeeds
+{
+    self.sessionStore.guestSession = nil;
+    XCTAssertNil(self.sessionStore.guestSession);
+    
+    TWTRGuestSession *session = [TWTRSessionFixtureLoader twitterGuestSession];
+    self.sessionStore.guestSession = session;
+    
+    XCTAssertNotNil(self.sessionStore.guestSession);
+    XCTAssertEqual(session, self.sessionStore.guestSession);
+}
+
+- (void)testGeustSession_restoresSavedSession
+{
+    self.sessionStore.guestSession = nil;
+    TWTRGuestSession *session = [TWTRSessionFixtureLoader twitterGuestSession];
+    self.sessionStore.guestSession = session;
+    
+    TWTRSessionStore *store = [self instantiateSessionStore];
+
+    XCTAssertNotNil(store.guestSession);
+    XCTAssertEqualObjects(store.guestSession, session);
+}
+
+- (void)testAccessGroupMigration
+{
+    /// This is a pretty ugly test. The reason it is structured this way is because
+    /// the access groups are not saved on the simulator which is where our tests run.
+    /// so we cannot initialize the store and check to see if the access group actually
+    /// migrated. We create a partial mock before initializing the object so that we
+    /// can check that we have the intent to save the keychain item.
+    
+    // Save a session in the store, we don't care about the result
+    TWTRSession *session = [TWTRSessionFixtureLoader twitterSession];
+    [(id<TWTRUserSessionStore_Private>)self.sessionStore saveSession:session withVerification:NO completion:^(id<TWTRAuthSession>savedSession, NSError *error) {}];
+    
+    NSString *accessGroup = [[NSUUID UUID] UUIDString];
+    
+    // allocate a store so that we can make a partial mock from it
+    TWTRSessionStore *partialStore = [TWTRSessionStore alloc];
+    id storeMock = OCMPartialMock(partialStore);
+    
+    OCMExpect([storeMock saveKeychainItem:[OCMArg checkWithBlock:^BOOL(TWTRGenericKeychainItem *obj) {
+        return [obj.accessGroup isEqualToString:accessGroup];
+    }]]);
+    
+    // void cast to supress compiler warning
+    (void)[partialStore initWithAuthConfig:self.authConfig APIServiceConfig:self.serviceConfig refreshStrategies:self.refreshStrategies URLSession:[NSURLSession sharedSession] errorLogger:self.errorLoggerMock accessGroup:accessGroup];
+    
+    // grab the sessions so that we drain the backing dispatch_queue which does the actually processing of the sessions.
+    NSArray *sessions = [storeMock existingUserSessions];
+    NSArray *userIDs = [sessions valueForKey:@"userID"];
+    XCTAssertTrue([userIDs containsObject:session.userID]);
+    
+    OCMVerifyAll(storeMock);
+    [storeMock stopMocking];
+}
+
+@end

@@ -1,0 +1,1044 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D12C6AB1EA4644600DB2B3A /* TWTRSEWordRangeCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D12C6AA1EA4644600DB2B3A /* TWTRSEWordRangeCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D12C6AC1EA4644600DB2B3A /* TWTRSEWordRangeCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D12C6AA1EA4644600DB2B3A /* TWTRSEWordRangeCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D12C6B91EA5428900DB2B3A /* TWTRSEConfigurationSelectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E461DAEDA88004AF59F /* TWTRSEConfigurationSelectionTableViewCell.m */; };
+		3D12C6BA1EA5428D00DB2B3A /* TWTRSEConfigurationSelectionTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E451DAEDA88004AF59F /* TWTRSEConfigurationSelectionTableViewCell.h */; };
+		3D12C6BB1EA5429F00DB2B3A /* TWTRSETweetTextViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E481DAEDA88004AF59F /* TWTRSETweetTextViewContainer.m */; };
+		3D12C6BC1EA542A300DB2B3A /* TWTRSETweetTextViewContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E471DAEDA88004AF59F /* TWTRSETweetTextViewContainer.h */; };
+		3D12C6CB1EA5E05800DB2B3A /* TWTRSELocalizedResources.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D12C6CA1EA5E05800DB2B3A /* TWTRSELocalizedResources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D12C6CC1EA5E05800DB2B3A /* TWTRSELocalizedResources.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D12C6CA1EA5E05800DB2B3A /* TWTRSELocalizedResources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D12C6E91EA6127100DB2B3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF92EBEF1DB835BE005EB2D7 /* Assets.xcassets */; };
+		3D23EEA41F71D65E00198641 /* TwitterShareExtensionUI-Library.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3D23EEA31F71D65E00198641 /* TwitterShareExtensionUI-Library.xcconfig */; };
+		3D23EEA61F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3D23EEA51F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig */; };
+		3D23EEB91F724C5B00198641 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D23EEB81F724C5B00198641 /* UIKit.framework */; };
+		3D23EEBB1F724C6E00198641 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D23EEBA1F724C6D00198641 /* CoreGraphics.framework */; };
+		3D23EEBD1F724C9B00198641 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D23EEBC1F724C9A00198641 /* MobileCoreServices.framework */; };
+		3D23EEBF1F724CB800198641 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D23EEBE1F724CB800198641 /* CoreLocation.framework */; };
+		3D23EEC01F724CC400198641 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8CF5D21DAD693C00686F66 /* MapKit.framework */; };
+		3D2FDCF71F6E30F400AE6380 /* TWTRSESelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2FDCF61F6E30F400AE6380 /* TWTRSESelectionTableViewController.m */; };
+		3D2FDCF81F6E30F400AE6380 /* TWTRSESelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2FDCF61F6E30F400AE6380 /* TWTRSESelectionTableViewController.m */; };
+		3D7BAA111F63682D003EC153 /* TWTRSECardPreviewProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7BAA101F63682D003EC153 /* TWTRSECardPreviewProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D7BAA121F636839003EC153 /* TWTRSECardPreviewProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7BAA101F63682D003EC153 /* TWTRSECardPreviewProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D8C232F1F2FEB4A00D6B650 /* TFSUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8C232E1F2FEB4A00D6B650 /* TFSUtilities.framework */; };
+		3D90DA271F7377E200B23064 /* TWTRSEImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D90DA251F7377E200B23064 /* TWTRSEImageProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D90DA281F7377E200B23064 /* TWTRSEImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D90DA251F7377E200B23064 /* TWTRSEImageProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D90DA291F7377E200B23064 /* TWTRSEImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D90DA261F7377E200B23064 /* TWTRSEImageProvider.m */; };
+		3D90DA2A1F7377E200B23064 /* TWTRSEImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D90DA261F7377E200B23064 /* TWTRSEImageProvider.m */; };
+		3DA8FB801EA05D3200E778C9 /* TWTRSEScribe.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBC284D1E5E1E8B00595F01 /* TWTRSEScribe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DA8FB811EA05D5900E778C9 /* TWTRSETwitterUser.h in Headers */ = {isa = PBXBuildFile; fileRef = BFDCD0CF1E36A42000F0C726 /* TWTRSETwitterUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DA8FB821EA05D5F00E778C9 /* TWTRSEUIScribeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBC28531E5E265700595F01 /* TWTRSEUIScribeEvent.m */; };
+		3DA8FB831EA05D6B00E778C9 /* TWTRSETweetAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038EF61DAEF882004AF59F /* TWTRSETweetAttachment.m */; };
+		3DDAF42F1F5E91D200A19B66 /* TWTRSEFonts.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDAF42D1F5E91D200A19B66 /* TWTRSEFonts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DDAF4301F5E91D200A19B66 /* TWTRSEFonts.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDAF42D1F5E91D200A19B66 /* TWTRSEFonts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DDAF4311F5E91D200A19B66 /* TWTRSEFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAF42E1F5E91D200A19B66 /* TWTRSEFonts.m */; };
+		3DDAF4321F5E91D200A19B66 /* TWTRSEFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAF42E1F5E91D200A19B66 /* TWTRSEFonts.m */; };
+		AA76AF421FB273A4008CE2D3 /* DebugFormat.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA76AF3B1FB273A4008CE2D3 /* DebugFormat.xcconfig */; };
+		AA76AF431FB273A4008CE2D3 /* FrameworkTests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA76AF3C1FB273A4008CE2D3 /* FrameworkTests.xcconfig */; };
+		AA76AF441FB273A4008CE2D3 /* Project.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA76AF3D1FB273A4008CE2D3 /* Project.xcconfig */; };
+		AA76AF451FB273A4008CE2D3 /* Project-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA76AF3E1FB273A4008CE2D3 /* Project-Release.xcconfig */; };
+		AA76AF461FB273A4008CE2D3 /* Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA76AF3F1FB273A4008CE2D3 /* Framework.xcconfig */; };
+		AA76AF471FB273A4008CE2D3 /* Project-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA76AF401FB273A4008CE2D3 /* Project-Debug.xcconfig */; };
+		AA76AF481FB273A4008CE2D3 /* Library.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA76AF411FB273A4008CE2D3 /* Library.xcconfig */; };
+		BF038E5E1DAEDA88004AF59F /* TWTRSEAccountSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E401DAEDA88004AF59F /* TWTRSEAccountSelectionTableViewController.m */; };
+		BF038E601DAEDA88004AF59F /* TWTRSEAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E421DAEDA88004AF59F /* TWTRSEAccountTableViewCell.m */; };
+		BF038E611DAEDA88004AF59F /* TWTRSEConfigurationSelectionTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E451DAEDA88004AF59F /* TWTRSEConfigurationSelectionTableViewCell.h */; };
+		BF038E621DAEDA88004AF59F /* TWTRSEConfigurationSelectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E461DAEDA88004AF59F /* TWTRSEConfigurationSelectionTableViewCell.m */; };
+		BF038E631DAEDA88004AF59F /* TWTRSETweetTextViewContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E471DAEDA88004AF59F /* TWTRSETweetTextViewContainer.h */; };
+		BF038E641DAEDA88004AF59F /* TWTRSETweetTextViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E481DAEDA88004AF59F /* TWTRSETweetTextViewContainer.m */; };
+		BF038E661DAEDA88004AF59F /* TWTRSETweetComposerTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E4A1DAEDA88004AF59F /* TWTRSETweetComposerTableViewDataSource.m */; };
+		BF038E681DAEDA88004AF59F /* TWTRSETweetComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E4C1DAEDA88004AF59F /* TWTRSETweetComposerViewController.m */; };
+		BF038E6A1DAEDA88004AF59F /* TWTRSEFrameworkLazyLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E4F1DAEDA88004AF59F /* TWTRSEFrameworkLazyLoading.m */; };
+		BF038E6C1DAEDA88004AF59F /* UIView+TSEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E511DAEDA88004AF59F /* UIView+TSEExtensions.m */; };
+		BF038E6E1DAEDA88004AF59F /* TWTRSELoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E541DAEDA88004AF59F /* TWTRSELoadingTableViewCell.m */; };
+		BF038E701DAEDA88004AF59F /* TWTRSELocationMapTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E561DAEDA88004AF59F /* TWTRSELocationMapTableViewHeaderView.m */; };
+		BF038E721DAEDA88004AF59F /* TWTRSELocationSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E581DAEDA88004AF59F /* TWTRSELocationSelectionTableViewController.m */; };
+		BF038E741DAEDA88004AF59F /* TWTRSESheetPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E5A1DAEDA88004AF59F /* TWTRSESheetPresentationController.m */; };
+		BF038E761DAEDA88004AF59F /* TWTRSETweetShareNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E5C1DAEDA88004AF59F /* TWTRSETweetShareNavigationController.m */; };
+		BF038EDB1DAEDFA0004AF59F /* TWTRSEAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E331DAED9F8004AF59F /* TWTRSEAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF038EDC1DAEDFA0004AF59F /* TWTRSEGeoPlace.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E341DAED9F8004AF59F /* TWTRSEGeoPlace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF038EDD1DAEDFA0004AF59F /* TWTRSEGeoTagging.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E351DAED9F8004AF59F /* TWTRSEGeoTagging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF038EDE1DAEDFA0004AF59F /* TWTRSETweetShareViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E361DAED9F8004AF59F /* TWTRSETweetShareViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF038EDF1DAEDFA0004AF59F /* TWTRSETweetShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E371DAED9F8004AF59F /* TWTRSETweetShareViewController.m */; };
+		BF038EEE1DAEE6EA004AF59F /* TWTRSEAutoCompletion.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038EED1DAEE6EA004AF59F /* TWTRSEAutoCompletion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF038EF11DAEECC4004AF59F /* TWTRSETweet.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038EEF1DAEECC4004AF59F /* TWTRSETweet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF038EF21DAEECC4004AF59F /* TWTRSETweet.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038EF01DAEECC4004AF59F /* TWTRSETweet.m */; };
+		BF038EF51DAEF85B004AF59F /* TWTRSETweetAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038EF41DAEF859004AF59F /* TWTRSETweetAttachment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF038EF81DAEF96A004AF59F /* TWTRSETweetAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038EF61DAEF882004AF59F /* TWTRSETweetAttachment.m */; };
+		BF038F0F1DAF034F004AF59F /* TWTRSETweetAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038F0D1DAF034F004AF59F /* TWTRSETweetAttachmentView.m */; };
+		BF038F131DAF035B004AF59F /* TWTRSETweetImageAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038F111DAF035B004AF59F /* TWTRSETweetImageAttachmentView.m */; };
+		BF038F171DAF0382004AF59F /* TWTRSETweetURLAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038F151DAF0382004AF59F /* TWTRSETweetURLAttachmentView.m */; };
+		BF038F1B1DAF03E8004AF59F /* TWTRSETweetCustomCardAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038F191DAF03E8004AF59F /* TWTRSETweetCustomCardAttachmentView.m */; };
+		BF2588EC1DB0301400D279C3 /* TWTRSEAutoCompletionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2588EA1DB0301400D279C3 /* TWTRSEAutoCompletionViewModel.m */; };
+		BF4BB8DE1DB55265009F0F92 /* TWTRSEImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = BF4BB8DD1DB55265009F0F92 /* TWTRSEImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF4BB8E71DB5895B009F0F92 /* TWTRSETweetTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4BB8E51DB5895B009F0F92 /* TWTRSETweetTextView.m */; };
+		BF4BB8F01DB59C9D009F0F92 /* TWTRSENetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BF4BB8EF1DB59C98009F0F92 /* TWTRSENetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF4BB8F31DB5A100009F0F92 /* TWTRSELocalizedString.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4BB8F21DB5A100009F0F92 /* TWTRSELocalizedString.m */; };
+		BF629FDC1DB6C33600189CBB /* TWTRSETweetShareConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BF629FDB1DB6C33600189CBB /* TWTRSETweetShareConfiguration.m */; };
+		BF629FDD1DB6C74000189CBB /* TWTRSETweetShareConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = BF629FDA1DB6C22F00189CBB /* TWTRSETweetShareConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF629FE01DB6CEA700189CBB /* TWTRSETweetURLAttachmentMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = BF904F541DB6A45500B0BB73 /* TWTRSETweetURLAttachmentMetadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF629FE21DB6DE6800189CBB /* TWTRSETweetURLAttachmentMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = BF629FE11DB6DE6800189CBB /* TWTRSETweetURLAttachmentMetadata.m */; };
+		BF904F4C1DB6996300B0BB73 /* TWTRSETweetShareViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BF904F4B1DB6995F00B0BB73 /* TWTRSETweetShareViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF904F501DB6A05600B0BB73 /* TWTRSEBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF904F4E1DB6A05600B0BB73 /* TWTRSEBaseTableViewCell.m */; };
+		BF92EBF01DB835BE005EB2D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF92EBEF1DB835BE005EB2D7 /* Assets.xcassets */; };
+		BF92EBF81DB83638005EB2D7 /* TWTRSEUIBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = BF92EBF61DB83638005EB2D7 /* TWTRSEUIBundle.m */; };
+		BF99413B1DE3ADE60045467C /* TWTRSETweetCocoaItemProviderAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9941391DE3ADE60045467C /* TWTRSETweetCocoaItemProviderAttachmentView.m */; };
+		BFBC284E1E5E1E9000595F01 /* TWTRSEScribe.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBC284D1E5E1E8B00595F01 /* TWTRSEScribe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBC28541E5E265700595F01 /* TWTRSEUIScribeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBC28531E5E265700595F01 /* TWTRSEUIScribeEvent.m */; };
+		BFBE02871E2450FF007A246A /* TWTRSEAccountSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E401DAEDA88004AF59F /* TWTRSEAccountSelectionTableViewController.m */; };
+		BFBE02881E2450FF007A246A /* TWTRSEAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E421DAEDA88004AF59F /* TWTRSEAccountTableViewCell.m */; };
+		BFBE02891E2450FF007A246A /* TWTRSEAutoCompletionResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF212941DB1886A008B3257 /* TWTRSEAutoCompletionResult.m */; };
+		BFBE028A1E2450FF007A246A /* TWTRSEAutoCompletionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC1AEBE1DB022DA0065DEB7 /* TWTRSEAutoCompletionTableViewController.m */; };
+		BFBE028B1E2450FF007A246A /* TWTRSEAutoCompletionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2588EA1DB0301400D279C3 /* TWTRSEAutoCompletionViewModel.m */; };
+		BFBE028C1E2450FF007A246A /* TWTRSESimpleTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF212971DB19BB3008B3257 /* TWTRSESimpleTextTableViewCell.m */; };
+		BFBE028D1E2450FF007A246A /* TWTRSETweetAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038F0D1DAF034F004AF59F /* TWTRSETweetAttachmentView.m */; };
+		BFBE028E1E2450FF007A246A /* TWTRSETweetCocoaItemProviderAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9941391DE3ADE60045467C /* TWTRSETweetCocoaItemProviderAttachmentView.m */; };
+		BFBE028F1E2450FF007A246A /* TWTRSETweetCustomCardAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038F191DAF03E8004AF59F /* TWTRSETweetCustomCardAttachmentView.m */; };
+		BFBE02901E2450FF007A246A /* TWTRSETweetImageAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038F111DAF035B004AF59F /* TWTRSETweetImageAttachmentView.m */; };
+		BFBE02911E2450FF007A246A /* TWTRSETweetURLAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038F151DAF0382004AF59F /* TWTRSETweetURLAttachmentView.m */; };
+		BFBE02921E2450FF007A246A /* TWTRSETweetComposerTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E4A1DAEDA88004AF59F /* TWTRSETweetComposerTableViewDataSource.m */; };
+		BFBE02931E2450FF007A246A /* TWTRSETweetComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E4C1DAEDA88004AF59F /* TWTRSETweetComposerViewController.m */; };
+		BFBE02951E2450FF007A246A /* TWTRSETweetTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4BB8E51DB5895B009F0F92 /* TWTRSETweetTextView.m */; };
+		BFBE02961E2450FF007A246A /* NSArray+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2128F1DB03DCF008B3257 /* NSArray+Helpers.m */; };
+		BFBE02971E2450FF007A246A /* TWTRSEFrameworkLazyLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E4F1DAEDA88004AF59F /* TWTRSEFrameworkLazyLoading.m */; };
+		BFBE02981E2450FF007A246A /* TWTRSEThrottledProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF212891DB0356F008B3257 /* TWTRSEThrottledProperty.m */; };
+		BFBE02991E2450FF007A246A /* UIView+TSEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E511DAEDA88004AF59F /* UIView+TSEExtensions.m */; };
+		BFBE029B1E2450FF007A246A /* TWTRSEGeoPlaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3CF8B01DBAB24400BA84F2 /* TWTRSEGeoPlaceTableViewCell.m */; };
+		BFBE029C1E2450FF007A246A /* TWTRSELoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E541DAEDA88004AF59F /* TWTRSELoadingTableViewCell.m */; };
+		BFBE029D1E2450FF007A246A /* TWTRSELocationMapTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E561DAEDA88004AF59F /* TWTRSELocationMapTableViewHeaderView.m */; };
+		BFBE029E1E2450FF007A246A /* TWTRSELocationSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E581DAEDA88004AF59F /* TWTRSELocationSelectionTableViewController.m */; };
+		BFBE02A01E2450FF007A246A /* TWTRSEBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF904F4E1DB6A05600B0BB73 /* TWTRSEBaseTableViewCell.m */; };
+		BFBE02A11E2450FF007A246A /* TWTRSEUIBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = BF92EBF61DB83638005EB2D7 /* TWTRSEUIBundle.m */; };
+		BFBE02A21E2450FF007A246A /* TWTRSELocalizedString.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4BB8F21DB5A100009F0F92 /* TWTRSELocalizedString.m */; };
+		BFBE02A31E2450FF007A246A /* TWTRSESheetPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E5A1DAEDA88004AF59F /* TWTRSESheetPresentationController.m */; };
+		BFBE02A41E2450FF007A246A /* TWTRSETweetShareNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E5C1DAEDA88004AF59F /* TWTRSETweetShareNavigationController.m */; };
+		BFBE02A51E2450FF007A246A /* TWTRSETweet.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038EF01DAEECC4004AF59F /* TWTRSETweet.m */; };
+		BFBE02A61E2450FF007A246A /* TWTRSETweetShareConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BF629FDB1DB6C33600189CBB /* TWTRSETweetShareConfiguration.m */; };
+		BFBE02A71E2450FF007A246A /* TWTRSETweetShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E371DAED9F8004AF59F /* TWTRSETweetShareViewController.m */; };
+		BFBE02A81E2450FF007A246A /* TWTRSETweetURLAttachmentMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = BF629FE11DB6DE6800189CBB /* TWTRSETweetURLAttachmentMetadata.m */; };
+		BFBE02A91E245115007A246A /* TWTRSEAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E331DAED9F8004AF59F /* TWTRSEAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02AA1E245115007A246A /* TWTRSEAutoCompletion.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038EED1DAEE6EA004AF59F /* TWTRSEAutoCompletion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02AB1E245115007A246A /* TWTRSEGeoPlace.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E341DAED9F8004AF59F /* TWTRSEGeoPlace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02AC1E245115007A246A /* TWTRSEGeoTagging.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E351DAED9F8004AF59F /* TWTRSEGeoTagging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02AD1E245115007A246A /* TWTRSEImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = BF4BB8DD1DB55265009F0F92 /* TWTRSEImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02AE1E245115007A246A /* TWTRSENetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BF4BB8EF1DB59C98009F0F92 /* TWTRSENetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02AF1E245115007A246A /* TWTRSETweet.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038EEF1DAEECC4004AF59F /* TWTRSETweet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02B01E245115007A246A /* TWTRSETweetAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038EF41DAEF859004AF59F /* TWTRSETweetAttachment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02B11E245115007A246A /* TWTRSETweetShareConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = BF629FDA1DB6C22F00189CBB /* TWTRSETweetShareConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02B21E245115007A246A /* TWTRSETweetShareViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BF038E361DAED9F8004AF59F /* TWTRSETweetShareViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02B31E245115007A246A /* TWTRSETweetShareViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BF904F4B1DB6995F00B0BB73 /* TWTRSETweetShareViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02B41E245115007A246A /* TWTRSETweetURLAttachmentMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = BF904F541DB6A45500B0BB73 /* TWTRSETweetURLAttachmentMetadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBE02B51E24511A007A246A /* TwitterShareExtensionUI.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE95FEF1DAC2E1B00638749 /* TwitterShareExtensionUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFC1AEC01DB022DA0065DEB7 /* TWTRSEAutoCompletionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC1AEBE1DB022DA0065DEB7 /* TWTRSEAutoCompletionTableViewController.m */; };
+		BFC1AEC21DB031590065DEB7 /* TWTRSEAutoCompletionViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC1AEC11DB031590065DEB7 /* TWTRSEAutoCompletionViewModelTests.m */; };
+		BFDCD0D01E36A42000F0C726 /* TWTRSETwitterUser.h in Headers */ = {isa = PBXBuildFile; fileRef = BFDCD0CF1E36A42000F0C726 /* TWTRSETwitterUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE95FF61DAC2E1B00638749 /* TwitterShareExtensionUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE95FEC1DAC2E1B00638749 /* TwitterShareExtensionUI.framework */; };
+		BFE95FFD1DAC2E1B00638749 /* TwitterShareExtensionUI.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE95FEF1DAC2E1B00638749 /* TwitterShareExtensionUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFF2128B1DB0356F008B3257 /* TWTRSEThrottledProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF212891DB0356F008B3257 /* TWTRSEThrottledProperty.m */; };
+		BFF212901DB03DCF008B3257 /* NSArray+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2128F1DB03DCF008B3257 /* NSArray+Helpers.m */; };
+		BFF212951DB1886A008B3257 /* TWTRSEAutoCompletionResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF212941DB1886A008B3257 /* TWTRSEAutoCompletionResult.m */; };
+		BFF212991DB19BB3008B3257 /* TWTRSESimpleTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF212971DB19BB3008B3257 /* TWTRSESimpleTextTableViewCell.m */; };
+		BFF2E31E1DBACCDD006081A5 /* TWTRSEGeoPlaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3CF8B01DBAB24400BA84F2 /* TWTRSEGeoPlaceTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D12C6E71EA6106C00DB2B3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFE95FE31DAC2E1B00638749 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D12C6E01EA6103D00DB2B3A;
+			remoteInfo = TwitterShareExtensionUIResources;
+		};
+		BFE95FF71DAC2E1B00638749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFE95FE31DAC2E1B00638749 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFE95FEB1DAC2E1B00638749;
+			remoteInfo = TwitterShareExtensionUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BFBE027A1E245036007A246A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		20D3B1F81F876162008B439C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		3D12C6AA1EA4644600DB2B3A /* TWTRSEWordRangeCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSEWordRangeCalculator.h; sourceTree = "<group>"; };
+		3D12C6CA1EA5E05800DB2B3A /* TWTRSELocalizedResources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSELocalizedResources.h; sourceTree = "<group>"; };
+		3D12C6E11EA6103D00DB2B3A /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterShareExtensionUIResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D12C6E31EA6103E00DB2B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D23EEA31F71D65E00198641 /* TwitterShareExtensionUI-Library.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "TwitterShareExtensionUI-Library.xcconfig"; sourceTree = "<group>"; };
+		3D23EEA51F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = TwitterShareExtensionUIResources.xcconfig; sourceTree = "<group>"; };
+		3D23EEB61F724C3000198641 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D23EEB81F724C5B00198641 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3D23EEBA1F724C6D00198641 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3D23EEBC1F724C9A00198641 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3D23EEBE1F724CB800198641 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3D2FDCF31F6E30DC00AE6380 /* TWTRSESelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRSESelectionTableViewController.h; path = TwitterShareExtensionUI/Private/TWTRSESelectionTableViewController.h; sourceTree = SOURCE_ROOT; };
+		3D2FDCF61F6E30F400AE6380 /* TWTRSESelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRSESelectionTableViewController.m; path = TwitterShareExtensionUI/Private/TWTRSESelectionTableViewController.m; sourceTree = SOURCE_ROOT; };
+		3D7BAA101F63682D003EC153 /* TWTRSECardPreviewProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSECardPreviewProvider.h; sourceTree = "<group>"; };
+		3D8C232E1F2FEB4A00D6B650 /* TFSUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TFSUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D90DA251F7377E200B23064 /* TWTRSEImageProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTRSEImageProvider.h; sourceTree = "<group>"; };
+		3D90DA261F7377E200B23064 /* TWTRSEImageProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWTRSEImageProvider.m; sourceTree = "<group>"; };
+		3DDAF42D1F5E91D200A19B66 /* TWTRSEFonts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTRSEFonts.h; sourceTree = "<group>"; };
+		3DDAF42E1F5E91D200A19B66 /* TWTRSEFonts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWTRSEFonts.m; sourceTree = "<group>"; };
+		AA76AF3B1FB273A4008CE2D3 /* DebugFormat.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DebugFormat.xcconfig; sourceTree = "<group>"; };
+		AA76AF3C1FB273A4008CE2D3 /* FrameworkTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = FrameworkTests.xcconfig; sourceTree = "<group>"; };
+		AA76AF3D1FB273A4008CE2D3 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		AA76AF3E1FB273A4008CE2D3 /* Project-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
+		AA76AF3F1FB273A4008CE2D3 /* Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		AA76AF401FB273A4008CE2D3 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
+		AA76AF411FB273A4008CE2D3 /* Library.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Library.xcconfig; sourceTree = "<group>"; };
+		BF038E331DAED9F8004AF59F /* TWTRSEAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSEAccount.h; sourceTree = "<group>"; };
+		BF038E341DAED9F8004AF59F /* TWTRSEGeoPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSEGeoPlace.h; sourceTree = "<group>"; };
+		BF038E351DAED9F8004AF59F /* TWTRSEGeoTagging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSEGeoTagging.h; sourceTree = "<group>"; };
+		BF038E361DAED9F8004AF59F /* TWTRSETweetShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSETweetShareViewController.h; sourceTree = "<group>"; };
+		BF038E371DAED9F8004AF59F /* TWTRSETweetShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSETweetShareViewController.m; sourceTree = "<group>"; };
+		BF038E3F1DAEDA88004AF59F /* TWTRSEAccountSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSEAccountSelectionTableViewController.h; sourceTree = "<group>"; };
+		BF038E401DAEDA88004AF59F /* TWTRSEAccountSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSEAccountSelectionTableViewController.m; sourceTree = "<group>"; };
+		BF038E411DAEDA88004AF59F /* TWTRSEAccountTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSEAccountTableViewCell.h; sourceTree = "<group>"; };
+		BF038E421DAEDA88004AF59F /* TWTRSEAccountTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSEAccountTableViewCell.m; sourceTree = "<group>"; };
+		BF038E451DAEDA88004AF59F /* TWTRSEConfigurationSelectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSEConfigurationSelectionTableViewCell.h; sourceTree = "<group>"; };
+		BF038E461DAEDA88004AF59F /* TWTRSEConfigurationSelectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSEConfigurationSelectionTableViewCell.m; sourceTree = "<group>"; };
+		BF038E471DAEDA88004AF59F /* TWTRSETweetTextViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSETweetTextViewContainer.h; sourceTree = "<group>"; };
+		BF038E481DAEDA88004AF59F /* TWTRSETweetTextViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSETweetTextViewContainer.m; sourceTree = "<group>"; };
+		BF038E491DAEDA88004AF59F /* TWTRSETweetComposerTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSETweetComposerTableViewDataSource.h; sourceTree = "<group>"; };
+		BF038E4A1DAEDA88004AF59F /* TWTRSETweetComposerTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSETweetComposerTableViewDataSource.m; sourceTree = "<group>"; };
+		BF038E4B1DAEDA88004AF59F /* TWTRSETweetComposerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSETweetComposerViewController.h; sourceTree = "<group>"; };
+		BF038E4C1DAEDA88004AF59F /* TWTRSETweetComposerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSETweetComposerViewController.m; sourceTree = "<group>"; };
+		BF038E4E1DAEDA88004AF59F /* TWTRSEFrameworkLazyLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSEFrameworkLazyLoading.h; sourceTree = "<group>"; };
+		BF038E4F1DAEDA88004AF59F /* TWTRSEFrameworkLazyLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSEFrameworkLazyLoading.m; sourceTree = "<group>"; };
+		BF038E501DAEDA88004AF59F /* UIView+TSEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TSEExtensions.h"; sourceTree = "<group>"; };
+		BF038E511DAEDA88004AF59F /* UIView+TSEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TSEExtensions.m"; sourceTree = "<group>"; };
+		BF038E531DAEDA88004AF59F /* TWTRSELoadingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSELoadingTableViewCell.h; sourceTree = "<group>"; };
+		BF038E541DAEDA88004AF59F /* TWTRSELoadingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSELoadingTableViewCell.m; sourceTree = "<group>"; };
+		BF038E551DAEDA88004AF59F /* TWTRSELocationMapTableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSELocationMapTableViewHeaderView.h; sourceTree = "<group>"; };
+		BF038E561DAEDA88004AF59F /* TWTRSELocationMapTableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSELocationMapTableViewHeaderView.m; sourceTree = "<group>"; };
+		BF038E571DAEDA88004AF59F /* TWTRSELocationSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSELocationSelectionTableViewController.h; sourceTree = "<group>"; };
+		BF038E581DAEDA88004AF59F /* TWTRSELocationSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSELocationSelectionTableViewController.m; sourceTree = "<group>"; };
+		BF038E591DAEDA88004AF59F /* TWTRSESheetPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSESheetPresentationController.h; sourceTree = "<group>"; };
+		BF038E5A1DAEDA88004AF59F /* TWTRSESheetPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSESheetPresentationController.m; sourceTree = "<group>"; };
+		BF038E5B1DAEDA88004AF59F /* TWTRSETweetShareNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSETweetShareNavigationController.h; sourceTree = "<group>"; };
+		BF038E5C1DAEDA88004AF59F /* TWTRSETweetShareNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSETweetShareNavigationController.m; sourceTree = "<group>"; };
+		BF038EED1DAEE6EA004AF59F /* TWTRSEAutoCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSEAutoCompletion.h; sourceTree = "<group>"; };
+		BF038EEF1DAEECC4004AF59F /* TWTRSETweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSETweet.h; sourceTree = "<group>"; };
+		BF038EF01DAEECC4004AF59F /* TWTRSETweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSETweet.m; sourceTree = "<group>"; };
+		BF038EF41DAEF859004AF59F /* TWTRSETweetAttachment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTRSETweetAttachment.h; sourceTree = "<group>"; };
+		BF038EF61DAEF882004AF59F /* TWTRSETweetAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSETweetAttachment.m; sourceTree = "<group>"; };
+		BF038F0C1DAF034F004AF59F /* TWTRSETweetAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSETweetAttachmentView.h; sourceTree = "<group>"; };
+		BF038F0D1DAF034F004AF59F /* TWTRSETweetAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSETweetAttachmentView.m; sourceTree = "<group>"; };
+		BF038F101DAF035B004AF59F /* TWTRSETweetImageAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSETweetImageAttachmentView.h; sourceTree = "<group>"; };
+		BF038F111DAF035B004AF59F /* TWTRSETweetImageAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSETweetImageAttachmentView.m; sourceTree = "<group>"; };
+		BF038F141DAF0382004AF59F /* TWTRSETweetURLAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSETweetURLAttachmentView.h; sourceTree = "<group>"; };
+		BF038F151DAF0382004AF59F /* TWTRSETweetURLAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSETweetURLAttachmentView.m; sourceTree = "<group>"; };
+		BF038F181DAF03E8004AF59F /* TWTRSETweetCustomCardAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSETweetCustomCardAttachmentView.h; sourceTree = "<group>"; };
+		BF038F191DAF03E8004AF59F /* TWTRSETweetCustomCardAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSETweetCustomCardAttachmentView.m; sourceTree = "<group>"; };
+		BF2588E91DB0301400D279C3 /* TWTRSEAutoCompletionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRSEAutoCompletionViewModel.h; path = "Auto Completion/TWTRSEAutoCompletionViewModel.h"; sourceTree = "<group>"; };
+		BF2588EA1DB0301400D279C3 /* TWTRSEAutoCompletionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRSEAutoCompletionViewModel.m; path = "Auto Completion/TWTRSEAutoCompletionViewModel.m"; sourceTree = "<group>"; };
+		BF3CF8AF1DBAB24400BA84F2 /* TWTRSEGeoPlaceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSEGeoPlaceTableViewCell.h; sourceTree = "<group>"; };
+		BF3CF8B01DBAB24400BA84F2 /* TWTRSEGeoPlaceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSEGeoPlaceTableViewCell.m; sourceTree = "<group>"; };
+		BF4BB8DD1DB55265009F0F92 /* TWTRSEImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSEImageDownloader.h; sourceTree = "<group>"; };
+		BF4BB8E41DB5895B009F0F92 /* TWTRSETweetTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSETweetTextView.h; sourceTree = "<group>"; };
+		BF4BB8E51DB5895B009F0F92 /* TWTRSETweetTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSETweetTextView.m; sourceTree = "<group>"; };
+		BF4BB8EF1DB59C98009F0F92 /* TWTRSENetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTRSENetworking.h; sourceTree = "<group>"; };
+		BF4BB8F11DB5A09E009F0F92 /* TWTRSELocalizedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTRSELocalizedString.h; sourceTree = "<group>"; };
+		BF4BB8F21DB5A100009F0F92 /* TWTRSELocalizedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSELocalizedString.m; sourceTree = "<group>"; };
+		BF629FDA1DB6C22F00189CBB /* TWTRSETweetShareConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTRSETweetShareConfiguration.h; sourceTree = "<group>"; };
+		BF629FDB1DB6C33600189CBB /* TWTRSETweetShareConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSETweetShareConfiguration.m; sourceTree = "<group>"; };
+		BF629FE11DB6DE6800189CBB /* TWTRSETweetURLAttachmentMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSETweetURLAttachmentMetadata.m; sourceTree = "<group>"; };
+		BF8CF5D21DAD693C00686F66 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BF904F4B1DB6995F00B0BB73 /* TWTRSETweetShareViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTRSETweetShareViewControllerDelegate.h; sourceTree = "<group>"; };
+		BF904F4D1DB6A05600B0BB73 /* TWTRSEBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSEBaseTableViewCell.h; sourceTree = "<group>"; };
+		BF904F4E1DB6A05600B0BB73 /* TWTRSEBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSEBaseTableViewCell.m; sourceTree = "<group>"; };
+		BF904F541DB6A45500B0BB73 /* TWTRSETweetURLAttachmentMetadata.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTRSETweetURLAttachmentMetadata.h; sourceTree = "<group>"; };
+		BF92EBE71DB8200A005EB2D7 /* TWTRSEColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTRSEColors.h; sourceTree = "<group>"; };
+		BF92EBEF1DB835BE005EB2D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF92EBF51DB83638005EB2D7 /* TWTRSEUIBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSEUIBundle.h; sourceTree = "<group>"; };
+		BF92EBF61DB83638005EB2D7 /* TWTRSEUIBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSEUIBundle.m; sourceTree = "<group>"; };
+		BF9941381DE3ADE60045467C /* TWTRSETweetCocoaItemProviderAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSETweetCocoaItemProviderAttachmentView.h; sourceTree = "<group>"; };
+		BF9941391DE3ADE60045467C /* TWTRSETweetCocoaItemProviderAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSETweetCocoaItemProviderAttachmentView.m; sourceTree = "<group>"; };
+		BFBC284D1E5E1E8B00595F01 /* TWTRSEScribe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTRSEScribe.h; sourceTree = "<group>"; };
+		BFBC28531E5E265700595F01 /* TWTRSEUIScribeEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSEUIScribeEvent.m; sourceTree = "<group>"; };
+		BFBC28551E5E269300595F01 /* TWTRSEUIScribeEvent+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TWTRSEUIScribeEvent+Private.h"; sourceTree = "<group>"; };
+		BFBE027C1E245036007A246A /* libTwitterShareExtensionUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTwitterShareExtensionUI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC1AEBD1DB022DA0065DEB7 /* TWTRSEAutoCompletionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRSEAutoCompletionTableViewController.h; path = "Auto Completion/TWTRSEAutoCompletionTableViewController.h"; sourceTree = "<group>"; };
+		BFC1AEBE1DB022DA0065DEB7 /* TWTRSEAutoCompletionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRSEAutoCompletionTableViewController.m; path = "Auto Completion/TWTRSEAutoCompletionTableViewController.m"; sourceTree = "<group>"; };
+		BFC1AEC11DB031590065DEB7 /* TWTRSEAutoCompletionViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSEAutoCompletionViewModelTests.m; sourceTree = "<group>"; };
+		BFDCD0CF1E36A42000F0C726 /* TWTRSETwitterUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSETwitterUser.h; sourceTree = "<group>"; };
+		BFE95FEC1DAC2E1B00638749 /* TwitterShareExtensionUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TwitterShareExtensionUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE95FEF1DAC2E1B00638749 /* TwitterShareExtensionUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterShareExtensionUI.h; sourceTree = "<group>"; };
+		BFE95FF01DAC2E1B00638749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFE95FF51DAC2E1B00638749 /* TwitterShareExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterShareExtensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE95FFC1DAC2E1B00638749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFF212881DB0356F008B3257 /* TWTRSEThrottledProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSEThrottledProperty.h; sourceTree = "<group>"; };
+		BFF212891DB0356F008B3257 /* TWTRSEThrottledProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSEThrottledProperty.m; sourceTree = "<group>"; };
+		BFF2128E1DB03D7F008B3257 /* NSArray+Helpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Helpers.h"; sourceTree = "<group>"; };
+		BFF2128F1DB03DCF008B3257 /* NSArray+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Helpers.m"; sourceTree = "<group>"; };
+		BFF212911DB18817008B3257 /* TWTRSEAutoCompletionResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TWTRSEAutoCompletionResult.h; path = "Auto Completion/TWTRSEAutoCompletionResult.h"; sourceTree = "<group>"; };
+		BFF212941DB1886A008B3257 /* TWTRSEAutoCompletionResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRSEAutoCompletionResult.m; path = "Auto Completion/TWTRSEAutoCompletionResult.m"; sourceTree = "<group>"; };
+		BFF212961DB19BB3008B3257 /* TWTRSESimpleTextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRSESimpleTextTableViewCell.h; path = "Auto Completion/TWTRSESimpleTextTableViewCell.h"; sourceTree = "<group>"; };
+		BFF212971DB19BB3008B3257 /* TWTRSESimpleTextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRSESimpleTextTableViewCell.m; path = "Auto Completion/TWTRSESimpleTextTableViewCell.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFBE02791E245036007A246A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE95FE81DAC2E1B00638749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D23EEBB1F724C6E00198641 /* CoreGraphics.framework in Frameworks */,
+				3D23EEBF1F724CB800198641 /* CoreLocation.framework in Frameworks */,
+				3D23EEC01F724CC400198641 /* MapKit.framework in Frameworks */,
+				3D23EEBD1F724C9B00198641 /* MobileCoreServices.framework in Frameworks */,
+				3D23EEB91F724C5B00198641 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE95FF21DAC2E1B00638749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D8C232F1F2FEB4A00D6B650 /* TFSUtilities.framework in Frameworks */,
+				BFE95FF61DAC2E1B00638749 /* TwitterShareExtensionUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D12C6E21EA6103E00DB2B3A /* TwitterShareExtensionUIResources */ = {
+			isa = PBXGroup;
+			children = (
+				3D12C6E31EA6103E00DB2B3A /* Info.plist */,
+			);
+			path = TwitterShareExtensionUIResources;
+			sourceTree = "<group>";
+		};
+		3D23EE961F71CC1900198641 /* BuildConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				AA76AF3B1FB273A4008CE2D3 /* DebugFormat.xcconfig */,
+				AA76AF3F1FB273A4008CE2D3 /* Framework.xcconfig */,
+				AA76AF3C1FB273A4008CE2D3 /* FrameworkTests.xcconfig */,
+				AA76AF411FB273A4008CE2D3 /* Library.xcconfig */,
+				AA76AF401FB273A4008CE2D3 /* Project-Debug.xcconfig */,
+				AA76AF3E1FB273A4008CE2D3 /* Project-Release.xcconfig */,
+				AA76AF3D1FB273A4008CE2D3 /* Project.xcconfig */,
+				3D23EEA31F71D65E00198641 /* TwitterShareExtensionUI-Library.xcconfig */,
+				3D23EEA51F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig */,
+			);
+			path = BuildConfiguration;
+			sourceTree = "<group>";
+		};
+		BF038E321DAED9F8004AF59F /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				BF038E331DAED9F8004AF59F /* TWTRSEAccount.h */,
+				BF038EED1DAEE6EA004AF59F /* TWTRSEAutoCompletion.h */,
+				3D7BAA101F63682D003EC153 /* TWTRSECardPreviewProvider.h */,
+				3DDAF42D1F5E91D200A19B66 /* TWTRSEFonts.h */,
+				3DDAF42E1F5E91D200A19B66 /* TWTRSEFonts.m */,
+				BF038E341DAED9F8004AF59F /* TWTRSEGeoPlace.h */,
+				BF038E351DAED9F8004AF59F /* TWTRSEGeoTagging.h */,
+				BF4BB8DD1DB55265009F0F92 /* TWTRSEImageDownloader.h */,
+				3D90DA251F7377E200B23064 /* TWTRSEImageProvider.h */,
+				3D90DA261F7377E200B23064 /* TWTRSEImageProvider.m */,
+				3D12C6CA1EA5E05800DB2B3A /* TWTRSELocalizedResources.h */,
+				BF4BB8EF1DB59C98009F0F92 /* TWTRSENetworking.h */,
+				BFBC284D1E5E1E8B00595F01 /* TWTRSEScribe.h */,
+				BF038EEF1DAEECC4004AF59F /* TWTRSETweet.h */,
+				BF038EF01DAEECC4004AF59F /* TWTRSETweet.m */,
+				BF038EF41DAEF859004AF59F /* TWTRSETweetAttachment.h */,
+				BF038EF61DAEF882004AF59F /* TWTRSETweetAttachment.m */,
+				BF629FDA1DB6C22F00189CBB /* TWTRSETweetShareConfiguration.h */,
+				BF629FDB1DB6C33600189CBB /* TWTRSETweetShareConfiguration.m */,
+				BF038E361DAED9F8004AF59F /* TWTRSETweetShareViewController.h */,
+				BF038E371DAED9F8004AF59F /* TWTRSETweetShareViewController.m */,
+				BF904F4B1DB6995F00B0BB73 /* TWTRSETweetShareViewControllerDelegate.h */,
+				BF904F541DB6A45500B0BB73 /* TWTRSETweetURLAttachmentMetadata.h */,
+				BF629FE11DB6DE6800189CBB /* TWTRSETweetURLAttachmentMetadata.m */,
+				BFDCD0CF1E36A42000F0C726 /* TWTRSETwitterUser.h */,
+				BFBC28531E5E265700595F01 /* TWTRSEUIScribeEvent.m */,
+				3D12C6AA1EA4644600DB2B3A /* TWTRSEWordRangeCalculator.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		BF038E3D1DAEDA88004AF59F /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				BF038E3E1DAEDA88004AF59F /* Account Selection */,
+				BF038EF31DAEF3FC004AF59F /* Auto Completion */,
+				BF038E431DAEDA88004AF59F /* Composer */,
+				BF038E4D1DAEDA88004AF59F /* Extensions */,
+				BF038E521DAEDA88004AF59F /* Location Selection */,
+				BF904F4D1DB6A05600B0BB73 /* TWTRSEBaseTableViewCell.h */,
+				BF904F4E1DB6A05600B0BB73 /* TWTRSEBaseTableViewCell.m */,
+				BF92EBE71DB8200A005EB2D7 /* TWTRSEColors.h */,
+				BF4BB8F11DB5A09E009F0F92 /* TWTRSELocalizedString.h */,
+				BF4BB8F21DB5A100009F0F92 /* TWTRSELocalizedString.m */,
+				BF038E591DAEDA88004AF59F /* TWTRSESheetPresentationController.h */,
+				BF038E5A1DAEDA88004AF59F /* TWTRSESheetPresentationController.m */,
+				3D2FDCF31F6E30DC00AE6380 /* TWTRSESelectionTableViewController.h */,
+				3D2FDCF61F6E30F400AE6380 /* TWTRSESelectionTableViewController.m */,
+				BF038E5B1DAEDA88004AF59F /* TWTRSETweetShareNavigationController.h */,
+				BF038E5C1DAEDA88004AF59F /* TWTRSETweetShareNavigationController.m */,
+				BF92EBF51DB83638005EB2D7 /* TWTRSEUIBundle.h */,
+				BF92EBF61DB83638005EB2D7 /* TWTRSEUIBundle.m */,
+				BFBC28551E5E269300595F01 /* TWTRSEUIScribeEvent+Private.h */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		BF038E3E1DAEDA88004AF59F /* Account Selection */ = {
+			isa = PBXGroup;
+			children = (
+				BF038E3F1DAEDA88004AF59F /* TWTRSEAccountSelectionTableViewController.h */,
+				BF038E401DAEDA88004AF59F /* TWTRSEAccountSelectionTableViewController.m */,
+				BF038E411DAEDA88004AF59F /* TWTRSEAccountTableViewCell.h */,
+				BF038E421DAEDA88004AF59F /* TWTRSEAccountTableViewCell.m */,
+			);
+			path = "Account Selection";
+			sourceTree = "<group>";
+		};
+		BF038E431DAEDA88004AF59F /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+				BF038F0B1DAF034F004AF59F /* Attachment Views */,
+				BF038E451DAEDA88004AF59F /* TWTRSEConfigurationSelectionTableViewCell.h */,
+				BF038E461DAEDA88004AF59F /* TWTRSEConfigurationSelectionTableViewCell.m */,
+				BF038E491DAEDA88004AF59F /* TWTRSETweetComposerTableViewDataSource.h */,
+				BF038E4A1DAEDA88004AF59F /* TWTRSETweetComposerTableViewDataSource.m */,
+				BF038E4B1DAEDA88004AF59F /* TWTRSETweetComposerViewController.h */,
+				BF038E4C1DAEDA88004AF59F /* TWTRSETweetComposerViewController.m */,
+				BF4BB8E41DB5895B009F0F92 /* TWTRSETweetTextView.h */,
+				BF4BB8E51DB5895B009F0F92 /* TWTRSETweetTextView.m */,
+				BF038E471DAEDA88004AF59F /* TWTRSETweetTextViewContainer.h */,
+				BF038E481DAEDA88004AF59F /* TWTRSETweetTextViewContainer.m */,
+			);
+			path = Composer;
+			sourceTree = "<group>";
+		};
+		BF038E4D1DAEDA88004AF59F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BFF2128E1DB03D7F008B3257 /* NSArray+Helpers.h */,
+				BFF2128F1DB03DCF008B3257 /* NSArray+Helpers.m */,
+				BF038E4E1DAEDA88004AF59F /* TWTRSEFrameworkLazyLoading.h */,
+				BF038E4F1DAEDA88004AF59F /* TWTRSEFrameworkLazyLoading.m */,
+				BFF212881DB0356F008B3257 /* TWTRSEThrottledProperty.h */,
+				BFF212891DB0356F008B3257 /* TWTRSEThrottledProperty.m */,
+				BF038E501DAEDA88004AF59F /* UIView+TSEExtensions.h */,
+				BF038E511DAEDA88004AF59F /* UIView+TSEExtensions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF038E521DAEDA88004AF59F /* Location Selection */ = {
+			isa = PBXGroup;
+			children = (
+				BF3CF8AE1DBAB23900BA84F2 /* Cells */,
+				BF038E551DAEDA88004AF59F /* TWTRSELocationMapTableViewHeaderView.h */,
+				BF038E561DAEDA88004AF59F /* TWTRSELocationMapTableViewHeaderView.m */,
+				BF038E571DAEDA88004AF59F /* TWTRSELocationSelectionTableViewController.h */,
+				BF038E581DAEDA88004AF59F /* TWTRSELocationSelectionTableViewController.m */,
+			);
+			path = "Location Selection";
+			sourceTree = "<group>";
+		};
+		BF038EF31DAEF3FC004AF59F /* Auto Completion */ = {
+			isa = PBXGroup;
+			children = (
+				BFF212911DB18817008B3257 /* TWTRSEAutoCompletionResult.h */,
+				BFF212941DB1886A008B3257 /* TWTRSEAutoCompletionResult.m */,
+				BFC1AEBD1DB022DA0065DEB7 /* TWTRSEAutoCompletionTableViewController.h */,
+				BFC1AEBE1DB022DA0065DEB7 /* TWTRSEAutoCompletionTableViewController.m */,
+				BF2588E91DB0301400D279C3 /* TWTRSEAutoCompletionViewModel.h */,
+				BF2588EA1DB0301400D279C3 /* TWTRSEAutoCompletionViewModel.m */,
+				BFF212961DB19BB3008B3257 /* TWTRSESimpleTextTableViewCell.h */,
+				BFF212971DB19BB3008B3257 /* TWTRSESimpleTextTableViewCell.m */,
+			);
+			name = "Auto Completion";
+			sourceTree = "<group>";
+		};
+		BF038F0B1DAF034F004AF59F /* Attachment Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF038F0C1DAF034F004AF59F /* TWTRSETweetAttachmentView.h */,
+				BF038F0D1DAF034F004AF59F /* TWTRSETweetAttachmentView.m */,
+				BF9941381DE3ADE60045467C /* TWTRSETweetCocoaItemProviderAttachmentView.h */,
+				BF9941391DE3ADE60045467C /* TWTRSETweetCocoaItemProviderAttachmentView.m */,
+				BF038F181DAF03E8004AF59F /* TWTRSETweetCustomCardAttachmentView.h */,
+				BF038F191DAF03E8004AF59F /* TWTRSETweetCustomCardAttachmentView.m */,
+				BF038F101DAF035B004AF59F /* TWTRSETweetImageAttachmentView.h */,
+				BF038F111DAF035B004AF59F /* TWTRSETweetImageAttachmentView.m */,
+				BF038F141DAF0382004AF59F /* TWTRSETweetURLAttachmentView.h */,
+				BF038F151DAF0382004AF59F /* TWTRSETweetURLAttachmentView.m */,
+			);
+			path = "Attachment Views";
+			sourceTree = "<group>";
+		};
+		BF3CF8AE1DBAB23900BA84F2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BF3CF8AF1DBAB24400BA84F2 /* TWTRSEGeoPlaceTableViewCell.h */,
+				BF3CF8B01DBAB24400BA84F2 /* TWTRSEGeoPlaceTableViewCell.m */,
+				BF038E531DAEDA88004AF59F /* TWTRSELoadingTableViewCell.h */,
+				BF038E541DAEDA88004AF59F /* TWTRSELoadingTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		BF8CF5D11DAD693C00686F66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20D3B1F81F876162008B439C /* CoreFoundation.framework */,
+				3D23EEBE1F724CB800198641 /* CoreLocation.framework */,
+				3D23EEBC1F724C9A00198641 /* MobileCoreServices.framework */,
+				3D23EEBA1F724C6D00198641 /* CoreGraphics.framework */,
+				3D23EEB81F724C5B00198641 /* UIKit.framework */,
+				3D23EEB61F724C3000198641 /* Foundation.framework */,
+				3D8C232E1F2FEB4A00D6B650 /* TFSUtilities.framework */,
+				BF8CF5D21DAD693C00686F66 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFE95FE21DAC2E1B00638749 = {
+			isa = PBXGroup;
+			children = (
+				3D23EE961F71CC1900198641 /* BuildConfiguration */,
+				BFE95FEE1DAC2E1B00638749 /* TwitterShareExtensionUI */,
+				BFE95FF91DAC2E1B00638749 /* TwitterShareExtensionUITests */,
+				3D12C6E21EA6103E00DB2B3A /* TwitterShareExtensionUIResources */,
+				BFE95FED1DAC2E1B00638749 /* Products */,
+				BF8CF5D11DAD693C00686F66 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BFE95FED1DAC2E1B00638749 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFE95FEC1DAC2E1B00638749 /* TwitterShareExtensionUI.framework */,
+				BFE95FF51DAC2E1B00638749 /* TwitterShareExtensionUITests.xctest */,
+				BFBE027C1E245036007A246A /* libTwitterShareExtensionUI.a */,
+				3D12C6E11EA6103D00DB2B3A /* TwitterShareExtensionUIResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFE95FEE1DAC2E1B00638749 /* TwitterShareExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				BF92EBEF1DB835BE005EB2D7 /* Assets.xcassets */,
+				BFE95FF01DAC2E1B00638749 /* Info.plist */,
+				BF038E3D1DAEDA88004AF59F /* Private */,
+				BF038E321DAED9F8004AF59F /* Public */,
+				BFE95FEF1DAC2E1B00638749 /* TwitterShareExtensionUI.h */,
+			);
+			path = TwitterShareExtensionUI;
+			sourceTree = "<group>";
+		};
+		BFE95FF91DAC2E1B00638749 /* TwitterShareExtensionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFE95FFC1DAC2E1B00638749 /* Info.plist */,
+				BFC1AEC11DB031590065DEB7 /* TWTRSEAutoCompletionViewModelTests.m */,
+			);
+			path = TwitterShareExtensionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BFBE02861E2450AB007A246A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBE02B01E245115007A246A /* TWTRSETweetAttachment.h in Headers */,
+				BFBE02AA1E245115007A246A /* TWTRSEAutoCompletion.h in Headers */,
+				BFBE02B51E24511A007A246A /* TwitterShareExtensionUI.h in Headers */,
+				BFBE02AE1E245115007A246A /* TWTRSENetworking.h in Headers */,
+				BFBE02B41E245115007A246A /* TWTRSETweetURLAttachmentMetadata.h in Headers */,
+				3DA8FB801EA05D3200E778C9 /* TWTRSEScribe.h in Headers */,
+				BFBE02AD1E245115007A246A /* TWTRSEImageDownloader.h in Headers */,
+				3D12C6CC1EA5E05800DB2B3A /* TWTRSELocalizedResources.h in Headers */,
+				BFBE02B21E245115007A246A /* TWTRSETweetShareViewController.h in Headers */,
+				BFBE02AC1E245115007A246A /* TWTRSEGeoTagging.h in Headers */,
+				BFBE02A91E245115007A246A /* TWTRSEAccount.h in Headers */,
+				3D7BAA121F636839003EC153 /* TWTRSECardPreviewProvider.h in Headers */,
+				BFBE02B11E245115007A246A /* TWTRSETweetShareConfiguration.h in Headers */,
+				3D12C6BA1EA5428D00DB2B3A /* TWTRSEConfigurationSelectionTableViewCell.h in Headers */,
+				BFBE02AF1E245115007A246A /* TWTRSETweet.h in Headers */,
+				3DA8FB811EA05D5900E778C9 /* TWTRSETwitterUser.h in Headers */,
+				3D12C6AC1EA4644600DB2B3A /* TWTRSEWordRangeCalculator.h in Headers */,
+				3D90DA281F7377E200B23064 /* TWTRSEImageProvider.h in Headers */,
+				BFBE02B31E245115007A246A /* TWTRSETweetShareViewControllerDelegate.h in Headers */,
+				3D12C6BC1EA542A300DB2B3A /* TWTRSETweetTextViewContainer.h in Headers */,
+				3DDAF4301F5E91D200A19B66 /* TWTRSEFonts.h in Headers */,
+				BFBE02AB1E245115007A246A /* TWTRSEGeoPlace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE95FE91DAC2E1B00638749 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF904F4C1DB6996300B0BB73 /* TWTRSETweetShareViewControllerDelegate.h in Headers */,
+				BF038EDE1DAEDFA0004AF59F /* TWTRSETweetShareViewController.h in Headers */,
+				BF629FDD1DB6C74000189CBB /* TWTRSETweetShareConfiguration.h in Headers */,
+				BF4BB8DE1DB55265009F0F92 /* TWTRSEImageDownloader.h in Headers */,
+				BF038EEE1DAEE6EA004AF59F /* TWTRSEAutoCompletion.h in Headers */,
+				BF038EF51DAEF85B004AF59F /* TWTRSETweetAttachment.h in Headers */,
+				3D12C6AB1EA4644600DB2B3A /* TWTRSEWordRangeCalculator.h in Headers */,
+				BFDCD0D01E36A42000F0C726 /* TWTRSETwitterUser.h in Headers */,
+				BF038E611DAEDA88004AF59F /* TWTRSEConfigurationSelectionTableViewCell.h in Headers */,
+				BF629FE01DB6CEA700189CBB /* TWTRSETweetURLAttachmentMetadata.h in Headers */,
+				BF038EF11DAEECC4004AF59F /* TWTRSETweet.h in Headers */,
+				3D7BAA111F63682D003EC153 /* TWTRSECardPreviewProvider.h in Headers */,
+				BF4BB8F01DB59C9D009F0F92 /* TWTRSENetworking.h in Headers */,
+				BF038EDB1DAEDFA0004AF59F /* TWTRSEAccount.h in Headers */,
+				BF038E631DAEDA88004AF59F /* TWTRSETweetTextViewContainer.h in Headers */,
+				3D12C6CB1EA5E05800DB2B3A /* TWTRSELocalizedResources.h in Headers */,
+				BFBC284E1E5E1E9000595F01 /* TWTRSEScribe.h in Headers */,
+				3D90DA271F7377E200B23064 /* TWTRSEImageProvider.h in Headers */,
+				BF038EDD1DAEDFA0004AF59F /* TWTRSEGeoTagging.h in Headers */,
+				BFE95FFD1DAC2E1B00638749 /* TwitterShareExtensionUI.h in Headers */,
+				3DDAF42F1F5E91D200A19B66 /* TWTRSEFonts.h in Headers */,
+				BF038EDC1DAEDFA0004AF59F /* TWTRSEGeoPlace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3D12C6E01EA6103D00DB2B3A /* TwitterShareExtensionUIResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D12C6E41EA6103E00DB2B3A /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUIResources" */;
+			buildPhases = (
+				3D12C6DF1EA6103D00DB2B3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitterShareExtensionUIResources;
+			productName = TwitterShareExtensionUIResources;
+			productReference = 3D12C6E11EA6103D00DB2B3A /* TwitterShareExtensionUIResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		BFBE027B1E245036007A246A /* TwitterShareExtensionUI-static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFBE02841E245036007A246A /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUI-static" */;
+			buildPhases = (
+				BFBE02781E245036007A246A /* Sources */,
+				BFBE02791E245036007A246A /* Frameworks */,
+				BFBE027A1E245036007A246A /* CopyFiles */,
+				BFBE02861E2450AB007A246A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D12C6E81EA6106C00DB2B3A /* PBXTargetDependency */,
+			);
+			name = "TwitterShareExtensionUI-static";
+			productName = "TwitterShareExtensionUI-static";
+			productReference = BFBE027C1E245036007A246A /* libTwitterShareExtensionUI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BFE95FEB1DAC2E1B00638749 /* TwitterShareExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE960001DAC2E1B00638749 /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUI" */;
+			buildPhases = (
+				BFE95FE71DAC2E1B00638749 /* Sources */,
+				BFE95FE81DAC2E1B00638749 /* Frameworks */,
+				BFE95FE91DAC2E1B00638749 /* Headers */,
+				BFE95FEA1DAC2E1B00638749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitterShareExtensionUI;
+			productName = TwitterShareExtensionUI;
+			productReference = BFE95FEC1DAC2E1B00638749 /* TwitterShareExtensionUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BFE95FF41DAC2E1B00638749 /* TwitterShareExtensionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE960031DAC2E1B00638749 /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUITests" */;
+			buildPhases = (
+				BFE95FF11DAC2E1B00638749 /* Sources */,
+				BFE95FF21DAC2E1B00638749 /* Frameworks */,
+				BFE95FF31DAC2E1B00638749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFE95FF81DAC2E1B00638749 /* PBXTargetDependency */,
+			);
+			name = TwitterShareExtensionUITests;
+			productName = TwitterShareExtensionUITests;
+			productReference = BFE95FF51DAC2E1B00638749 /* TwitterShareExtensionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFE95FE31DAC2E1B00638749 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Twitter;
+				TargetAttributes = {
+					3D12C6E01EA6103D00DB2B3A = {
+						CreatedOnToolsVersion = 8.3.1;
+					};
+					BFBE027B1E245036007A246A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					BFE95FEB1DAC2E1B00638749 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9YG77X724H;
+						ProvisioningStyle = Manual;
+					};
+					BFE95FF41DAC2E1B00638749 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9YG77X724H;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = BFE95FE61DAC2E1B00638749 /* Build configuration list for PBXProject "TwitterShareExtensionUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BFE95FE21DAC2E1B00638749;
+			productRefGroup = BFE95FED1DAC2E1B00638749 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFE95FEB1DAC2E1B00638749 /* TwitterShareExtensionUI */,
+				BFE95FF41DAC2E1B00638749 /* TwitterShareExtensionUITests */,
+				BFBE027B1E245036007A246A /* TwitterShareExtensionUI-static */,
+				3D12C6E01EA6103D00DB2B3A /* TwitterShareExtensionUIResources */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D12C6DF1EA6103D00DB2B3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D12C6E91EA6127100DB2B3A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE95FEA1DAC2E1B00638749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D23EEA61F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig in Resources */,
+				AA76AF451FB273A4008CE2D3 /* Project-Release.xcconfig in Resources */,
+				3D23EEA41F71D65E00198641 /* TwitterShareExtensionUI-Library.xcconfig in Resources */,
+				AA76AF431FB273A4008CE2D3 /* FrameworkTests.xcconfig in Resources */,
+				BF92EBF01DB835BE005EB2D7 /* Assets.xcassets in Resources */,
+				AA76AF441FB273A4008CE2D3 /* Project.xcconfig in Resources */,
+				AA76AF471FB273A4008CE2D3 /* Project-Debug.xcconfig in Resources */,
+				AA76AF421FB273A4008CE2D3 /* DebugFormat.xcconfig in Resources */,
+				AA76AF481FB273A4008CE2D3 /* Library.xcconfig in Resources */,
+				AA76AF461FB273A4008CE2D3 /* Framework.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE95FF31DAC2E1B00638749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFBE02781E245036007A246A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBE028A1E2450FF007A246A /* TWTRSEAutoCompletionTableViewController.m in Sources */,
+				BFBE028C1E2450FF007A246A /* TWTRSESimpleTextTableViewCell.m in Sources */,
+				3D12C6B91EA5428900DB2B3A /* TWTRSEConfigurationSelectionTableViewCell.m in Sources */,
+				BFBE02951E2450FF007A246A /* TWTRSETweetTextView.m in Sources */,
+				3D90DA2A1F7377E200B23064 /* TWTRSEImageProvider.m in Sources */,
+				BFBE02A11E2450FF007A246A /* TWTRSEUIBundle.m in Sources */,
+				BFBE02911E2450FF007A246A /* TWTRSETweetURLAttachmentView.m in Sources */,
+				BFBE02A31E2450FF007A246A /* TWTRSESheetPresentationController.m in Sources */,
+				BFBE029C1E2450FF007A246A /* TWTRSELoadingTableViewCell.m in Sources */,
+				3D12C6BB1EA5429F00DB2B3A /* TWTRSETweetTextViewContainer.m in Sources */,
+				3DA8FB831EA05D6B00E778C9 /* TWTRSETweetAttachment.m in Sources */,
+				BFBE02901E2450FF007A246A /* TWTRSETweetImageAttachmentView.m in Sources */,
+				BFBE02A61E2450FF007A246A /* TWTRSETweetShareConfiguration.m in Sources */,
+				BFBE029D1E2450FF007A246A /* TWTRSELocationMapTableViewHeaderView.m in Sources */,
+				BFBE02871E2450FF007A246A /* TWTRSEAccountSelectionTableViewController.m in Sources */,
+				BFBE028D1E2450FF007A246A /* TWTRSETweetAttachmentView.m in Sources */,
+				3DDAF4321F5E91D200A19B66 /* TWTRSEFonts.m in Sources */,
+				BFBE02961E2450FF007A246A /* NSArray+Helpers.m in Sources */,
+				BFBE02A21E2450FF007A246A /* TWTRSELocalizedString.m in Sources */,
+				BFBE02A41E2450FF007A246A /* TWTRSETweetShareNavigationController.m in Sources */,
+				BFBE029E1E2450FF007A246A /* TWTRSELocationSelectionTableViewController.m in Sources */,
+				BFBE02891E2450FF007A246A /* TWTRSEAutoCompletionResult.m in Sources */,
+				BFBE02931E2450FF007A246A /* TWTRSETweetComposerViewController.m in Sources */,
+				BFBE028E1E2450FF007A246A /* TWTRSETweetCocoaItemProviderAttachmentView.m in Sources */,
+				BFBE02A81E2450FF007A246A /* TWTRSETweetURLAttachmentMetadata.m in Sources */,
+				3DA8FB821EA05D5F00E778C9 /* TWTRSEUIScribeEvent.m in Sources */,
+				BFBE02A71E2450FF007A246A /* TWTRSETweetShareViewController.m in Sources */,
+				BFBE028B1E2450FF007A246A /* TWTRSEAutoCompletionViewModel.m in Sources */,
+				BFBE02981E2450FF007A246A /* TWTRSEThrottledProperty.m in Sources */,
+				BFBE02A01E2450FF007A246A /* TWTRSEBaseTableViewCell.m in Sources */,
+				BFBE02921E2450FF007A246A /* TWTRSETweetComposerTableViewDataSource.m in Sources */,
+				BFBE02A51E2450FF007A246A /* TWTRSETweet.m in Sources */,
+				BFBE02881E2450FF007A246A /* TWTRSEAccountTableViewCell.m in Sources */,
+				BFBE02991E2450FF007A246A /* UIView+TSEExtensions.m in Sources */,
+				BFBE02971E2450FF007A246A /* TWTRSEFrameworkLazyLoading.m in Sources */,
+				BFBE029B1E2450FF007A246A /* TWTRSEGeoPlaceTableViewCell.m in Sources */,
+				3D2FDCF81F6E30F400AE6380 /* TWTRSESelectionTableViewController.m in Sources */,
+				BFBE028F1E2450FF007A246A /* TWTRSETweetCustomCardAttachmentView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE95FE71DAC2E1B00638749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2588EC1DB0301400D279C3 /* TWTRSEAutoCompletionViewModel.m in Sources */,
+				BF038E621DAEDA88004AF59F /* TWTRSEConfigurationSelectionTableViewCell.m in Sources */,
+				BF038E701DAEDA88004AF59F /* TWTRSELocationMapTableViewHeaderView.m in Sources */,
+				BF038E681DAEDA88004AF59F /* TWTRSETweetComposerViewController.m in Sources */,
+				3D90DA291F7377E200B23064 /* TWTRSEImageProvider.m in Sources */,
+				BF038E741DAEDA88004AF59F /* TWTRSESheetPresentationController.m in Sources */,
+				BF038E761DAEDA88004AF59F /* TWTRSETweetShareNavigationController.m in Sources */,
+				BF038E5E1DAEDA88004AF59F /* TWTRSEAccountSelectionTableViewController.m in Sources */,
+				BFF2E31E1DBACCDD006081A5 /* TWTRSEGeoPlaceTableViewCell.m in Sources */,
+				BFF2128B1DB0356F008B3257 /* TWTRSEThrottledProperty.m in Sources */,
+				BF038F131DAF035B004AF59F /* TWTRSETweetImageAttachmentView.m in Sources */,
+				BFF212901DB03DCF008B3257 /* NSArray+Helpers.m in Sources */,
+				BF4BB8E71DB5895B009F0F92 /* TWTRSETweetTextView.m in Sources */,
+				BF038EF21DAEECC4004AF59F /* TWTRSETweet.m in Sources */,
+				BF629FE21DB6DE6800189CBB /* TWTRSETweetURLAttachmentMetadata.m in Sources */,
+				BF038E6A1DAEDA88004AF59F /* TWTRSEFrameworkLazyLoading.m in Sources */,
+				BF038E6C1DAEDA88004AF59F /* UIView+TSEExtensions.m in Sources */,
+				BF4BB8F31DB5A100009F0F92 /* TWTRSELocalizedString.m in Sources */,
+				3DDAF4311F5E91D200A19B66 /* TWTRSEFonts.m in Sources */,
+				BF92EBF81DB83638005EB2D7 /* TWTRSEUIBundle.m in Sources */,
+				BFC1AEC01DB022DA0065DEB7 /* TWTRSEAutoCompletionTableViewController.m in Sources */,
+				BF99413B1DE3ADE60045467C /* TWTRSETweetCocoaItemProviderAttachmentView.m in Sources */,
+				BF038F0F1DAF034F004AF59F /* TWTRSETweetAttachmentView.m in Sources */,
+				BF038E661DAEDA88004AF59F /* TWTRSETweetComposerTableViewDataSource.m in Sources */,
+				BF038E641DAEDA88004AF59F /* TWTRSETweetTextViewContainer.m in Sources */,
+				BFBC28541E5E265700595F01 /* TWTRSEUIScribeEvent.m in Sources */,
+				BFF212951DB1886A008B3257 /* TWTRSEAutoCompletionResult.m in Sources */,
+				BF038E601DAEDA88004AF59F /* TWTRSEAccountTableViewCell.m in Sources */,
+				BF038EDF1DAEDFA0004AF59F /* TWTRSETweetShareViewController.m in Sources */,
+				BF904F501DB6A05600B0BB73 /* TWTRSEBaseTableViewCell.m in Sources */,
+				BF038EF81DAEF96A004AF59F /* TWTRSETweetAttachment.m in Sources */,
+				BFF212991DB19BB3008B3257 /* TWTRSESimpleTextTableViewCell.m in Sources */,
+				BF629FDC1DB6C33600189CBB /* TWTRSETweetShareConfiguration.m in Sources */,
+				BF038E721DAEDA88004AF59F /* TWTRSELocationSelectionTableViewController.m in Sources */,
+				BF038E6E1DAEDA88004AF59F /* TWTRSELoadingTableViewCell.m in Sources */,
+				BF038F171DAF0382004AF59F /* TWTRSETweetURLAttachmentView.m in Sources */,
+				BF038F1B1DAF03E8004AF59F /* TWTRSETweetCustomCardAttachmentView.m in Sources */,
+				3D2FDCF71F6E30F400AE6380 /* TWTRSESelectionTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE95FF11DAC2E1B00638749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC1AEC21DB031590065DEB7 /* TWTRSEAutoCompletionViewModelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D12C6E81EA6106C00DB2B3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D12C6E01EA6103D00DB2B3A /* TwitterShareExtensionUIResources */;
+			targetProxy = 3D12C6E71EA6106C00DB2B3A /* PBXContainerItemProxy */;
+		};
+		BFE95FF81DAC2E1B00638749 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFE95FEB1DAC2E1B00638749 /* TwitterShareExtensionUI */;
+			targetProxy = BFE95FF71DAC2E1B00638749 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3D12C6E51EA6103E00DB2B3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D23EEA51F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3D12C6E61EA6103E00DB2B3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D23EEA51F71D84100198641 /* TwitterShareExtensionUIResources.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		BFBE02821E245036007A246A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D23EEA31F71D65E00198641 /* TwitterShareExtensionUI-Library.xcconfig */;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_MODULES_AUTOLINK = YES;
+				ENABLE_BITCODE = YES;
+			};
+			name = Debug;
+		};
+		BFBE02831E245036007A246A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D23EEA31F71D65E00198641 /* TwitterShareExtensionUI-Library.xcconfig */;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_MODULES_AUTOLINK = YES;
+				ENABLE_BITCODE = YES;
+			};
+			name = Release;
+		};
+		BFE95FFE1DAC2E1B00638749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA76AF401FB273A4008CE2D3 /* Project-Debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+			};
+			name = Debug;
+		};
+		BFE95FFF1DAC2E1B00638749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA76AF3E1FB273A4008CE2D3 /* Project-Release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+			};
+			name = Release;
+		};
+		BFE960011DAC2E1B00638749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA76AF3F1FB273A4008CE2D3 /* Framework.xcconfig */;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = YES;
+			};
+			name = Debug;
+		};
+		BFE960021DAC2E1B00638749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA76AF3F1FB273A4008CE2D3 /* Framework.xcconfig */;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = YES;
+			};
+			name = Release;
+		};
+		BFE960041DAC2E1B00638749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA76AF3C1FB273A4008CE2D3 /* FrameworkTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		BFE960051DAC2E1B00638749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA76AF3C1FB273A4008CE2D3 /* FrameworkTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D12C6E41EA6103E00DB2B3A /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUIResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D12C6E51EA6103E00DB2B3A /* Debug */,
+				3D12C6E61EA6103E00DB2B3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFBE02841E245036007A246A /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUI-static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBE02821E245036007A246A /* Debug */,
+				BFBE02831E245036007A246A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE95FE61DAC2E1B00638749 /* Build configuration list for PBXProject "TwitterShareExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE95FFE1DAC2E1B00638749 /* Debug */,
+				BFE95FFF1DAC2E1B00638749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE960001DAC2E1B00638749 /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE960011DAC2E1B00638749 /* Debug */,
+				BFE960021DAC2E1B00638749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE960031DAC2E1B00638749 /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE960041DAC2E1B00638749 /* Debug */,
+				BFE960051DAC2E1B00638749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFE95FE31DAC2E1B00638749 /* Project object */;
+}

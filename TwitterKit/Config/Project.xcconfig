@@ -1,0 +1,60 @@
+// Copyright (C) 2017 Twitter, Inc.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+#include "Bitcode.xcconfig"
+#include "CompilerFeatures.xcconfig"
+#include "SDKSuffix.xcconfig"
+
+
+TARGETED_DEVICE_FAMILY = 1,2
+IPHONEOS_DEPLOYMENT_TARGET = 9.0
+
+// Pre-compiled headers
+SHARED_PRECOMPS_DIR = $(PROJECT_TEMP_DIR)/SharedPrecompiledHeaders
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+
+// Warnings
+GCC_TREAT_WARNINGS_AS_ERRORS = YES
+
+GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES
+GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES
+GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES
+GCC_WARN_UNKNOWN_PRAGMAS = YES
+CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES
+CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES
+GCC_WARN_ABOUT_MISSING_NEWLINE = YES
+APPLICATION_EXTENSION_API_ONLY = NO
+
+// Versioning
+CURRENT_PROJECT_VERSION = 3.3.0
+DYLIB_CURRENT_VERSION = $(CURRENT_PROJECT_VERSION)
+
+// Can *probably* remove this
+DYLIB_COMPATIBILITY_VERSION = 1
+
+// Not sure what this is for ???
+TWC_BUNDLE_IDENTIFIER[sdk=*] = com.twitter.sdk.$(FAB_PRODUCT_BUNDLE_IDENTIFIER_SUFFIX)
+
+// Debug definition
+GCC_PREPROCESSOR_DEFINITIONS_Debug = DEBUG=1 TWC_BUNDLE_IDENTIFIER=$(TWC_BUNDLE_IDENTIFIER)
+GCC_PREPROCESSOR_DEFINITIONS_Release = TWC_BUNDLE_IDENTIFIER=$(TWC_BUNDLE_IDENTIFIER)
+GCC_PREPROCESSOR_DEFINITIONS = $(GCC_PREPROCESSOR_DEFINITIONS_$(CONFIGURATION))
+
+// Gross (should probably set up in the Xcode project)
+OTHER_LDFLAGS = $(inherited) -ObjC
+OTHER_LDFLAGS[sdk=iphoneos*] = $(inherited) -framework UIKit -framework AddressBook
+OTHER_LDFLAGS[sdk=iphonesimulator*] = $(inherited) -framework UIKit -framework AddressBook
+
+// For TwitterKit Tests
+FRAMEWORK_SEARCH_PATHS = $(PROJECT_DIR)/../vendor

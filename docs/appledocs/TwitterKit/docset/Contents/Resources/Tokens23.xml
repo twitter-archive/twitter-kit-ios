@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRUser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRUser</TokenIdentifier>
+			<Abstract type="html">Represents a user on Twitter.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+            
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/setUserID:</TokenIdentifier>
+			<Abstract type="html">The ID of the Twitter User.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/userID</TokenIdentifier>
+			<Abstract type="html">The ID of the Twitter User.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRUser/userID</TokenIdentifier>
+			<Abstract type="html">The ID of the Twitter User.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/setName:</TokenIdentifier>
+			<Abstract type="html">The user&apos;s name as it appears on their profile.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/name</TokenIdentifier>
+			<Abstract type="html">The user&apos;s name as it appears on their profile.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRUser/name</TokenIdentifier>
+			<Abstract type="html">The user&apos;s name as it appears on their profile.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/setScreenName:</TokenIdentifier>
+			<Abstract type="html">The user&apos;s username on Twitter.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/screenName</TokenIdentifier>
+			<Abstract type="html">The user&apos;s username on Twitter.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRUser/screenName</TokenIdentifier>
+			<Abstract type="html">The user&apos;s username on Twitter.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/setIsVerified:</TokenIdentifier>
+			<Abstract type="html">Whether the user has been verified by Twitter.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isVerified</Declaration>
+			
+			
+			<Anchor>//api/name/isVerified</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/isVerified</TokenIdentifier>
+			<Abstract type="html">Whether the user has been verified by Twitter.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isVerified</Declaration>
+			
+			
+			<Anchor>//api/name/isVerified</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRUser/isVerified</TokenIdentifier>
+			<Abstract type="html">Whether the user has been verified by Twitter.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isVerified</Declaration>
+			
+			
+			<Anchor>//api/name/isVerified</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/setIsProtected:</TokenIdentifier>
+			<Abstract type="html">Whether the user is protected.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isProtected</Declaration>
+			
+			
+			<Anchor>//api/name/isProtected</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/isProtected</TokenIdentifier>
+			<Abstract type="html">Whether the user is protected.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isProtected</Declaration>
+			
+			
+			<Anchor>//api/name/isProtected</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRUser/isProtected</TokenIdentifier>
+			<Abstract type="html">Whether the user is protected.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isProtected</Declaration>
+			
+			
+			<Anchor>//api/name/isProtected</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/setProfileImageURL:</TokenIdentifier>
+			<Abstract type="html">The HTTPS URL of the user&apos;s profile image.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *profileImageURL</Declaration>
+			
+			
+			<Anchor>//api/name/profileImageURL</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/profileImageURL</TokenIdentifier>
+			<Abstract type="html">The HTTPS URL of the user&apos;s profile image.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *profileImageURL</Declaration>
+			
+			
+			<Anchor>//api/name/profileImageURL</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRUser/profileImageURL</TokenIdentifier>
+			<Abstract type="html">The HTTPS URL of the user&apos;s profile image.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *profileImageURL</Declaration>
+			
+			
+			<Anchor>//api/name/profileImageURL</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/setProfileImageMiniURL:</TokenIdentifier>
+			<Abstract type="html">The URL of a smaller version of the user&apos;s profile image.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *profileImageMiniURL</Declaration>
+			
+			
+			<Anchor>//api/name/profileImageMiniURL</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/profileImageMiniURL</TokenIdentifier>
+			<Abstract type="html">The URL of a smaller version of the user&apos;s profile image.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *profileImageMiniURL</Declaration>
+			
+			
+			<Anchor>//api/name/profileImageMiniURL</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRUser/profileImageMiniURL</TokenIdentifier>
+			<Abstract type="html">The URL of a smaller version of the user&apos;s profile image.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *profileImageMiniURL</Declaration>
+			
+			
+			<Anchor>//api/name/profileImageMiniURL</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/setProfileImageLargeURL:</TokenIdentifier>
+			<Abstract type="html">The URL of a larger version of the user&apos;s profile image.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *profileImageLargeURL</Declaration>
+			
+			
+			<Anchor>//api/name/profileImageLargeURL</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/profileImageLargeURL</TokenIdentifier>
+			<Abstract type="html">The URL of a larger version of the user&apos;s profile image.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *profileImageLargeURL</Declaration>
+			
+			
+			<Anchor>//api/name/profileImageLargeURL</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRUser/profileImageLargeURL</TokenIdentifier>
+			<Abstract type="html">The URL of a larger version of the user&apos;s profile image.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *profileImageLargeURL</Declaration>
+			
+			
+			<Anchor>//api/name/profileImageLargeURL</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/setFormattedScreenName:</TokenIdentifier>
+			<Abstract type="html">The formatted version of the user&apos;s screenName with the @ sign for display purposes.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *formattedScreenName</Declaration>
+			
+			
+			<Anchor>//api/name/formattedScreenName</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/formattedScreenName</TokenIdentifier>
+			<Abstract type="html">The formatted version of the user&apos;s screenName with the @ sign for display purposes.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *formattedScreenName</Declaration>
+			
+			
+			<Anchor>//api/name/formattedScreenName</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRUser/formattedScreenName</TokenIdentifier>
+			<Abstract type="html">The formatted version of the user&apos;s screenName with the @ sign for display purposes.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *formattedScreenName</Declaration>
+			
+			
+			<Anchor>//api/name/formattedScreenName</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/setProfileURL:</TokenIdentifier>
+			<Abstract type="html">Returns the URL for deeplinking to the the user&apos;s profile.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSURL *profileURL</Declaration>
+			
+			
+			<Anchor>//api/name/profileURL</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUser/profileURL</TokenIdentifier>
+			<Abstract type="html">Returns the URL for deeplinking to the the user&apos;s profile.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSURL *profileURL</Declaration>
+			
+			
+			<Anchor>//api/name/profileURL</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRUser/profileURL</TokenIdentifier>
+			<Abstract type="html">Returns the URL for deeplinking to the the user&apos;s profile.</Abstract>
+			<DeclaredIn>TWTRUser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSURL *profileURL</Declaration>
+			
+			
+			<Anchor>//api/name/profileURL</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRSEGeoPlace.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRSEGeoPlace</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEGeoPlace.h</DeclaredIn>
+            
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSEGeoPlace/setPlaceID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEGeoPlace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *placeID</Declaration>
+			
+			
+			<Anchor>//api/name/placeID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSEGeoPlace/placeID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEGeoPlace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *placeID</Declaration>
+			
+			
+			<Anchor>//api/name/placeID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/TWTRSEGeoPlace/placeID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEGeoPlace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *placeID</Declaration>
+			
+			
+			<Anchor>//api/name/placeID</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSEGeoPlace/setName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEGeoPlace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSEGeoPlace/name</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEGeoPlace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/TWTRSEGeoPlace/name</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEGeoPlace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSEGeoPlace/setAddress:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEGeoPlace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable, copy) NSString *address</Declaration>
+			
+			
+			<Anchor>//api/name/address</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSEGeoPlace/address</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEGeoPlace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable, copy) NSString *address</Declaration>
+			
+			
+			<Anchor>//api/name/address</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/TWTRSEGeoPlace/address</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEGeoPlace.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, nullable, copy) NSString *address</Declaration>
+			
+			
+			<Anchor>//api/name/address</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

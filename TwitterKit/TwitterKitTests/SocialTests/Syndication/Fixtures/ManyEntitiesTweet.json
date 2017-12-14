@@ -1,0 +1,421 @@
+
+{
+    "contributors": null,
+    "coordinates": null,
+    "created_at": "Wed Oct 28 20:14:59 +0000 2015",
+    "entities": {
+        "hashtags": [
+                     {
+                     "indices": [
+                                 487,
+                                 507
+                                 ],
+                     "text": "NATIONALILOVEYOUDAY"
+                     },
+                     {
+                     "indices": [
+                                 511,
+                                 517
+                                 ],
+                     "text": "blimp"
+                     },
+                     {
+                     "indices": [
+                                 522,
+                                 539
+                                 ],
+                     "text": "BlackLivesMatter"
+                     },
+                     {
+                     "indices": [
+                                 544,
+                                 554
+                                 ],
+                     "text": "GOPDebate"
+                     },
+                     {
+                     "indices": [
+                                 559,
+                                 564
+                                 ],
+                     "text": "CISA"
+                     }
+                     ],
+        "media": [
+                  {
+                  "display_url": "pic.twitter.com/QGq7iJysSE",
+                  "expanded_url": "http://twitter.com/beyond_oneforty/status/659463389735948288/photo/1",
+                  "id": 659463386187497472,
+                  "id_str": "659463386187497472",
+                  "indices": [
+                              565,
+                              588
+                              ],
+                  "media_url": "http://pbs.twimg.com/media/CSbidKwVAAACffd.jpg",
+                  "media_url_https": "https://pbs.twimg.com/media/CSbidKwVAAACffd.jpg",
+                  "sizes": {
+                  "large": {
+                  "h": 1024,
+                  "resize": "fit",
+                  "w": 768
+                  },
+                  "medium": {
+                  "h": 800,
+                  "resize": "fit",
+                  "w": 600
+                  },
+                  "small": {
+                  "h": 453,
+                  "resize": "fit",
+                  "w": 340
+                  },
+                  "thumb": {
+                  "h": 150,
+                  "resize": "crop",
+                  "w": 150
+                  }
+                  },
+                  "type": "photo",
+                  "url": "https://t.co/QGq7iJysSE"
+                  }
+                  ],
+        "symbols": [],
+        "urls": [
+                 {
+                 "display_url": "dwell.com/green/article/\u2026",
+                 "expanded_url": "http://www.dwell.com/green/article/passive-progressive",
+                 "indices": [
+                             26,
+                             49
+                             ],
+                 "url": "https://t.co/wDJlXIG4Bs"
+                 },
+                 {
+                 "display_url": "dwell.com/house-tours/ar\u2026",
+                 "expanded_url": "http://www.dwell.com/house-tours/article/midcentury-modern-renovation-opens-interiors-and-admits-more-sunlight",
+                 "indices": [
+                             53,
+                             76
+                             ],
+                 "url": "https://t.co/7IOzrScDyB"
+                 },
+                 {
+                 "display_url": "dwell.com/renovation/art\u2026",
+                 "expanded_url": "http://www.dwell.com/renovation/article/movable-walls-instantly-transform-small-vacation-home-two-bedroom-studio",
+                 "indices": [
+                             80,
+                             103
+                             ],
+                 "url": "https://t.co/PsnIJFQBxN"
+                 },
+                 {
+                 "display_url": "dwell.com/house-tours/ar\u2026",
+                 "expanded_url": "http://www.dwell.com/house-tours/article/california-cottage-renovated-easy-indoor-outdoor-living",
+                 "indices": [
+                             107,
+                             130
+                             ],
+                 "url": "https://t.co/yB3JKpsWhg"
+                 },
+                 {
+                 "display_url": "dwell.com/renovation/art\u2026",
+                 "expanded_url": "http://www.dwell.com/renovation/article/5-unexpected-building-transformations",
+                 "indices": [
+                             134,
+                             157
+                             ],
+                 "url": "https://t.co/5WjJl1NrR4"
+                 },
+                 {
+                 "display_url": "dwell.com/house-tours/ar\u2026",
+                 "expanded_url": "http://www.dwell.com/house-tours/article/bay-area-renovation-keeps-its-midcentury-modern-roots",
+                 "indices": [
+                             161,
+                             184
+                             ],
+                 "url": "https://t.co/MVCJqAlgtf"
+                 },
+                 {
+                 "display_url": "dwell.com/houses-we-love\u2026",
+                 "expanded_url": "http://www.dwell.com/houses-we-love/article/striking-minimalist-guest-apartment-prague",
+                 "indices": [
+                             188,
+                             211
+                             ],
+                 "url": "https://t.co/a8RC6mOh1k"
+                 },
+                 {
+                 "display_url": "dwell.com/renovation/art\u2026",
+                 "expanded_url": "http://www.dwell.com/renovation/article/10-bright-light-filled-renovations",
+                 "indices": [
+                             215,
+                             238
+                             ],
+                 "url": "https://t.co/BUbDH5TeUA"
+                 },
+                 {
+                 "display_url": "dwell.com/green/article/\u2026",
+                 "expanded_url": "http://www.dwell.com/green/article/5-green-renovations",
+                 "indices": [
+                             242,
+                             265
+                             ],
+                 "url": "https://t.co/DqQnKpqOYA"
+                 },
+                 {
+                 "display_url": "dwell.com/renovation/art\u2026",
+                 "expanded_url": "http://www.dwell.com/renovation/article/20-modern-home-renovations",
+                 "indices": [
+                             270,
+                             293
+                             ],
+                 "url": "https://t.co/pd0BnijQgB"
+                 }
+                 ],
+        "user_mentions": [
+                          {
+                          "id": 15062340,
+                          "id_str": "15062340",
+                          "indices": [
+                                      311,
+                                      323
+                                      ],
+                          "name": "/dev/cloud/jeremy",
+                          "screen_name": "jeremycloud"
+                          },
+                          {
+                          "id": 3994176380,
+                          "id_str": "3994176380",
+                          "indices": [
+                                      327,
+                                      342
+                                      ],
+                          "name": "Ben Test",
+                          "screen_name": "bsangster_test"
+                          },
+                          {
+                          "id": 2183115870,
+                          "id_str": "2183115870",
+                          "indices": [
+                                      347,
+                                      361
+                                      ],
+                          "name": "Lee Tester",
+                          "screen_name": "tester_ladams"
+                          },
+                          {
+                          "id": 3661520234,
+                          "id_str": "3661520234",
+                          "indices": [
+                                      366,
+                                      381
+                                      ],
+                          "name": "Hot Chilli Squid",
+                          "screen_name": "hotchillisquid"
+                          },
+                          {
+                          "id": 2546801954,
+                          "id_str": "2546801954",
+                          "indices": [
+                                      386,
+                                      399
+                                      ],
+                          "name": "Antonio Pruebas",
+                          "screen_name": "antonioeight"
+                          },
+                          {
+                          "id": 584263636,
+                          "id_str": "584263636",
+                          "indices": [
+                                      404,
+                                      417
+                                      ],
+                          "name": "Funster Flynn",
+                          "screen_name": "FunsterFlynn"
+                          },
+                          {
+                          "id": 2421165361,
+                          "id_str": "2421165361",
+                          "indices": [
+                                      422,
+                                      431
+                                      ],
+                          "name": "Alt David Pan",
+                          "screen_name": "altdavep"
+                          },
+                          {
+                          "id": 2424272372,
+                          "id_str": "2424272372",
+                          "indices": [
+                                      436,
+                                      440
+                                      ],
+                          "name": "Todd Sherman",
+                          "screen_name": "tdd"
+                          },
+                          {
+                          "id": 351151981,
+                          "id_str": "351151981",
+                          "indices": [
+                                      444,
+                                      452
+                                      ],
+                          "name": "frackme",
+                          "screen_name": "frackme"
+                          },
+                          {
+                          "id": 121605518,
+                          "id_str": "121605518",
+                          "indices": [
+                                      458,
+                                      466
+                                      ],
+                          "name": "Joy",
+                          "screen_name": "joyousx"
+                          }
+                          ]
+    },
+    "extended_entities": {
+        "media": [
+                  {
+                  "display_url": "pic.twitter.com/QGq7iJysSE",
+                  "expanded_url": "http://twitter.com/beyond_oneforty/status/659463389735948288/photo/1",
+                  "id": 659463386187497472,
+                  "id_str": "659463386187497472",
+                  "indices": [
+                              565,
+                              588
+                              ],
+                  "media_url": "http://pbs.twimg.com/media/CSbidKwVAAACffd.jpg",
+                  "media_url_https": "https://pbs.twimg.com/media/CSbidKwVAAACffd.jpg",
+                  "sizes": {
+                  "large": {
+                  "h": 1024,
+                  "resize": "fit",
+                  "w": 768
+                  },
+                  "medium": {
+                  "h": 800,
+                  "resize": "fit",
+                  "w": 600
+                  },
+                  "small": {
+                  "h": 453,
+                  "resize": "fit",
+                  "w": 340
+                  },
+                  "thumb": {
+                  "h": 150,
+                  "resize": "crop",
+                  "w": 150
+                  }
+                  },
+                  "type": "photo",
+                  "url": "https://t.co/QGq7iJysSE"
+                  },
+                  {
+                  "display_url": "pic.twitter.com/QGq7iJysSE",
+                  "expanded_url": "http://twitter.com/beyond_oneforty/status/659463389735948288/photo/1",
+                  "id": 659463382681042944,
+                  "id_str": "659463382681042944",
+                  "indices": [
+                              565,
+                              588
+                              ],
+                  "media_url": "http://pbs.twimg.com/media/CSbic9sUwAAlOum.jpg",
+                  "media_url_https": "https://pbs.twimg.com/media/CSbic9sUwAAlOum.jpg",
+                  "sizes": {
+                  "large": {
+                  "h": 196,
+                  "resize": "fit",
+                  "w": 199
+                  },
+                  "medium": {
+                  "h": 196,
+                  "resize": "fit",
+                  "w": 199
+                  },
+                  "small": {
+                  "h": 196,
+                  "resize": "fit",
+                  "w": 199
+                  },
+                  "thumb": {
+                  "h": 150,
+                  "resize": "crop",
+                  "w": 150
+                  }
+                  },
+                  "type": "photo",
+                  "url": "https://t.co/QGq7iJysSE"
+                  }
+                  ]
+    },
+    "favorite_count": 1,
+    "favorited": false,
+    "full_text_length": 588,
+    "geo": null,
+    "id": 659463389735948288,
+    "id_str": "659463389735948288",
+    "in_reply_to_screen_name": null,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "is_quote_status": false,
+    "lang": "en",
+    "place": null,
+    "possibly_sensitive": false,
+    "preview_length": 140,
+    "retweet_count": 0,
+    "retweeted": false,
+    "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+    "text": "A random list of URLS:\n1) https://t.co/wDJlXIG4Bs\n2) https://t.co/7IOzrScDyB\n3) https://t.co/PsnIJFQBxN\n4) https://t.co/yB3JKpsWhg\n5) https://t.co/5WjJl1NrR4\n6) https://t.co/MVCJqAlgtf\n7) https://t.co/a8RC6mOh1k\n8) https://t.co/BUbDH5TeUA\n9) https://t.co/DqQnKpqOYA\n10) https://t.co/pd0BnijQgB\n\nSome people:\n1) @jeremycloud\n2) @bsangster_test \n3) @tester_ladams \n4) @hotchillisquid \n5) @antonioeight \n6) @FunsterFlynn \n7) @altdavep \n8) @tdd\n9) @frackme \n10) @joyousx \n\nSome hashtags:\n1) #NATIONALILOVEYOUDAY\n2) #blimp \n3) #BlackLivesMatter \n4) #GOPDebate \n5) #CISA https://t.co/QGq7iJysSE",
+    "truncated": false,
+    "user": {
+        "contributors_enabled": false,
+        "created_at": "Tue Oct 06 21:08:37 +0000 2015",
+        "default_profile": true,
+        "default_profile_image": false,
+        "description": "",
+        "entities": {
+            "description": {
+                "urls": []
+            }
+        },
+        "favourites_count": 0,
+        "follow_request_sent": false,
+        "followers_count": 50,
+        "following": true,
+        "friends_count": 11,
+        "geo_enabled": false,
+        "has_extended_profile": false,
+        "id": 3883872981,
+        "id_str": "3883872981",
+        "is_translation_enabled": false,
+        "is_translator": false,
+        "lang": "en",
+        "listed_count": 0,
+        "location": "",
+        "name": "Beyond 140",
+        "notifications": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/651506565225271296/PMEWfvS__normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/651506565225271296/PMEWfvS__normal.jpg",
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "protected": true,
+        "screen_name": "beyond_oneforty",
+        "statuses_count": 24,
+        "time_zone": null,
+        "url": null,
+        "utc_offset": null,
+        "verified": false
+    }
+}

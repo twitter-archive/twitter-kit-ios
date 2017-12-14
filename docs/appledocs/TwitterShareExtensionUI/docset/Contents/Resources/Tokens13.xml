@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRSECardPreviewProvider.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRSECardPreviewProvider</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSECardPreviewProvider.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSECardPreviewProvider/lookupImageURLStringForURLString:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSECardPreviewProvider.h</DeclaredIn>
+			
+			<Declaration>- (void)lookupImageURLStringForURLString:(NSString *)urlString completion:(NSItemProviderCompletionHandler)completion</Declaration>
+			
+			
+			<Anchor>//api/name/lookupImageURLStringForURLString:completion:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

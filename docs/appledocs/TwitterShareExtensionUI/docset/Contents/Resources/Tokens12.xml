@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRSEAutoCompletion.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRSEAutoCompletion</TokenIdentifier>
+			<Abstract type="html">When a request for autoCompletion is received, a previous, unfinished one should be considered abandoned and
+the request can be cancelled.</Abstract>
+			<DeclaredIn>TWTRSEAutoCompletion.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSEAutoCompletion/loadAutoCompletionResultsForHashtag:callback:</TokenIdentifier>
+			<Abstract type="html">Implement this method to provide auto-completion results for hashtags.
+This method will be called on the main thread.</Abstract>
+			<DeclaredIn>TWTRSEAutoCompletion.h</DeclaredIn>
+			
+			<Declaration>- (void)loadAutoCompletionResultsForHashtag:(NSString *)hashtag callback:(TWTRSEHashtagAutoCompletionCallback)callback</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>hashtag</Name>
+					<Abstract type="html">The hashtag (starting with #) to use to search for similar ones.</Abstract>
+				</Parameter><Parameter>
+					<Name>callback</Name>
+					<Abstract type="html">Must be called at most once, on any queue, with the results of the hashtag autoCompletion to be shown.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadAutoCompletionResultsForHashtag:callback:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSEAutoCompletion/loadAutoCompletionResultsForUsername:callback:</TokenIdentifier>
+			<Abstract type="html">Implement this method to provide auto-completion results for users.
+This method will be called on the main thread.</Abstract>
+			<DeclaredIn>TWTRSEAutoCompletion.h</DeclaredIn>
+			
+			<Declaration>- (void)loadAutoCompletionResultsForUsername:(NSString *)username callback:(TWTRSEUserAutoCompletionCallback)callback</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>username</Name>
+					<Abstract type="html">The username (not starting with @) to use to search for matching users.</Abstract>
+				</Parameter><Parameter>
+					<Name>callback</Name>
+					<Abstract type="html">Must be called at most once, on any queue, with the results of the user autoCompletion to be shown.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadAutoCompletionResultsForUsername:callback:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

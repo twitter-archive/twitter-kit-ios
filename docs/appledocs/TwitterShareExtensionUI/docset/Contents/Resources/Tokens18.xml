@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRSETweetAttachment.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRSETweetAttachment</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+            
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSETweetAttachment/setUrlString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, readonly) NSString *urlString</Declaration>
+			
+			
+			<Anchor>//api/name/urlString</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSETweetAttachment/urlString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, readonly) NSString *urlString</Declaration>
+			
+			
+			<Anchor>//api/name/urlString</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/TWTRSETweetAttachment/urlString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nullable, nonatomic, readonly) NSString *urlString</Declaration>
+			
+			
+			<Anchor>//api/name/urlString</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

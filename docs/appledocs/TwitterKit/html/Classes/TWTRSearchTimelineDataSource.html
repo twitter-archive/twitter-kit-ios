@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TWTRSearchTimelineDataSource Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">TwitterKit </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Twitter Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/filterSensitiveTweets">filterSensitiveTweets</option>
+		
+		<option value="//api/name/geocodeSpecifier">geocodeSpecifier</option>
+		
+		<option value="//api/name/languageCode">languageCode</option>
+		
+		<option value="//api/name/maxTweetsPerRequest">maxTweetsPerRequest</option>
+		
+		<option value="//api/name/resultType">resultType</option>
+		
+		<option value="//api/name/searchQuery">searchQuery</option>
+		
+		<option value="//api/name/timelineFilter">timelineFilter</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/initWithSearchQuery:APIClient:">- initWithSearchQuery:APIClient:</option>
+		
+		<option value="//api/name/initWithSearchQuery:APIClient:languageCode:maxTweetsPerRequest:resultType:">- initWithSearchQuery:APIClient:languageCode:maxTweetsPerRequest:resultType:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TWTRSearchTimelineDataSource Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>TWTRTimelineDataSource</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TWTRSearchTimelineDataSource.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Data source representing a Search Timeline. Provides <a href="../Classes/TWTRTweet.html">TWTRTweet</a> objects to a <a href="../Classes/TWTRTimelineViewController.html">TWTRTimelineViewController</a> in pages determined by the <a href="../Classes/TWTRTimelineCursor.html">TWTRTimelineCursor</a> object passed in to the <code>loadNext:</code> and <code>loadPrevious:</code> methods.</p>
+
+<h2>Search Queries:</h2>
+
+<ul>
+<li><code>watching now</code>    containing both “watching” and “now”. Default.</li>
+<li><code>“happy hour”</code>    containing the exact phrase “happy hour”.</li>
+<li><code>love OR hate</code>    containing either “love” or “hate” (or both).</li>
+<li><code>beer -root</code>     containing “beer” but not “root”.</li>
+<li><code>#haiku</code>         containing the hashtag “haiku”.</li>
+<li><code>from:alexiskold</code>sent from person “alexiskold”.</li>
+<li><code>to:techcrunch</code>   sent to person “techcrunch”.</li>
+<li><code>@mashable</code>      referencing person “mashable”.</li>
+<li><code>flight :(</code>      containing “flight” and with a negative attitude.</li>
+<li><code>traffic ?</code>      containing “traffic” and asking a question.</li>
+<li><code>movie -scary :)</code>containing “movie”, but not “scary”, and with a positive attitude.</li>
+<li><code>hilarious filter:links</code> containing “hilarious” and linking to URL.</li>
+<li><code>news source:twitterfeed</code>containing “news” and entered via TwitterFeed</li>
+<li><code>superhero since:2010-12-27</code>  containing “superhero” and sent since date “2010-12-27” (year-month-day).</li>
+<li><code>ftw until:2010-12-27</code>   containing “ftw” and sent before the date “2010-12-27”.</li>
+</ul>
+
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/searchQuery" title="searchQuery"></a>
+	<h3 class="method-title"><code><a href="#//api/name/searchQuery">&nbsp;&nbsp;searchQuery</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The search query. This matches what you would type into <a href="https://twitter.com/search">https://twitter.com/search</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *searchQuery</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRSearchTimelineDataSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/languageCode" title="languageCode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/languageCode">&nbsp;&nbsp;languageCode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Restricts tweets returned to a given language, specified by its ISO 639-1 code (for example: en, es). Language detection is best-effort. The server defaults to returning Tweets in all languages.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly, nullable) NSString *languageCode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRSearchTimelineDataSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/maxTweetsPerRequest" title="maxTweetsPerRequest"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maxTweetsPerRequest">&nbsp;&nbsp;maxTweetsPerRequest</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The number of Tweets to request in each network request for more Tweets. By default requests 30 tweets. If set to <code>0</code> the parameter will not be set on the request and the Twitter API will use the default size for the endpoint.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger maxTweetsPerRequest</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRSearchTimelineDataSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/geocodeSpecifier" title="geocodeSpecifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/geocodeSpecifier">&nbsp;&nbsp;geocodeSpecifier</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The geocode details to narrow search results. The format is &ldquo;latitude,longitude,radius&rdquo; e.g. &ldquo;37.781157,-122.398720,1mi&rdquo;</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, nullable) NSString *geocodeSpecifier</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="https://dev.twitter.com/rest/public/search">https://dev.twitter.com/rest/public/search</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRSearchTimelineDataSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/filterSensitiveTweets" title="filterSensitiveTweets"></a>
+	<h3 class="method-title"><code><a href="#//api/name/filterSensitiveTweets">&nbsp;&nbsp;filterSensitiveTweets</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Filter out sensitive (containing nudity or violence) tweets.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL filterSensitiveTweets</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defaults to YES.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRSearchTimelineDataSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/timelineFilter" title="timelineFilter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/timelineFilter">&nbsp;&nbsp;timelineFilter</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, nullable) TWTRTimelineFilter *timelineFilter</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resultType" title="resultType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resultType">&nbsp;&nbsp;resultType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, nullable) NSString *resultType</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithSearchQuery:APIClient:" title="initWithSearchQuery:APIClient:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithSearchQuery:APIClient:">&ndash;&nbsp;initWithSearchQuery:APIClient:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Convenience initializer. Uses default values for <a href="#//api/name/languageCode"><code>languageCode</code></a> and <a href="#//api/name/maxTweetsPerRequest"><code>maxTweetsPerRequest</code></a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithSearchQuery:(NSString *)<em>searchQuery</em> APIClient:(TWTRAPIClient *)<em>client</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchQuery</code></th>
+						<td><p>(required) The query string that you would type into <a href="https://twitter.com/search">https://twitter.com/search</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>(required) An instance of <code>TWTRAPIClient</code> with which API calls will be made.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A fully initialized search timeline datasource or <code>nil</code> if any of the required parameters are missing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRSearchTimelineDataSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithSearchQuery:APIClient:languageCode:maxTweetsPerRequest:resultType:" title="initWithSearchQuery:APIClient:languageCode:maxTweetsPerRequest:resultType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithSearchQuery:APIClient:languageCode:maxTweetsPerRequest:resultType:">&ndash;&nbsp;initWithSearchQuery:APIClient:languageCode:maxTweetsPerRequest:resultType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create a new search timeline data source.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithSearchQuery:(NSString *)<em>searchQuery</em> APIClient:(TWTRAPIClient *)<em>client</em> languageCode:(nullable NSString *)<em>languageCode</em> maxTweetsPerRequest:(NSUInteger)<em>maxTweetsPerRequest</em> resultType:(nullable NSString *)<em>resultType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchQuery</code></th>
+						<td><p>(required) The query string that you would type into <a href="https://twitter.com/search">https://twitter.com/search</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>(required) An instance of <code>TWTRAPIClient</code> with which API calls will be made.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>languageCode</code></th>
+						<td><p>(optional) The ISO 639-1 language code to restrict Tweets to. A <code>nil</code> value will not add the parameter to the server request and so use the server default.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maxTweetsPerRequest</code></th>
+						<td><p>(optional) The number of tweets to request in each query to the Twitter API. A value of 0 will not add to the parameters and thus use the server default.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>resultType</code></th>
+						<td><p>(optional) The result type for timeline. It is default to &lsquo;mixed&rsquo; if not assigned.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A fully initialized search timeline datasource or <code>nil</code> if any of the required parameters are missing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TWTRSearchTimelineDataSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Twitter Inc. All rights reserved. Updated: 2017-12-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

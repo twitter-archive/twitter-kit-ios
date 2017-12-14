@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRSEImageProvider.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRSEImageProvider</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEImageProvider.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEImageProvider/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEImageProvider.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TWTRSEImageProvider/imageProviderWithItemProvider:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEImageProvider.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)imageProviderWithItemProvider:(NSItemProvider *)itemProvider</Declaration>
+			
+			
+			<Anchor>//api/name/imageProviderWithItemProvider:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TWTRSEImageProvider/existingImageProviderForItemProvider:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEImageProvider.h</DeclaredIn>
+			
+			<Declaration>+ (nullable TWTRSEImageProvider *)existingImageProviderForItemProvider:(NSItemProvider *)itemProvider</Declaration>
+			
+			
+			<Anchor>//api/name/existingImageProviderForItemProvider:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSEImageProvider/loadWithOptions:success:failure:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEImageProvider.h</DeclaredIn>
+			
+			<Declaration>- (void)loadWithOptions:(NSDictionary *)options success:(TWTRSEImageSuccessBlock)successBlock failure:(TWTRSEImageFailureBlock)failureBlock</Declaration>
+			
+			
+			<Anchor>//api/name/loadWithOptions:success:failure:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TWTRSEImageProvider/reset</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEImageProvider.h</DeclaredIn>
+			
+			<Declaration>+ (void)reset</Declaration>
+			
+			
+			<Anchor>//api/name/reset</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

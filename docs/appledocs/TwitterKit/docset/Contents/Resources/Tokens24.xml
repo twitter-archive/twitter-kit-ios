@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRUserTimelineDataSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRUserTimelineDataSource</TokenIdentifier>
+			<Abstract type="html">This Timeline Data Source provides a list of Tweets roughly consistent with the list on a Users profile page. The difference is that this data source will filter out Tweets that are direct replies to other users by default.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+            
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUserTimelineDataSource/setScreenName:</TokenIdentifier>
+			<Abstract type="html">The screen name of the User whose Tweets are being shown. Either the screenName or the userID are required.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUserTimelineDataSource/screenName</TokenIdentifier>
+			<Abstract type="html">The screen name of the User whose Tweets are being shown. Either the screenName or the userID are required.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRUserTimelineDataSource/screenName</TokenIdentifier>
+			<Abstract type="html">The screen name of the User whose Tweets are being shown. Either the screenName or the userID are required.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUserTimelineDataSource/setUserID:</TokenIdentifier>
+			<Abstract type="html">The userID of the User whose Tweets are being shown. Either the screenName or the userID are required.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUserTimelineDataSource/userID</TokenIdentifier>
+			<Abstract type="html">The userID of the User whose Tweets are being shown. Either the screenName or the userID are required.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRUserTimelineDataSource/userID</TokenIdentifier>
+			<Abstract type="html">The userID of the User whose Tweets are being shown. Either the screenName or the userID are required.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUserTimelineDataSource/setMaxTweetsPerRequest:</TokenIdentifier>
+			<Abstract type="html">The number of Tweets to request in each query to the Twitter Timeline API when fetching the next batch of Tweets. Will request 30 Tweets by default. Setting this value to 0 will use the server default.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger maxTweetsPerRequest</Declaration>
+			
+			
+			<Anchor>//api/name/maxTweetsPerRequest</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUserTimelineDataSource/maxTweetsPerRequest</TokenIdentifier>
+			<Abstract type="html">The number of Tweets to request in each query to the Twitter Timeline API when fetching the next batch of Tweets. Will request 30 Tweets by default. Setting this value to 0 will use the server default.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger maxTweetsPerRequest</Declaration>
+			
+			
+			<Anchor>//api/name/maxTweetsPerRequest</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRUserTimelineDataSource/maxTweetsPerRequest</TokenIdentifier>
+			<Abstract type="html">The number of Tweets to request in each query to the Twitter Timeline API when fetching the next batch of Tweets. Will request 30 Tweets by default. Setting this value to 0 will use the server default.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger maxTweetsPerRequest</Declaration>
+			
+			
+			<Anchor>//api/name/maxTweetsPerRequest</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUserTimelineDataSource/setIncludeReplies:</TokenIdentifier>
+			<Abstract type="html">Whether to request replies in the set of Tweets from the server.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL includeReplies</Declaration>
+			
+			
+			<Anchor>//api/name/includeReplies</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUserTimelineDataSource/includeReplies</TokenIdentifier>
+			<Abstract type="html">Whether to request replies in the set of Tweets from the server.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL includeReplies</Declaration>
+			
+			
+			<Anchor>//api/name/includeReplies</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRUserTimelineDataSource/includeReplies</TokenIdentifier>
+			<Abstract type="html">Whether to request replies in the set of Tweets from the server.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL includeReplies</Declaration>
+			
+			
+			<Anchor>//api/name/includeReplies</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUserTimelineDataSource/setIncludeRetweets:</TokenIdentifier>
+			<Abstract type="html">Whether to request retweets in the set of Tweets from the server.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL includeRetweets</Declaration>
+			
+			
+			<Anchor>//api/name/includeRetweets</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUserTimelineDataSource/includeRetweets</TokenIdentifier>
+			<Abstract type="html">Whether to request retweets in the set of Tweets from the server.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL includeRetweets</Declaration>
+			
+			
+			<Anchor>//api/name/includeRetweets</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRUserTimelineDataSource/includeRetweets</TokenIdentifier>
+			<Abstract type="html">Whether to request retweets in the set of Tweets from the server.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL includeRetweets</Declaration>
+			
+			
+			<Anchor>//api/name/includeRetweets</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUserTimelineDataSource/setTimelineFilter:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) TWTRTimelineFilter *timelineFilter</Declaration>
+			
+			
+			<Anchor>//api/name/timelineFilter</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUserTimelineDataSource/timelineFilter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) TWTRTimelineFilter *timelineFilter</Declaration>
+			
+			
+			<Anchor>//api/name/timelineFilter</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRUserTimelineDataSource/timelineFilter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) TWTRTimelineFilter *timelineFilter</Declaration>
+			
+			
+			<Anchor>//api/name/timelineFilter</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUserTimelineDataSource/initWithScreenName:APIClient:</TokenIdentifier>
+			<Abstract type="html">Convenience initializer. Uses default values for maxTweetsPerRequest, includeReplies and includeRetweets.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithScreenName:(NSString *)screenName APIClient:(TWTRAPIClient *)client</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>screenName</Name>
+					<Abstract type="html">The screen name of a Twitter User</Abstract>
+				</Parameter><Parameter>
+					<Name>client</Name>
+					<Abstract type="html">The API client to use for making network requests.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A fully initialized user timeline datasource or nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithScreenName:APIClient:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUserTimelineDataSource/initWithScreenName:userID:APIClient:maxTweetsPerRequest:includeReplies:includeRetweets:</TokenIdentifier>
+			<Abstract type="html">The designated initialzer accepted values for properties.</Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithScreenName:(nullable NSString *)screenName userID:(nullable NSString *)userID APIClient:(TWTRAPIClient *)client maxTweetsPerRequest:(NSUInteger)maxTweetsPerRequest includeReplies:(BOOL)includeReplies includeRetweets:(BOOL)includeRetweets</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>screenName</Name>
+					<Abstract type="html">The screen name of the Twitter User</Abstract>
+				</Parameter><Parameter>
+					<Name>userID</Name>
+					<Abstract type="html">The user ID of the Twitter User</Abstract>
+				</Parameter><Parameter>
+					<Name>client</Name>
+					<Abstract type="html">The API client to use for making network requests.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxTweetsPerRequest</Name>
+					<Abstract type="html">The number of Tweets per batch to request. A value of 0 will use the server default.</Abstract>
+				</Parameter><Parameter>
+					<Name>includeReplies</Name>
+					<Abstract type="html">Whether replies should be requested</Abstract>
+				</Parameter><Parameter>
+					<Name>includeRetweets</Name>
+					<Abstract type="html">Whether retweets should be requested</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A fully initialized user timeline datasource or nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithScreenName:userID:APIClient:maxTweetsPerRequest:includeReplies:includeRetweets:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRUserTimelineDataSource/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRUserTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

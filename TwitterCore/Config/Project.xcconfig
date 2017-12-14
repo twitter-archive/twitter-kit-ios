@@ -1,0 +1,53 @@
+// Copyright (C) 2017 Twitter, Inc.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+#include "Architectures.xcconfig"
+#include "Bitcode.xcconfig"
+#include "SDKSuffix.xcconfig"
+
+PRODUCT_NAME = TwitterCore
+
+CURRENT_PROJECT_VERSION = 3.1.0
+DYLIB_COMPATIBILITY_VERSION = 1
+DYLIB_CURRENT_VERSION = $(CURRENT_PROJECT_VERSION)
+
+IPHONEOS_DEPLOYMENT_TARGET = 8.0
+TVOS_DEPLOYMENT_TARGET = 9.0
+MACOSX_DEPLOYMENT_TARGET = 10.8
+
+APPLICATION_EXTENSION_API_ONLY = NO
+
+TWC_BUNDLE_IDENTIFIER[sdk=*] = com.twittercore.sdk.$(FAB_PRODUCT_BUNDLE_IDENTIFIER_SUFFIX)
+
+GCC_PREPROCESSOR_DEFINITIONS_Debug = DEBUG=1 TWC_BUNDLE_IDENTIFIER=$(TWC_BUNDLE_IDENTIFIER)
+GCC_PREPROCESSOR_DEFINITIONS_Release = TWC_BUNDLE_IDENTIFIER=$(TWC_BUNDLE_IDENTIFIER)
+
+GCC_PREPROCESSOR_DEFINITIONS = $(GCC_PREPROCESSOR_DEFINITIONS_$(CONFIGURATION))
+
+GCC_WARN_ABOUT_MISSING_NEWLINE = YES
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+
+MODULEMAP_FILE = TwitterCore-$(FAB_PRODUCT_BUNDLE_IDENTIFIER_SUFFIX)-module.modulemap
+MODULEMAP_PRIVATE_FILE = TwitterCore-module.private.modulemap
+
+OTHER_LDFLAGS = $(inherited) -ObjC
+OTHER_LDFLAGS[sdk=macosx*] = $(inherited) -framework Cocoa
+OTHER_LDFLAGS[sdk=iphoneos*] = $(inherited) -framework UIKit -framework Social -framework Accounts
+OTHER_LDFLAGS[sdk=iphonesimulator*] = $(inherited) -framework UIKit -framework Social -framework Accounts
+OTHER_LDFLAGS[sdk=watchos*] = $(inherited) -framework WatchKit
+OTHER_LDFLAGS[sdk=watchsimulator*] = $(inherited) -framework WatchKit
+OTHER_LDFLAGS[sdk=appletvos*] = $(inherited) -framework UIKit
+OTHER_LDFLAGS[sdk=appletvsimulator*] = $(inherited) -framework UIKit
+
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/../vendor

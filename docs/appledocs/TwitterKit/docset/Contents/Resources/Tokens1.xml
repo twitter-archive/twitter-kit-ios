@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRCollectionTimelineDataSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRCollectionTimelineDataSource</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRCollectionTimelineDataSource.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRCollectionTimelineDataSource/setMaxTweetsPerRequest:</TokenIdentifier>
+			<Abstract type="html">The number of Tweets to request in each query to the Twitter Timeline API when fetching the next batch of Tweets.</Abstract>
+			<DeclaredIn>TWTRCollectionTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger maxTweetsPerRequest</Declaration>
+			
+			
+			<Anchor>//api/name/maxTweetsPerRequest</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRCollectionTimelineDataSource/maxTweetsPerRequest</TokenIdentifier>
+			<Abstract type="html">The number of Tweets to request in each query to the Twitter Timeline API when fetching the next batch of Tweets.</Abstract>
+			<DeclaredIn>TWTRCollectionTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger maxTweetsPerRequest</Declaration>
+			
+			
+			<Anchor>//api/name/maxTweetsPerRequest</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRCollectionTimelineDataSource/maxTweetsPerRequest</TokenIdentifier>
+			<Abstract type="html">The number of Tweets to request in each query to the Twitter Timeline API when fetching the next batch of Tweets.</Abstract>
+			<DeclaredIn>TWTRCollectionTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger maxTweetsPerRequest</Declaration>
+			
+			
+			<Anchor>//api/name/maxTweetsPerRequest</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRCollectionTimelineDataSource/setCollectionID:</TokenIdentifier>
+			<Abstract type="html">ID of the collection.</Abstract>
+			<DeclaredIn>TWTRCollectionTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *collectionID</Declaration>
+			
+			
+			<Anchor>//api/name/collectionID</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRCollectionTimelineDataSource/collectionID</TokenIdentifier>
+			<Abstract type="html">ID of the collection.</Abstract>
+			<DeclaredIn>TWTRCollectionTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *collectionID</Declaration>
+			
+			
+			<Anchor>//api/name/collectionID</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRCollectionTimelineDataSource/collectionID</TokenIdentifier>
+			<Abstract type="html">ID of the collection.</Abstract>
+			<DeclaredIn>TWTRCollectionTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *collectionID</Declaration>
+			
+			
+			<Anchor>//api/name/collectionID</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRCollectionTimelineDataSource/setTimelineFilter:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRCollectionTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) TWTRTimelineFilter *timelineFilter</Declaration>
+			
+			
+			<Anchor>//api/name/timelineFilter</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRCollectionTimelineDataSource/timelineFilter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRCollectionTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) TWTRTimelineFilter *timelineFilter</Declaration>
+			
+			
+			<Anchor>//api/name/timelineFilter</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRCollectionTimelineDataSource/timelineFilter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRCollectionTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, nullable) TWTRTimelineFilter *timelineFilter</Declaration>
+			
+			
+			<Anchor>//api/name/timelineFilter</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRCollectionTimelineDataSource/initWithCollectionID:APIClient:</TokenIdentifier>
+			<Abstract type="html">Convenience initializer.</Abstract>
+			<DeclaredIn>TWTRCollectionTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithCollectionID:(NSString *)collectionID APIClient:(TWTRAPIClient *)client</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>collectionID</Name>
+					<Abstract type="html">(required) The ID of this collection. For example, the ID of this collection: https://twitter.com/TwitterMusic/timelines/393773266801659904 is @&quot;393773266801659904&quot;</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of TWTRCollectionTimelineDataSource or nil if any of the required parameters is missing.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCollectionID:APIClient:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRCollectionTimelineDataSource/initWithCollectionID:APIClient:maxTweetsPerRequest:</TokenIdentifier>
+			<Abstract type="html">Designated initializer setting all supported values for Collection Timeline Data Source.</Abstract>
+			<DeclaredIn>TWTRCollectionTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithCollectionID:(NSString *)collectionID APIClient:(TWTRAPIClient *)client maxTweetsPerRequest:(NSUInteger)maxTweetsPerRequest</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>collectionID</Name>
+					<Abstract type="html">(required) The Collection ID value. e.g. @&quot;393773266801659904&quot;</Abstract>
+				</Parameter><Parameter>
+					<Name>client</Name>
+					<Abstract type="html">(required) The API client to use for all network requests.</Abstract>
+				</Parameter><Parameter>
+					<Name>maxTweetsPerRequest</Name>
+					<Abstract type="html">(optional) Number of Tweets to request per batch. A value of 0 uses the server default.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of TWTRCollectionTimelineDataSource or nil if any of the required parameters are missing.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCollectionID:APIClient:maxTweetsPerRequest:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRCollectionTimelineDataSource/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRCollectionTimelineDataSource.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

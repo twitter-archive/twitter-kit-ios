@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/TWTRErrorCode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/TWTRErrorCode</TokenIdentifier>
+			<Abstract type="html">Error codes surfaced by the Twitter SDK.</Abstract>
+			<DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRErrorCodeUnknown</TokenIdentifier>
+            <Abstract type="html">Unknown error.
+     </Abstract>
+            <Declaration>TWTRErrorCodeUnknown</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRErrorCodeNoAuthentication</TokenIdentifier>
+            <Abstract type="html">Authentication has not been set up yet. You must call [TWTRTwitter logInWithCompletion:] or [TWTRTwitter logInGuestWithCompletion:]
+     </Abstract>
+            <Declaration>TWTRErrorCodeNoAuthentication</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRErrorCodeNotInitialized</TokenIdentifier>
+            <Abstract type="html">Twitter has not been initialized yet. Call [Fabric with:@[TwitterKit]] or [TWTRTwitter startWithConsumerKey:consumerSecret:].
+     </Abstract>
+            <Declaration>TWTRErrorCodeNotInitialized</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRErrorCodeUserDeclinedPermission</TokenIdentifier>
+            <Abstract type="html">User has declined to grant permission to information such as their email address.
+     </Abstract>
+            <Declaration>TWTRErrorCodeUserDeclinedPermission</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRErrorCodeUserHasNoEmailAddress</TokenIdentifier>
+            <Abstract type="html">User has granted permission to their email address but no address is associated with their account.
+     </Abstract>
+            <Declaration>TWTRErrorCodeUserHasNoEmailAddress</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRErrorCodeInvalidResourceID</TokenIdentifier>
+            <Abstract type="html">A resource has been requested by ID, but that ID was not found.
+     </Abstract>
+            <Declaration>TWTRErrorCodeInvalidResourceID</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRErrorCodeInvalidURL</TokenIdentifier>
+            <Abstract type="html">A request has been issued for an invalid URL.
+     </Abstract>
+            <Declaration>TWTRErrorCodeInvalidURL</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRErrorCodeMismatchedJSONType</TokenIdentifier>
+            <Abstract type="html">Type mismatch in parsing JSON from the Twitter API.
+     </Abstract>
+            <Declaration>TWTRErrorCodeMismatchedJSONType</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRErrorCodeKeychainSerializationFailure</TokenIdentifier>
+            <Abstract type="html">Fail to save to keychain.
+     </Abstract>
+            <Declaration>TWTRErrorCodeKeychainSerializationFailure</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRErrorCodeDiskSerializationError</TokenIdentifier>
+            <Abstract type="html">Fail to save to disk.
+     </Abstract>
+            <Declaration>TWTRErrorCodeDiskSerializationError</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRErrorCodeWebViewError</TokenIdentifier>
+            <Abstract type="html">Error authenticating with the webview.
+     </Abstract>
+            <Declaration>TWTRErrorCodeWebViewError</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRErrorCodeMissingParameter</TokenIdentifier>
+            <Abstract type="html">A required parameter is missing.
+     </Abstract>
+            <Declaration>TWTRErrorCodeMissingParameter</Declaration>
+            
+            <DeclaredIn>TWTRConstants.h</DeclaredIn>
+            
+            <NodeRef refid="6"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

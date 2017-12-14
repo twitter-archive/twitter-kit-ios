@@ -1,0 +1,27 @@
+.DS_Store
+__RELEASES__
+bin/
+
+# Xcode
+build/
+DerivedData
+dist
+*.xccheckout
+*.xcuserdatad
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+*.o
+*.Plo
+*.lo
+config.log
+config.status
+*.xcscmblueprint
+
+*.gcda
+*.gcno
+
+!**/Carthage/Build
+Artifacts
+DemoApp/Config.xcconfig
+

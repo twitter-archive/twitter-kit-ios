@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRTweetUserMentionEntity.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRTweetUserMentionEntity</TokenIdentifier>
+			<Abstract type="html">A Tweet entity which represents a user mention.</Abstract>
+			<DeclaredIn>TWTRTweetUserMentionEntity.h</DeclaredIn>
+            
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetUserMentionEntity/setUserID:</TokenIdentifier>
+			<Abstract type="html">The userID of the user whom ha   s been mentioned.</Abstract>
+			<DeclaredIn>TWTRTweetUserMentionEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetUserMentionEntity/userID</TokenIdentifier>
+			<Abstract type="html">The userID of the user whom ha   s been mentioned.</Abstract>
+			<DeclaredIn>TWTRTweetUserMentionEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetUserMentionEntity/userID</TokenIdentifier>
+			<Abstract type="html">The userID of the user whom ha   s been mentioned.</Abstract>
+			<DeclaredIn>TWTRTweetUserMentionEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *userID</Declaration>
+			
+			
+			<Anchor>//api/name/userID</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetUserMentionEntity/setName:</TokenIdentifier>
+			<Abstract type="html">The name of the user whom has been mentioned.</Abstract>
+			<DeclaredIn>TWTRTweetUserMentionEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetUserMentionEntity/name</TokenIdentifier>
+			<Abstract type="html">The name of the user whom has been mentioned.</Abstract>
+			<DeclaredIn>TWTRTweetUserMentionEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetUserMentionEntity/name</TokenIdentifier>
+			<Abstract type="html">The name of the user whom has been mentioned.</Abstract>
+			<DeclaredIn>TWTRTweetUserMentionEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetUserMentionEntity/setScreenName:</TokenIdentifier>
+			<Abstract type="html">The screen name of the user whom has been mentioned.</Abstract>
+			<DeclaredIn>TWTRTweetUserMentionEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetUserMentionEntity/screenName</TokenIdentifier>
+			<Abstract type="html">The screen name of the user whom has been mentioned.</Abstract>
+			<DeclaredIn>TWTRTweetUserMentionEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetUserMentionEntity/screenName</TokenIdentifier>
+			<Abstract type="html">The screen name of the user whom has been mentioned.</Abstract>
+			<DeclaredIn>TWTRTweetUserMentionEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *screenName</Declaration>
+			
+			
+			<Anchor>//api/name/screenName</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

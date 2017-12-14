@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRTweetViewDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRTweetViewDelegate</TokenIdentifier>
+			<Abstract type="html">Delegate for TWTRTweetView to receive updates on the user interacting with this particular Tweet view.</Abstract>
+			<DeclaredIn>TWTRTweetViewDelegate.h</DeclaredIn>
+            
+			
+			<NodeRef refid="30"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRTweetViewDelegate/tweetView:didTapImage:withURL:</TokenIdentifier>
+			<Abstract type="html">The tweet view image was tapped.</Abstract>
+			<DeclaredIn>TWTRTweetViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)tweetView:(TWTRTweetView *)tweetView didTapImage:(UIImage *)image withURL:(NSURL *)imageURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tweetView</Name>
+					<Abstract type="html">The Tweet view that was tapped.</Abstract>
+				</Parameter><Parameter>
+					<Name>image</Name>
+					<Abstract type="html">The exact UIImage data shown by the Tweet view.</Abstract>
+				</Parameter><Parameter>
+					<Name>imageURL</Name>
+					<Abstract type="html">The full URL of the image being shown.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tweetView:didTapImage:withURL:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRTweetViewDelegate/tweetView:didTapVideoWithURL:</TokenIdentifier>
+			<Abstract type="html">The Tweet view video was tapped.
+If this method is not implemented a video player will be presented.</Abstract>
+			<DeclaredIn>TWTRTweetViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)tweetView:(TWTRTweetView *)tweetView didTapVideoWithURL:(NSURL *)videoURL</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tweetView</Name>
+					<Abstract type="html">The Tweet view that was tapped.</Abstract>
+				</Parameter><Parameter>
+					<Name>videoURL</Name>
+					<Abstract type="html">The full URL of the video being shown.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tweetView:didTapVideoWithURL:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRTweetViewDelegate/tweetView:didTapURL:</TokenIdentifier>
+			<Abstract type="html">A URL in the text of a tweet was tapped. Implement to show your own webview rather than opening Safari.</Abstract>
+			<DeclaredIn>TWTRTweetViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)tweetView:(TWTRTweetView *)tweetView didTapURL:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tweetView</Name>
+					<Abstract type="html">The Tweet view that was tapped.</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The URL that was tapped.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tweetView:didTapURL:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRTweetViewDelegate/tweetView:didTapProfileImageForUser:</TokenIdentifier>
+			<Abstract type="html">Called when the user&apos;s profile image is tapped.
+If this method is not implemented, the default behavior is to deep link into Twitter application or twitter.com in a webview.</Abstract>
+			<DeclaredIn>TWTRTweetViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)tweetView:(TWTRTweetView *)tweetView didTapProfileImageForUser:(TWTRUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tweetView</Name>
+					<Abstract type="html">The Tweet view that was tapped.</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract type="html">The Twitter user.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tweetView:didTapProfileImageForUser:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRTweetViewDelegate/tweetView:didTapTweet:</TokenIdentifier>
+			<Abstract type="html">Called when the Tweet is tapped.
+If this method is not implemented, the default behavior is to deep link into Twitter application or twitter.com in a webview.</Abstract>
+			<DeclaredIn>TWTRTweetViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)tweetView:(TWTRTweetView *)tweetView didTapTweet:(TWTRTweet *)tweet</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tweetView</Name>
+					<Abstract type="html">The Tweet view that was tapped.</Abstract>
+				</Parameter><Parameter>
+					<Name>tweet</Name>
+					<Abstract type="html">The Tweet that user tapped.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tweetView:didTapTweet:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRTweetViewDelegate/tweetView:didChangePlaybackState:</TokenIdentifier>
+			<Abstract type="html">Called when video in the Tweet changes its state.</Abstract>
+			<DeclaredIn>TWTRTweetViewDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)tweetView:(TWTRTweetView *)tweetView didChangePlaybackState:(TWTRVideoPlaybackState)newState</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tweetView</Name>
+					<Abstract type="html">The Tweet view that was tapped.</Abstract>
+				</Parameter><Parameter>
+					<Name>newState</Name>
+					<Abstract type="html">The state of the video. (TWTRVideoPlaybackStatePaused, TWTRVideoPlaybackStatePlaying, TWTRVideoPlaybackStateCompleted)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tweetView:didChangePlaybackState:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

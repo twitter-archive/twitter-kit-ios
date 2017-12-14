@@ -1,0 +1,25 @@
+
+task :screenshots do
+  sh 'snapshot --snapfile ./Screenshots/Snapfile'
+end
+
+task :ui_tests do
+  root = task.application.original_dir
+
+  build_dir = root + '/build'
+  puts build_dir
+  sh "rm -rf #{build_dir}"
+
+  run_tests('Integration Tests', build_dir, ['platform=iOS Simulator,name=iPhone 6s'])
+end
+
+task :default => 'test'
+
+
+private
+
+# This is what the TeamCity CI currently uses for running Integration Tests
+def run_tests(scheme, obj_root, destinations)
+  destinations = destinations.map! { |destination| "-destination \'#{destination}\'" }.join(' ')
+  sh "xcodebuild -workspace FabricSampleApp.xcworkspace -scheme '#{scheme}' #{destinations} SYMROOT=#{obj_root} OBJROOT=#{obj_root} -configuration Release clean test | xcpretty --report junit --color ; exit ${PIPESTATUS[0]}"
+end

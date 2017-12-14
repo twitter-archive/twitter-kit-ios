@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRTweetHashtagEntity.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRTweetHashtagEntity</TokenIdentifier>
+			<Abstract type="html">A Tweet entity which represents a Hashtag like &apos;#twitterkit&apos;</Abstract>
+			<DeclaredIn>TWTRTweetHashtagEntity.h</DeclaredIn>
+            
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetHashtagEntity/setText:</TokenIdentifier>
+			<Abstract type="html">The text represented by this entity.</Abstract>
+			<DeclaredIn>TWTRTweetHashtagEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetHashtagEntity/text</TokenIdentifier>
+			<Abstract type="html">The text represented by this entity.</Abstract>
+			<DeclaredIn>TWTRTweetHashtagEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetHashtagEntity/text</TokenIdentifier>
+			<Abstract type="html">The text represented by this entity.</Abstract>
+			<DeclaredIn>TWTRTweetHashtagEntity.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

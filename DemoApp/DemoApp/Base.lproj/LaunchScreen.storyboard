@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V90-eA-toh">
+                                <rect key="frame" x="46.5" y="273.5" width="282.5" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TwitterKit iOS Demo App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7A-nR-yrZ">
+                                        <rect key="frame" x="60" y="15" width="222.5" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="7c0-ae-MOf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mobile" translatesAutoresizingMaskIntoConstraints="NO" id="CuX-H5-GJc">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="XUy-Vw-SSb"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="O7A-nR-yrZ" firstAttribute="leading" secondItem="CuX-H5-GJc" secondAttribute="trailing" constant="10" id="FUa-o0-AA0"/>
+                                    <constraint firstItem="CuX-H5-GJc" firstAttribute="top" secondItem="V90-eA-toh" secondAttribute="top" id="Lr4-u3-pCb"/>
+                                    <constraint firstItem="O7A-nR-yrZ" firstAttribute="centerY" secondItem="V90-eA-toh" secondAttribute="centerY" id="Mdr-M1-QR3"/>
+                                    <constraint firstAttribute="trailing" secondItem="O7A-nR-yrZ" secondAttribute="trailing" id="SUC-fi-4w8"/>
+                                    <constraint firstAttribute="height" constant="60" id="Ypy-aZ-2p5"/>
+                                    <constraint firstItem="CuX-H5-GJc" firstAttribute="leading" secondItem="V90-eA-toh" secondAttribute="leading" id="a7Z-FN-uwD"/>
+                                    <constraint firstAttribute="bottom" secondItem="CuX-H5-GJc" secondAttribute="bottom" id="uZq-br-Ywh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="V90-eA-toh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-30" id="50E-8L-bat"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="V90-eA-toh" secondAttribute="trailing" constant="20" id="PGM-oq-cNK"/>
+                            <constraint firstItem="V90-eA-toh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SqQ-Fm-RIb"/>
+                            <constraint firstItem="V90-eA-toh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="p4z-Qk-mR2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mobile" width="60" height="69"/>
+    </resources>
+</document>

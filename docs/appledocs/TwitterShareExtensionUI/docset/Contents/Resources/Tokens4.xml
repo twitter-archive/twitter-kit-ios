@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRSETweetAttachmentCocoaItemProvider.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRSETweetAttachmentCocoaItemProvider</TokenIdentifier>
+			<Abstract type="html">An attachment that is able to render the contents of an NSItemProvider
+(like those from an iOS share extension).</Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetAttachmentCocoaItemProvider/initWithTitle:itemProvider:cardPreviewProvider:imageDownloader:</TokenIdentifier>
+			<Abstract type="html">A title to render alongside the attachment (optional)</Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithTitle:(nullable NSString *)title itemProvider:(NSItemProvider *)itemProvider cardPreviewProvider:(nullable id&lt;TWTRSECardPreviewProvider&gt;)cardPreviewProvider imageDownloader:(nullable id&lt;TWTRSEImageDownloader&gt;)imageDownloader</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">A title to render alongside the attachment (optional)</Abstract>
+				</Parameter><Parameter>
+					<Name>itemProvider</Name>
+					<Abstract type="html">(required) The item provider that will be loaded to render this attachment.
+        Only the kUTTypeURL and kUTTypeFileURL UTI types are currenly supported.
+        For kUTTypeText, consider adding the text to the text of the initialTweet property.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithTitle:itemProvider:cardPreviewProvider:imageDownloader:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetAttachmentCocoaItemProvider/setTitle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy, nullable) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetAttachmentCocoaItemProvider/title</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy, nullable) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetAttachmentCocoaItemProvider/title</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy, nullable) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetAttachmentCocoaItemProvider/setItemProvider:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSItemProvider *itemProvider</Declaration>
+			
+			
+			<Anchor>//api/name/itemProvider</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetAttachmentCocoaItemProvider/itemProvider</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSItemProvider *itemProvider</Declaration>
+			
+			
+			<Anchor>//api/name/itemProvider</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetAttachmentCocoaItemProvider/itemProvider</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSItemProvider *itemProvider</Declaration>
+			
+			
+			<Anchor>//api/name/itemProvider</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetAttachmentCocoaItemProvider/setCardPreviewProvider:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy, nullable) id&lt;TWTRSECardPreviewProvider&gt; cardPreviewProvider</Declaration>
+			
+			
+			<Anchor>//api/name/cardPreviewProvider</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetAttachmentCocoaItemProvider/cardPreviewProvider</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy, nullable) id&lt;TWTRSECardPreviewProvider&gt; cardPreviewProvider</Declaration>
+			
+			
+			<Anchor>//api/name/cardPreviewProvider</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetAttachmentCocoaItemProvider/cardPreviewProvider</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy, nullable) id&lt;TWTRSECardPreviewProvider&gt; cardPreviewProvider</Declaration>
+			
+			
+			<Anchor>//api/name/cardPreviewProvider</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetAttachmentCocoaItemProvider/setImageDownloader:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy, nullable) id&lt;TWTRSEImageDownloader&gt; imageDownloader</Declaration>
+			
+			
+			<Anchor>//api/name/imageDownloader</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRSETweetAttachmentCocoaItemProvider/imageDownloader</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy, nullable) id&lt;TWTRSEImageDownloader&gt; imageDownloader</Declaration>
+			
+			
+			<Anchor>//api/name/imageDownloader</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRSETweetAttachmentCocoaItemProvider/imageDownloader</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSETweetAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy, nullable) id&lt;TWTRSEImageDownloader&gt; imageDownloader</Declaration>
+			
+			
+			<Anchor>//api/name/imageDownloader</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,6 @@
+framework module DCIntrospect_ARC {
+  umbrella header "DCIntrospect-ARC-umbrella.h"
+
+  export *
+  module * { export * }
+}

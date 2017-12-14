@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/TWTRMediaEntitySizeResizingMode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/TWTRMediaEntitySizeResizingMode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRMediaEntitySize.h</DeclaredIn>
+            
+			
+			<NodeRef refid="32"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRMediaEntitySizeResizingModeFit</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TWTRMediaEntitySizeResizingModeFit</Declaration>
+            
+            <DeclaredIn>TWTRMediaEntitySize.h</DeclaredIn>
+            
+            <NodeRef refid="32"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TWTRMediaEntitySizeResizingModeCrop</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TWTRMediaEntitySizeResizingModeCrop</Declaration>
+            
+            <DeclaredIn>TWTRMediaEntitySize.h</DeclaredIn>
+            
+            <NodeRef refid="32"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

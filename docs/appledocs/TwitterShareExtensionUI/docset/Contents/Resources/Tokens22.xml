@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/TWTRSEWordRangeCalculator.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/TWTRSEWordRangeCalculator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TWTRSEWordRangeCalculator.h</DeclaredIn>
+            
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSEWordRangeCalculator/wordRangeForIndex:</TokenIdentifier>
+			<Abstract type="html">find a &quot;word&quot; in this string based on canonical boundaries</Abstract>
+			<DeclaredIn>TWTRSEWordRangeCalculator.h</DeclaredIn>
+			
+			<Declaration>- (NSRange)wordRangeForIndex:(NSInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">location around which to look for a &apos;word&apos; used in the Text of a Tweet</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a range representing the &quot;word&quot; which contains index (nil if no Tweet Text &apos;word&apos; token found)</Abstract></ReturnValue>
+			<Anchor>//api/name/wordRangeForIndex:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/TWTRSEWordRangeCalculator/wordRangeIncludingUnderscoreForIndex:</TokenIdentifier>
+			<Abstract type="html">this function does the same thing as wordRangeForIndex:, but where &apos;_&apos; is a valid character</Abstract>
+			<DeclaredIn>TWTRSEWordRangeCalculator.h</DeclaredIn>
+			
+			<Declaration>- (NSRange)wordRangeIncludingUnderscoreForIndex:(NSUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">location in this string around which to find a &apos;word&apos; as a token</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the value represented by wordRangeForIndex: where &apos;_&apos; is a valid character in the word at index</Abstract></ReturnValue>
+			<Anchor>//api/name/wordRangeIncludingUnderscoreForIndex:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

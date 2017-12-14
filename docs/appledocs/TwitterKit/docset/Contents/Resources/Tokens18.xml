@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TWTRTweetTableViewCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TWTRTweetTableViewCell</TokenIdentifier>
+			<Abstract type="html">A table view cell subclass which displays a Tweet.</Abstract>
+			<DeclaredIn>TWTRTweetTableViewCell.h</DeclaredIn>
+            
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetTableViewCell/setTweetView:</TokenIdentifier>
+			<Abstract type="html">The Tweet view inside this cell. Holds all relevant text and images.</Abstract>
+			<DeclaredIn>TWTRTweetTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRTweetView *tweetView</Declaration>
+			
+			
+			<Anchor>//api/name/tweetView</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetTableViewCell/tweetView</TokenIdentifier>
+			<Abstract type="html">The Tweet view inside this cell. Holds all relevant text and images.</Abstract>
+			<DeclaredIn>TWTRTweetTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRTweetView *tweetView</Declaration>
+			
+			
+			<Anchor>//api/name/tweetView</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TWTRTweetTableViewCell/tweetView</TokenIdentifier>
+			<Abstract type="html">The Tweet view inside this cell. Holds all relevant text and images.</Abstract>
+			<DeclaredIn>TWTRTweetTableViewCell.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) TWTRTweetView *tweetView</Declaration>
+			
+			
+			<Anchor>//api/name/tweetView</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TWTRTweetTableViewCell/configureWithTweet:</TokenIdentifier>
+			<Abstract type="html">Configures the existing Tweet view with a Tweet. Updates labels, images, and thumbnails.</Abstract>
+			<DeclaredIn>TWTRTweetTableViewCell.h</DeclaredIn>
+			
+			<Declaration>- (void)configureWithTweet:(TWTRTweet *)tweet</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tweet</Name>
+					<Abstract type="html">The TWTRTweet model object for the Tweet to display.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/configureWithTweet:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TWTRTweetTableViewCell/heightForTweet:style:width:showingActions:</TokenIdentifier>
+			<Abstract type="html">Returns how tall the Tweet view should be.</Abstract>
+			<DeclaredIn>TWTRTweetTableViewCell.h</DeclaredIn>
+			
+			<Declaration>+ (CGFloat)heightForTweet:(TWTRTweet *)tweet style:(TWTRTweetViewStyle)style width:(CGFloat)width showingActions:(BOOL)showActions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tweet</Name>
+					<Abstract type="html">the Tweet</Abstract>
+				</Parameter><Parameter>
+					<Name>style</Name>
+					<Abstract type="html">the style of the Tweet view</Abstract>
+				</Parameter><Parameter>
+					<Name>width</Name>
+					<Abstract type="html">the width of the Tweet</Abstract>
+				</Parameter><Parameter>
+					<Name>showActions</Name>
+					<Abstract type="html">whether the Tweet view will be displaying actions</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the calculated height of the Tweet view</Abstract></ReturnValue>
+			<Anchor>//api/name/heightForTweet:style:width:showingActions:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
