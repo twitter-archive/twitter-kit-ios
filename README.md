@@ -50,7 +50,7 @@ To add Twitter Kit to your app, simply add `TwitterKit` to your Podfile.
 ```
 target 'MyApp' do
     use_frameworks!
-        pod 'TwitterKit'
+    pod 'TwitterKit'
 end
 ```
 
