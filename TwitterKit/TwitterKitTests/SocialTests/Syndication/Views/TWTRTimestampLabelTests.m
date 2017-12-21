@@ -21,6 +21,8 @@
 #import "TWTRFixtureLoader.h"
 #import "TWTRTimestampLabel.h"
 #import "TWTRTweet.h"
+#import <TwitterCore/TWTRDateFormatters.h>
+#import <TwitterCore/TWTRDateFormatters_Private.h>
 
 @interface TWTRTimestampLabelTests : XCTestCase
 
@@ -37,6 +39,9 @@
 - (void)setUp
 {
     [super setUp];
+    
+    [TWTRDateFormatters resetCache];
+    [TWTRDateFormatters setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US"]];
 
     self.timestamp = [[TWTRTimestampLabel alloc] init];
 
