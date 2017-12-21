@@ -170,6 +170,16 @@
     OCMVerifyAll(mockTwitterKit);
 }
 
+- (void)testLoginWithViewController_releaseViewControllerAfterLogin
+{
+    UIViewController *viewController = [[UIViewController alloc] init];
+    __weak typeof(viewController) weakViewController = viewController;
+    [self.twitterKit logInWithViewController:viewController completion:^(TWTRSession *_Nullable session, NSError *_Nullable error){
+    }];
+    viewController = nil;
+    XCTAssertNil(weakViewController);
+}
+
 - (void)testLogout_clearsWebViewCookies
 {
     [self.twitterKit.sessionStore saveSession:self.session
