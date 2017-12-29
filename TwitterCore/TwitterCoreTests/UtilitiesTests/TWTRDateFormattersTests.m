@@ -57,8 +57,11 @@ static NSString *const APIDateString = @"Mon Mar 05 22:08:25 +0000 2007";
 
 - (void)testCurrentYearDateFormatter
 {
-    NSString *formattedDate = [[TWTRDateFormatters dayAndMonthDateFormatter] stringFromDate:self.apiDate];
-    XCTAssertTrue([formattedDate isEqualToString:@"Mar 05"]);
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"MMM dd";
+    NSString *desired = [dateFormatter stringFromDate:self.apiDate];
+    NSString *actual = [[TWTRDateFormatters dayAndMonthDateFormatter] stringFromDate:self.apiDate];
+    XCTAssertTrue([desired isEqualToString:actual]);
 }
 
 - (void)testCurrentYearDateFormatter_handlesLocale
@@ -66,33 +69,46 @@ static NSString *const APIDateString = @"Mon Mar 05 22:08:25 +0000 2007";
     [TWTRDateFormatters setLocale:self.spanishLocale];
     NSString *formattedDate = [[TWTRDateFormatters dayAndMonthDateFormatter] stringFromDate:self.apiDate];
     NSString *expectedDate;
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = [NSDateFormatter dateFormatFromTemplate:@"MMM dd" options:0 locale:self.spanishLocale];
+    
     NSProcessInfo *processInfo = [NSProcessInfo processInfo];
     if ([processInfo respondsToSelector:@selector(operatingSystemVersion)] && processInfo.operatingSystemVersion.majorVersion >= 9) {
-        expectedDate = @"05 Mar";
+        expectedDate = [dateFormatter stringFromDate:self.apiDate];
     } else {
-        expectedDate = @"05-Mar";
+        expectedDate = [dateFormatter stringFromDate:self.apiDate];
     }
     XCTAssertEqualObjects(formattedDate, expectedDate);
 }
 
 - (void)testSystemLongDateFormatter
 {
-    NSString *formattedDate = [[TWTRDateFormatters systemLongDateFormatter] stringFromDate:self.apiDate];
-    XCTAssert([formattedDate isEqualToString:@"March 5, 2007"]);
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateStyle = NSDateFormatterLongStyle;
+    NSString *desired = [dateFormatter stringFromDate:self.apiDate];
+    NSString *actual = [[TWTRDateFormatters systemLongDateFormatter] stringFromDate:self.apiDate];
+    XCTAssert([actual isEqualToString:desired]);
 }
 
 - (void)testSystemLongDateFormatter_handlesLocale
 {
     [TWTRDateFormatters setLocale:self.spanishLocale];
-    NSString *formattedDate = [[TWTRDateFormatters systemLongDateFormatter] stringFromDate:self.apiDate];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateStyle = NSDateFormatterLongStyle;
+    dateFormatter.locale = self.spanishLocale;
+    NSString *desired = [dateFormatter stringFromDate:self.apiDate];
+    NSString *actual = [[TWTRDateFormatters systemLongDateFormatter] stringFromDate:self.apiDate];
 
-    XCTAssert([formattedDate isEqualToString:@"5 de marzo de 2007"]);
+    XCTAssert([actual isEqualToString:desired]);
 }
 
 - (void)testShortHistoricalDateFormatter
 {
-    NSString *formattedDate = [[TWTRDateFormatters shortHistoricalDateFormatter] stringFromDate:self.apiDate];
-    XCTAssertTrue([formattedDate isEqualToString:@"3/5/07"]);
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateStyle = NSDateFormatterShortStyle;
+    NSString *desired = [dateFormatter stringFromDate:self.apiDate];
+    NSString *actual = [[TWTRDateFormatters shortHistoricalDateFormatter] stringFromDate:self.apiDate];
+    XCTAssert([desired isEqualToString:actual]);
 }
 
 - (void)testHTTPDateHeaderParsingFormatter
