@@ -15,6 +15,8 @@
  *
  */
 
+#import <TwitterCore/TWTRDateFormatters.h>
+#import <TwitterCore/TWTRDateFormatters_Private.h>
 #import <XCTest/XCTest.h>
 #import "TUDelorean+Rollback.h"
 #import "TUDelorean.h"
@@ -37,6 +39,9 @@
 - (void)setUp
 {
     [super setUp];
+
+    [TWTRDateFormatters resetCache];
+    [TWTRDateFormatters setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US"]];
 
     self.timestamp = [[TWTRTimestampLabel alloc] init];
 
@@ -74,13 +79,14 @@
 
 - (void)testRegularFormattedDate
 {
-    [TUDelorean temporarilyTimeTravelTo:self.november2014 block:^(NSDate *date) {
-        self.timestamp.date = self.obamaTweet.createdAt;
-        XCTAssertEqualObjects(self.timestamp.text, @" • 11/6/12");
+    [TUDelorean temporarilyTimeTravelTo:self.november2014
+                                  block:^(NSDate *date) {
+                                      self.timestamp.date = self.obamaTweet.createdAt;
+                                      XCTAssertEqualObjects(self.timestamp.text, @" • 11/6/12");
 
-        self.timestamp.date = self.googleTweet.createdAt;
-        XCTAssertEqualObjects(self.timestamp.text, @" • May 23");
-    }];
+                                      self.timestamp.date = self.googleTweet.createdAt;
+                                      XCTAssertEqualObjects(self.timestamp.text, @" • May 23");
+                                  }];
 }
 
 @end
