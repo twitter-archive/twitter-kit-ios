@@ -389,7 +389,12 @@ static TWTRTwitter *sharedTwitter;
         [viewController presentViewController:navigationController animated:YES completion:nil];
     }
         completion:^(TWTRSession *session, NSError *error) {
-            [viewController dismissViewControllerAnimated:YES completion:nil];
+            /**
+                Grab the top view controller here since the top most view controller should be the
+                web view controller at this point in the login cycle otherwise this would dismiss
+                the view controller below it.
+             */
+            [[TWTRUtils topViewController] dismissViewControllerAnimated:YES completion:nil];
             completion(session, error);
         }];
 }
