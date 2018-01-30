@@ -26,7 +26,6 @@
 #import "TWTRSETweetTextViewContainer.h"
 #import "UIView+TSEExtensions.h"
 
-
 #pragma mark - static const definitions
 
 static const CGFloat kCursorRectVerticalOutsetForScroll = 4.0;
@@ -35,8 +34,7 @@ static const CGFloat kAttachmentViewPadding = 4.0;
 
 static const NSTimeInterval kScrollRetryDelay = 0.1;
 
-static const UIEdgeInsets kComposeTextViewTextContainerInsets = { .top = 8, .left = 12, .bottom = 8, .right = 8 };
-
+static const UIEdgeInsets kComposeTextViewTextContainerInsets = {.top = 8, .left = 12, .bottom = 8, .right = 8};
 
 #pragma mark -
 
@@ -91,12 +89,12 @@ static const UIEdgeInsets kComposeTextViewTextContainerInsets = { .top = 8, .lef
         _characterCounterLabel.backgroundColor = [UIColor clearColor];
         _characterCounterLabel.font = [TWTRSEFonts characterCountFont];
         _characterCounterLabel.numberOfLines = 1;
-        _characterCounterLabel.textAlignment = NSTextAlignmentRight; // varies from Apple SLShareViewController, but stays out of the way better
+        _characterCounterLabel.textAlignment = NSTextAlignmentRight;  // varies from Apple SLShareViewController, but stays out of the way better
 
         _characterCountOverLimitColor = [TWTRSEFonts characterCountLimitColor];
         _characterCountBelowLimitColor = _placeholderLabel.textColor;
 
-        _numberOfLinesToDisplay = self.minNumberOfLinesToDisplay; // even with empty text, provide a bit of buffer
+        _numberOfLinesToDisplay = self.minNumberOfLinesToDisplay;  // even with empty text, provide a bit of buffer
 
         [self addSubview:_placeholderLabel];
         [self addSubview:_textView];
@@ -171,9 +169,9 @@ static const UIEdgeInsets kComposeTextViewTextContainerInsets = { .top = 8, .lef
         const UILayoutGuide *defaultMargins = self.layoutMarginsGuide;
         const CGFloat attachmentViewPadding = kAttachmentViewPadding * (CGFloat)(TWTRSEUIIsIOS11OrGreater() ? 1 : 3);
         [self.attachmentView.leadingAnchor constraintEqualToAnchor:defaultMargins.leadingAnchor constant:attachmentViewPadding].active = YES;
-        [self.attachmentView.topAnchor constraintEqualToAnchor:self.characterCounterLabel.bottomAnchor constant:kAttachmentViewPadding/2.0].active = YES;
-        [self.attachmentView.widthAnchor constraintEqualToAnchor:defaultMargins.widthAnchor constant:(CGFloat)-2.0*attachmentViewPadding].active = YES;
-        [self.attachmentView.bottomAnchor constraintEqualToAnchor:defaultMargins.bottomAnchor constant:(CGFloat)1.5*(kAttachmentViewPadding-attachmentViewPadding)].active = YES;
+        [self.attachmentView.topAnchor constraintEqualToAnchor:self.characterCounterLabel.bottomAnchor constant:kAttachmentViewPadding / 2.0].active = YES;
+        [self.attachmentView.widthAnchor constraintEqualToAnchor:defaultMargins.widthAnchor constant:(CGFloat)-2.0 * attachmentViewPadding].active = YES;
+        [self.attachmentView.bottomAnchor constraintEqualToAnchor:defaultMargins.bottomAnchor constant:(CGFloat)1.5 * (kAttachmentViewPadding - attachmentViewPadding)].active = YES;
     });
 }
 
@@ -181,6 +179,13 @@ static const UIEdgeInsets kComposeTextViewTextContainerInsets = { .top = 8, .lef
 {
     self.characterCounterLabel.text = [NSString stringWithFormat:@"%@", @([self.tweet remainingCharacters])];
     self.characterCounterLabel.textColor = ([self.tweet isNearOrOverCharacterLimit]) ? _characterCountOverLimitColor : _characterCountBelowLimitColor;
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+
+    [self _tseui_updateLineCount];
 }
 
 - (void)_tseui_updateLineCount
@@ -206,7 +211,7 @@ static const UIEdgeInsets kComposeTextViewTextContainerInsets = { .top = 8, .lef
 
     _placeholderLabel.hidden = tweet.text.length > 0;
     if ([_placeholderLabel isHidden]) {
-        _placeholderLabel.alpha = 0; // for later animation
+        _placeholderLabel.alpha = 0;  // for later animation
     }
 
     // Hold on to the same instance so that changes to the text made outside are taken into account in `_tseui_updateCharacterCount`.
@@ -219,7 +224,7 @@ static const UIEdgeInsets kComposeTextViewTextContainerInsets = { .top = 8, .lef
             __weak typeof(self) weakSelf = self;
             [cocoaItemProviderAttachment afterURLLoadPerform:^{
                 __strong typeof(self) strongSelf = weakSelf;
-                [strongSelf _tseui_updateCharacterCount]; // will account for attachment URL
+                [strongSelf _tseui_updateCharacterCount];  // will account for attachment URL
             }];
         }
         self.attachmentView = [[TWTRSETweetAttachmentView alloc] initWithAttachment:tweet.attachment];
@@ -245,14 +250,13 @@ static const UIEdgeInsets kComposeTextViewTextContainerInsets = { .top = 8, .lef
 
 - (void)setTextSelection:(NSRange)textSelection
 {
-    if (! NSEqualRanges(textSelection, _textSelection)) {
+    if (!NSEqualRanges(textSelection, _textSelection)) {
         _textSelection = textSelection;
 
         if (textSelection.location != NSNotFound && NSMaxRange(textSelection) <= self.textView.text.length) {
             self.textView.selectedRange = textSelection;
         } else {
-            NSAssert(textSelection.location != NSNotFound && NSMaxRange(textSelection) <= self.textView.text.length,
-                     @"(range %@ exceeds text length %u)", NSStringFromRange(textSelection), (unsigned)self.textView.text.length);
+            NSAssert(textSelection.location != NSNotFound && NSMaxRange(textSelection) <= self.textView.text.length, @"(range %@ exceeds text length %u)", NSStringFromRange(textSelection), (unsigned)self.textView.text.length);
         }
     }
 }
@@ -296,16 +300,19 @@ static const UIEdgeInsets kComposeTextViewTextContainerInsets = { .top = 8, .lef
 - (void)_tseui_hidePlaceholder:(BOOL)hidden
 {
     if (![_placeholderLabel isHidden] && hidden) {
-        [UIView animateWithDuration:0.2 animations:^{
-            self->_placeholderLabel.alpha = 0;
-        } completion:^(BOOL finished) {
-            self->_placeholderLabel.hidden = YES;
-        }];
+        [UIView animateWithDuration:0.2
+            animations:^{
+                self->_placeholderLabel.alpha = 0;
+            }
+            completion:^(BOOL finished) {
+                self->_placeholderLabel.hidden = YES;
+            }];
     } else if ([_placeholderLabel isHidden] && !hidden) {
         _placeholderLabel.hidden = NO;
-        [UIView animateWithDuration:0.2 animations:^{
-            self->_placeholderLabel.alpha = 1;
-        }];
+        [UIView animateWithDuration:0.2
+                         animations:^{
+                             self->_placeholderLabel.alpha = 1;
+                         }];
     }
 }
 
