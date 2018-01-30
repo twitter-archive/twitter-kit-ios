@@ -183,6 +183,13 @@ static const UIEdgeInsets kComposeTextViewTextContainerInsets = { .top = 8, .lef
     self.characterCounterLabel.textColor = ([self.tweet isNearOrOverCharacterLimit]) ? _characterCountOverLimitColor : _characterCountBelowLimitColor;
 }
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    [self _tseui_updateLineCount];
+}
+
 - (void)_tseui_updateLineCount
 {
     NSUInteger textViewNumberOfLines = _textView.numberOfLines;
