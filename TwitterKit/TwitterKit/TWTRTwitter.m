@@ -389,7 +389,9 @@ static TWTRTwitter *sharedTwitter;
         [viewController presentViewController:navigationController animated:YES completion:nil];
     }
         completion:^(TWTRSession *session, NSError *error) {
-            [viewController dismissViewControllerAnimated:YES completion:nil];
+            // Dismiss from `presentedViewController` so that `viewController` itself doesn't get dismissed
+            // when it is also a `presentedViewController` of another presenting (parent) view controller.
+            [viewController.presentedViewController dismissViewControllerAnimated:YES completion:nil];
             completion(session, error);
         }];
 }
