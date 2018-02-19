@@ -74,7 +74,7 @@ Make sure that the run script phase is after your Link Binaries with Libraries p
 
 Twitter Kit includes a demonstration app allowing you to preview features, and verify functionality. Create Twitter API keys as above, and then:
 
-* To check out a demo app with features already built in, rename `DemoApp/Config.xcconfig.sample` to `DemoApp/Config.xcconfig` and populate the consumer key and secret.
+* To check out a demo app with features already built in, rename `DemoApp/Config.xcconfig.example` to `DemoApp/Config.xcconfig` and populate the consumer key and secret.
 * Run `DemoApp.xcworkspace` on Xcode to verify build.
 
 ## Code of conduct
