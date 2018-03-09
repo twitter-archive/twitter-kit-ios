@@ -110,6 +110,7 @@ static const CGFloat TWTRImageCornerRadius = 4.0;
         self.inlinePlayerView.shouldSetChromeVisible = NO;
         self.inlinePlayerView.delegate = self;
         self.inlinePlayerView.aspectRatio = TWTRVideoPlayerAspectRatioAspectFill;
+        self.inlinePlayerView.translatesAutoresizingMaskIntoConstraints = NO;
         [self insertSubview:self.inlinePlayerView belowSubview:[self videoThumbnail]];
     } else {
         [self.inlinePlayerView removeFromSuperview];
