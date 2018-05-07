@@ -58,14 +58,14 @@ end
 
 To install Twitter Kit for iOS using Carthage, add the following lines to your Cartfile. For more information about how to set up Carthage and your Cartfile, see [here](https://github.com/Carthage/Carthage).
 
-```
+```swift
 binary "https://ton.twimg.com/syndication/twitterkit/ios/TwitterKit.json"
 binary "https://ton.twimg.com/syndication/twitterkit/ios/TwitterCore.json"
 ```
 
 After running `carthage update`, add `TwitterKit.framework` and `TwitterShareExtensionUI.framework` to the `Linked Frameworks and Binaries` section under General of your App target. In addition to that, make sure that when you are adding the copy-frameworks run script for Carthage that you add the following input paths: 
 
-```
+```swift
 $(SRCROOT)/Carthage/Build/iOS/TwitterCore.framework
 $(SRCROOT)/Carthage/Build/iOS/TwitterKit.framework
 $(SRCROOT)/Carthage/Build/iOS/TwitterShareExtensionUI.framework
@@ -82,7 +82,7 @@ Twitter Kit includes a demonstration app allowing you to preview features, and v
 
 ## Code of conduct
 
-This, and all github.com/twitter projects, are under the [Twitter Open Source Code of Conduct](https://github.com/twitter/code-of-conduct/blob/master/code-of-conduct.md). Additionally, see the [Typelevel Code of Conduct](http://typelevel.org/conduct) for specific examples of harassing behavior that are not tolerated.
+This, and all https://github.com/twitter projects, are under the [Twitter Open Source Code of Conduct](https://github.com/twitter/code-of-conduct/blob/master/code-of-conduct.md). Additionally, see the [Typelevel Code of Conduct](http://typelevel.org/conduct) for specific examples of harassing behavior that are not tolerated.
 
 ## Contribution
 
