@@ -99,7 +99,11 @@ NS_ASSUME_NONNULL_BEGIN
     NSDictionary *views = NSDictionaryOfVariableBindings(topBar);
 
     [TWTRViewUtil addVisualConstraints:@"H:|[topBar]|" views:views];
-    [TWTRViewUtil addVisualConstraints:@"V:|[topBar]" views:views];
+    if (@available(iOS 11, *)) {
+      [topBar.topAnchor constraintEqualToAnchor: self.view.safeAreaLayoutGuide.topAnchor].active = YES;
+    } else {
+      [TWTRViewUtil addVisualConstraints:@"V:|[topBar]" views:views];
+    }
 
     UIBarButtonItem *button = [self makeCloseButton];
     UINavigationItem *item = [[UINavigationItem alloc] init];
