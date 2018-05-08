@@ -47,7 +47,7 @@ Using Twitter Kit from source in production applications is not officially suppo
 
 To add Twitter Kit to your app, simply add `TwitterKit` to your Podfile.
 
-```
+```ruby
 target 'MyApp' do
   use_frameworks!
   pod 'TwitterKit'
