@@ -80,7 +80,13 @@ NS_ASSUME_NONNULL_BEGIN
     NSDictionary *views = NSDictionaryOfVariableBindings(bottomBar);
 
     [TWTRViewUtil addVisualConstraints:@"H:|[bottomBar]|" views:views];
-    [TWTRViewUtil addVisualConstraints:@"V:[bottomBar(60)]|" views:views];
+    [TWTRViewUtil addVisualConstraints:@"V:[bottomBar(60)]" views:views];
+    
+    if (@available(iOS 11, *)) {
+        [bottomBar.bottomAnchor constraintEqualToAnchor:self.safeAreaLayoutGuide.bottomAnchor].active = YES;
+    } else {
+        [TWTRViewUtil constraintToBottomOfSuperview:bottomBar].active = YES;
+    }
 
     _bottomBarContainer = bottomBar;
 
