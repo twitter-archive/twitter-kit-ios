@@ -356,6 +356,8 @@ static TWTRTwitter *sharedTwitter;
     } else {
         [self.scribeSink didStartOAuthLogin];
 
+        __weak typeof(viewController) weakViewController = viewController;
+        
         self.mobileSSO = [[TWTRMobileSSO alloc] initWithAuthConfig:self.sessionStore.authConfig];
         [self.mobileSSO attemptAppLoginWithCompletion:^(TWTRSession *session, NSError *error) {
             if (session) {
@@ -365,9 +367,10 @@ static TWTRTwitter *sharedTwitter;
                     // The user tapped "Cancel"
                     completion(session, error);
                 } else {
+                    typeof(viewController) strongViewController = weakViewController;
                     // There wasn't a Twitter app
                     [[TWTRTwitter sharedInstance].scribeSink didFailSSOLogin];
-                    [self performWebBasedLogin:viewController completion:completion];
+                    [self performWebBasedLogin:strongViewController completion:completion];
                 }
             }
         }];
@@ -384,12 +387,15 @@ static TWTRTwitter *sharedTwitter;
 
     self.webAuthenticationFlow = [[TWTRWebAuthenticationFlow alloc] initWithSessionStore:self.sessionStore];
 
+    __weak typeof(viewController) weakViewController = viewController;
     [self.webAuthenticationFlow beginAuthenticationFlow:^(UIViewController *controller) {
+        typeof(viewController) strongViewController = weakViewController;
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
-        [viewController presentViewController:navigationController animated:YES completion:nil];
+        [strongViewController presentViewController:navigationController animated:YES completion:nil];
     }
         completion:^(TWTRSession *session, NSError *error) {
-            [viewController dismissViewControllerAnimated:YES completion:nil];
+            typeof(viewController) strongViewController = weakViewController;
+            [strongViewController dismissViewControllerAnimated:YES completion:nil];
             completion(session, error);
         }];
 }
