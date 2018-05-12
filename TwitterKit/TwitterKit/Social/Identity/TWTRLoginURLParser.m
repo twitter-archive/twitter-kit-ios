@@ -80,6 +80,9 @@
 {
     NSDictionary *parameters = [TWTRNetworkingUtil parametersFromQueryString:url.absoluteString];
     NSString *token = parameters[TWTRAuthOAuthTokenKey];
+    if (token == nil) {
+        token = parameters[TWTRAuthAppOAuthDeniedKey];
+    }
 
     return [[[TWTRTwitter sharedInstance] sessionStore] isValidOauthToken:token];
 }
