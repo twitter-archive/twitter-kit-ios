@@ -292,9 +292,9 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
 
     self.scrollView.alwaysBounceVertical = YES;
 
-    if (@available(iOS 11.0, *)) {
-        self.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    }
+//    if (@available(iOS 11.0, *)) {
+//        self.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+//    }
 
     self.tableView.bounces = NO;
 
@@ -435,7 +435,7 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
     if (@available(iOS 11.0, *)) {
         _scrollViewTopConstraint.active = NO;
         _scrollViewTopConstraint = [_scrollView.topAnchor constraintEqualToAnchor:self.view.topAnchor
-                                                                         constant:self.navigationController.navigationBar.frame.size.height];
+                                                                         constant:0.0f];
         _scrollViewTopConstraint.active = YES;
     }
     _tableViewHeightConstraint.active = NO;
