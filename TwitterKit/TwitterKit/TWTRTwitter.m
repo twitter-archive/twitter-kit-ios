@@ -16,7 +16,6 @@
  */
 
 #import "TWTRTwitter.h"
-#import <TwitterCore/TFSScribe.h>
 #import <TwitterCore/TWTRAPIConstantsUser.h>
 #import <TwitterCore/TWTRAPIServiceConfig.h>
 #import <TwitterCore/TWTRAPIServiceConfigRegistry.h>
@@ -29,7 +28,6 @@
 #import <TwitterCore/TWTRNetworkingConstants.h>
 #import <TwitterCore/TWTRNetworkingPipeline.h>
 #import <TwitterCore/TWTRResourcesUtil.h>
-#import <TwitterCore/TWTRScribeService.h>
 #import <TwitterCore/TWTRSessionRefreshStrategy.h>
 #import <TwitterCore/TWTRSessionStore.h>
 #import <TwitterCore/TWTRSessionStore_Private.h>
@@ -46,8 +44,6 @@
 #import "TWTRNotificationConstants.h"
 #import "TWTRPersistentStore.h"
 #import "TWTRRuntime.h"
-#import "TWTRScribeAPIServiceConfig.h"
-#import "TWTRScribeSink.h"
 #import "TWTRSessionMigrator.h"
 #import "TWTRSystemAccountSerializer.h"
 #import "TWTRTweetCache.h"
@@ -157,11 +153,9 @@ static TWTRTwitter *sharedTwitter;
 
     NSString *cacheDir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
 
-    [self setupScribeSink];
     [self setupImageLoaderWithCacheDir:cacheDir];
 
     [self setupNetworkingSessionStackWithAccessGroup:accessGroup];
-    [self populateScribeService];
     [TWTRResourcesUtil setKitVersion:TWTRVersion];
 
     [self kitDidFinishStarting];
@@ -231,10 +225,6 @@ static TWTRTwitter *sharedTwitter;
     TWTRAPIClient *client = [[TWTRAPIClient alloc] initWithUserID:session.userID];
 
     [client verifySessionWithCompletion:^(id object, NSError *error) {
-        if (!error) {
-            [self.scribeSink didVerifyCredentialsForSession:session];
-        }
-
 #if DEBUG
         if (error) {
             NSLog(@"Error verifying user session %@: %@", session.userID, error);
@@ -266,20 +256,6 @@ static TWTRTwitter *sharedTwitter;
     [[TWTRAPIServiceConfigRegistry defaultRegistry] registerServiceConfig:cardsConfig forType:TWTRAPIServiceConfigTypeCards];
 }
 
-- (void)setupScribeSink
-{
-    NSURL *scribeModelURL = [[TWTRResourcesUtil bundleWithBundlePath:TWTRResourceBundleLocation] URLForResource:@"TFSScribe" withExtension:@"momd"];
-    NSAssert(scribeModelURL != nil, @"Failed to create a Scribe model");
-
-    TFSScribe *scribe = [[TFSScribe alloc] initWithStoreURL:[self scribeStoreURL] modelURL:scribeModelURL];
-    TWTRScribeAPIServiceConfig *twitterScribeConfig = [[TWTRScribeAPIServiceConfig alloc] init];
-
-    _scribeService = [[TWTRScribeService alloc] initWithScribe:scribe scribeAPIServiceConfig:twitterScribeConfig];
-    _scribeSink = [[TWTRScribeSink alloc] initWithScribeService:_scribeService];
-
-    [self removeScribeDocumentFromDocumentsDirectory];
-}
-
 - (void)setupNetworkingSessionStackWithAccessGroup:(nullable NSString *)accessGroup
 {
     NSURLSession *URLSession = [TWTRAPIClient URLSession];
@@ -288,7 +264,7 @@ static TWTRTwitter *sharedTwitter;
 
     TWTRGuestSessionRefreshStrategy *guestSessionRefreshStrategy = [[TWTRGuestSessionRefreshStrategy alloc] initWithAuthConfig:_authConfig APIServiceConfig:defaultConfig];
 
-    _sessionStore = [[TWTRSessionStore alloc] initWithAuthConfig:_authConfig APIServiceConfig:defaultConfig refreshStrategies:@[guestSessionRefreshStrategy] URLSession:URLSession errorLogger:self.scribeSink accessGroup:accessGroup];
+    _sessionStore = [[TWTRSessionStore alloc] initWithAuthConfig:_authConfig APIServiceConfig:defaultConfig refreshStrategies:@[guestSessionRefreshStrategy] URLSession:URLSession accessGroup:accessGroup];
 
     TWTRSessionMigrator *migrator = [[TWTRSessionMigrator alloc] init];
     [migrator runMigrationWithDestination:_sessionStore removeOnSuccess:NO];
@@ -330,13 +306,6 @@ static TWTRTwitter *sharedTwitter;
     _imageLoader = imageLoader;
 }
 
-- (void)populateScribeService
-{
-    TWTRParameterAssertOrReturn(self.scribeService);
-    TWTRParameterAssertOrReturn([TWTRAPIClient networkingPipeline]);
-    [self.scribeService setSessionStore:_sessionStore networkingPipeline:[TWTRAPIClient networkingPipeline]];
-}
-
 #pragma mark - Login
 
 - (void)logInWithCompletion:(TWTRLogInCompletion)completion
@@ -354,8 +323,6 @@ static TWTRTwitter *sharedTwitter;
         // Throws exception if the app does not have a valid scheme
         [NSException raise:TWTRInvalidInitializationException format:@"Attempt made to Log in or Like a Tweet without a valid Twitter Kit URL Scheme set up in the app settings. Please see https://dev.twitter.com/twitterkit/ios/installation for more info."];
     } else {
-        [self.scribeSink didStartOAuthLogin];
-
         self.mobileSSO = [[TWTRMobileSSO alloc] initWithAuthConfig:self.sessionStore.authConfig];
         [self.mobileSSO attemptAppLoginWithCompletion:^(TWTRSession *session, NSError *error) {
             if (session) {
@@ -366,7 +333,6 @@ static TWTRTwitter *sharedTwitter;
                     completion(session, error);
                 } else {
                     // There wasn't a Twitter app
-                    [[TWTRTwitter sharedInstance].scribeSink didFailSSOLogin];
                     [self performWebBasedLogin:viewController completion:completion];
                 }
             }
@@ -435,49 +401,6 @@ static TWTRTwitter *sharedTwitter;
 - (NSURL *)applicationSupportDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask] lastObject];
-}
-
-- (NSURL *)scribeStoreURL
-{
-    NSURL *baseURL = [[self applicationSupportDirectory] URLByAppendingPathComponent:@"com.twitterkit" isDirectory:YES];
-    NSError *error;
-    if (![[NSFileManager defaultManager] createDirectoryAtURL:baseURL withIntermediateDirectories:YES attributes:nil error:&error]) {
-        NSLog(@"Unable to create directory at %@", baseURL);
-    }
-
-    return [baseURL URLByAppendingPathComponent:@"scribe.sqlite"];
-}
-
-- (void)removeScribeDocumentFromDocumentsDirectory
-{
-    NSFileManager *manager = [NSFileManager defaultManager];
-    NSURL *baseURL = [self applicationDocumentsDirectory];
-
-    [manager removeItemAtURL:[baseURL URLByAppendingPathComponent:@"scribe.sqlite"] error:nil];
-    [manager removeItemAtURL:[baseURL URLByAppendingPathComponent:@"scribe.sqlite-shm"] error:nil];
-    [manager removeItemAtURL:[baseURL URLByAppendingPathComponent:@"scribe.sqlite-wal"] error:nil];
-}
-
-#pragma mark - Testing Helpers
-
-/**
- * This method is only here to enable a couple of existing tests. Those tests should be
- * refactored so we don't need to update the scribe sink and then this method can be
- * removed. This method will throw an exception if it is not called from a unit test.
- */
-- (void)performWithScribeSink:(TWTRScribeSink *)sink action:(void (^)())action
-{
-    if (![TWTRRuntime isRunningUnitTests]) {
-        [NSException raise:NSGenericException format:@"method should only be called wihin a unit test"];
-    }
-
-    TWTRParameterAssertOrReturn(action);
-    TWTRParameterAssertOrReturn(sink);
-
-    TWTRScribeSink *original = self.scribeSink;
-    _scribeSink = sink;
-    action();
-    _scribeSink = original;
 }
 
 @end

@@ -20,7 +20,6 @@
 #import <TwitterCore/TWTRSessionStore.h>
 #import "TWTRCollectionTimelineDataSource.h"
 #import "TWTRNotificationConstants.h"
-#import "TWTRScribeSink.h"
 #import "TWTRTableViewAdPlacer.h"
 #import "TWTRTableViewProxy.h"
 #import "TWTRTimelineCursor.h"
@@ -162,7 +161,6 @@ static CGFloat const TWTREstimatedRowHeight = 150;
             TWTRCollectionTimelineDataSource *collectionDataSource = (TWTRCollectionTimelineDataSource *)self.dataSource;
             timelineID = collectionDataSource.collectionID;
         }
-        [TWTRTwitter.sharedInstance.scribeSink didShowTimelineOfType:self.dataSource.timelineType timelineID:timelineID];
     }
     [self loadNewestTweets];
 
@@ -351,10 +349,6 @@ static CGFloat const TWTREstimatedRowHeight = 150;
                                                    }
                                                    self.currentCursor = cursor;
                                                    [self.tableViewProxy reloadData];
-
-                                                   // Scribe number of filter every time tweets reload
-                                                   NSUInteger filterCount = self.dataSource.timelineFilter.filterCount;
-                                                   [TWTRTwitter.sharedInstance.scribeSink didFilterWithTweetsShown:filterCount];
 
                                                } else if (error) {
                                                    NSLog(@"[TwitterKit] Couldn't load Tweets from TWTRTimelineViewController: %@", error);

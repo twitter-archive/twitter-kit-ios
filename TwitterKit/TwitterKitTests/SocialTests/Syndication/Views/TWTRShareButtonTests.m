@@ -48,10 +48,6 @@ static TWTRTweet *testTweet;
 @property (nonatomic, assign) BOOL shouldSucceed;
 @end
 @implementation StubActivityViewController
-- (instancetype)init
-{
-    return [super initWithActivityItems:@[] applicationActivities:nil];
-}
 - (void)setCompletionWithItemsHandler:(UIActivityViewControllerCompletionWithItemsHandler)completionHandler
 {
     completionHandler(@"mailActivity", self.shouldSucceed, nil, nil);
@@ -103,7 +99,7 @@ void imitateDevice(UIUserInterfaceIdiom idiom)
 {
     OCMExpect([self.mockNotificationCenter postNotificationName:@"TWTRDidShareTweetNotification" tweet:testTweet userInfo:nil]);
     id mockUIActivityViewController = [OCMockObject niceMockForClass:[UIActivityViewController class]];
-    StubActivityViewController *stubActivity = [StubActivityViewController new];
+    StubActivityViewController *stubActivity = [[StubActivityViewController alloc] initWithActivityItems:@[] applicationActivities:nil];
     stubActivity.shouldSucceed = YES;
     [[[mockUIActivityViewController expect] andReturn:stubActivity] alloc];
 
@@ -115,8 +111,10 @@ void imitateDevice(UIUserInterfaceIdiom idiom)
 {
     OCMExpect([self.mockNotificationCenter postNotificationName:@"TWTRCancelledShareTweetNotification" tweet:testTweet userInfo:nil]);
 
+    StubActivityViewController *stubActivity = [[StubActivityViewController alloc] initWithActivityItems:@[] applicationActivities:nil];
+
     id mockUIActivityViewController = [OCMockObject niceMockForClass:[UIActivityViewController class]];
-    [[[mockUIActivityViewController expect] andReturn:[StubActivityViewController new]] alloc];
+    [[[mockUIActivityViewController expect] andReturn:stubActivity] alloc];
 
     [self.tweetView.shareButton shareButtonTapped];
     [self.mockNotificationCenter verify];

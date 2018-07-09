@@ -93,7 +93,6 @@
         _displayLinkWrapper.actionBlock = [self displayLinkDidFireBlock];
 
         _videoPlayerView.delegate = self;
-        _videoPlayerView.scribeDelegate = self;
         _controlsView.delegate = self;
 
         [self synchronizeUI];
@@ -222,16 +221,6 @@
                      animations:^{
                          self.controlsView.alpha = 1.0;
                      }];
-}
-
-#pragma mark - TWTRVideoPlayerScribeDelegate
-
-// The synchronizer might go away in the future but it acts as a proxy so we can decouple Twitter models in TWTRVideoViewController from the player
-- (void)videoPlayer:(TWTRVideoPlayerOutputView *)player didPlayPercentOfMedia:(NSUInteger)percentOfMedia playbackConfiguration:(TWTRVideoPlaybackConfiguration *)playbackConfiguration
-{
-    if ([self.scribeDelegate respondsToSelector:@selector(videoPlayer:didPlayPercentOfMedia:playbackConfiguration:)]) {
-        [self.scribeDelegate videoPlayer:player didPlayPercentOfMedia:percentOfMedia playbackConfiguration:playbackConfiguration];
-    }
 }
 
 @end

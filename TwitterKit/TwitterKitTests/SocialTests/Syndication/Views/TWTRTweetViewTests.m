@@ -114,42 +114,6 @@
     XCTAssert(tweetView.contentView.mediaView != nil);
 }
 
-#pragma mark - Calculation Only
-
-- (void)testCalculationOnly_DoesNotScribeImpression
-{
-    TWTRTweetView *tweetView = [[TWTRTweetView alloc] initWithTweet:nil];
-    tweetView.calculationOnly = YES;
-
-    id scribeSinkMock = OCMPartialMock([TWTRScribeSink new]);
-    [[[scribeSinkMock reject] ignoringNonObjectArgs] didShowTweetWithID:OCMOCK_ANY style:0 showingActions:0];
-
-    [[TWTRTwitter sharedInstance] performWithScribeSink:scribeSinkMock
-                                                 action:^{
-                                                     [tweetView configureWithTweet:self.retweet];
-                                                 }];
-
-    OCMVerifyAll(scribeSinkMock);
-    [scribeSinkMock stopMocking];
-}
-
-- (void)testCalculationOnly_DoesNotScribeVideo
-{
-    TWTRTweetView *tweetView = [[TWTRTweetView alloc] initWithTweet:nil];
-    tweetView.calculationOnly = YES;
-
-    id scribeSinkMock = OCMPartialMock([TWTRScribeSink new]);
-    [[scribeSinkMock reject] didShowMediaEntities:OCMOCK_ANY inTweetID:OCMOCK_ANY publishedByOwnerID:OCMOCK_ANY];
-
-    [[TWTRTwitter sharedInstance] performWithScribeSink:scribeSinkMock
-                                                 action:^{
-                                                     [tweetView configureWithTweet:self.retweet];
-                                                 }];
-
-    OCMVerifyAll(scribeSinkMock);
-    [scribeSinkMock stopMocking];
-}
-
 #pragma mark - Text
 
 - (void)testRegularTweetText
@@ -222,35 +186,6 @@
 
         XCTAssertEqualWithAccuracy(calculatorHeight, autolayoutHeight, 1.5f);
     }
-}
-
-- (void)testConfigureWithTweetScribeWithStyleCompact
-{
-    id scribeSinkMock = [OCMockObject mockForClass:[TWTRScribeSink class]];
-
-    OCMExpect([scribeSinkMock didShowTweetWithID:self.retweet.tweetID style:TWTRTweetViewStyleCompact showingActions:NO]);
-
-    [[TWTRTwitter sharedInstance] performWithScribeSink:scribeSinkMock
-                                                 action:^{
-                                                     [self.compactTweetView configureWithTweet:self.retweet];
-                                                 }];
-
-    OCMVerifyAll(scribeSinkMock);
-}
-
-- (void)testConfigureWithTweetScribeWithStyleRegular
-{
-    self.regularTweetView.showActionButtons = YES;
-
-    id scribeSinkMock = [OCMockObject mockForClass:[TWTRScribeSink class]];
-    OCMExpect([scribeSinkMock didShowTweetWithID:self.retweet.tweetID style:TWTRTweetViewStyleRegular showingActions:YES]);
-
-    [[TWTRTwitter sharedInstance] performWithScribeSink:scribeSinkMock
-                                                 action:^{
-                                                     [self.regularTweetView configureWithTweet:self.retweet];
-                                                 }];
-
-    OCMVerifyAll(scribeSinkMock);
 }
 
 #pragma mark - Media

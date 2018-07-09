@@ -19,7 +19,6 @@
 
 #import <TwitterCore/TWTRAssertionMacros.h>
 
-#import "TWTRScribeSink.h"
 #import "TWTRTweet.h"
 #import "TWTRTwitter_Private.h"
 #import "TWTRUser.h"
@@ -39,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Init
 
-- (instancetype)initWithTweet:(TWTRTweet *)tweet playbackConfiguration:(TWTRVideoPlaybackConfiguration *)playbackConfiguration scribeSink:(nullable TWTRScribeSink *)scribeSink controlsView:(nullable TWTRVideoControlsView *)controlsView previewImage:(nullable UIImage *)previewImage
+- (instancetype)initWithTweet:(TWTRTweet *)tweet playbackConfiguration:(TWTRVideoPlaybackConfiguration *)playbackConfiguration controlsView:(nullable TWTRVideoControlsView *)controlsView previewImage:(nullable UIImage *)previewImage
 {
     TWTRParameterAssertOrReturnValue(tweet, nil);
     TWTRParameterAssertOrReturnValue(playbackConfiguration, nil);
@@ -49,7 +48,6 @@ NS_ASSUME_NONNULL_BEGIN
         _playbackConfiguration = playbackConfiguration;
         _controlsView = controlsView;
         _previewImage = previewImage;
-        _scribeSink = scribeSink;
         _shouldSetChromeVisible = YES;
         _aspectRatio = TWTRVideoPlayerAspectRatioAspect;
 
@@ -111,7 +109,7 @@ NS_ASSUME_NONNULL_BEGIN
     self.controlsView.translatesAutoresizingMaskIntoConstraints = NO;
     [bottomBar addSubview:self.controlsView];
 
-    NSDictionary *views = @{@"controls": self.controlsView};
+    NSDictionary *views = @{ @"controls": self.controlsView };
 
     [TWTRViewUtil addVisualConstraints:@"H:|[controls]|" views:views];
     [TWTRViewUtil addVisualConstraints:@"V:[controls]|" views:views];
@@ -164,7 +162,6 @@ NS_ASSUME_NONNULL_BEGIN
 {
     if (self.playerView && self.controlsView) {
         _synchronizer = [[TWTRVideoControlsViewSynchronizer alloc] initWithVideoPlayer:self.playerView controls:self.controlsView];
-        _synchronizer.scribeDelegate = self;
         _synchronizer.delegate = self;
     }
 }
@@ -331,19 +328,6 @@ NS_ASSUME_NONNULL_BEGIN
 {
     if ([self.delegate respondsToSelector:@selector(playerViewDidBecomeReady:shouldAutoPlay:)]) {
         [self.delegate playerViewDidBecomeReady:self shouldAutoPlay:self.playerView.shouldAutoPlay];
-    }
-}
-
-#pragma mark - TWTRVideoPlayerOutputViewScribeDelegate
-
-- (void)videoPlayer:(TWTRVideoPlayerOutputView *)player didPlayPercentOfMedia:(NSUInteger)percentOfMedia playbackConfiguration:(TWTRVideoPlaybackConfiguration *)playbackConfiguration
-{
-    if (!self.window) {
-        [self pauseVideo];
-    }
-
-    if (self.scribeSink) {
-        [self.scribeSink didPlayPercentOfMedia:percentOfMedia fromPlaybackConfiguration:playbackConfiguration inTweetID:self.tweet.tweetID publishedByOwnerID:self.tweet.author.userID];
     }
 }
 

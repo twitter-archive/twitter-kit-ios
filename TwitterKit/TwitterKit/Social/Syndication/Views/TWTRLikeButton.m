@@ -27,7 +27,6 @@
 #import "TWTRImages.h"
 #import "TWTRNotificationCenter.h"
 #import "TWTRNotificationConstants.h"
-#import "TWTRScribeSink.h"
 #import "TWTRStore.h"
 #import "TWTRTranslationsUtil.h"
 #import "TWTRTweet.h"
@@ -50,7 +49,6 @@ typedef void (^TWTRTweetActionAPIClientCompletion)(TWTRAPIClient *_Nullable APIC
 @end
 
 @implementation TWTRLikeButton
-@synthesize scribeViewName = _scribeViewName;
 
 #pragma mark - Init
 
@@ -158,12 +156,6 @@ typedef void (^TWTRTweetActionAPIClientCompletion)(TWTRAPIClient *_Nullable APIC
                 NSString *notificationName = attemptingToLike ? TWTRDidLikeTweetNotification : TWTRDidUnlikeTweetNotification;
                 [TWTRNotificationCenter postNotificationName:notificationName tweet:tweet userInfo:nil];
 
-                // scribes
-                if (attemptingToLike) {
-                    [[TWTRTwitter sharedInstance].scribeSink didLikeTweetWithID:tweet.tweetID forUserID:tweet.perspectivalUserID fromViewName:self.scribeViewName];
-                } else {
-                    [[TWTRTwitter sharedInstance].scribeSink didUnlikeTweetWithID:tweet.tweetID forUserID:tweet.perspectivalUserID fromViewName:self.scribeViewName];
-                }
             } else {  // Must revert assumed state
                 [self configureWithTweet:originalTweet];
                 [[TWTRTweetRepository sharedInstance] cacheTweet:originalTweet perspective:client.userID];

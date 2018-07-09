@@ -31,7 +31,6 @@
 #import "TWTRMobileSSO.h"
 #import "TWTRMockURLSessionProtocol.h"
 #import "TWTRNotificationConstants.h"
-#import "TWTRScribeSink.h"
 #import "TWTRStubMobileSSO.h"
 #import "TWTRStubTwitterClient.h"
 #import "TWTRTestCase.h"
@@ -135,19 +134,6 @@
 
     XCTAssertThrows([self.twitterKit logInWithCompletion:^(TWTRSession *_Nullable session, NSError *_Nullable error){
     }]);
-}
-
-- (void)testLoginWithViewController_scribesStart
-{
-    id scribeSinkMock = [OCMockObject niceMockForClass:[TWTRScribeSink class]];
-    OCMExpect([scribeSinkMock didStartOAuthLogin]);
-    self.twitterKit.scribeSink = scribeSinkMock;
-
-    TWTRLogInCompletion testCompletion = ^(TWTRSession *session, NSError *error) {
-    };
-    [self.twitterKit logInWithCompletion:testCompletion];
-
-    OCMVerifyAll(scribeSinkMock);
 }
 
 - (void)testLoginWithViewController_callsAttemptAppLogin

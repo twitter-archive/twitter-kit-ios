@@ -19,7 +19,6 @@
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
 
-#import "TWTRScribableView.h"
 #import "TWTRTweetViewDelegate.h"
 
 @class TWTRTweet;
@@ -34,7 +33,7 @@ typedef NS_ENUM(NSInteger, TWTRShareButtonSize) {
     TWTRShareButtonSizeLarge
 };
 
-@interface TWTRShareButton : UIButton <TWTRScribableView>
+@interface TWTRShareButton : UIButton
 
 /**
  *  The view controller from which to present the Share Sheet and

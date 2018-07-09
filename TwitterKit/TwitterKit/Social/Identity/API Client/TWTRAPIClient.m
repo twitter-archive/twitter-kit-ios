@@ -38,7 +38,6 @@
 #import "TWTRAPIConstantsTimelines.h"
 #import "TWTRJSONSerialization.h"
 #import "TWTRMediaType.h"
-#import "TWTRScribeSink.h"
 #import "TWTRTimelineCursor.h"
 #import "TWTRTimelineFilterManager.h"
 #import "TWTRTimelineParser.h"
@@ -341,10 +340,6 @@ static id<TWTRSessionStore_Private> TWTRSharedSessionStore = nil;
 
 - (void)loadTweetsWithIDs:(NSArray *)tweetIDStrings completion:(TWTRLoadTweetsCompletion)completion
 {
-    NSParameterAssert(TWTRTwitter.sharedInstance.scribeSink);
-    // Scribe the loadTweet request so we know what Tweets were requested
-    [TWTRTwitter.sharedInstance.scribeSink didLoadTweetsWithIDs:tweetIDStrings];
-
     TWTRLoadTweetsCompletion completionWithPerspectivalUserID = ^(NSArray *tweets, NSError *error) {
         NSArray *perspectivalTweets = [[self class] perspectivalTweets:tweets userID:self.userID];
         completion(perspectivalTweets, error);

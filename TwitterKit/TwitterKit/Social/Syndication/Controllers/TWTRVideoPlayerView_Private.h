@@ -26,12 +26,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TWTRVideoPlayerView () <TWTRVideoPlayerOutputViewDelegate, TWTRVideoPlayerScribeDelegate, UIGestureRecognizerDelegate, TWTRVideoCTAViewDelegate, TWTRVideoControlsViewSynchronizerDelegate>
+@interface TWTRVideoPlayerView () <TWTRVideoPlayerOutputViewDelegate, UIGestureRecognizerDelegate, TWTRVideoCTAViewDelegate, TWTRVideoControlsViewSynchronizerDelegate>
 
 @property (nonatomic, readonly) TWTRTweet *tweet;
 @property (nonatomic, readonly) TWTRVideoPlaybackConfiguration *playbackConfiguration;
 @property (nonatomic, readonly) TWTRVideoPlayerOutputView *playerView;
-@property (nonatomic, readonly) TWTRScribeSink *scribeSink;
 
 @property (nonatomic, nullable) TWTRVideoControlsView *controlsView;
 @property (nonatomic, readonly, nullable) TWTRVideoControlsViewSynchronizer *synchronizer;

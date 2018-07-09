@@ -16,13 +16,11 @@
  */
 
 #import "TWTRSEAccount.h"
-#import "TWTRSEScribe.h"
 #import "TWTRSESheetPresentationController.h"
 #import "TWTRSETweetComposerViewController.h"
 #import "TWTRSETweetShareConfiguration.h"
 #import "TWTRSETweetShareNavigationController.h"
 #import "TWTRSETweetShareViewController.h"
-#import "TWTRSEUIScribeEvent+Private.h"
 
 @interface TWTRSETweetShareViewController ()
 
@@ -53,18 +51,6 @@
     return self;
 }
 
-- (void)_tseui_scribeAction:(NSString *)action
-{
-    id<TWTRSEScribe> scribe = _configuration.scribe;
-    id<TWTRSEAccount> account = _configuration.initiallySelectedAccount;
-    if (scribe && account) {
-        [scribe scribeEvent:[[TWTRSEUIScribeEvent alloc] initWithUser:@(account.userID)
-                                                           element:@""
-                                                            action:action]];
-    }
-
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -77,7 +63,6 @@
     [self addChildViewController:_navigationController];
     [self.view addSubview:_navigationController.view];
     [_navigationController didMoveToParentViewController:self];
-    [self _tseui_scribeAction:@"load"];
 }
 
 - (void)viewWillLayoutSubviews
@@ -90,7 +75,6 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self _tseui_scribeAction:@"impression"];
 }
 
 - (void)preferredContentSizeDidChangeForChildContentContainer:(id<UIContentContainer>)container

@@ -20,7 +20,6 @@
 #import <XCTest/XCTest.h>
 #import "TWTRComposerNetworking.h"
 #import "TWTRFixtureLoader.h"
-#import "TWTRScribeSink.h"
 #import "TWTRSharedComposerWrapper.h"
 #import "TWTRTweet.h"
 #import "TWTRTwitter.h"
@@ -118,55 +117,6 @@ UIImage *videoThumbnail(NSURL *url);
     UIImage *previewImage = [UIImage new];
     TWTRSharedComposerWrapper *composer = [[TWTRSharedComposerWrapper alloc] initWithInitialText:nil image:previewImage videoData:videoData];
     XCTAssertEqualObjects(composer.networking.pendingVideoData, [TWTRFixtureLoader videoData]);
-}
-
-#pragma mark - Scribing
-
-- (void)testScribe_openComposer
-{
-    // Set up expectation
-    id mockScribeSink = OCMClassMock([TWTRScribeSink class]);
-    OCMExpect([mockScribeSink didOpenComposer]);
-    [TWTRTwitter sharedInstance].scribeSink = mockScribeSink;
-
-    // Trigger the scribe call
-    id wrapper = [[TWTRSharedComposerWrapper alloc] initWithInitialText:nil image:nil videoURL:nil];
-    XCTAssertNotNil(wrapper);
-
-    // Verify
-    OCMVerifyAll(mockScribeSink);
-}
-
-- (void)testScribe_tapCancel
-{
-    TWTRSharedComposerWrapper *composer = [[TWTRSharedComposerWrapper alloc] initWithInitialText:nil image:nil videoURL:nil];
-
-    // Set up expectation
-    id mockScribeSink = OCMClassMock([TWTRScribeSink class]);
-    OCMExpect([mockScribeSink didTapCancelFromComposerWithSelectedUserID:OCMOCK_ANY]);
-    [TWTRTwitter sharedInstance].scribeSink = mockScribeSink;
-
-    // Trigger the scribe call
-    [composer shareViewControllerWantsToCancelComposerWithPartiallyComposedTweet:[TWTRSETweet new]];
-
-    // Verify
-    OCMVerifyAll(mockScribeSink);
-}
-
-- (void)testScribe_tapSend
-{
-    TWTRSharedComposerWrapper *composer = [[TWTRSharedComposerWrapper alloc] initWithInitialText:nil image:nil videoURL:nil];
-
-    // Set up expectation
-    id mockScribeSink = OCMClassMock([TWTRScribeSink class]);
-    OCMExpect([mockScribeSink didTapSendFromComposerWithSelectedUserID:OCMOCK_ANY]);
-    [TWTRTwitter sharedInstance].scribeSink = mockScribeSink;
-
-    // Trigger the scribe call
-    [composer shareViewControllerDidFinishSendingTweet];
-
-    // Verify
-    OCMVerifyAll(mockScribeSink);
 }
 
 #pragma mark - TWTRSETweetShareViewControllerDelegate Protocol Methods

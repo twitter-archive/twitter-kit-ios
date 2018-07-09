@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @implementation TWTRVideoViewController
 
-- (instancetype)initWithTweet:(TWTRTweet *)tweet playbackConfiguration:(TWTRVideoPlaybackConfiguration *)playbackConfig scribeSink:(nullable TWTRScribeSink *)scribeSink previewImage:(nullable UIImage *)previewImage playerView:(nullable TWTRVideoPlayerView *)playerView
+- (instancetype)initWithTweet:(TWTRTweet *)tweet playbackConfiguration:(TWTRVideoPlaybackConfiguration *)playbackConfig previewImage:(nullable UIImage *)previewImage playerView:(nullable TWTRVideoPlayerView *)playerView
 {
     TWTRParameterAssertOrReturnValue(tweet, nil);
     TWTRParameterAssertOrReturnValue(playbackConfig, nil);
@@ -46,10 +46,9 @@ NS_ASSUME_NONNULL_BEGIN
         _tweet = tweet;
         _playbackConfiguration = playbackConfig;
         _thumbnailImage = previewImage;
-        _scribeSink = scribeSink;
 
         if (!playerView) {
-            _playerView = [[TWTRVideoPlayerView alloc] initWithTweet:tweet playbackConfiguration:playbackConfig scribeSink:scribeSink controlsView:[TWTRVideoControlsView fullscreenControls] previewImage:previewImage];
+            _playerView = [[TWTRVideoPlayerView alloc] initWithTweet:tweet playbackConfiguration:playbackConfig controlsView:[TWTRVideoControlsView fullscreenControls] previewImage:previewImage];
         } else {
             _playerView = playerView;
             _playerView.delegate = self;
@@ -110,15 +109,6 @@ NS_ASSUME_NONNULL_BEGIN
 {
     if (self.mediaContainer) {
         [self.mediaContainer setChromeVisible:visible animated:animated];
-    }
-}
-
-#pragma mark - TWTRVideoPlayerViewDelegate
-
-- (void)playerViewDidBecomeReady:(TWTRVideoPlayerView *)playerView shouldAutoPlay:(BOOL)shouldAutoPlay
-{
-    if (shouldAutoPlay && self.playerView == playerView) {
-        [self.scribeSink didBeginPlaybackFromPlaybackConfiguration:self.playbackConfiguration inTweetID:self.tweet.tweetID publishedByOwnerID:self.tweet.author.userID isInlinePlayback:NO];
     }
 }
 

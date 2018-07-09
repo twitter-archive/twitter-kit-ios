@@ -24,7 +24,6 @@
 @class TWTRSession;
 @protocol TWTRAuthSession;
 @protocol TWTRAPIServiceConfig;
-@protocol TWTRErrorLogger;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -57,7 +56,7 @@ typedef void (^TWTRNetworkSessionProviderGuestLogInCompletion)(TWTRGuestSession 
  */
 @protocol TWTRNetworkSessionProvider <NSObject>
 
-+ (void)userSessionWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig errorLogger:(id<TWTRErrorLogger>)errorLogger completion:(TWTRNetworkSessionProviderUserLogInCompletion)completion __TVOS_UNAVAILABLE;
++ (void)userSessionWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig completion:(TWTRNetworkSessionProviderUserLogInCompletion)completion __TVOS_UNAVAILABLE;
 
 + (void)verifyUserSession:(id<TWTRAuthSession>)userSession withAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig URLSession:(NSURLSession *)URLSession completion:(TWTRNetworkSessionProviderUserLogInCompletion)completion;
 

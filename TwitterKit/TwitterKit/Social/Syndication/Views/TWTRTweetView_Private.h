@@ -19,7 +19,6 @@
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
 
-#import "TWTRScribeSink.h"
 #import "TWTRTweetViewMetrics.h"
 
 @class TWTRLikeButton;

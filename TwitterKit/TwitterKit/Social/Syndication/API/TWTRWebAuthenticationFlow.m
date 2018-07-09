@@ -78,7 +78,7 @@
 {
     TWTRParameterAssertOrReturn(completion);
 
-    TWTRWebAuthenticationTokenRequestor *tokenRequestor = [[TWTRWebAuthenticationTokenRequestor alloc] initWithAuthConfig:self.sessionStore.authConfig serviceConfig:self.sessionStore.APIServiceConfig errorLogger:self.sessionStore.errorLogger];
+    TWTRWebAuthenticationTokenRequestor *tokenRequestor = [[TWTRWebAuthenticationTokenRequestor alloc] initWithAuthConfig:self.sessionStore.authConfig serviceConfig:self.sessionStore.APIServiceConfig];
     [tokenRequestor requestAuthenticationToken:^(NSString *token, NSError *error) {
         if (token) {
             completion(token);
@@ -116,14 +116,13 @@
 
 - (void)saveSession:(TWTRSession *)session
 {
-    [self.sessionStore saveSession:session
-                        completion:^(id<TWTRAuthSession> savedSession, NSError *error) {
-                            if (savedSession) {
-                                [self succeedWithSession:savedSession];
-                            } else {
-                                [self failWithError:error];
-                            }
-                        }];
+    [self.sessionStore saveSession:session completion:^(id<TWTRAuthSession> savedSession, NSError *error) {
+        if (savedSession) {
+            [self succeedWithSession:savedSession];
+        } else {
+            [self failWithError:error];
+        }
+    }];
 }
 
 - (void)failWithError:(NSError *)error

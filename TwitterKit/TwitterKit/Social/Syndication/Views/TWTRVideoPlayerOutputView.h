@@ -25,7 +25,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol TWTRVideoPlayerScribeDelegate;
 @protocol TWTRVideoPlayerOutputViewDelegate;
 
 typedef NS_ENUM(NSUInteger, TWTRVideoPlayerAspectRatio) {
@@ -72,11 +71,6 @@ typedef NS_ENUM(NSUInteger, TWTRVideoPlayerAspectRatio) {
  * The player's delegate.
  */
 @property (nonatomic, weak) id<TWTRVideoPlayerOutputViewDelegate> delegate;
-
-/**
- *  Delegate for reporting analytics.
- */
-@property (nonatomic, weak) id<TWTRVideoPlayerScribeDelegate> scribeDelegate;
 
 /**
  * The state of playback.
@@ -147,20 +141,6 @@ typedef NS_ENUM(NSUInteger, TWTRVideoPlayerAspectRatio) {
 @optional
 - (void)videoPlayer:(TWTRVideoPlayerOutputView *)player didChangePlaybackState:(TWTRVideoPlaybackState)newState;
 - (void)videoPlayerDidBecomeReady:(TWTRVideoPlayerOutputView *)player;
-
-@end
-
-@protocol TWTRVideoPlayerScribeDelegate <NSObject>
-
-/**
- *  Notifies the delegate of how much of the video has been played.
- *
- *  @param player         The player view playing the video.
- *  @param percentOfMedia Percent of the media played, 0 <= percent <= 100 and reported every 25%.
- *  @param mediaEntity    The media entity containing metadata for the video.
- *  @param playbackConfiguration  The video playback configuration containing metadata for the video.
- */
-- (void)videoPlayer:(TWTRVideoPlayerOutputView *)player didPlayPercentOfMedia:(NSUInteger)percentOfMedia playbackConfiguration:(TWTRVideoPlaybackConfiguration *)playbackConfiguration;
 
 @end
 

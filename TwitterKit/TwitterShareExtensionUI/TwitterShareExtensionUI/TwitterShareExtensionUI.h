@@ -33,7 +33,6 @@ FOUNDATION_EXTERN const unsigned char TwitterShareExtensionUIVersionString[];
 #import <TwitterShareExtensionUI/TWTRSEImageProvider.h>
 #import <TwitterShareExtensionUI/TWTRSELocalizedResources.h>
 #import <TwitterShareExtensionUI/TWTRSENetworking.h>
-#import <TwitterShareExtensionUI/TWTRSEScribe.h>
 #import <TwitterShareExtensionUI/TWTRSETweet.h>
 #import <TwitterShareExtensionUI/TWTRSETweetAttachment.h>
 #import <TwitterShareExtensionUI/TWTRSETweetShareConfiguration.h>

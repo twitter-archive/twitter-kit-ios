@@ -109,7 +109,6 @@
 #import "TWTRSETweetShareViewControllerDelegate.h"
 #import "TWTRSETweetTextViewContainer.h"
 #import "TWTRSEUIBundle.h"
-#import "TWTRSEUIScribeEvent+Private.h"
 #import "UIView+TSEExtensions.h"
 
 @import CoreLocation;
@@ -510,12 +509,6 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
 
 - (void)_tseui_tweetContentsChanged
 {
-    id<TWTRSEScribe> scribe = _configuration.scribe;
-    if (scribe) {
-        [scribe scribeEvent:[[TWTRSEUIScribeEvent alloc] initWithUser:@(self.selectedAccount.userID)
-                                                           element:@"tweet"
-                                                            action:@"change"]];
-    }
     [self _tseui_updateTweetButtonEnableState];
 }
 
@@ -712,13 +705,6 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
 
 - (void)_tseui_cancelButtonTapped
 {
-    id<TWTRSEScribe> scribe = _configuration.scribe;
-    if (scribe) {
-        [scribe scribeEvent:[[TWTRSEUIScribeEvent alloc] initWithUser:@(self.selectedAccount.userID)
-                                                           element:@"cancel"
-                                                            action:@"click"]];
-    }
-
     [_configuration.delegate shareViewControllerWantsToCancelComposerWithPartiallyComposedTweet:[self.dataSource.composedTweet copy]];
 }
 
@@ -729,32 +715,6 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
     }
 
     [self.view endEditing:YES];
-
-    id<TWTRSEScribe> scribe = _configuration.scribe;
-    if (scribe) {
-        [scribe scribeEvent:[[TWTRSEUIScribeEvent alloc] initWithUser:@(_selectedAccount.userID)
-                                                           element:@"send_tweet"
-                                                            action:@"click"]];
-        if ([self.dataSource.composedTweet.attachment isKindOfClass:[TWTRSETweetAttachmentImage class]]) {
-            [scribe scribeEvent:[[TWTRSEUIScribeEvent alloc] initWithUser:@(_selectedAccount.userID)
-                                                               element:@""
-                                                                action:@"send_photo_tweet"]];
-
-        }
-        if ([self.dataSource.composedTweet isKindOfClass:[TWTRSETweetAttachmentURL class]]) {
-            [scribe scribeEvent:[[TWTRSEUIScribeEvent alloc] initWithUser:@(_selectedAccount.userID)
-                                                               element:@""
-                                                                action:@"send_link_tweet"]];
-        }
-        if (0 < self.dataSource.composedTweet.place.placeID.length) {
-            [scribe scribeEvent:[[TWTRSEUIScribeEvent alloc] initWithUser:@(_selectedAccount.userID)
-                                                               element:@""
-                                                                action:@"send_geo_tweet"]];
-
-        }
-        // @"send_gif_tweet";
-        // @"send_video_tweet";
-    }
 
     self.isSendingTweet = YES;
 
@@ -843,13 +803,6 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
 {
     BOOL isChangedAccount = (account.userID != self.selectedAccount.userID);
     if (isChangedAccount) {
-        id<TWTRSEScribe> scribe = _configuration.scribe;
-        if (scribe) {
-            NSString *action = (0 != account.userID) ? ((0 != self.selectedAccount) ? @"changed" : @"selected") : @"deselected";
-            [scribe scribeEvent:[[TWTRSEUIScribeEvent alloc] initWithUser:@(self.selectedAccount.userID)
-                                                               element:@"user"
-                                                                action:action]];
-        }
         self.selectedAccount = account;
     }
 
@@ -863,13 +816,6 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
     BOOL isChangedLocation = (!location.placeID && self.selectedGeoPlace.placeID)
                               || (location.placeID && ![self.selectedGeoPlace.placeID isEqualToString:location.placeID]);
     if (isChangedLocation) {
-        id<TWTRSEScribe> scribe = _configuration.scribe;
-        if (scribe) {
-            NSString *action = location ? ((self.selectedGeoPlace) ? @"changed" : @"selected") : @"deselected";
-            [scribe scribeEvent:[[TWTRSEUIScribeEvent alloc] initWithUser:@(self.selectedAccount.userID)
-                                                               element:@"location"
-                                                                action:action]];
-        }
         self.selectedGeoPlace = location;
     }
 

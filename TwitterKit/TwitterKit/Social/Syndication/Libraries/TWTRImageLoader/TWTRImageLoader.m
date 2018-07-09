@@ -17,12 +17,10 @@
 
 #import "TWTRImageLoader.h"
 #import <TwitterCore/TWTRAssertionMacros.h>
-#import <TwitterCore/TWTRErrorLogger.h>
 #import <TwitterShareExtensionUI/TWTRSEImageDownloader.h>
 #import "TWTRConstants_Private.h"
 #import "TWTRImageLoaderCache.h"
 #import "TWTRImageLoaderTaskManager.h"
-#import "TWTRScribeSink.h"
 #import "TWTRTwitter_Private.h"
 
 #define TWTRImageLoaderQueueName [NSString stringWithFormat:@"%@.image-loader.current-tasks", TWTRBundleID]
@@ -145,17 +143,12 @@
                                                  completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                                                      NSError *localizedError = [TWTRImageLoader localizedErrorFromResponse:response networkError:error];
                                                      if ([data length] == 0 || localizedError) {
-                                                         dispatch_async(dispatch_get_main_queue(), ^{
-                                                             [[TWTRTwitter sharedInstance].scribeSink didEncounterError:localizedError withMessage:@"Failed to load image."];
-                                                         });
-
                                                          completion(nil, localizedError);
                                                          return;
                                                      }
 
                                                      dispatch_barrier_async(self.privateConcurrentQueue, ^{
                                                          [self.taskManager removeTaskWithRequestID:requestID];
-
                                                          dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
                                                              // TODO: add background image decoding later. Doing init phase here only offers
                                                              // very minimal gain

@@ -20,7 +20,6 @@
 #import <Accounts/Accounts.h>
 #import <OCMock/OCMock.h>
 #import <TwitterCore/TWTRConstants.h>
-#import <TwitterCore/TWTRErrorLogger.h>
 #import <TwitterCore/TWTRUtils.h>
 #import "TWTRAPIServiceConfig.h"
 #import "TWTRAppleSocialAuthenticaticationProvider.h"
@@ -31,7 +30,6 @@
 @interface TWTRAppleSocialAuthProviderTests : TWTRTestCase
 
 @property (nonatomic, readonly) TWTRAppleSocialAuthenticaticationProvider *appleSocialProvider;
-@property (nonatomic, readonly) id<TWTRErrorLogger> errorLoggerMock;
 
 @end
 
@@ -53,8 +51,7 @@
     TWTRAuthConfig *authConfig = [[TWTRAuthConfig alloc] initWithConsumerKey:@"test" consumerSecret:@"test"];
     id<TWTRAPIServiceConfig> apiServiceConfig = OCMProtocolMock(@protocol(TWTRAPIServiceConfig));
 
-    _errorLoggerMock = OCMProtocolMock(@protocol(TWTRErrorLogger));
-    _appleSocialProvider = [[TWTRAppleSocialAuthenticaticationProvider alloc] initWithAuthConfig:authConfig apiServiceConfig:apiServiceConfig errorLogger:_errorLoggerMock];
+    _appleSocialProvider = [[TWTRAppleSocialAuthenticaticationProvider alloc] initWithAuthConfig:authConfig apiServiceConfig:apiServiceConfig];
 }
 
 - (void)testSocialAppAuthWith2Accounts

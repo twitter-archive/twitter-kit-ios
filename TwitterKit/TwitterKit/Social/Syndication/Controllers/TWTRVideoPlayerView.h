@@ -23,7 +23,6 @@
 #import "TWTRVideoPlayerOutputView.h"
 
 @class TWTRTweet;
-@class TWTRScribeSink;
 @class TWTRVideoPlaybackConfiguration;
 @class TWTRVideoControlsView;
 @class TWTRVideoPlayerView;
@@ -51,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) TWTRVideoPlayerAspectRatio aspectRatio;
 @property (nonatomic) TWTRVideoPlaybackState playbackState;
 
-- (instancetype)initWithTweet:(TWTRTweet *)tweet playbackConfiguration:(TWTRVideoPlaybackConfiguration *)playbackConfiguration scribeSink:(nullable TWTRScribeSink *)scribeSink controlsView:(nullable TWTRVideoControlsView *)controlsView previewImage:(nullable UIImage *)previewImage;
+- (instancetype)initWithTweet:(TWTRTweet *)tweet playbackConfiguration:(TWTRVideoPlaybackConfiguration *)playbackConfiguration controlsView:(nullable TWTRVideoControlsView *)controlsView previewImage:(nullable UIImage *)previewImage;
 
 - (void)loadVideo;
 - (void)playVideo;

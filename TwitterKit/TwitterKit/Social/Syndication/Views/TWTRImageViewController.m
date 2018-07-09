@@ -19,7 +19,6 @@
 #import <TwitterCore/TWTRAssertionMacros.h>
 #import "TWTRImageLoader.h"
 #import "TWTRImageScrollView.h"
-#import "TWTRScribeSink.h"
 #import "TWTRTranslationsUtil.h"
 #import "TWTRTweetMediaEntity.h"
 #import "TWTRTwitter_Private.h"
@@ -70,8 +69,6 @@
     if (imageURL) {
         [self loadFullImageWithURL:imageURL];
     }
-
-    [[TWTRTwitter sharedInstance].scribeSink didSeeMediaEntity:self.mediaEntity fromTweetID:self.parentTweetID];
 }
 
 - (void)viewDidDisappear:(BOOL)animated

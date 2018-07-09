@@ -36,7 +36,6 @@
 @end
 
 @implementation TWTRShareButton
-@synthesize scribeViewName = _scribeViewName;
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
@@ -102,8 +101,6 @@
     if (!self.tweet) {
         return;
     }
-
-    [[TWTRTwitter sharedInstance].scribeSink didShareTweetWithID:self.tweet.tweetID forUserID:self.tweet.perspectivalUserID fromViewName:self.scribeViewName];
 
     [TWTRNotificationCenter postNotificationName:TWTRWillShareTweetNotification tweet:self.tweet userInfo:nil];
 

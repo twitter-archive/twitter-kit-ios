@@ -19,7 +19,6 @@
 #import "TWTRAPIServiceConfig.h"
 #import "TWTRAssertionMacros.h"
 #import "TWTRAuthSession.h"
-#import "TWTRErrorLogger.h"
 #import "TWTRGenericKeychainItem.h"
 #import "TWTRGuestSession.h"
 #import "TWTRNetworkSessionProvider.h"
@@ -65,21 +64,20 @@ static NSString *const TWTRSessionStoreGuestUserName = @"com.twitter.sdk.ios.cor
 
 #pragma mark - Initialization
 
-- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig refreshStrategies:(NSArray *)refreshStrategies URLSession:(NSURLSession *)URLSession errorLogger:(id<TWTRErrorLogger>)errorLogger
+- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig refreshStrategies:(NSArray *)refreshStrategies URLSession:(NSURLSession *)URLSession
 {
-    return [self initWithAuthConfig:authConfig APIServiceConfig:APIServiceConfig refreshStrategies:refreshStrategies URLSession:URLSession errorLogger:errorLogger accessGroup:nil];
+    return [self initWithAuthConfig:authConfig APIServiceConfig:APIServiceConfig refreshStrategies:refreshStrategies URLSession:URLSession accessGroup:nil];
 }
 
-- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig refreshStrategies:(NSArray *)refreshStrategies URLSession:(NSURLSession *)URLSession errorLogger:(id<TWTRErrorLogger>)errorLogger accessGroup:(nullable NSString *)accessGroup
+- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig refreshStrategies:(NSArray *)refreshStrategies URLSession:(NSURLSession *)URLSession accessGroup:(nullable NSString *)accessGroup
 {
-    TWTRParameterAssertOrReturnValue(authConfig && APIServiceConfig && refreshStrategies && URLSession && errorLogger, nil);
+    TWTRParameterAssertOrReturnValue(authConfig && APIServiceConfig && refreshStrategies && URLSession, nil);
 
     if (self = [super init]) {
         _APIServiceConfig = APIServiceConfig;
         _authConfig = authConfig;
         _accessGroup = [accessGroup copy];
 
-        _errorLogger = errorLogger;
         _authSessionCache = [NSMutableArray array];
 
         _refreshStrategies = [refreshStrategies copy];
@@ -109,19 +107,15 @@ static NSString *const TWTRSessionStoreGuestUserName = @"com.twitter.sdk.ios.cor
     TWTRCheckArgumentWithCompletion2(session, completion);
 
     if (verifySession) {
-        [TWTRNetworkSessionProvider verifyUserSession:session
-                                       withAuthConfig:self.authConfig
-                                     APIServiceConfig:self.APIServiceConfig
-                                           URLSession:self.URLSession
-                                           completion:^(TWTRSession *userSession, NSError *error) {
-                                               if (userSession) {
-                                                   [self storeSession:userSession];
-                                               }
+        [TWTRNetworkSessionProvider verifyUserSession:session withAuthConfig:self.authConfig APIServiceConfig:self.APIServiceConfig URLSession:self.URLSession completion:^(TWTRSession *userSession, NSError *error) {
+            if (userSession) {
+                [self storeSession:userSession];
+            }
 
-                                               dispatch_async(dispatch_get_main_queue(), ^{
-                                                   completion(userSession, error);
-                                               });
-                                           }];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completion(userSession, error);
+            });
+        }];
     } else {
         [self storeSession:session];
 
@@ -134,20 +128,15 @@ static NSString *const TWTRSessionStoreGuestUserName = @"com.twitter.sdk.ios.cor
 - (void)saveSessionWithAuthToken:(NSString *)authToken authTokenSecret:(NSString *)authTokenSecret completion:(TWTRSessionStoreSaveCompletion)completion
 {
     TWTRCheckArgumentWithCompletion2(authToken && authTokenSecret, completion);
-    [TWTRNetworkSessionProvider verifySessionWithAuthToken:authToken
-                                                authSecret:authTokenSecret
-                                            withAuthConfig:self.authConfig
-                                          APIServiceConfig:self.APIServiceConfig
-                                                URLSession:self.URLSession
-                                                completion:^(TWTRSession *userSession, NSError *error) {
-                                                    if (userSession) {
-                                                        [self storeSession:userSession];
-                                                    }
+    [TWTRNetworkSessionProvider verifySessionWithAuthToken:authToken authSecret:authTokenSecret withAuthConfig:self.authConfig APIServiceConfig:self.APIServiceConfig URLSession:self.URLSession completion:^(TWTRSession *userSession, NSError *error) {
+        if (userSession) {
+            [self storeSession:userSession];
+        }
 
-                                                    dispatch_async(dispatch_get_main_queue(), ^{
-                                                        completion(userSession, error);
-                                                    });
-                                                }];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            completion(userSession, error);
+        });
+    }];
 }
 
 - (id<TWTRAuthSession>)sessionForUserID:(NSString *)userID
@@ -185,18 +174,15 @@ static NSString *const TWTRSessionStoreGuestUserName = @"com.twitter.sdk.ios.cor
 {
     TWTRParameterAssertOrReturn(completion);
 
-    [TWTRNetworkSessionProvider userSessionWithAuthConfig:self.authConfig
-                                         APIServiceConfig:self.APIServiceConfig
-                                              errorLogger:self.errorLogger
-                                               completion:^(TWTRSession *userSession, NSError *userAuthError) {
-                                                   if (userSession) {
-                                                       [self storeSession:userSession];
-                                                   }
+    [TWTRNetworkSessionProvider userSessionWithAuthConfig:self.authConfig APIServiceConfig:self.APIServiceConfig completion:^(TWTRSession *userSession, NSError *userAuthError) {
+        if (userSession) {
+            [self storeSession:userSession];
+        }
 
-                                                   dispatch_async(dispatch_get_main_queue(), ^{
-                                                       completion(userSession, userAuthError);
-                                                   });
-                                               }];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            completion(userSession, userAuthError);
+        });
+    }];
 }
 
 - (void)logOutUserID:(NSString *)userID
@@ -227,19 +213,15 @@ static NSString *const TWTRSessionStoreGuestUserName = @"com.twitter.sdk.ios.cor
 
     // TODO: there is a chance that we could make multiple guest session requests here if this method is called while a fetch is in flight.
     NSString *accessToken = localGuestSession.accessToken;
-    [TWTRNetworkSessionProvider guestSessionWithAuthConfig:self.authConfig
-                                          APIServiceConfig:self.APIServiceConfig
-                                                URLSession:self.URLSession
-                                               accessToken:accessToken
-                                                completion:^(TWTRGuestSession *guestSession, NSError *guestAuthError) {
-                                                    if (guestSession) {
-                                                        self.guestSession = guestSession;
-                                                    }
+    [TWTRNetworkSessionProvider guestSessionWithAuthConfig:self.authConfig APIServiceConfig:self.APIServiceConfig URLSession:self.URLSession accessToken:accessToken completion:^(TWTRGuestSession *guestSession, NSError *guestAuthError) {
+        if (guestSession) {
+            self.guestSession = guestSession;
+        }
 
-                                                    dispatch_async(dispatch_get_main_queue(), ^{
-                                                        completion(guestSession, guestAuthError);
-                                                    });
-                                                }];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            completion(guestSession, guestAuthError);
+        });
+    }];
 }
 
 #pragma mark - TWTRSessionRefreshingStore Methods
@@ -254,13 +236,13 @@ static NSString *const TWTRSessionStoreGuestUserName = @"com.twitter.sdk.ios.cor
             [self refreshAuthSessionID:sessionID withStrategy:refreshStrategy completion:completion];
         } else {
             dispatch_async(dispatch_get_main_queue(), ^{
-                NSError *const cannotRefreshSessionError = [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeCannotRefreshSession userInfo:@{NSLocalizedDescriptionKey: [NSString stringWithFormat:@"Does not support refreshing session of class %@", sessionClass]}];
+                NSError *const cannotRefreshSessionError = [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeCannotRefreshSession userInfo:@{ NSLocalizedDescriptionKey: [NSString stringWithFormat:@"Does not support refreshing session of class %@", sessionClass] }];
                 completion(nil, cannotRefreshSessionError);
             });
         }
     } else {
         dispatch_async(dispatch_get_main_queue(), ^{
-            NSError *const cannotRefreshSessionError = [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeCannotRefreshSession userInfo:@{NSLocalizedDescriptionKey: @"Error trying to refresh session tokens."}];
+            NSError *const cannotRefreshSessionError = [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeCannotRefreshSession userInfo:@{ NSLocalizedDescriptionKey: @"Error trying to refresh session tokens." }];
             completion(nil, cannotRefreshSessionError);
         });
     }
@@ -580,19 +562,17 @@ static NSString *const TWTRSessionStoreGuestUserName = @"com.twitter.sdk.ios.cor
 - (NSArray *)unsafeLoadAllUserSessions
 {
     TWTRGenericKeychainQuery *query = [self userSessionQueryWithID:nil];
-    return [self unsafeLoadSessionsWithQuery:query
-                                 passingTest:^BOOL(id obj) {
-                                     return [obj conformsToProtocol:@protocol(TWTRAuthSession)];
-                                 }];
+    return [self unsafeLoadSessionsWithQuery:query passingTest:^BOOL(id obj) {
+        return [obj conformsToProtocol:@protocol(TWTRAuthSession)];
+    }];
 }
 
 - (nullable TWTRGuestSession *)unsafeLoadGuestSession
 {
     TWTRGenericKeychainQuery *query = [self guestSessionQuery];
-    NSArray *sessions = [self unsafeLoadSessionsWithQuery:query
-                                              passingTest:^BOOL(id obj) {
-                                                  return [obj isKindOfClass:[TWTRGuestSession class]];
-                                              }];
+    NSArray *sessions = [self unsafeLoadSessionsWithQuery:query passingTest:^BOOL(id obj) {
+        return [obj isKindOfClass:[TWTRGuestSession class]];
+    }];
 
     if (sessions.count > 1) {
         NSLog(@"Error: there should not be more than 1 guest session");  // TODO: better handling
@@ -673,25 +653,21 @@ static NSString *const TWTRSessionStoreGuestUserName = @"com.twitter.sdk.ios.cor
 
     id<TWTRAuthSession> session = [self sessionForUserID:sessionID];
     if (session) {
-        [strategy refreshSession:session
-                      URLSession:self.URLSession
-                      completion:^(id refreshedSession, NSError *refreshError) {
-                          if (refreshedSession) {
-                              [self saveSession:refreshedSession
-                                  withVerification:NO
-                                        completion:^(id<TWTRAuthSession> savedSession, NSError *saveError) {
-                                            dispatch_async(dispatch_get_main_queue(), ^{
-                                                completion(savedSession, saveError);
-                                            });
-                                        }];
-                          } else {
-                              dispatch_async(dispatch_get_main_queue(), ^{
-                                  completion(nil, refreshError);
-                              });
-                          }
-                      }];
+        [strategy refreshSession:session URLSession:self.URLSession completion:^(id refreshedSession, NSError *refreshError) {
+            if (refreshedSession) {
+                [self saveSession:refreshedSession withVerification:NO completion:^(id<TWTRAuthSession> savedSession, NSError *saveError) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        completion(savedSession, saveError);
+                    });
+                }];
+            } else {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    completion(nil, refreshError);
+                });
+            }
+        }];
     } else {
-        NSError *const noSessionFoundError = [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeSessionNotFound userInfo:@{NSLocalizedDescriptionKey: [NSString stringWithFormat:@"Error fetching existing session for user ID %@.", sessionID]}];
+        NSError *const noSessionFoundError = [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeSessionNotFound userInfo:@{ NSLocalizedDescriptionKey: [NSString stringWithFormat:@"Error fetching existing session for user ID %@.", sessionID] }];
         dispatch_async(dispatch_get_main_queue(), ^{
             completion(nil, noSessionFoundError);
         });
@@ -708,16 +684,14 @@ static NSString *const TWTRSessionStoreGuestUserName = @"com.twitter.sdk.ios.cor
 {
     TWTRCheckArgumentWithCompletion2(strategy && self.guestSession, completion);
 
-    [strategy refreshSession:self.guestSession
-                  URLSession:self.URLSession
-                  completion:^(TWTRGuestSession *refreshedSession, NSError *error) {
-                      dispatch_async(dispatch_get_main_queue(), ^{
-                          if (refreshedSession) {
-                              self.guestSession = refreshedSession;
-                          }
-                          completion(refreshedSession, error);
-                      });
-                  }];
+    [strategy refreshSession:self.guestSession URLSession:self.URLSession completion:^(TWTRGuestSession *refreshedSession, NSError *error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (refreshedSession) {
+                self.guestSession = refreshedSession;
+            }
+            completion(refreshedSession, error);
+        });
+    }];
 }
 
 #pragma mark - Testing Utility

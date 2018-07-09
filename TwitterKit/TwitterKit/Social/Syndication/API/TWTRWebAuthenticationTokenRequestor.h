@@ -20,7 +20,6 @@
  */
 
 #import <TwitterCore/TWTRAPIServiceConfig.h>
-#import <TwitterCore/TWTRErrorLogger.h>
 
 @class TWTRAuthConfig;
 
@@ -30,7 +29,7 @@ typedef void (^TWTRAuthenticationTokenRequestCompletion)(NSString *_Nullable tok
 
 @interface TWTRWebAuthenticationTokenRequestor : NSObject
 
-- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig serviceConfig:(id<TWTRAPIServiceConfig>)serviceConfig errorLogger:(id<TWTRErrorLogger>)errorLogger;
+- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig serviceConfig:(id<TWTRAPIServiceConfig>)serviceConfig;
 
 - (void)requestAuthenticationToken:(TWTRAuthenticationTokenRequestCompletion)completion;
 

@@ -20,7 +20,6 @@
 #endif
 #import <UIKit/UIKit.h>
 #import "NSStringPunycodeAdditions.h"
-#import "TWTRScribeSink.h"
 #import "TWTRTimelineFilter.h"
 #import "TWTRTimelineFilterManager.h"
 #import "TWTRTweet.h"
@@ -129,12 +128,6 @@
     CFTimeInterval endTime = CACurrentMediaTime();
     NSLog(@"Total Runtime: %g ms. Filtered %lu tweets (%lu in total)", (endTime - startTime) * 1000, (unsigned long)filteredTweetsInResponse, (unsigned long)self.totalFilteredTweets);
 #endif
-
-    // Scribe filter information on main thread
-    dispatch_async(dispatch_get_main_queue(), ^{
-        NSUInteger filterCount = self.filters.filterCount;
-        [TWTRTwitter.sharedInstance.scribeSink didFilterRequestedTweets:tweets.count totalFilters:filterCount totalFilteredTweets:filteredTweets.count];
-    });
     return filteredTweets;
 }
 

@@ -32,7 +32,6 @@
                           networking:(id<TWTRSENetworking>)networking
                          twitterText:(Class<TwitterTextProtocol>)twitterText
                  wordRangeCalculator:(Class<TWTRSEWordRangeCalculator>)wordRangeCalculator
-                              scribe:(id<TWTRSEScribe>)scribe
                             delegate:(id<TWTRSETweetShareViewControllerDelegate>)delegate
 {
     NSParameterAssert(accounts);
@@ -53,7 +52,6 @@
         _imageDownloader = imageDownloader;
         _networking = networking;
         _wordRangeCalculator = wordRangeCalculator;
-        _scribe = scribe;
         _delegate = delegate;
     }
 

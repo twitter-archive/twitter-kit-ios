@@ -21,7 +21,6 @@
 #import "TWTRFixtureLoader.h"
 #import "TWTRImageTestHelper.h"
 #import "TWTRImageViewController.h"
-#import "TWTRScribeSink.h"
 #import "TWTRTweet.h"
 #import "TWTRTweetMediaEntity.h"
 #import "TWTRTweet_Private.h"
@@ -59,19 +58,6 @@
     self.mediaTweet = [TWTRFixtureLoader obamaTweet];
     self.mediaEntity = self.mediaTweet.media.firstObject;
     self.imageViewController = [[TWTRImageViewController alloc] initWithImage:self.landscapeImage mediaEntity:self.mediaEntity parentTweetID:self.mediaTweet.tweetID];
-}
-
-- (void)testScribeCalls
-{
-    id mock = OCMClassMock([TWTRScribeSink class]);
-    OCMExpect([mock didSeeMediaEntity:self.mediaEntity fromTweetID:self.mediaTweet.tweetID]);
-
-    [[TWTRTwitter sharedInstance] performWithScribeSink:mock
-                                                 action:^{
-                                                     [self.imageViewController viewDidAppear:YES];
-                                                 }];
-
-    OCMVerifyAll(mock);
 }
 
 @end

@@ -20,7 +20,6 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "TWTRScribableView.h"
 
 @class TWTRTweet;
 
@@ -34,7 +33,7 @@ typedef NS_ENUM(NSInteger, TWTRLikeButtonSize) {
     TWTRLikeButtonSizeLarge
 };
 
-@interface TWTRLikeButton : UIButton <TWTRScribableView>
+@interface TWTRLikeButton : UIButton
 
 /**
  *  The view controller from which to present the login UIWebView or

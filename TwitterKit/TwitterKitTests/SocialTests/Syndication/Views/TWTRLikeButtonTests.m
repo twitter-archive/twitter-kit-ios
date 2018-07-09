@@ -125,18 +125,6 @@
     OCMVerifyAll(mockClient);
 }
 
-#pragma mark - Scribing
-
-- (void)testLikeTweet_scribesLike
-{
-    // Once we add scribing to action buttons, add a test
-}
-
-- (void)testLikeTweet_scribesUnlike
-{
-    // Once we add scribing to action buttons, add a test
-}
-
 #pragma mark - Notifications
 
 - (void)testLikeTweet_sendsLikeNotification

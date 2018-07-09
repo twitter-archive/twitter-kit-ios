@@ -26,7 +26,6 @@
 @protocol TWTRSEImageDownloader;
 @protocol TWTRSELocalizedResources;
 @protocol TWTRSENetworking;
-@protocol TWTRSEScribe;
 @protocol TWTRSETweetShareViewControllerDelegate;
 @protocol TWTRSEWordRangeCalculator;
 @protocol TwitterTextProtocol;
@@ -44,7 +43,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, nullable) id<TWTRSECardPreviewProvider> cardPreviewProvider;
 @property (nonatomic, readonly) id<TWTRSEImageDownloader> imageDownloader;
 @property (nonatomic, readonly) id<TWTRSENetworking> networking;
-@property (nullable, nonatomic, readonly) id<TWTRSEScribe> scribe;
 @property (nonatomic, readonly) Class<TWTRSEWordRangeCalculator> wordRangeCalculator;
 @property (nullable, nonatomic, readonly, weak) id<TWTRSETweetShareViewControllerDelegate> delegate;
 
@@ -72,7 +70,6 @@ NS_ASSUME_NONNULL_BEGIN
                           networking:(id<TWTRSENetworking>)networking
                          twitterText:(Class<TwitterTextProtocol>)twitterText
                  wordRangeCalculator:(Class<TWTRSEWordRangeCalculator>)wordRangeCalculator
-                              scribe:(nullable id<TWTRSEScribe>)scribe
                             delegate:(id<TWTRSETweetShareViewControllerDelegate>)delegate NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)init NS_UNAVAILABLE;

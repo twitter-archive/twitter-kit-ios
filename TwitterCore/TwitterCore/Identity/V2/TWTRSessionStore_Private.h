@@ -21,7 +21,6 @@
 
 // TODO: this is temporary. clean up after refactoring scribe layer
 #import <TwitterCore/TWTRSessionStore.h>
-#import "TWTRScribeService.h"
 
 @class TWTRAuthConfig;
 @protocol TWTRAPIServiceConfig;
@@ -75,12 +74,6 @@ typedef void (^TWTRSessionStoreUserSessionSavedCompletion)(id<TWTRAuthSession> s
 @interface TWTRSessionStore () <TWTRSessionStore_Private>
 
 /**
- *  Logger for logging important session lifecycle events.
- *  Scribe service used to log events.
- */
-@property (nonatomic, readonly) id<TWTRErrorLogger> errorLogger;
-
-/**
  *  Service config for configuring endpoints to make auth requests against.
  */
 @property (nonatomic, readonly) id<TWTRAPIServiceConfig> APIServiceConfig;
@@ -102,13 +95,12 @@ typedef void (^TWTRSessionStoreUserSessionSavedCompletion)(id<TWTRAuthSession> s
  *  @param APIServiceConfig  (required) API service config for specifying server endpoints
  *  @param refreshStrategies (required) Strategies to use to refresh sessions
  *  @param URLSession        (required) URL session used to make authentication requests
- *  @param eventLogger       (required) Logger for logging important session lifecycle events. **This should be removed before we hit production**
  *  @param accessGroup       (optional) An optional access group to use for persistence to the store.
  *
  *  @return A fully initialized session store.
  */
-- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig refreshStrategies:(NSArray *)refreshStrategies URLSession:(NSURLSession *)URLSession errorLogger:(id<TWTRErrorLogger>)errorLogger;
-- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig refreshStrategies:(NSArray *)refreshStrategies URLSession:(NSURLSession *)URLSession errorLogger:(id<TWTRErrorLogger>)errorLogger accessGroup:(nullable NSString *)accessGroup NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig refreshStrategies:(NSArray *)refreshStrategies URLSession:(NSURLSession *)URLSession;
+- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig refreshStrategies:(NSArray *)refreshStrategies URLSession:(NSURLSession *)URLSession accessGroup:(nullable NSString *)accessGroup NS_DESIGNATED_INITIALIZER;
 
 - (NSString *)userSessionServiceName;
 - (NSString *)guestSessionServiceName;

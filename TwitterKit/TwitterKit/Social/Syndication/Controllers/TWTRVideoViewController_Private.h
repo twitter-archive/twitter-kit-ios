@@ -19,7 +19,6 @@
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
 
-#import "TWTRScribeSink.h"
 #import "TWTRVideoPlayerView.h"
 #import "TWTRVideoViewController.h"
 
@@ -31,7 +30,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) TWTRVideoPlaybackConfiguration *playbackConfiguration;
 @property (nonatomic, readonly) UIImage *thumbnailImage;
 @property (nonatomic, readonly) TWTRVideoPlayerView *playerView;
-@property (nonatomic, readonly, nullable) TWTRScribeSink *scribeSink;
 
 @end
 

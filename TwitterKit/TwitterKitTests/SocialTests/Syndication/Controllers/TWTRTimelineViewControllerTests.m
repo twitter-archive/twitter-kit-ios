@@ -36,7 +36,6 @@
 
 @interface TWTRTimelineViewController ()
 
-- (TWTRScribeSink *)scribeSink;
 - (void)setCurrentCursor:(TWTRTimelineCursor *)cursor;
 - (void)loadPreviousTweets;
 - (void)refresh;
@@ -158,28 +157,6 @@
 
     [mockTimelineVC loadPreviousTweets];
     OCMVerifyAll(mockTimelineVC);
-}
-
-#pragma mark - Scribing
-
-- (void)testTimelineViewController_ScribesProperlyOnLoad
-{
-    XCTestExpectation *expectation = [self expectationWithDescription:@"wait for network"];
-
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.timeline.tweets removeAllObjects];
-        id mockScribeSink = OCMClassMock([TWTRScribeSink class]);
-        OCMExpect([mockScribeSink didShowTimelineOfType:TWTRTimelineTypeUser timelineID:nil]);
-
-        [[TWTRTwitter sharedInstance] performWithScribeSink:mockScribeSink
-                                                     action:^{
-                                                         [self.timeline viewWillAppear:YES];
-                                                     }];
-        OCMVerifyAll(mockScribeSink);
-        [expectation fulfill];
-    });
-
-    [self waitForExpectationsWithTimeout:1.0 handler:nil];
 }
 
 #pragma mark - Refresh

@@ -26,7 +26,6 @@
 #import "TWTRAssertionMacros.h"
 #import "TWTRAuthenticationConstants.h"
 #import "TWTRConstants.h"
-#import "TWTRErrorLogger.h"
 #import "TWTRSession.h"
 #import "TWTRUserAPIClient.h"
 #import "TWTRUtils.h"
@@ -38,7 +37,6 @@ NSString *const TWTRSocialAppProviderActionSheetCompletionKey = @"TWTRAppleSocia
 @property (nonatomic, readonly) ACAccountStore *accountStore;
 @property (nonatomic) NSArray *accounts;
 @property (nonatomic, readonly) TWTRAuthConfig *authConfig;
-@property (nonatomic, readonly) id<TWTRErrorLogger> errorLogger;
 @property (nonatomic, copy, readonly) id<TWTRAPIServiceConfig> apiServiceConfig;
 @property (nonatomic, readonly) TWTRUserAPIClient *twitterClient;
 
@@ -48,17 +46,15 @@ NSString *const TWTRSocialAppProviderActionSheetCompletionKey = @"TWTRAppleSocia
 
 #pragma mark - init
 
-- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig apiServiceConfig:(id<TWTRAPIServiceConfig>)apiServiceConfig errorLogger:(id<TWTRErrorLogger>)errorLogger
+- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig apiServiceConfig:(id<TWTRAPIServiceConfig>)apiServiceConfig
 {
     TWTRParameterAssertOrReturnValue(authConfig.consumerKey.length > 0, nil);
     TWTRParameterAssertOrReturnValue(authConfig.consumerSecret.length > 0, nil);
-    TWTRParameterAssertOrReturnValue(errorLogger, nil);
 
     if (self = [super init]) {
         _authConfig = authConfig;
         _accountStore = [[ACAccountStore alloc] init];
         _apiServiceConfig = apiServiceConfig;
-        _errorLogger = errorLogger;
         _twitterClient = [[TWTRUserAPIClient alloc] initWithAuthConfig:authConfig authToken:nil authTokenSecret:nil];
     }
 
@@ -71,12 +67,12 @@ NSString *const TWTRSocialAppProviderActionSheetCompletionKey = @"TWTRAppleSocia
 
     [self requestAccessForTwitterAccountsWithCompletion:^(BOOL granted, NSError *error) {
         if (!granted) {
-            NSError *permissionDeniedError = [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeDenied userInfo:@{NSLocalizedDescriptionKey: @"User denied access to system accounts.", NSLocalizedRecoverySuggestionErrorKey: @"Give this user access to the System Twitter account."}];
+            NSError *permissionDeniedError = [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeDenied userInfo:@{ NSLocalizedDescriptionKey: @"User denied access to system accounts.", NSLocalizedRecoverySuggestionErrorKey: @"Give this user access to the System Twitter account." }];
             completion(nil, permissionDeniedError);
         } else {
             self.accounts = [self getTwitterAccounts];
             if ([self.accounts count] == 0) {  // No accounts, error
-                NSError *noAccountsError = [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeNoAccounts userInfo:@{NSLocalizedDescriptionKey: @"User allowed permission to system accounts but there were none set up."}];
+                NSError *noAccountsError = [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeNoAccounts userInfo:@{ NSLocalizedDescriptionKey: @"User allowed permission to system accounts but there were none set up." }];
                 completion(nil, noAccountsError);
                 return;
             } else if ([self.accounts count] > 1) {  // Multiple accounts, pick one
@@ -101,15 +97,13 @@ NSString *const TWTRSocialAppProviderActionSheetCompletionKey = @"TWTRAppleSocia
 - (void)requestAccessForTwitterAccountsWithCompletion:(ACAccountStoreRequestAccessCompletionHandler)completion
 {
     ACAccountType *twitterAccount = [self.accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
-    [self.accountStore requestAccessToAccountsWithType:twitterAccount
-                                               options:nil
-                                            completion:^(BOOL granted, NSError *error) {
-                                                dispatch_async(dispatch_get_main_queue(), ^{
-                                                    if (completion) {
-                                                        completion(granted, error);
-                                                    }
-                                                });
-                                            }];
+    [self.accountStore requestAccessToAccountsWithType:twitterAccount options:nil completion:^(BOOL granted, NSError *error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (completion) {
+                completion(granted, error);
+            }
+        });
+    }];
 }
 
 - (NSArray *)getTwitterAccounts
@@ -141,26 +135,25 @@ NSString *const TWTRSocialAppProviderActionSheetCompletionKey = @"TWTRAppleSocia
     }
     TWTRParameterAssertOrReturn(completion);
 
-    NSDictionary *parameters = @{@"x_auth_mode": @"reverse_auth"};
+    NSDictionary *parameters = @{ @"x_auth_mode": @"reverse_auth" };
     NSURL *postURL = TWTRAPIURLWithPath(self.apiServiceConfig, TWTRTwitterRequestTokenPath);
     NSURLRequest *request = [self.twitterClient URLRequestWithMethod:@"POST" URLString:postURL.absoluteString parameters:parameters];
 
-    [self.twitterClient sendAsynchronousRequest:request
-                                     completion:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-                                         if (connectionError) {
-                                             [self.errorLogger didEncounterError:connectionError withMessage:@"Error attempting to obtain temporary auth token."];
-                                             completion(nil, connectionError);
-                                             return;
-                                         }
-                                         NSString *authToken = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-                                         if (authToken == nil) {
-                                             NSError *reverseAuthError = [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeReverseAuthFailed userInfo:@{NSLocalizedDescriptionKey: @"Reverse auth failed."}];
-                                             [self.errorLogger didEncounterError:reverseAuthError withMessage:@"Error performing reverse auth."];
-                                             completion(nil, reverseAuthError);
-                                             return;
-                                         }
-                                         [self getAuthTokenWithAccount:account withAuthToken:authToken completion:completion];
-                                     }];
+    [self.twitterClient sendAsynchronousRequest:request completion:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        if (connectionError) {
+            NSLog(@"[TwitterKit] Error attempting to obtain temporary auth token.");
+            completion(nil, connectionError);
+            return;
+        }
+        NSString *authToken = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        if (authToken == nil) {
+            NSError *reverseAuthError = [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeReverseAuthFailed userInfo:@{ NSLocalizedDescriptionKey: @"Reverse auth failed." }];
+            NSLog(@"[TwitterKit] Error performing reverse auth.");
+            completion(nil, reverseAuthError);
+            return;
+        }
+        [self getAuthTokenWithAccount:account withAuthToken:authToken completion:completion];
+    }];
 }
 
 // do the reverse oauth
@@ -177,37 +170,34 @@ NSString *const TWTRSocialAppProviderActionSheetCompletionKey = @"TWTRAppleSocia
 
     NSURL *accessTokenURL = TWTRAPIURLWithPath(self.apiServiceConfig, TWTRTwitterAccessTokenPath);
     NSString *consumerKey = self.authConfig.consumerKey;
-    NSDictionary *parameters = @{@"x_reverse_auth_parameters": authToken, @"x_reverse_auth_target": consumerKey};
+    NSDictionary *parameters = @{ @"x_reverse_auth_parameters": authToken, @"x_reverse_auth_target": consumerKey };
 
-    [self performTwitterRequestWithURL:accessTokenURL
-                            parameters:parameters
-                               account:account
-                            completion:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
-                                if (error) {
-                                    if (error.code == NSURLErrorUserCancelledAuthentication) {
-                                        /// The user's credentials are no longer valid, prompt them to renew
-                                        ACAccountStore *store = [[ACAccountStore alloc] init];
+    [self performTwitterRequestWithURL:accessTokenURL parameters:parameters account:account completion:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+        if (error) {
+            if (error.code == NSURLErrorUserCancelledAuthentication) {
+                /// The user's credentials are no longer valid, prompt them to renew
+                ACAccountStore *store = [[ACAccountStore alloc] init];
 
-                                        /// We ignore the completion because it always returns ACAccountCredentialRenewResultRejected for Twitter.
-                                        [store renewCredentialsForAccount:account completion:nil];
+                /// We ignore the completion because it always returns ACAccountCredentialRenewResultRejected for Twitter.
+                [store renewCredentialsForAccount:account completion:nil];
 
-                                        NSDictionary *userInfo = @{NSLocalizedDescriptionKey: @"The system account credentials are no longer valid and will need to be updated in the Settings app.", NSLocalizedRecoverySuggestionErrorKey: @"The user has been prompted to visit the Settings app."};
+                NSDictionary *userInfo = @{ NSLocalizedDescriptionKey: @"The system account credentials are no longer valid and will need to be updated in the Settings app.", NSLocalizedRecoverySuggestionErrorKey: @"The user has been prompted to visit the Settings app." };
 
-                                        NSError *renewError = [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeSystemAccountCredentialsInvalid userInfo:userInfo];
+                NSError *renewError = [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeSystemAccountCredentialsInvalid userInfo:userInfo];
 
-                                        [self.errorLogger didEncounterError:renewError withMessage:@"User's system account credentials are invalid."];
-                                        completion(nil, renewError);
+                NSLog(@"[TwitterKit] User's system account credentials are invalid.");
+                completion(nil, renewError);
 
-                                    } else {
-                                        [self.errorLogger didEncounterError:error withMessage:@"Error retrieving reverse-auth access token."];
-                                        completion(nil, error);
-                                    }
-                                } else {
-                                    NSString *recdData = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-                                    NSDictionary *recdDict = [TWTRUtils dictionaryWithQueryString:recdData];
-                                    completion(recdDict, nil);
-                                }
-                            }];
+            } else {
+                NSLog(@"[TwitterKit] Error retrieving reverse-auth access token.");
+                completion(nil, error);
+            }
+        } else {
+            NSString *recdData = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+            NSDictionary *recdDict = [TWTRUtils dictionaryWithQueryString:recdData];
+            completion(recdDict, nil);
+        }
+    }];
 }
 
 #pragma mark - Internal functions
@@ -256,7 +246,7 @@ NSString *const TWTRSocialAppProviderActionSheetCompletionKey = @"TWTRAppleSocia
 - (void)actionSheetCancel:(UIActionSheet *)actionSheet
 {
     TWTRAuthenticationProviderCompletion completion = objc_getAssociatedObject(actionSheet, (__bridge const void *)(TWTRSocialAppProviderActionSheetCompletionKey));
-    completion(nil, [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeCancelled userInfo:@{NSLocalizedDescriptionKey: @"User cancelled authentication."}]);
+    completion(nil, [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeCancelled userInfo:@{ NSLocalizedDescriptionKey: @"User cancelled authentication." }]);
 }
 
 @end

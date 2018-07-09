@@ -28,7 +28,6 @@
 #import <TwitterCore/TWTRUtils.h>
 #import "TWTRErrors.h"
 #import "TWTRLoginURLParser.h"
-#import "TWTRScribeSink.h"
 #import "TWTRTwitter_Private.h"
 #import "TWTRWebViewController.h"
 
@@ -80,11 +79,9 @@
 - (UIViewController *)webController
 {
     if (_useWebFlow) {
-        [[TWTRTwitter sharedInstance].scribeSink didStartWebLogin];
         return [self webViewController];
     } else {
         [self.navigationController setNavigationBarHidden:YES];
-        [[TWTRTwitter sharedInstance].scribeSink didStartSafariLogin];
         return [self safariViewController];
     }
 }
@@ -206,12 +203,6 @@
 - (void)succeedWithSession:(TWTRSession *)session
 {
     if (self.completion) {
-        // Scribe successful login flow
-        if (_useWebFlow) {
-            [[TWTRTwitter sharedInstance].scribeSink didFinishWebLogin];
-        } else {
-            [[TWTRTwitter sharedInstance].scribeSink didFinishSafariLogin];
-        }
         self.completion(session, nil);
     }
 }
@@ -219,20 +210,6 @@
 - (void)failWithError:(NSError *)error
 {
     if (self.completion) {
-        // Scribe cancel/fail depending on error code and which flow
-        if (error.code == TWTRLogInErrorCodeCancelled) {
-            if (_useWebFlow) {
-                [[TWTRTwitter sharedInstance].scribeSink didCancelWebLogin];
-            } else {
-                [[TWTRTwitter sharedInstance].scribeSink didCancelSafariLogin];
-            }
-        } else {
-            if (_useWebFlow) {
-                [[TWTRTwitter sharedInstance].scribeSink didFailWebLogin];
-            } else {
-                [[TWTRTwitter sharedInstance].scribeSink didFailSafariLogin];
-            }
-        }
         self.completion(nil, error);
     }
 }

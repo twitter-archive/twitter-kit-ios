@@ -20,7 +20,6 @@
 #import <XCTest/XCTest.h>
 #import "TWTRAPIClient_Private.h"
 #import "TWTRKit.h"
-#import "TWTRScribeSink.h"
 #import "TWTRSearchTimelineDataSource.h"
 #import "TWTRTimelineCursor.h"
 

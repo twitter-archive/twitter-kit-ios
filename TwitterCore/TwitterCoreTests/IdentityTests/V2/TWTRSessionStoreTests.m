@@ -20,7 +20,6 @@
 #import "TWTRAuthConfig.h"
 #import "TWTRAuthenticationConstants.h"
 #import "TWTRConstants.h"
-#import "TWTRErrorLogger.h"
 #import "TWTRFakeAPIServiceConfig.h"
 #import "TWTRGenericKeychainItem.h"
 #import "TWTRGuestSession.h"
@@ -55,7 +54,6 @@
 @property (nonatomic, readonly) TWTRGuestSession *guestSession;
 @property (nonatomic, readonly) TWTRSession *userSession;
 @property (nonatomic, readonly) id networkSessionProviderMock;
-@property (nonatomic, readonly) id<TWTRErrorLogger> errorLoggerMock;
 @property (nonatomic, readonly) NSString *userVerificationResponse;
 
 @end
@@ -67,8 +65,7 @@
     XCTAssertNotNil(self.authConfig);
     XCTAssertNotNil(self.serviceConfig);
     XCTAssertNotNil(self.refreshStrategies);
-    XCTAssertNotNil(self.errorLoggerMock);
-    return [[TWTRSessionStore alloc] initWithAuthConfig:self.authConfig APIServiceConfig:self.serviceConfig refreshStrategies:self.refreshStrategies URLSession:[NSURLSession sharedSession] errorLogger:self.errorLoggerMock];
+    return [[TWTRSessionStore alloc] initWithAuthConfig:self.authConfig APIServiceConfig:self.serviceConfig refreshStrategies:self.refreshStrategies URLSession:[NSURLSession sharedSession]];
 }
 
 - (void)setUp
@@ -79,13 +76,12 @@
 
     _userVerificationResponse = @"{\"id\": 123, \"screen_name\": \"screen_name\"}";
 
-    _errorLoggerMock = OCMProtocolMock(@protocol(TWTRErrorLogger));
     _authConfig = [[TWTRAuthConfig alloc] initWithConsumerKey:@"consumerKey" consumerSecret:@"consumerSecret"];
     _serviceConfig = [[TWTRFakeAPIServiceConfig alloc] init];
     TWTRTestGuestSessionRefreshStrategy *strategy = [[TWTRTestGuestSessionRefreshStrategy alloc] init];
     _refreshStrategies = @[strategy];
     _sessionStore = [self instantiateSessionStore];
-    _noStrategyStore = [[TWTRSessionStore alloc] initWithAuthConfig:_authConfig APIServiceConfig:_serviceConfig refreshStrategies:@[] URLSession:[NSURLSession sharedSession] errorLogger:_errorLoggerMock];
+    _noStrategyStore = [[TWTRSessionStore alloc] initWithAuthConfig:_authConfig APIServiceConfig:_serviceConfig refreshStrategies:@[] URLSession:[NSURLSession sharedSession]];
 
     NSURL *url = [NSURL URLWithString:@"https://api.twitter.com"];
     _okResponse = [[NSHTTPURLResponse alloc] initWithURL:url statusCode:200 HTTPVersion:@"1.1" headerFields:@{}];
@@ -305,7 +301,7 @@
 
 - (void)testLogIn_success
 {
-    [OCMStub([self.networkSessionProviderMock userSessionWithAuthConfig:OCMOCK_ANY APIServiceConfig:OCMOCK_ANY errorLogger:OCMOCK_ANY completion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
+    [OCMStub([self.networkSessionProviderMock userSessionWithAuthConfig:OCMOCK_ANY APIServiceConfig:OCMOCK_ANY completion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
         TWTRSessionLogInCompletion loginCompletion;
         [invocation getArgument:&loginCompletion atIndex:invocation.methodSignature.numberOfArguments - 1];
         loginCompletion(self.userSession, nil);
@@ -320,7 +316,7 @@
 
 - (void)testLogIn_failure
 {
-    [OCMStub([self.networkSessionProviderMock userSessionWithAuthConfig:OCMOCK_ANY APIServiceConfig:OCMOCK_ANY errorLogger:OCMOCK_ANY completion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
+    [OCMStub([self.networkSessionProviderMock userSessionWithAuthConfig:OCMOCK_ANY APIServiceConfig:OCMOCK_ANY completion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
         NSError *error = [NSError errorWithDomain:@"domain" code:0 userInfo:@{}];
         TWTRSessionLogInCompletion loginCompletion;
         [invocation getArgument:&loginCompletion atIndex:invocation.methodSignature.numberOfArguments - 1];
@@ -336,7 +332,7 @@
 
 - (void)testLogIn_doesNotPersistSessionIfLoginFails
 {
-    [OCMStub([self.networkSessionProviderMock userSessionWithAuthConfig:OCMOCK_ANY APIServiceConfig:OCMOCK_ANY errorLogger:OCMOCK_ANY completion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
+    [OCMStub([self.networkSessionProviderMock userSessionWithAuthConfig:OCMOCK_ANY APIServiceConfig:OCMOCK_ANY completion:OCMOCK_ANY]) andDo:^(NSInvocation *invocation) {
         NSError *error = [NSError errorWithDomain:@"domain" code:0 userInfo:@{}];
         TWTRSessionLogInCompletion loginCompletion;
         [invocation getArgument:&loginCompletion atIndex:invocation.methodSignature.numberOfArguments - 1];
@@ -480,7 +476,7 @@
 - (void)testRefreshGuestSession_fails
 {
     id<TWTRSessionRefreshStrategy> cannotRefreshGuestStrategy = [[TWTRNilGuestSessionRefreshStrategy alloc] init];
-    TWTRSessionStore *cannotRefreshGuestSessionsStore = [[TWTRSessionStore alloc] initWithAuthConfig:self.authConfig APIServiceConfig:self.serviceConfig refreshStrategies:@[cannotRefreshGuestStrategy] URLSession:[NSURLSession sharedSession] errorLogger:self.errorLoggerMock];
+    TWTRSessionStore *cannotRefreshGuestSessionsStore = [[TWTRSessionStore alloc] initWithAuthConfig:self.authConfig APIServiceConfig:self.serviceConfig refreshStrategies:@[cannotRefreshGuestStrategy] URLSession:[NSURLSession sharedSession]];
 
     cannotRefreshGuestSessionsStore.guestSession = self.guestSession;
     [cannotRefreshGuestSessionsStore refreshSessionClass:[self.guestSession class] sessionID:self.guestSession.guestToken completion:^(TWTRGuestSession *refreshedSession, NSError *error) {

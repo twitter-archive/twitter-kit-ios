@@ -50,7 +50,7 @@
 
     self.playbackConfig = [[TWTRVideoPlaybackConfiguration alloc] initWithVideoURL:[NSURL URLWithString:@"https://video.twimg.com/ext_tw_video/675887965726515200/pu/pl/fb6bgw1oy5Gko69h.m3u8"] aspectRatio:1 duration:6.532 mediaType:TWTRMediaTypeVideo mediaID:@"23424" deeplinkConfiguration:nil];
     self.videoTweet = [TWTRFixtureLoader videoTweet];
-    self.videoController = [[TWTRVideoViewController alloc] initWithTweet:self.videoTweet playbackConfiguration:self.playbackConfig scribeSink:nil previewImage:nil playerView:nil];
+    self.videoController = [[TWTRVideoViewController alloc] initWithTweet:self.videoTweet playbackConfiguration:self.playbackConfig previewImage:nil playerView:nil];
     self.parentController = [[UIViewController alloc] init];
 }
 
@@ -60,17 +60,17 @@
 // has the expected configurations.
 - (void)testInit_videoPlayerInitalizedAsExpected
 {
-    TWTRVideoViewController *viewController = [[TWTRVideoViewController alloc] initWithTweet:self.videoTweet playbackConfiguration:self.playbackConfig scribeSink:nil previewImage:nil playerView:nil];
+    TWTRVideoViewController *viewController = [[TWTRVideoViewController alloc] initWithTweet:self.videoTweet playbackConfiguration:self.playbackConfig previewImage:nil playerView:nil];
 
     XCTAssertEqual(viewController.playerView.aspectRatio, TWTRVideoPlayerAspectRatioAspect);
 }
 
 - (void)testInit_videoPlayerPassedInConfiguredAsExpected
 {
-    TWTRVideoPlayerView *customPlayer = [[TWTRVideoPlayerView alloc] initWithTweet:self.videoTweet playbackConfiguration:self.playbackConfig scribeSink:nil controlsView:[TWTRVideoControlsView inlineControls] previewImage:nil];
+    TWTRVideoPlayerView *customPlayer = [[TWTRVideoPlayerView alloc] initWithTweet:self.videoTweet playbackConfiguration:self.playbackConfig controlsView:[TWTRVideoControlsView inlineControls] previewImage:nil];
     customPlayer.aspectRatio = TWTRVideoPlayerAspectRatioAspectFill;
 
-    TWTRVideoViewController *viewController = [[TWTRVideoViewController alloc] initWithTweet:self.videoTweet playbackConfiguration:self.playbackConfig scribeSink:nil previewImage:nil playerView:customPlayer];
+    TWTRVideoViewController *viewController = [[TWTRVideoViewController alloc] initWithTweet:self.videoTweet playbackConfiguration:self.playbackConfig previewImage:nil playerView:customPlayer];
 
     XCTAssertEqual(viewController.playerView.aspectRatio, TWTRVideoPlayerAspectRatioAspect);
 }

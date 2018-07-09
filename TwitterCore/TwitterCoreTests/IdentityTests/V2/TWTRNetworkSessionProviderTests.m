@@ -20,7 +20,6 @@
 #import <TwitterCore/TWTRAppAuthProvider.h>
 #import <TwitterCore/TWTRAuthConfig.h>
 #import <TwitterCore/TWTRAuthenticationConstants.h>
-#import <TwitterCore/TWTRErrorLogger.h>
 #import <TwitterCore/TWTRGuestAuthProvider.h>
 #import <TwitterCore/TWTRGuestSession.h>
 #import "TWTRAppleSocialAuthenticaticationProvider.h"
@@ -37,7 +36,6 @@
 @property (nonatomic, readonly) id<TWTRAPIServiceConfig> serviceConfig;
 @property (nonatomic, readonly) TWTRGuestSession *guestSession;
 @property (nonatomic, readonly) TWTRSession *userSession;
-@property (nonatomic, readonly) id<TWTRErrorLogger> errorLoggerMock;
 
 @property (nonatomic, readonly) NSDictionary *appAuthResponse;
 @property (nonatomic, readonly) NSDictionary *userAuthResponse;
@@ -69,7 +67,7 @@
         OCMStub([mockObj alloc]).andReturn(mockObj);
     }];
 #if !TARGET_OS_TV
-    [OCMStub([_appleAuthProviderMock initWithAuthConfig:OCMOCK_ANY apiServiceConfig:OCMOCK_ANY errorLogger:OCMOCK_ANY]) andReturn:_appleAuthProviderMock];
+    [OCMStub([_appleAuthProviderMock initWithAuthConfig:OCMOCK_ANY apiServiceConfig:OCMOCK_ANY]) andReturn:_appleAuthProviderMock];
 #endif
     [OCMStub([_appAuthProviderMock initWithAuthConfig:OCMOCK_ANY apiServiceConfig:OCMOCK_ANY]) andReturn:_appAuthProviderMock];
     [OCMStub([_guestAuthProviderMock initWithAuthConfig:OCMOCK_ANY apiServiceConfig:OCMOCK_ANY accessToken:OCMOCK_ANY]) andReturn:_guestAuthProviderMock];
@@ -82,8 +80,6 @@
     _appAuthResponse = @{ TWTRAuthAppOAuthTokenKey: @"accessToken" };
     _guestAuthResponse = @{ TWTRAuthAppOAuthTokenKey: @"accessToken", TWTRGuestAuthOAuthTokenKey: @"guestToken" };
     _guestSession = [[TWTRGuestSession alloc] initWithSessionDictionary:_guestAuthResponse];
-
-    _errorLoggerMock = OCMProtocolMock(@protocol(TWTRErrorLogger));
 }
 
 - (void)tearDown
@@ -106,7 +102,7 @@
         [invocation getArgument:&authCompletion atIndex:invocation.methodSignature.numberOfArguments - 1];
         authCompletion(self.userAuthResponse, nil);
     }];
-    [TWTRNetworkSessionProvider userSessionWithAuthConfig:self.authConfig APIServiceConfig:self.serviceConfig errorLogger:self.errorLoggerMock completion:^(TWTRSession *userSession, NSError *error) {
+    [TWTRNetworkSessionProvider userSessionWithAuthConfig:self.authConfig APIServiceConfig:self.serviceConfig completion:^(TWTRSession *userSession, NSError *error) {
         XCTAssertEqualObjects(userSession.userID, @"1");
         self.asyncComplete = YES;
     }];
@@ -122,7 +118,7 @@
         [invocation getArgument:&authCompletion atIndex:invocation.methodSignature.numberOfArguments - 1];
         authCompletion(nil, error);
     }];
-    [TWTRNetworkSessionProvider userSessionWithAuthConfig:self.authConfig APIServiceConfig:self.serviceConfig errorLogger:self.errorLoggerMock completion:^(TWTRSession *userSession, NSError *error) {
+    [TWTRNetworkSessionProvider userSessionWithAuthConfig:self.authConfig APIServiceConfig:self.serviceConfig completion:^(TWTRSession *userSession, NSError *error) {
         XCTAssertNil(userSession);
         XCTAssertNotNil(error);
         self.asyncComplete = YES;

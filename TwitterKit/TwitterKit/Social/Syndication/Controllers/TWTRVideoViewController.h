@@ -23,7 +23,6 @@
 #import "TWTRMediaContainerViewController.h"
 
 @class TWTRTweet;
-@class TWTRScribeSink;
 @class TWTRVideoPlayerView;
 @class TWTRVideoPlaybackConfiguration;
 @class TWTRMediaContainerViewController;
@@ -50,7 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Initializes the receiver with a given playback configuration and preview image
  */
-- (instancetype)initWithTweet:(TWTRTweet *)tweet playbackConfiguration:(TWTRVideoPlaybackConfiguration *)playbackConfig scribeSink:(nullable TWTRScribeSink *)scribeSink previewImage:(nullable UIImage *)previewImage playerView:(nullable TWTRVideoPlayerView *)playerView;
+- (instancetype)initWithTweet:(TWTRTweet *)tweet playbackConfiguration:(TWTRVideoPlaybackConfiguration *)playbackConfig previewImage:(nullable UIImage *)previewImage playerView:(nullable TWTRVideoPlayerView *)playerView;
 
 @end
 

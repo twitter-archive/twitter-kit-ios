@@ -31,7 +31,6 @@
 #import "TWTRNotificationConstants.h"
 #import "TWTRProfileHeaderView.h"
 #import "TWTRProfileView.h"
-#import "TWTRScribeConstants.h"
 #import "TWTRShareButton.h"
 #import "TWTRStore.h"
 #import "TWTRSubscriber.h"
@@ -153,13 +152,11 @@ static TWTRTweetViewTheme const TWTRTweetViewDefaultTheme = TWTRTweetViewThemeLi
         // Share Button
         _shareButton = [[TWTRShareButton alloc] initWithShareButtonSize:TWTRShareButtonSizeRegular];
         _shareButton.hidden = (style == TWTRTweetViewStyleCompact);
-        _shareButton.scribeViewName = TWTRScribeViewNameTweet;
         _shareButton.translatesAutoresizingMaskIntoConstraints = NO;
         [_actionContainer addSubview:_shareButton];
 
         // Like Button
         _likeButton = [[TWTRLikeButton alloc] initWithLikeButtonSize:TWTRLikeButtonSizeRegular];
-        _likeButton.scribeViewName = TWTRScribeViewNameTweet;
         _likeButton.translatesAutoresizingMaskIntoConstraints = NO;
         [_actionContainer addSubview:_likeButton];
 
@@ -448,28 +445,6 @@ static TWTRTweetViewTheme const TWTRTweetViewDefaultTheme = TWTRTweetViewThemeLi
     [self invalidateIntrinsicContentSize];
     [self setNeedsUpdateConstraints];
     [self setNeedsLayout];
-
-    // Don't bother loading images or Scribing if this view is only used for height calculations
-    BOOL shouldScribeAndLoad = (self.calculationOnly == NO);
-    if (shouldScribeAndLoad) {
-        TWTRTweetMediaEntity *firstEntity = tweetToDisplay.media.firstObject;
-        const BOOL isDisplayingVideoTweet = firstEntity && (firstEntity.mediaType == TWTRMediaTypeVideo || firstEntity.mediaType == TWTRMediaTypeGIF);
-        if (isDisplayingVideoTweet) {
-            [TWTRTwitter.sharedInstance.scribeSink didShowMediaEntities:@[firstEntity] inTweetID:tweetToDisplay.tweetID publishedByOwnerID:tweetToDisplay.author.userID];
-        }
-
-        // Scribe that we are showing a Tweet (even if we are displaying the
-        // retweetedTweet, we want to Scribe the .tweetID itself)
-        NSString *const tweetIDToScribe = self.tweet.tweetID;
-        if (tweetIDToScribe) {
-            [TWTRTwitter.sharedInstance.scribeSink didShowTweetWithID:tweetIDToScribe style:self.style showingActions:self.showActionButtons];
-        }
-
-        NSString *const quotedTweetIDToScribe = [self tweetToDisplay].quotedTweet.tweetID;
-        if (quotedTweetIDToScribe) {
-            [TWTRTwitter.sharedInstance.scribeSink didShowQuoteTweetWithID:quotedTweetIDToScribe];
-        }
-    }
 }
 
 - (void)updateAttachmentViewWithTweet:(TWTRTweet *)tweet

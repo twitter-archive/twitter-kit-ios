@@ -125,7 +125,6 @@ NSString *videoGravityForAspectRatio(TWTRVideoPlayerAspectRatio aspectRatio)
 - (void)dealloc
 {
     [self unregisterObservers];
-    [self unregisterAnalyticsObservers];
 }
 
 - (void)prepareSubviewsWithPreviewImage:(UIImage *)image
@@ -176,7 +175,6 @@ NSString *videoGravityForAspectRatio(TWTRVideoPlayerAspectRatio aspectRatio)
         self->_player = [AVPlayer playerWithPlayerItem:self.playerItem];
         self.playerLayerView.playerLayer.player = self.player;
         [self registerObservers];
-        [self registerAnalyticsObservers];
     });
 }
 
@@ -235,38 +233,6 @@ NSString *videoGravityForAspectRatio(TWTRVideoPlayerAspectRatio aspectRatio)
         [self handlePlayerStatusChange:change];
     } else {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
-    }
-}
-
-- (void)registerAnalyticsObservers
-{
-    // set up observer for individual entities
-    const NSTimeInterval duration = [self videoDuration];
-    NSArray<NSNumber *> *const percentPoles = @[@25, @50, @75, @100];
-    NSMutableArray *boundaryTimes = [NSMutableArray array];
-    [percentPoles enumerateObjectsUsingBlock:^(NSNumber *percentPole, NSUInteger idx, BOOL *stop) {
-        const double poleInSecond = (percentPole.doubleValue / 100) * duration;
-        // timescale = 1000 so we don't get warnings on losing precision
-        const CMTime time = CMTimeMakeWithSeconds(poleInSecond, 1000);
-        [boundaryTimes addObject:[NSValue valueWithCMTime:time]];
-    }];
-
-    @weakify(self);
-    self.playerObserver = [self.player addBoundaryTimeObserverForTimes:boundaryTimes queue:NULL usingBlock:^{
-        @strongify(self);
-        if ([self.scribeDelegate respondsToSelector:@selector(videoPlayer:didPlayPercentOfMedia:playbackConfiguration:)]) {
-            const NSUInteger percentPlayed = (int)ceil(100 * [self elapsedTime] / [self videoDuration]);
-            const NSUInteger normalizedPercentPlayed = MIN(percentPlayed, 100);  // Possible to get >100 due to math on floats
-            [self.scribeDelegate videoPlayer:self didPlayPercentOfMedia:normalizedPercentPlayed playbackConfiguration:self.configuration];
-        }
-    }];
-}
-
-- (void)unregisterAnalyticsObservers
-{
-    if (self.playerObserver) {
-        [self.player removeTimeObserver:self.playerObserver];
-        self.playerObserver = nil;
     }
 }
 

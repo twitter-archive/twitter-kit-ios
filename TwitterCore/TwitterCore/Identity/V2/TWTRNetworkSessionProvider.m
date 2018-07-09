@@ -25,7 +25,6 @@
 #import "TWTRAuthenticationConstants.h"
 #import "TWTRConstants.h"
 #import "TWTRDictUtil.h"
-#import "TWTRErrorLogger.h"
 #import "TWTRGuestAuthProvider.h"
 #import "TWTRGuestSession_Private.h"
 #import "TWTRSession.h"
@@ -36,18 +35,18 @@
 
 #if !TARGET_OS_TV
 
-+ (void)userSessionWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig errorLogger:(id<TWTRErrorLogger>)errorLogger completion:(TWTRNetworkSessionProviderUserLogInCompletion)completion
++ (void)userSessionWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig completion:(TWTRNetworkSessionProviderUserLogInCompletion)completion
 {
     TWTRCheckArgumentWithCompletion2(authConfig && APIServiceConfig, completion);
 
     // Make the completion block retain this variable by using __block
-    __block TWTRAppleSocialAuthenticaticationProvider *appleSocialAuthProvider = [[TWTRAppleSocialAuthenticaticationProvider alloc] initWithAuthConfig:authConfig apiServiceConfig:APIServiceConfig errorLogger:errorLogger];
+    __block TWTRAppleSocialAuthenticaticationProvider *appleSocialAuthProvider = [[TWTRAppleSocialAuthenticaticationProvider alloc] initWithAuthConfig:authConfig apiServiceConfig:APIServiceConfig];
 
     [appleSocialAuthProvider authenticateWithCompletion:^(NSDictionary *socialAuthResponseDict, NSError *socialAuthError) {
         appleSocialAuthProvider = nil;  // accessed here to retain it while the action sheet created by it may be visible.
 
         if (socialAuthError) {
-            [errorLogger didEncounterError:socialAuthError withMessage:@"Unable to authenticate using the system account."];
+            NSLog(@"[TwitterKit] Unable to authenticate using the system account.");
             [self callUserCompletionWithResponseDict:nil withError:socialAuthError completion:completion];
         } else {
             [self callUserCompletionWithResponseDict:socialAuthResponseDict withError:nil completion:completion];
@@ -64,16 +63,15 @@
     NSURL *verifyURL = TWTRAPIURLWithPath(APIServiceConfig, TWTRAPIConstantsVerifyCredentialsURL);
     NSURLRequest *verifyRequest = [NSURLRequest requestWithURL:verifyURL];
     NSURLRequest *signedVerifyRequest = [TWTRUserAuthRequestSigner signedURLRequest:verifyRequest authConfig:authConfig session:userSession];
-    NSURLSessionDataTask *verifySessionTask = [URLSession dataTaskWithRequest:signedVerifyRequest
-                                                            completionHandler:^(NSData *data, NSURLResponse *response, NSError *connectionError) {
-                                                                if (connectionError) {
-                                                                    NSLog(@"[TwitterCore] Cannot verify session credentials.");
-                                                                    completion(nil, connectionError);
-                                                                    return;
-                                                                }
+    NSURLSessionDataTask *verifySessionTask = [URLSession dataTaskWithRequest:signedVerifyRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *connectionError) {
+        if (connectionError) {
+            NSLog(@"[TwitterKit] Cannot verify session credentials.");
+            completion(nil, connectionError);
+            return;
+        }
 
-                                                                completion(userSession, nil);
-                                                            }];
+        completion(userSession, nil);
+    }];
     [verifySessionTask resume];
 }
 
@@ -85,18 +83,17 @@
     NSURL *verifyURL = TWTRAPIURLWithPath(APIServiceConfig, TWTRAPIConstantsVerifyCredentialsURL);
     NSURLRequest *verifyRequest = [NSURLRequest requestWithURL:verifyURL];
     NSURLRequest *signedVerifyRequest = [TWTRUserAuthRequestSigner signedURLRequest:verifyRequest authConfig:authConfig session:tokenOnlySession];
-    NSURLSessionDataTask *verifySessionTask = [URLSession dataTaskWithRequest:signedVerifyRequest
-                                                            completionHandler:^(NSData *data, NSURLResponse *response, NSError *connectionError) {
-                                                                if (connectionError) {
-                                                                    NSLog(@"[TwitterCore] Cannot verify session credentials.");
-                                                                    completion(nil, connectionError);
-                                                                    return;
-                                                                }
+    NSURLSessionDataTask *verifySessionTask = [URLSession dataTaskWithRequest:signedVerifyRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *connectionError) {
+        if (connectionError) {
+            NSLog(@"[TwitterKit] Cannot verify session credentials.");
+            completion(nil, connectionError);
+            return;
+        }
 
-                                                                TWTRSession *userSession = [self userSessionWithAuthToken:authToken authTokenSecret:authTokenSecret fromResponseData:data];
+        TWTRSession *userSession = [self userSessionWithAuthToken:authToken authTokenSecret:authTokenSecret fromResponseData:data];
 
-                                                                completion(userSession, nil);
-                                                            }];
+        completion(userSession, nil);
+    }];
     [verifySessionTask resume];
 }
 
@@ -107,15 +104,13 @@
     if (accessToken) {
         [TWTRNetworkSessionProvider guestSessionWithAuthConfig:authConfig APIServiceConfig:APIServiceConfig accessToken:accessToken completion:completion];
     } else {
-        [TWTRNetworkSessionProvider appSessionWithAuthConfig:authConfig
-                                            APIServiceConfig:APIServiceConfig
-                                                  completion:^(NSString *appAccessToken, NSError *appAuthError) {
-                                                      if (appAccessToken) {
-                                                          [TWTRNetworkSessionProvider guestSessionWithAuthConfig:authConfig APIServiceConfig:APIServiceConfig accessToken:appAccessToken completion:completion];
-                                                      } else {
-                                                          completion(nil, appAuthError);
-                                                      }
-                                                  }];
+        [TWTRNetworkSessionProvider appSessionWithAuthConfig:authConfig APIServiceConfig:APIServiceConfig completion:^(NSString *appAccessToken, NSError *appAuthError) {
+            if (appAccessToken) {
+                [TWTRNetworkSessionProvider guestSessionWithAuthConfig:authConfig APIServiceConfig:APIServiceConfig accessToken:appAccessToken completion:completion];
+            } else {
+                completion(nil, appAuthError);
+            }
+        }];
     }
 }
 

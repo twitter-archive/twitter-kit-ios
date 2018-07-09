@@ -35,11 +35,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)controlsViewSynchronizerVideoPlayerDidBecomeReady:(TWTRVideoControlsViewSynchronizer *)synchronizer;
 @end
 
-@interface TWTRVideoControlsViewSynchronizer : NSObject <TWTRVideoPlayerOutputViewDelegate, TWTRVideoPlayerScribeDelegate, TWTRVideoControlsViewDelegate>
+@interface TWTRVideoControlsViewSynchronizer : NSObject <TWTRVideoPlayerOutputViewDelegate, TWTRVideoControlsViewDelegate>
 
 @property (nonatomic, weak) TWTRVideoControlsView *controlsView;
 @property (nonatomic, weak, readonly) TWTRVideoPlayerOutputView *videoPlayerView;
-@property (nonatomic, weak) id<TWTRVideoPlayerScribeDelegate> scribeDelegate;
 @property (nonatomic, weak) id<TWTRVideoControlsViewSynchronizerDelegate> delegate;
 
 /**

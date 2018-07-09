@@ -16,12 +16,10 @@
  */
 
 #import <OCMock/OCMock.h>
-#import <TwitterCore/TWTRScribeService.h>
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "TWTRAPIClient_Private.h"
 #import "TWTRKit.h"
-#import "TWTRScribeSink.h"
 #import "TWTRTimelineCursor.h"
 #import "TWTRUserTimelineDataSource.h"
 

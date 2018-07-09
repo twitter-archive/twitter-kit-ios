@@ -26,14 +26,12 @@
 #import "TWTRMultiPhotoLayout.h"
 #import "TWTRPlayIcon.h"
 #import "TWTRPlayerCardEntity.h"
-#import "TWTRScribeSink.h"
 #import "TWTRTranslationsUtil.h"
 #import "TWTRTweet.h"
 #import "TWTRTweetImageView.h"
 #import "TWTRTweetMediaEntity.h"
 #import "TWTRTweet_Private.h"
 #import "TWTRTwitter_Private.h"
-#import "TWTRUser.h"  // for scribing
 #import "TWTRVideoControlsView.h"
 #import "TWTRVideoMetaData.h"
 #import "TWTRVideoPlaybackConfiguration.h"
@@ -106,7 +104,7 @@ static const CGFloat TWTRImageCornerRadius = 4.0;
             [self.inlinePlayerView removeFromSuperview];
         }
 
-        self.inlinePlayerView = [[TWTRVideoPlayerView alloc] initWithTweet:tweet playbackConfiguration:[self videoPlaybackConfiguration] scribeSink:[TWTRTwitter sharedInstance].scribeSink controlsView:[TWTRVideoControlsView inlineControls] previewImage:[self videoThumbnail].image];
+        self.inlinePlayerView = [[TWTRVideoPlayerView alloc] initWithTweet:tweet playbackConfiguration:[self videoPlaybackConfiguration] controlsView:[TWTRVideoControlsView inlineControls] previewImage:[self videoThumbnail].image];
         self.inlinePlayerView.shouldSetChromeVisible = NO;
         self.inlinePlayerView.delegate = self;
         self.inlinePlayerView.aspectRatio = TWTRVideoPlayerAspectRatioAspectFill;
@@ -405,10 +403,7 @@ static const CGFloat TWTRImageCornerRadius = 4.0;
 
 - (void)presentVideo:(TWTRVideoPlaybackConfiguration *)videoConfig fromViewController:(UIViewController *)presentingViewController
 {
-    TWTRScribeSink *scribeSink = [TWTRTwitter sharedInstance].scribeSink;
-    [scribeSink didPlayPercentOfMedia:0 fromPlaybackConfiguration:videoConfig inTweetID:self.tweet.tweetID publishedByOwnerID:self.tweet.author.userID];
-
-    TWTRVideoViewController *viewController = [[TWTRVideoViewController alloc] initWithTweet:self.tweet playbackConfiguration:videoConfig scribeSink:scribeSink previewImage:[self imageAtIndex:0] playerView:self.inlinePlayerView];
+    TWTRVideoViewController *viewController = [[TWTRVideoViewController alloc] initWithTweet:self.tweet playbackConfiguration:videoConfig previewImage:[self imageAtIndex:0] playerView:self.inlinePlayerView];
     viewController.delegate = self;
 
     [self presentMediaViewController:viewController fromView:self presentingViewController:presentingViewController];
@@ -427,11 +422,9 @@ static const CGFloat TWTRImageCornerRadius = 4.0;
         view.alpha = 0.0;
     });
 
-    [mediaContainer showFromView:view
-                inViewController:presentingViewController
-                      completion:^{
-                          view.alpha = 1.0;
-                      }];
+    [mediaContainer showFromView:view inViewController:presentingViewController completion:^{
+        view.alpha = 1.0;
+    }];
 }
 
 - (TWTRVideoPlaybackConfiguration *)videoPlaybackConfiguration
@@ -508,14 +501,6 @@ static const CGFloat TWTRImageCornerRadius = 4.0;
 - (void)playerViewDidTapFullscreen:(TWTRVideoPlayerView *)playerView
 {
     [self presentDetailedVideoView];
-}
-
-- (void)playerViewDidBecomeReady:(TWTRVideoPlayerView *)playerView shouldAutoPlay:(BOOL)shouldAutoPlay
-{
-    if (shouldAutoPlay && playerView == self.inlinePlayerView) {
-        TWTRScribeSink *scribeSink = [TWTRTwitter sharedInstance].scribeSink;
-        [scribeSink didBeginPlaybackFromPlaybackConfiguration:[self videoPlaybackConfiguration] inTweetID:self.tweet.tweetID publishedByOwnerID:self.tweet.author.userID isInlinePlayback:YES];
-    }
 }
 
 - (void)playerView:(TWTRVideoPlayerView *)playerView didChangePlaybackState:(TWTRVideoPlaybackState)newState

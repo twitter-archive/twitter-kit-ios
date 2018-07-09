@@ -22,7 +22,6 @@
 #import "TWTRAuthConfigSessionsValidator_Private.h"
 #import "TWTRAuthConfigStore.h"
 #import "TWTRAuthenticationConstants.h"
-#import "TWTRErrorLogger.h"
 #import "TWTRFakeAPIServiceConfig.h"
 #import "TWTRGuestSession.h"
 #import "TWTRSession.h"
@@ -58,9 +57,8 @@
 
     self.authConfig = [[TWTRAuthConfig alloc] initWithConsumerKey:@"consumerKey" consumerSecret:@"consumerSecret"];
     TWTRFakeAPIServiceConfig *serviceConfig = [[TWTRFakeAPIServiceConfig alloc] init];
-    id<TWTRErrorLogger> errorLogger = OCMProtocolMock(@protocol(TWTRErrorLogger));
 
-    self.sessionStore = [[TWTRSessionStore alloc] initWithAuthConfig:self.authConfig APIServiceConfig:serviceConfig refreshStrategies:@[] URLSession:[NSURLSession sharedSession] errorLogger:errorLogger];
+    self.sessionStore = [[TWTRSessionStore alloc] initWithAuthConfig:self.authConfig APIServiceConfig:serviceConfig refreshStrategies:@[] URLSession:[NSURLSession sharedSession]];
 
     self.sessionStore.guestSession = [[TWTRGuestSession alloc] initWithSessionDictionary:@{ TWTRAuthAppOAuthTokenKey: @"accessToken", TWTRGuestAuthOAuthTokenKey: @"guestToken" }];
     self.sessionStoreMock = OCMPartialMock(self.sessionStore);

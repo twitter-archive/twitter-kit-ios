@@ -18,7 +18,6 @@
 #import "TWTRMultiImageViewController.h"
 #import <TwitterCore/TWTRAssertionMacros.h>
 #import "TWTRImageViewController.h"
-#import "TWTRScribeSink.h"
 #import "TWTRTwitter_Private.h"
 
 @interface TWTRMultiImageViewController () <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
@@ -96,7 +95,6 @@
 
 - (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers transitionCompleted:(BOOL)completed
 {
-    [[TWTRTwitter sharedInstance].scribeSink didNavigateInsideGallery];
 }
 
 #pragma mark - TWTRMediaContainerPresentable
@@ -108,12 +106,10 @@
 
 - (void)willShowInMediaContainer
 {
-    [[TWTRTwitter sharedInstance].scribeSink didPresentPhotoGallery];
 }
 
 - (void)didDismissInMediaContainer
 {
-    [[TWTRTwitter sharedInstance].scribeSink didDismissPhotoGallery];
 }
 
 - (UIImage *)transitionImage

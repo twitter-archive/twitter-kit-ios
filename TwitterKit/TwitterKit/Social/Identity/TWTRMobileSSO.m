@@ -20,7 +20,6 @@
 #import <TwitterCore/TWTRSessionStore.h>
 #import "TWTRErrors.h"
 #import "TWTRLoginURLParser.h"
-#import "TWTRScribeSink.h"
 #import "TWTRTwitter.h"
 #import "TWTRTwitter_Private.h"
 
@@ -46,22 +45,15 @@
 
     // Attempt to open Twitter app with Mobile SSO URL
     if (iOS10) {
-        [[UIApplication sharedApplication] openURL:twitterAuthURL
-            options:@{}
-            completionHandler:^(BOOL success) {
-                if (success) {
-                    // The Twitter app with the twitterauth:// scheme is installed,
-                    // scribe that we are starting the flow
-                    [[TWTRTwitter sharedInstance].scribeSink didStartSSOLogin];
-                } else {
-                    completion(nil, [TWTRErrors noTwitterAppError]);
-                }
-            }];
+        [[UIApplication sharedApplication] openURL:twitterAuthURL options:@{} completionHandler:^(BOOL success) {
+            if (!success) {
+                completion(nil, [TWTRErrors noTwitterAppError]);
+            }
+        }];
 
     } else {
         if ([[UIApplication sharedApplication] canOpenURL:twitterAuthURL]) {
             [[UIApplication sharedApplication] openURL:twitterAuthURL];
-            [[TWTRTwitter sharedInstance].scribeSink didStartSSOLogin];
         } else {
             completion(nil, [TWTRErrors noTwitterAppError]);
         }
@@ -76,7 +68,6 @@
     if (!isExpectedSourceApplication) {
         // The source application for Mobile SSO is not from a valid bundle id
         dispatch_async(dispatch_get_main_queue(), ^{
-            [[TWTRTwitter sharedInstance].scribeSink didFailSSOLogin];
             self.completion(nil, [TWTRErrors invalidSourceApplicationError]);
         });
 
@@ -96,23 +87,17 @@
     if ([self.loginURLParser isMobileSSOCancelURL:url]) {
         // The user cancelled the Twitter SSO flow
         dispatch_async(dispatch_get_main_queue(), ^{
-            [[TWTRTwitter sharedInstance].scribeSink didCancelSSOLogin];
             self.completion(nil, [TWTRErrors mobileSSOCancelError]);
         });
         return YES;
     } else if ([self.loginURLParser isMobileSSOSuccessURL:url]) {
         // The user finished the flow, the Twitter app gave us valid tokens
-        [[TWTRTwitter sharedInstance].scribeSink didFinishSSOLogin];
         NSDictionary *parameters = [self.loginURLParser parametersForSSOURL:url];
         TWTRSession *newSession = [[TWTRSession alloc] initWithSSOResponse:parameters];
         TWTRSessionStore *store = [TWTRTwitter sharedInstance].sessionStore;
-        [store saveSession:newSession
-                completion:^(id<TWTRAuthSession> session, NSError *error) {
-                    if (error) {
-                        [[TWTRTwitter sharedInstance].scribeSink didEncounterError:error withMessage:@"Failed to save session"];
-                    }
-                    self.completion(session, error);
-                }];
+        [store saveSession:newSession completion:^(id<TWTRAuthSession> session, NSError *error) {
+            self.completion(session, error);
+        }];
         return YES;
     }
 

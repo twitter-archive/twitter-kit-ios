@@ -28,7 +28,6 @@
 #import "TWTRComposerViewController.h"
 #import "TWTRErrors.h"
 #import "TWTRLocalizedResources.h"
-#import "TWTRScribeSink.h"
 #import "TWTRTwitter.h"
 #import "TWTRTwitterText.h"
 #import "TWTRTwitter_Private.h"
@@ -76,12 +75,11 @@ UIImage *videoThumbnail(NSURL *url)
     NSArray *accounts = existingAccounts();
     if (accounts.count == 0) {
         NSLog(@"[TwitterKit] Error: Composer created without any user accounts set up. It is the responsibility of the developer to ensure that Twitter Kit has a logged-in user before presenting a composer. See https://dev.twitter.com/twitterkit/ios/compose-tweets#presenting-a-basic-composer");
-        [[TWTRTwitter sharedInstance].scribeSink didEncounterError:[TWTRErrors noAccountsError] withMessage:@"Composer created with no accounts."];
     }
     TWTRSETweet *tweet = [self tweetWithText:text attachment:attachment image:image];
 
     // Shared Composer
-    TWTRSETweetShareConfiguration *config = [[TWTRSETweetShareConfiguration alloc] initWithInitialTweet:tweet accounts:accounts initiallySelectedAccount:[accounts lastObject] geoTagging:nil autoCompletion:nil cardPreviewProvider:nil imageDownloader:[self imageLoader] localizedResources:[TWTRLocalizedResources class] networking:self.networking twitterText:[TWTRTwitterText class] wordRangeCalculator:[NSString class] scribe:nil delegate:self];
+    TWTRSETweetShareConfiguration *config = [[TWTRSETweetShareConfiguration alloc] initWithInitialTweet:tweet accounts:accounts initiallySelectedAccount:[accounts lastObject] geoTagging:nil autoCompletion:nil cardPreviewProvider:nil imageDownloader:[self imageLoader] localizedResources:[TWTRLocalizedResources class] networking:self.networking twitterText:[TWTRTwitterText class] wordRangeCalculator:[NSString class] delegate:self];
 
     self = [super initWithConfiguration:config];
 
@@ -99,8 +97,6 @@ UIImage *videoThumbnail(NSURL *url)
         NSLog(@"Only one attachment type may be provided (image or video).");
         return nil;
     }
-
-    [[TWTRTwitter sharedInstance].scribeSink didOpenComposer];
 
     if (videoURL) {
         image = videoThumbnail(videoURL);
@@ -123,8 +119,6 @@ UIImage *videoThumbnail(NSURL *url)
         NSLog(@"The video doesn't have a preview image to show in composer.");
         return nil;
     }
-
-    [[TWTRTwitter sharedInstance].scribeSink didOpenComposer];
 
     if (self = [self initWithText:initialText image:image attachment:nil]) {
         if (videoData) {
@@ -165,8 +159,6 @@ UIImage *videoThumbnail(NSURL *url)
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 
-    [[TWTRTwitter sharedInstance].scribeSink didTapCancelFromComposerWithSelectedUserID:self.currentUserID];
-
     // Reset the pending video data so that a second Tweet doesn't attempt
     // to send that data again (or send data for a cancelled Tweet)
     [self.networking cancelPendingVideoUpload];
@@ -176,8 +168,6 @@ UIImage *videoThumbnail(NSURL *url)
 - (void)shareViewControllerDidFinishSendingTweet
 {
     [self dismissViewControllerAnimated:YES completion:nil];
-
-    [[TWTRTwitter sharedInstance].scribeSink didTapSendFromComposerWithSelectedUserID:self.currentUserID];
 }
 
 - (void)shareViewController:(TWTRSETweetShareViewController *)shareViewController didSelectAccount:(id<TWTRSEAccount>)account
@@ -188,11 +178,10 @@ UIImage *videoThumbnail(NSURL *url)
 - (void)shareViewControllerPresentedWithNoAccounts
 {
     NSLog(@"[TwitterKit] Error: composer presented with no available Twitter accounts.");
-    [self dismissViewControllerAnimated:NO
-                             completion:^{
-                                 NSError *error = [NSError errorWithDomain:TWTRErrorDomain code:0 userInfo:@{NSLocalizedDescriptionKey: @"Error: There is no Twitter account."}];
-                                 [self.delegate composerDidFail:(TWTRComposerViewController *)self withError:error];
-                             }];
+    [self dismissViewControllerAnimated:NO completion:^{
+        NSError *error = [NSError errorWithDomain:TWTRErrorDomain code:0 userInfo:@{ NSLocalizedDescriptionKey: @"Error: There is no Twitter account." }];
+        [self.delegate composerDidFail:(TWTRComposerViewController *)self withError:error];
+    }];
 }
 
 #pragma mark - TWTRComposerNetworkingDelegate Protocol Methods
