@@ -50,7 +50,10 @@ static NSString *const APIDateString = @"Mon Mar 05 22:08:25 +0000 2007";
 
 - (void)testAccessibilityText
 {
-    NSString *desired = @"March 5, 2007";
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateStyle = NSDateFormatterLongStyle;
+
+    NSString *desired = [formatter stringFromDate:self.apiDate];
     NSString *actual = [TWTRDateUtil accessibilityTextForDate:self.apiDate];
     XCTAssert([desired isEqualToString:actual]);
 }
