@@ -323,6 +323,7 @@ static TWTRTwitter *sharedTwitter;
         // Throws exception if the app does not have a valid scheme
         [NSException raise:TWTRInvalidInitializationException format:@"Attempt made to Log in or Like a Tweet without a valid Twitter Kit URL Scheme set up in the app settings. Please see https://dev.twitter.com/twitterkit/ios/installation for more info."];
     } else {
+        __weak typeof(viewController) weakViewController = viewController;
         self.mobileSSO = [[TWTRMobileSSO alloc] initWithAuthConfig:self.sessionStore.authConfig];
         [self.mobileSSO attemptAppLoginWithCompletion:^(TWTRSession *session, NSError *error) {
             if (session) {
@@ -332,8 +333,9 @@ static TWTRTwitter *sharedTwitter;
                     // The user tapped "Cancel"
                     completion(session, error);
                 } else {
+                    typeof(weakViewController) strongViewController = weakViewController;
                     // There wasn't a Twitter app
-                    [self performWebBasedLogin:viewController completion:completion];
+                    [self performWebBasedLogin:strongViewController completion:completion];
                 }
             }
         }];
@@ -350,9 +352,11 @@ static TWTRTwitter *sharedTwitter;
 
     self.webAuthenticationFlow = [[TWTRWebAuthenticationFlow alloc] initWithSessionStore:self.sessionStore];
 
+    __weak typeof(viewController) weakViewController = viewController;
     [self.webAuthenticationFlow beginAuthenticationFlow:^(UIViewController *controller) {
+        __strong typeof(weakViewController) strongViewController = weakViewController;
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
-        [viewController presentViewController:navigationController animated:YES completion:nil];
+        [strongViewController presentViewController:navigationController animated:YES completion:nil];
     }
         completion:^(TWTRSession *session, NSError *error) {
             /**
