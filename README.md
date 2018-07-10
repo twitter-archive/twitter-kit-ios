@@ -46,7 +46,7 @@ Using Twitter Kit from source in production applications is not officially suppo
 
 To add Twitter Kit to your app, simply add `TwitterKit` to your Podfile.
 
-```
+```ruby
 target 'MyApp' do
   use_frameworks!
   pod 'TwitterKit'
@@ -57,14 +57,14 @@ end
 
 To install Twitter Kit for iOS using Carthage, add the following lines to your Cartfile. For more information about how to set up Carthage and your Cartfile, see [here](https://github.com/Carthage/Carthage).
 
-```
+```swift
 binary "https://ton.twimg.com/syndication/twitterkit/ios/TwitterKit.json"
 binary "https://ton.twimg.com/syndication/twitterkit/ios/TwitterCore.json"
 ```
 
 After running `carthage update`, add `TwitterKit.framework` and `TwitterShareExtensionUI.framework` to the `Linked Frameworks and Binaries` section under General of your App target. In addition to that, make sure that when you are adding the copy-frameworks run script for Carthage that you add the following input paths: 
 
-```
+```swift
 $(SRCROOT)/Carthage/Build/iOS/TwitterCore.framework
 $(SRCROOT)/Carthage/Build/iOS/TwitterKit.framework
 $(SRCROOT)/Carthage/Build/iOS/TwitterShareExtensionUI.framework
