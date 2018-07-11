@@ -21,8 +21,8 @@
 
 #import <Foundation/Foundation.h>
 #import <TwitterCore/TWTRSession.h>
-#import <TwitterShareExtensionUI/TwitterShareExtensionUI.h>
 #import "TWTRUser.h"
+#import "TwitterShareExtensionUI.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

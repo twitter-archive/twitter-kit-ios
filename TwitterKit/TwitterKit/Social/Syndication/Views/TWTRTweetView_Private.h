@@ -39,8 +39,7 @@
 @property (nonatomic, readonly) TWTRTweetContentView *contentView;
 @property (nonatomic) TWTRTweetContentView *attachmentContentView;
 
-// When this variable is set, configureWithTweet: will not log any
-// Scribe calls, and won't load any images. Defaults to NO.
+// When this variable is set, configureWithTweet: won't load any images. Defaults to NO.
 @property (nonatomic) BOOL calculationOnly;
 @property (nonatomic) BOOL doneInitializing;
 @property (nonatomic, readwrite) TWTRTweet *tweet;

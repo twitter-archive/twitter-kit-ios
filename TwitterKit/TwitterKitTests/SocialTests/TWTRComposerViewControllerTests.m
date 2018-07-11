@@ -15,12 +15,12 @@
  *
  */
 
-#import <TwitterShareExtensionUI/TwitterShareExtensionUI.h>
 #import <XCTest/XCTest.h>
 #import "TWTRComposerViewController.h"
 #import "TWTRImageTestHelper.h"
 #import "TWTRSharedComposerWrapper.h"
 #import "TWTRTwitter.h"
+#import "TwitterShareExtensionUI.h"
 
 @interface TWTRSETweetShareViewController ()
 

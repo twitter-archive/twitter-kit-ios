@@ -15,6 +15,8 @@
  *
  */
 
+#import <UIKit/UIKit.h>
+
 @class TWTRUser;
 @class TWTRTweet;
 @class TWTRAuthConfig;

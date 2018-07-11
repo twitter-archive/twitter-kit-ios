@@ -17,10 +17,10 @@
 
 #import "TWTRImageLoader.h"
 #import <TwitterCore/TWTRAssertionMacros.h>
-#import <TwitterShareExtensionUI/TWTRSEImageDownloader.h>
 #import "TWTRConstants_Private.h"
 #import "TWTRImageLoaderCache.h"
 #import "TWTRImageLoaderTaskManager.h"
+#import "TWTRSEImageDownloader.h"
 #import "TWTRTwitter_Private.h"
 
 #define TWTRImageLoaderQueueName [NSString stringWithFormat:@"%@.image-loader.current-tasks", TWTRBundleID]

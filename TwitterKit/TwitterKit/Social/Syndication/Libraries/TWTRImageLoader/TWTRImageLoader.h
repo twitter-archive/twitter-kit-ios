@@ -19,10 +19,10 @@
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
 
-#import <TwitterShareExtensionUI/TWTRSEImageDownloader.h>
 #import <UIKit/UIKit.h>
 #import "TWTRImageLoaderCache.h"
 #import "TWTRImageLoaderTaskManager.h"
+#import "TWTRSEImageDownloader.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

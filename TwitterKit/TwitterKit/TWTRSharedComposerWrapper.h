@@ -19,11 +19,11 @@
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
 
-#import <TwitterShareExtensionUI/TWTRSETweet.h>
-#import <TwitterShareExtensionUI/TWTRSETweetShareViewController.h>
-#import <TwitterShareExtensionUI/TWTRSETweetShareViewControllerDelegate.h>
 #import "TWTRComposerNetworking.h"
 #import "TWTRComposerViewController.h"
+#import "TWTRSETweet.h"
+#import "TWTRSETweetShareViewController.h"
+#import "TWTRSETweetShareViewControllerDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 /**

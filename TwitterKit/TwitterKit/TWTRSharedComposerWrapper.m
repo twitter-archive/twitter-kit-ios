@@ -19,15 +19,15 @@
 #import <AVFoundation/AVFoundation.h>
 #import <TwitterCore/TWTRAssertionMacros.h>
 #import <TwitterCore/TWTRSessionStore.h>
-#import <TwitterShareExtensionUI/TWTRSETweet.h>
-#import <TwitterShareExtensionUI/TWTRSETweetAttachment.h>
-#import <TwitterShareExtensionUI/TWTRSETweetShareViewController.h>
 #import <UIKit/UIKit.h>
 #import "TWTRComposerAccount.h"
 #import "TWTRComposerNetworking.h"
 #import "TWTRComposerViewController.h"
 #import "TWTRErrors.h"
 #import "TWTRLocalizedResources.h"
+#import "TWTRSETweet.h"
+#import "TWTRSETweetAttachment.h"
+#import "TWTRSETweetShareViewController.h"
 #import "TWTRTwitter.h"
 #import "TWTRTwitterText.h"
 #import "TWTRTwitter_Private.h"
@@ -178,10 +178,11 @@ UIImage *videoThumbnail(NSURL *url)
 - (void)shareViewControllerPresentedWithNoAccounts
 {
     NSLog(@"[TwitterKit] Error: composer presented with no available Twitter accounts.");
-    [self dismissViewControllerAnimated:NO completion:^{
-        NSError *error = [NSError errorWithDomain:TWTRErrorDomain code:0 userInfo:@{ NSLocalizedDescriptionKey: @"Error: There is no Twitter account." }];
-        [self.delegate composerDidFail:(TWTRComposerViewController *)self withError:error];
-    }];
+    [self dismissViewControllerAnimated:NO
+                             completion:^{
+                                 NSError *error = [NSError errorWithDomain:TWTRErrorDomain code:0 userInfo:@{NSLocalizedDescriptionKey: @"Error: There is no Twitter account."}];
+                                 [self.delegate composerDidFail:(TWTRComposerViewController *)self withError:error];
+                             }];
 }
 
 #pragma mark - TWTRComposerNetworkingDelegate Protocol Methods

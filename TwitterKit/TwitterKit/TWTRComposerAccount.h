@@ -20,7 +20,7 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <TwitterShareExtensionUI/TwitterShareExtensionUI.h>
+#import "TwitterShareExtensionUI.h"
 
 @class TWTRSession;
 

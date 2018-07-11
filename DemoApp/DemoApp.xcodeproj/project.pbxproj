@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		191FF0FFCC8156460546E43A /* Pods_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E13E2EBAF8AC955FF850B86 /* Pods_DemoApp.framework */; };
 		2001BA381FA0EF0F0074EA67 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2001BA371FA0EF0F0074EA67 /* Config.xcconfig */; };
-		204B09911FB29FA600C8841C /* libTwitterShareExtensionUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 204B09921FB29FA600C8841C /* libTwitterShareExtensionUI.a */; };
 		20ABD1D71F0188DD00DCA2E0 /* TweetCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ABD1D61F0188DC00DCA2E0 /* TweetCollectionViewController.swift */; };
-		3733E29E1EA8276800E95681 /* TwitterShareExtensionUIResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3733E29D1EA8276800E95681 /* TwitterShareExtensionUIResources.bundle */; };
 		377340651ECA3D080065FFE0 /* DeletedTweet.json in Resources */ = {isa = PBXBuildFile; fileRef = 377340641ECA3D080065FFE0 /* DeletedTweet.json */; };
 		377783891E96AF1700BC4830 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 377783881E96AF1700BC4830 /* TwitterKitResources.bundle */; };
 		3777838B1E96AFD500BC4830 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3777838A1E96AFD500BC4830 /* Images.xcassets */; };
@@ -51,6 +49,7 @@
 		AA34AC7E1FA3A0B7009EA9EB /* DemoCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA34AC7D1FA3A0B7009EA9EB /* DemoCollectionViewDataSource.swift */; };
 		AA34AC801FA3A5F1009EA9EB /* DemoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA34AC7F1FA3A5F1009EA9EB /* DemoCollectionViewController.swift */; };
 		AA34AC821FA3A80D009EA9EB /* ComplexTweetDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA34AC811FA3A80D009EA9EB /* ComplexTweetDemo.swift */; };
+		AA3E099620119D4000792255 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3E099520119D3F00792255 /* MapKit.framework */; };
 		AA6E37681FA3D529009137EC /* TimelineDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6E37671FA3D529009137EC /* TimelineDemo.swift */; };
 		AA6E376F1FA79CEB009137EC /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6E376E1FA79CEB009137EC /* UIViewControllerExtensions.swift */; };
 		AA6E37771FA7BB0D009137EC /* TwitterSessionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6E37761FA7BB0D009137EC /* TwitterSessionCollectionViewCell.swift */; };
@@ -182,9 +181,6 @@
 /* Begin PBXFileReference section */
 		0E13E2EBAF8AC955FF850B86 /* Pods_DemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2001BA371FA0EF0F0074EA67 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../Config.xcconfig; sourceTree = "<group>"; };
-		20357E431FB28652000E20FE /* libTwitterShareExtensionUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTwitterShareExtensionUI.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		20357E451FB2866F000E20FE /* libTwitterShareExtensionUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTwitterShareExtensionUI.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		204B09921FB29FA600C8841C /* libTwitterShareExtensionUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTwitterShareExtensionUI.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		20ABD1D61F0188DC00DCA2E0 /* TweetCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCollectionViewController.swift; sourceTree = "<group>"; };
 		3733E29D1EA8276800E95681 /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterShareExtensionUIResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		377340641ECA3D080065FFE0 /* DeletedTweet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DeletedTweet.json; sourceTree = "<group>"; };
@@ -232,6 +228,7 @@
 		AA34AC7D1FA3A0B7009EA9EB /* DemoCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		AA34AC7F1FA3A5F1009EA9EB /* DemoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCollectionViewController.swift; sourceTree = "<group>"; };
 		AA34AC811FA3A80D009EA9EB /* ComplexTweetDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexTweetDemo.swift; sourceTree = "<group>"; };
+		AA3E099520119D3F00792255 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AA6E37671FA3D529009137EC /* TimelineDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineDemo.swift; sourceTree = "<group>"; };
 		AA6E376E1FA79CEB009137EC /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		AA6E37761FA7BB0D009137EC /* TwitterSessionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterSessionCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -256,7 +253,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				204B09911FB29FA600C8841C /* libTwitterShareExtensionUI.a in Frameworks */,
+				AA3E099620119D4000792255 /* MapKit.framework in Frameworks */,
 				AAEE1AFF1FACCC8300F11160 /* SafariServices.framework in Frameworks */,
 				379A6D4C1E95B7D100625984 /* libTwitterKit.a in Frameworks */,
 				377941651E96DBCF0049A022 /* DCIntrospect_ARC.framework in Frameworks */,
@@ -359,7 +356,7 @@
 			children = (
 				379A6D321E95B77C00625984 /* libTwitterKit.a */,
 				379A6D341E95B77C00625984 /* TwitterKitTests.xctest */,
-				379A6D361E95B77C00625984 /* .framework */,
+				379A6D361E95B77C00625984 /* TwitterKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -378,9 +375,7 @@
 		A7BC0A74110949C5A64504DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				204B09921FB29FA600C8841C /* libTwitterShareExtensionUI.a */,
-				20357E451FB2866F000E20FE /* libTwitterShareExtensionUI.a */,
-				20357E431FB28652000E20FE /* libTwitterShareExtensionUI.a */,
+				AA3E099520119D3F00792255 /* MapKit.framework */,
 				AAEE1AF81FACCC8300F11160 /* SafariServices.framework */,
 				377941601E96DBCF0049A022 /* DCIntrospect_ARC.framework */,
 				377941611E96DBCF0049A022 /* DZNEmptyDataSet.framework */,
@@ -625,10 +620,9 @@
 			remoteRef = 379A6D331E95B77C00625984 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		379A6D361E95B77C00625984 /* .framework */ = {
+		379A6D361E95B77C00625984 /* TwitterKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			name = .framework;
 			path = TwitterKit.framework;
 			remoteRef = 379A6D351E95B77C00625984 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -640,7 +634,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3733E29E1EA8276800E95681 /* TwitterShareExtensionUIResources.bundle in Resources */,
 				377783891E96AF1700BC4830 /* TwitterKitResources.bundle in Resources */,
 				379A6CBD1E95B47300625984 /* LaunchScreen.storyboard in Resources */,
 				2001BA381FA0EF0F0074EA67 /* Config.xcconfig in Resources */,
