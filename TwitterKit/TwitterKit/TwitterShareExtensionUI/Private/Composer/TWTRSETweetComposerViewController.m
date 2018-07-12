@@ -288,10 +288,6 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
 
     self.scrollView.alwaysBounceVertical = YES;
 
-    if (@available(iOS 11.0, *)) {
-        self.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    }
-
     self.tableView.bounces = NO;
 
     self.tableView.dataSource = self.dataSource;
