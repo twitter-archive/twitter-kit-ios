@@ -254,7 +254,7 @@ NSString *const TWTRTweetPerspectivalUserID = @"perspectival_user_id";
 {
     TWTRParameterAssertOrReturnValue([IDString length] > 0, nil);
 
-    return [NSString stringWithFormat:@"%@:%zd:%@:%@", NSStringFromClass([self class]), [[self class] version], perspective ?: @"", IDString];
+    return [NSString stringWithFormat:@"%@:%zd:%@:%@", NSStringFromClass([self class]), (long)[[self class] version], perspective ?: @"", IDString];
 }
 
 #pragma mark - JSON Validating
