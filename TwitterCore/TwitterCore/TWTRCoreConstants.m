@@ -19,7 +19,7 @@
 
 #define TWC_SDK_BUNDLE_ID TWC_STR(TWC_BUNDLE_IDENTIFIER)
 
-NSString *const TWTRCoreVersion = @"3.1.0";
+NSString *const TWTRCoreVersion = @"3.2.0";
 NSString *const TWTRCoreBundleID = @TWC_SDK_BUNDLE_ID;
 
 NSString *const TWTRTwitterCoreVersion = @TWC_STR(DISPLAY_VERSION);
