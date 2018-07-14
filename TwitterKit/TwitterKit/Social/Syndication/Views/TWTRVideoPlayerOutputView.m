@@ -421,7 +421,7 @@ NSString *videoGravityForAspectRatio(TWTRVideoPlayerAspectRatio aspectRatio)
 
             CMTimeRange editRange = CMTimeRangeMake([self standardTrim], CMTimeSubtract(duration, [self standardTotalTrimAmount]));
             CMTimeRange editAudioRange = CMTimeRangeMake([self standardTrim], CMTimeSubtract(duration, [self standardTrim]));
-            duration = editRange.duration;
+            //duration = editRange.duration;
 
             BOOL result = [compositionVideoTrack insertTimeRange:editRange ofTrack:sourceVideoTrack atTime:nextStartTime error:&editError];
             if (!result) {
