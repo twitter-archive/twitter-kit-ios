@@ -180,7 +180,7 @@ static const CGFloat TWTRControlsMinimumTappableSizeInPoints = 44.0;
     return [@"88:88" sizeWithAttributes:@{NSFontAttributeName: self.timeRemainingLabel.font}].width;
 }
 
-- (NSString *)displayStringForTimeInterval:(NSTimeInterval)interval
+- (NSString *)displayStringForTimeInterval:(NSTimeInterval)interval __attribute__((annotate("returns_localized_nsstring")))
 {
     return [TWTRStringUtil displayStringFromTimeInterval:interval] ?: @"--";
 }
