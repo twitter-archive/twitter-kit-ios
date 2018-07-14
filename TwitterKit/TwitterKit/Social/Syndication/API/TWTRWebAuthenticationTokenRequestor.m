@@ -101,15 +101,16 @@
 
 - (void)didFailToReceiveOAuthToken:(NSData *)responseData
 {
+    NSLog(@"[TwitterKit] Error obtaining user auth token.");
+#ifdef DEBUG
     NSString *errorDescription;
-
     if (responseData == nil) {
         errorDescription = @"";
     } else {
         errorDescription = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding] ?: @"";
     }
-
-    NSLog(@"[TwitterKit] Error obtaining user auth token.");
+    NSLog(@"[TwitterKit] %@", errorDescription);
+#endif
 }
 
 - (NSError *)unknownLoginErrorWithMessage:(NSString *)message
