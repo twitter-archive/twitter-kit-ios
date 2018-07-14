@@ -30,7 +30,7 @@
 @class MPLogEventRecorder;
 @class MPNetworkManager;
 
-typedef id(^MPSingletonProviderBlock)();
+typedef id(^MPSingletonProviderBlock)(void);
 
 
 typedef NS_OPTIONS(NSUInteger, MPATSSetting) {
