@@ -20,7 +20,7 @@
 
 @implementation TWTRJSONSerialization
 
-+ (NSArray *)arrayFromData:(NSData *)responseData error:(NSError **)error
++ (NSArray *)arrayFromData:(NSData *)responseData error:(NSError * __autoreleasing *)error
 {
     return [[self class] collectionFromData:responseData error:error validationHandler:^(id JSONResponse) {
         if (![JSONResponse isKindOfClass:[NSArray class]]) {
@@ -32,7 +32,7 @@
     }];
 }
 
-+ (NSDictionary *)dictionaryFromData:(NSData *)responseData error:(NSError **)error
++ (NSDictionary *)dictionaryFromData:(NSData *)responseData error:(NSError * __autoreleasing *)error
 {
     return [[self class] collectionFromData:responseData error:error validationHandler:^(id JSONResponse) {
         if (![JSONResponse isKindOfClass:[NSDictionary class]]) {
@@ -44,7 +44,7 @@
     }];
 }
 
-+ (id)collectionFromData:(NSData *)responseData error:(NSError **)error validationHandler:(BOOL (^)(id JSONResponse))validationHandler
++ (id)collectionFromData:(NSData *)responseData error:(NSError * __autoreleasing *)error validationHandler:(BOOL (^)(id JSONResponse))validationHandler
 {
     NSError *serializationError;
 
