@@ -566,7 +566,7 @@
 }
 
 #pragma mark - Response Validating
-- (BOOL)validateResponse:(NSHTTPURLResponse *)response data:(NSData *)data error:(NSError **)error
+- (BOOL)validateResponse:(NSHTTPURLResponse *)response data:(NSData *)data error:(NSError * __autoreleasing *)error
 {
     if (!self.responseValidatorError) {
         return YES;

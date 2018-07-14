@@ -192,7 +192,7 @@ NSString *const TWTRGenericKeychainItemErrorDomain = @"TWTRGenericKeychainItemEr
     return [self storeInKeychainReplacingExisting:YES error:error];
 }
 
-- (BOOL)storeInKeychainReplacingExisting:(BOOL)replaceExisting error:(NSError **)error;
+- (BOOL)storeInKeychainReplacingExisting:(BOOL)replaceExisting error:(NSError * __autoreleasing *)error;
 {
     __block BOOL success = YES;
 
@@ -223,7 +223,7 @@ NSString *const TWTRGenericKeychainItemErrorDomain = @"TWTRGenericKeychainItemEr
     return success;
 }
 
-- (BOOL)removeFromKeychain:(NSError **)error
+- (BOOL)removeFromKeychain:(NSError * __autoreleasing *)error
 {
     __block BOOL success = YES;
 
@@ -234,7 +234,7 @@ NSString *const TWTRGenericKeychainItemErrorDomain = @"TWTRGenericKeychainItemEr
     return success;
 }
 
-+ (BOOL)removeAllItemsForQuery:(TWTRGenericKeychainQuery *)query error:(NSError **)error;
++ (BOOL)removeAllItemsForQuery:(TWTRGenericKeychainQuery *)query error:(NSError * __autoreleasing *)error;
 {
     __block BOOL success = YES;
 
@@ -279,14 +279,14 @@ NSString *const TWTRGenericKeychainItemErrorDomain = @"TWTRGenericKeychainItemEr
  * This method fetches all the items that match the query but in an unsynchronized manner.
  * This method can safely be called from with the synchronouslyAccessKeychain: method.
  */
-+ (NSArray *)unsynchronizedStoredItemsMatchingQuery:(TWTRGenericKeychainQuery *)query error:(NSError **)error
++ (NSArray *)unsynchronizedStoredItemsMatchingQuery:(TWTRGenericKeychainQuery *)query error:(NSError * __autoreleasing *)error
 {
     NSMutableDictionary *queryDict = [query queryDictionary];
     return [self storedItemsMatchingQueryDictionary:queryDict error:error];
 }
 
 #pragma mark - Query
-+ (NSArray *)storedItemsMatchingQuery:(TWTRGenericKeychainQuery *)query error:(NSError **)error
++ (NSArray *)storedItemsMatchingQuery:(TWTRGenericKeychainQuery *)query error:(NSError * __autoreleasing *)error
 {
     NSArray *__block items = nil;
 
@@ -297,7 +297,7 @@ NSString *const TWTRGenericKeychainItemErrorDomain = @"TWTRGenericKeychainItemEr
     return items;
 }
 
-+ (NSArray *)storedItemsMatchingQueryDictionary:(NSDictionary *)queryDict error:(NSError **)error
++ (NSArray *)storedItemsMatchingQueryDictionary:(NSDictionary *)queryDict error:(NSError * __autoreleasing *)error
 {
     NSMutableArray *objects = nil;
     NSMutableDictionary *query = [queryDict mutableCopy];

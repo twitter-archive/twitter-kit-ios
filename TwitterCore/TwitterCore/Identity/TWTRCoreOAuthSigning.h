@@ -44,7 +44,7 @@ FOUNDATION_EXTERN NSString *const TWTROAuthEchoAuthorizationHeaderKey;
  *
  *  @see More information about OAuth Echo: https://dev.twitter.com/oauth/echo
  */
-- (NSDictionary *)OAuthEchoHeadersForRequestMethod:(NSString *)method URLString:(NSString *)URLString parameters:(nullable NSDictionary *)parameters error:(NSError **)error;
+- (NSDictionary *)OAuthEchoHeadersForRequestMethod:(NSString *)method URLString:(NSString *)URLString parameters:(nullable NSDictionary *)parameters error:(NSError * __autoreleasing *)error;
 
 /**
  *  This method provides you with the OAuth signature, as well as the formed URL with the query string, to send a request to `verify_credentials`.

@@ -76,7 +76,7 @@ typedef void (^TWTRNetworkingPipelineCallback)(NSData *_Nullable data, NSURLResp
 /**
  * This method should return an NO if the response represents an error state.
  */
-- (BOOL)validateResponse:(nullable NSURLResponse *)response data:(nullable NSData *)data error:(NSError **)error;
+- (BOOL)validateResponse:(nullable NSURLResponse *)response data:(nullable NSData *)data error:(NSError * __autoreleasing *)error;
 
 @end
 
