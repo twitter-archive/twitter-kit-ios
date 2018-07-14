@@ -379,6 +379,8 @@ NSString *videoGravityForAspectRatio(TWTRVideoPlayerAspectRatio aspectRatio)
     return (NSTimeInterval)time.value / (NSTimeInterval)time.timescale;
 }
 
+NS_ASSUME_NONNULL_END
+
 #pragma mark - Vine Seemless Looping Player From BlueBird
 // https://cgit.twitter.biz/twitter-ios/tree/TwitterPlatform/UI/UI/VineGif/TFNVinePlayer.m#n160
 + (AVPlayerItem *)seamlessLoopingVinePlayerItemFromURL:(NSURL *)url;
@@ -499,6 +501,8 @@ NSString *videoGravityForAspectRatio(TWTRVideoPlayerAspectRatio aspectRatio)
     }
     return item;
 }
+
+NS_ASSUME_NONNULL_BEGIN
 
 + (CMTime)standardTrim
 {

@@ -38,6 +38,8 @@ CGFloat TWTRRoundHalfInteger(CGFloat);
 
 - (instancetype)init NS_UNAVAILABLE;
 
+NS_ASSUME_NONNULL_END
+
 /*
  * Returns the TWTRMediaEntitySize that best matches the media entity sizes.
  *
@@ -45,7 +47,9 @@ CGFloat TWTRRoundHalfInteger(CGFloat);
  * @param fittingWidth (required) the target width.
  * @return a best fit size or nil.
  */
-+ (TWTRMediaEntitySize *)bestMatchSizeFromMediaEntity:(TWTRTweetMediaEntity *)mediaEntity fittingWidth:(CGFloat)fittingWidth;
++ (nullable TWTRMediaEntitySize *)bestMatchSizeFromMediaEntity:(TWTRTweetMediaEntity *)mediaEntity fittingWidth:(CGFloat)fittingWidth;
+
+NS_ASSUME_NONNULL_BEGIN
 
 /**
  * Returns an average of the aspect ratios in the given media
