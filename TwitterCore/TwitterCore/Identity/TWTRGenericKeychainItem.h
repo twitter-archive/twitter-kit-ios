@@ -71,10 +71,14 @@ extern NSString *const TWTRGenericKeychainItemErrorDomain;
  */
 + (instancetype)queryForAccount:(NSString *)account;
 
+NS_ASSUME_NONNULL_END
+
 /**
  * A query that will match all items that contain both the service and account.
  */
-+ (instancetype)queryForService:(NSString *)service account:(NSString *)account;
++ (nonnull instancetype)queryForService:(nonnull NSString *)service account:(nullable NSString *)account;
+
+NS_ASSUME_NONNULL_BEGIN
 
 /**
  * A query that will return all items with the given generic value.

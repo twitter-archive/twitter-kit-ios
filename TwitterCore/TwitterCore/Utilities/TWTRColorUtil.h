@@ -119,13 +119,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIColor *)contrastingTextColorFromBackgroundColor:(UIColor *)backgroundColor;
 
+NS_ASSUME_NONNULL_END
+
 /**
  *  Returns a darker color based on the original color and a percent to darken.
  *
  *  @param color         The original color
  *  @param lightnessLevel   Lightness levels to lighten. Capped to 0 and 1.0.
  */
-+ (UIColor *)darkerColorForColor:(UIColor *)color lightnessLevel:(CGFloat)lightnessLevel;
++ (nullable UIColor *)darkerColorForColor:(nonnull UIColor *)color lightnessLevel:(CGFloat)lightnessLevel;
 
 /**
  *  Returns a darker color based on the original color and a percent to lighten.
@@ -133,8 +135,6 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param color            The original color
  *  @param lightnessLevel   Lightness levels to lighten. Capped to 0 and 1.0.
  */
-+ (UIColor *)lighterColorForColor:(UIColor *)color lightnessLevel:(CGFloat)lightnessLevel;
++ (nullable UIColor *)lighterColorForColor:(nonnull UIColor *)color lightnessLevel:(CGFloat)lightnessLevel;
 
 @end
-
-NS_ASSUME_NONNULL_END
