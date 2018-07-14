@@ -156,10 +156,12 @@ static CGFloat const TWTREstimatedRowHeight = 150;
     }
 
     if (self.dataSource) {
-        NSString *timelineID = nil;
         if ([self.dataSource respondsToSelector:@selector(collectionID)]) {
             TWTRCollectionTimelineDataSource *collectionDataSource = (TWTRCollectionTimelineDataSource *)self.dataSource;
-            timelineID = collectionDataSource.collectionID;
+#ifdef DEBUG
+            NSString *timelineID = collectionDataSource.collectionID;
+            NSLog(@"[TwitterKit] timelineID = %@", timelineID);
+#endif
         }
     }
     [self loadNewestTweets];
