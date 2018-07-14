@@ -22,8 +22,6 @@
 @class TWTRMoPubAdConfiguration;
 @class TWTRTweet;
 
-NS_ASSUME_NONNULL_BEGIN
-
 /**
  This class is a `UITableViewController` subclass that displays `TWTRTweetTableViewCell` cells. It handles cell-reuse, cell-configuration, and loading more Tweets from the given timeline once the last cell is displayed.
 
@@ -49,7 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
   The source of `TWTRTweet` objects for this `TWTRTimelineViewController`.
   May be set to update the Tweets being shown by this table view. Must be set on the main thread.
  */
-@property (nonatomic, copy) id<TWTRTimelineDataSource> dataSource;
+@property (nonatomic, nullable, copy) id<TWTRTimelineDataSource> dataSource;
 
 /**
  *  The configuration of MoPub ads to show in the timeline. You must
@@ -67,12 +65,14 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * If set, this value will be passed to all TWTRTweetView instances in the timeline.
  */
-@property (nonatomic, weak) id<TWTRTweetViewDelegate> tweetViewDelegate;
+@property (nonatomic, nullable, weak) id<TWTRTweetViewDelegate> tweetViewDelegate;
 
 /**
  *  The object that acts as the delegate for the timeline.
  */
-@property (nonatomic, weak) id<TWTRTimelineDelegate> timelineDelegate;
+@property (nonatomic, nullable, weak) id<TWTRTimelineDelegate> timelineDelegate;
+
+NS_ASSUME_NONNULL_BEGIN
 
 /**
  Initializes a timeline view controller. Does not start loading tweets until

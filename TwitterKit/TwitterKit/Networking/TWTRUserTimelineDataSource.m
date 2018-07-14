@@ -42,15 +42,18 @@
 - (instancetype)initWithScreenName:(NSString *)screenName userID:(NSString *)userID APIClient:(TWTRAPIClient *)client maxTweetsPerRequest:(NSUInteger)maxTweetsPerRequest includeReplies:(BOOL)includeReplies includeRetweets:(BOOL)includeRetweets
 {
     TWTRParameterAssertOrReturnValue(client, nil);
-    BOOL missingBothScreenNameAndUserID = (!screenName && !userID);
-    if (missingBothScreenNameAndUserID) {
+    if (!screenName && !userID) {
         NSLog(@"[TwitterKit] Must supply either a screenname or userID");
         return nil;
     }
 
     if (self = [super init]) {
-        _userID = [userID copy];
-        _screenName = [screenName copy];
+        if (userID != nil) {
+            _userID = [userID copy];
+        }
+        if (screenName != nil) {
+            _screenName = [screenName copy];
+        }
         _maxTweetsPerRequest = maxTweetsPerRequest;
         _includeRetweets = includeRetweets;
         _includeReplies = includeReplies;

@@ -162,7 +162,7 @@
     [_tweetTextViewContainer updateText:self.composedTweet.text];
 }
 
-- (void)_tseui_updateTweetText:(NSString *)updatedText textSelection:(NSRange)textSelection allowUndo:(BOOL)allowUndo
+- (void)_tseui_updateTweetText:(nonnull NSString *)updatedText textSelection:(NSRange)textSelection allowUndo:(BOOL)allowUndo
 {
     NSString *existingText = _composedTweet.text;
     if ((updatedText || existingText) && updatedText != existingText && ![updatedText isEqualToString:existingText]) {

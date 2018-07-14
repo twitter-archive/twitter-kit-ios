@@ -66,6 +66,8 @@ typedef NS_OPTIONS(NSInteger, TWTRTweetEntityDisplayType) {
 - (NSString *)textForTweet:(nullable TWTRTweet *)tweet;
 - (NSAttributedString *)attributedTextForText:(NSString *)text withEntityRanges:(NSArray<TWTRTweetEntityRange *> *)entityRanges;
 
+NS_ASSUME_NONNULL_END
+
 /**
  *  Returns the retweeted by attribution text given a retweet.
  *
@@ -73,7 +75,9 @@ typedef NS_OPTIONS(NSInteger, TWTRTweetEntityDisplayType) {
  *
  *  @return retweeted by attribution text string
  */
-- (NSString *)retweetedByTextForRetweet:(nullable TWTRTweet *)retweet;
+- (nullable NSString *)retweetedByTextForRetweet:(nullable TWTRTweet *)retweet;
+
+NS_ASSUME_NONNULL_BEGIN
 
 /**
  * If the tweet displays media, return the aspect ratio for the

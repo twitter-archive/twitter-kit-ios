@@ -178,7 +178,6 @@ static const CGFloat TWTRImageCornerRadius = 4.0;
         self.aspectRatioConstraint.active = NO;
         [self setNeedsUpdateConstraints];
     }
-    _aspectRatioConstraint = nil;
 }
 
 #pragma mark - Configuration

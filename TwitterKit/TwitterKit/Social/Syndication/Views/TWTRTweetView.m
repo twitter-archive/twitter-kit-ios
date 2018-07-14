@@ -424,7 +424,9 @@ static TWTRTweetViewTheme const TWTRTweetViewDefaultTheme = TWTRTweetViewThemeLi
     self.profileUserToDisplay = tweetToDisplay.author;
 
     [self.contentView updateTweetTextWithTweet:tweetToDisplay];
-    [self.contentView updateProfileHeaderWithTweet:tweet];
+    if (tweet != nil) {
+        [self.contentView updateProfileHeaderWithTweet:tweet];
+    }
 
     BOOL isSameTweetAsBefore = [tweet.tweetID isEqualToString:previousTweet.tweetID];
 

@@ -74,7 +74,7 @@ const CGFloat TWTRAspectRatio16x10 = 16.0 / 10.0;
 - (NSString *)retweetedByTextForRetweet:(TWTRTweet *)retweet
 {
     if (!(retweet && retweet.isRetweet)) {
-        return @"";
+        return nil;
     }
 
     return [NSString stringWithFormat:TWTRLocalizedString(@"tw__tweet_retweeted_by_user"), retweet.author.name];
