@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc protocol TwitterLoginCollectionViewCellDelegate {
+protocol TwitterLoginCollectionViewCellDelegate :class {
     func loginCollectionViewCellDidTapAddAccountButton(cell: TwitterLoginCollectionViewCell)
 }
 
@@ -48,7 +48,7 @@ class TwitterLoginCollectionViewCell: UICollectionViewCell {
 
     // MARK: - Actions
 
-    func addAccount() {
+    @objc func addAccount() {
         delegate?.loginCollectionViewCellDidTapAddAccountButton(cell: self)
     }
 

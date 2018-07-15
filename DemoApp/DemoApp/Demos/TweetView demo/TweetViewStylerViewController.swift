@@ -81,7 +81,7 @@ class TweetViewStylerViewController: UIViewController {
 
     // MARK: - Actions
 
-    func updateTweetView() {
+    @objc func updateTweetView() {
         if let tweet = tweet {
             configureTweetView(with: tweet)
         }

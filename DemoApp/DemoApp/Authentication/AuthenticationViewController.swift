@@ -14,8 +14,8 @@ extension CGRect {
     }
 }
 
-@objc protocol AuthenticationViewControllerDelegate {
-    @objc func authenticationViewControllerDidTapHome(viewController: AuthenticationViewController)
+protocol AuthenticationViewControllerDelegate : class {
+    func authenticationViewControllerDidTapHome(viewController: AuthenticationViewController)
 }
 
 class AuthenticationViewController: UIViewController {
@@ -76,7 +76,7 @@ class AuthenticationViewController: UIViewController {
 
     // MARK: - Actions
 
-    func home() {
+    @objc func home() {
         delegate?.authenticationViewControllerDidTapHome(viewController: self)
     }
 

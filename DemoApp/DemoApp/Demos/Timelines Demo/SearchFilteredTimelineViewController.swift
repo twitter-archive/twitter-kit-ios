@@ -8,7 +8,6 @@
 
 import UIKit
 
-@objc (SearchFilteredTimelineViewController)
 class SearchFilteredTimelineViewController: TWTRTimelineViewController, DZNEmptyDataSetSource {
 
     convenience init() {

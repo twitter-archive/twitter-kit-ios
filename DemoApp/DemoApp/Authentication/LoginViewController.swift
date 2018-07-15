@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc protocol LoginViewControllerDelegate {
+protocol LoginViewControllerDelegate : class {
     func loginViewController(viewController: LoginViewController, didAuthWith session: TWTRSession)
     func loginViewControllerDidClearAccounts(viewController: LoginViewController)
 }
@@ -119,11 +119,11 @@ class LoginViewController: UIViewController {
 
     // MARK: - Actions
 
-    func backgroundTap() {
+    @objc func backgroundTap() {
         dismiss(animated: true, completion: nil)
     }
 
-    func login() {
+    @objc func login() {
         TWTRTwitter.sharedInstance().logIn(with: self) { (session, error) in
             if let session = session {
                 self.dismiss(animated: true) {
@@ -135,7 +135,7 @@ class LoginViewController: UIViewController {
         }
     }
 
-    func clearAccounts() {
+    @objc func clearAccounts() {
         for session in TWTRTwitter.sharedInstance().sessionStore.existingUserSessions() {
             if let session = session as? TWTRSession {
                 TWTRTwitter.sharedInstance().sessionStore.logOutUserID(session.userID)

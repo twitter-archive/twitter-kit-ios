@@ -15,7 +15,6 @@ func offset(indexPath: IndexPath) -> IndexPath {
     return newIndexPath
 }
 
-@objc(ESPNTimelineViewController)
 class ESPNTimelineViewController: TWTRTimelineViewController {
 
     let numberOfAds = 1
