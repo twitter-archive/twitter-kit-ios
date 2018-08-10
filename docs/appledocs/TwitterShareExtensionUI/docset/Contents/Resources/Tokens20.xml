@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intf/TWTRSETweetShareViewControllerDelegate</TokenIdentifier>
-			<Abstract type="html">Methods invoked by TWTRSETweetShareViewController to notify about events occured in the UI.
+			<Abstract type="html">Methods invoked by TWTRSETweetShareViewController to notify about events occurred in the UI.
 All of these methods are called in the main thread.</Abstract>
 			<DeclaredIn>TWTRSETweetShareViewControllerDelegate.h</DeclaredIn>
             

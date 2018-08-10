@@ -48,7 +48,7 @@ class TweetCollectionViewController: UIViewController, UICollectionViewDelegate,
                 self?.tweets = tweet
                 collectionView.reloadData()
             } else {
-                debugPrint("An unexpected error has occured");
+                debugPrint("An unexpected error has occurred");
             }
         }
     }

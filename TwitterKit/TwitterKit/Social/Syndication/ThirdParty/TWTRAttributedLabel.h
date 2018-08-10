@@ -240,7 +240,7 @@ extern NSString *const kTWTRBackgroundCornerRadiusAttributeName;
 
  @param attributedString The attributed string.
  @param size The maximum dimensions used to calculate size.
- @param numberOfLines The maximum number of lines in the text to draw, if the constraining size cannot accomodate the full attributed string.
+ @param numberOfLines The maximum number of lines in the text to draw, if the constraining size cannot accommodate the full attributed string.
 
  @return The size that fits the attributed string within the specified constraints.
  */
