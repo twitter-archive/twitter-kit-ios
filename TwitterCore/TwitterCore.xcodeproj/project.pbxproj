@@ -15,7 +15,6 @@
 		377783AF1E96B78A00BC4830 /* TUDelorean.m in Sources */ = {isa = PBXBuildFile; fileRef = 377783A21E96B78A00BC4830 /* TUDelorean.m */; };
 		377941381E96BF910049A022 /* TWTRMockURLSessionProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 377941311E96BF910049A022 /* TWTRMockURLSessionProtocol.m */; };
 		377941471E96DA9A0049A022 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377941461E96DA9A0049A022 /* OCMock.framework */; };
-		3789B0F31E96E6230026BBBC /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 377941461E96DA9A0049A022 /* OCMock.framework */; };
 		379A6D5B1E95B97300625984 /* EXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 379A6D581E95B97300625984 /* EXTKeyPathCoding.h */; };
 		379A6D5C1E95B97300625984 /* EXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 379A6D581E95B97300625984 /* EXTKeyPathCoding.h */; };
 		379A6D5D1E95B97300625984 /* EXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 379A6D591E95B97300625984 /* EXTScope.h */; };
@@ -241,6 +240,7 @@
 		AAAAF73D1F9E5129002F1991 /* TWTRAuthConfigSessionsValidator_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AAAAF73B1F9E510B002F1991 /* TWTRAuthConfigSessionsValidator_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		AAAAF7491FA12F17002F1991 /* TWTRAuthConfigStore_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AAAAF7481FA12F17002F1991 /* TWTRAuthConfigStore_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		AAAAF74A1FA12F17002F1991 /* TWTRAuthConfigStore_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AAAAF7481FA12F17002F1991 /* TWTRAuthConfigStore_Private.h */; };
+		AAEA30D0216FBC430027E9D3 /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AAEA30CF216FBC430027E9D3 /* OCMock.framework */; };
 		BF318EB41ADF32990082353A /* TWTRMultiThreadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D30C5A61ACE5EA000D0B1FA /* TWTRMultiThreadUtil.m */; };
 		BF8EF2C81AFD3E9F008B4829 /* TWTRCoreOAuthSigning+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8EF2C71AFD3E98008B4829 /* TWTRCoreOAuthSigning+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BF8EF2C91AFD3E9F008B4829 /* TWTRCoreOAuthSigning+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8EF2C71AFD3E98008B4829 /* TWTRCoreOAuthSigning+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -318,7 +318,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				3789B0F31E96E6230026BBBC /* OCMock.framework in CopyFiles */,
+				AAEA30D0216FBC430027E9D3 /* OCMock.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +511,7 @@
 		AAAE73BE1FB380BC005BEEAD /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
 		AAAE73BF1FB380BC005BEEAD /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		AAAE73C01FB380BC005BEEAD /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		AAEA30CF216FBC430027E9D3 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = ../vendor/OCMock.framework; sourceTree = "<group>"; };
 		BF8EF2C71AFD3E98008B4829 /* TWTRCoreOAuthSigning+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TWTRCoreOAuthSigning+Private.h"; sourceTree = "<group>"; };
 		BFA0EAF01B01277A000D712D /* TWTRCoreOAuthSigningTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRCoreOAuthSigningTests.m; sourceTree = "<group>"; };
 		DB0908971B6057B000FE4CD3 /* TWTRSessionMigrating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSessionMigrating.h; sourceTree = "<group>"; };
@@ -830,6 +831,7 @@
 		9D5A92181AAA89730039EFCC = {
 			isa = PBXGroup;
 			children = (
+				AAEA30CF216FBC430027E9D3 /* OCMock.framework */,
 				24AC143D1BE7B174000029B5 /* Config */,
 				9D4545431AB0D3C800730817 /* TwitterCore-module.private.modulemap */,
 				9D348B411AAFE73B007837FB /* TwitterCore-ios-module.modulemap */,
@@ -1181,7 +1183,6 @@
 				3D98960F1B9621CF00B9CABD /* TWTRTokenOnlyAuthSession.h in Headers */,
 				9D30C5CF1ACE60E200D0B1FA /* TWTRIdentifier.h in Headers */,
 				9D0AE5B71AC7400500884B45 /* TWTRDateUtil.h in Headers */,
-				9DF52D9C1ABB67F6004345D0 /* TWTRColorUtil.h in Headers */,
 				6C37A1CA1B22505900C360B4 /* TWTRCoreLanguage.h in Headers */,
 				3DEEF7C31B7A769A00A1B457 /* TWTRNetworkingConstants.h in Headers */,
 				9DBB70511ABB76BB00ED4051 /* TWTRResourcesUtil.h in Headers */,

@@ -3546,6 +3546,7 @@
 					"$(PROJECT_DIR)/../vendor",
 					"$(PROJECT_DIR)",
 				);
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -3558,6 +3559,7 @@
 					"$(PROJECT_DIR)/../vendor",
 					"$(PROJECT_DIR)",
 				);
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -3574,7 +3576,7 @@
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.twitter.sdk.ios;
-				SDKROOT = iphoneos11.1;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -3591,7 +3593,7 @@
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.twitter.sdk.ios;
-				SDKROOT = iphoneos11.1;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

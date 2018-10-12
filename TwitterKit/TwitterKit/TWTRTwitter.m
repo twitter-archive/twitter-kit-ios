@@ -379,17 +379,21 @@ static TWTRTwitter *sharedTwitter;
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *)options
 {
-    // Handle Mobile SSO redirect
-    if ([self.mobileSSO verifySourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]]) {
-        BOOL wasMobileSSO = [self.mobileSSO processRedirectURL:url];
-        if (!wasMobileSSO) {
-            BOOL isTokenValid = [self.mobileSSO verifyOauthTokenResponsefromURL:url];
-            if (isTokenValid) {
-                // If it wasn't a Mobile SSO redirect, try to handle as
-                // SFSafariViewController redirect
-                return [self.webAuthenticationFlow resumeAuthenticationWithRedirectURL:url];
-            }
+    NSString *sourceApplication = options[UIApplicationOpenURLOptionsSourceApplicationKey];
+    BOOL isSSOBundle = [self.mobileSSO isSSOWithSourceApplication:sourceApplication];
+    BOOL isWeb = [self.mobileSSO isWebWithSourceApplication:sourceApplication];
+
+    if (isSSOBundle) {
+        [self.mobileSSO processRedirectURL:url];
+    } else if (isWeb) {
+        BOOL isTokenValid = [self.mobileSSO verifyOauthTokenResponsefromURL:url];
+        if (isTokenValid) {
+            // If it wasn't a Mobile SSO redirect, try to handle as
+            // SFSafariViewController redirect
+            return [self.webAuthenticationFlow resumeAuthenticationWithRedirectURL:url];
         }
+    } else {
+        [self.mobileSSO triggerInvalidSourceError];
     }
 
     return NO;

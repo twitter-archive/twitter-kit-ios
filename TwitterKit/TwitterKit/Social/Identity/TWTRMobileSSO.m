@@ -45,11 +45,13 @@
 
     // Attempt to open Twitter app with Mobile SSO URL
     if (iOS10) {
-        [[UIApplication sharedApplication] openURL:twitterAuthURL options:@{} completionHandler:^(BOOL success) {
-            if (!success) {
-                completion(nil, [TWTRErrors noTwitterAppError]);
-            }
-        }];
+        [[UIApplication sharedApplication] openURL:twitterAuthURL
+            options:@{}
+            completionHandler:^(BOOL success) {
+                if (!success) {
+                    completion(nil, [TWTRErrors noTwitterAppError]);
+                }
+            }];
 
     } else {
         if ([[UIApplication sharedApplication] canOpenURL:twitterAuthURL]) {
@@ -60,21 +62,23 @@
     }
 }
 
-- (BOOL)verifySourceApplication:(NSString *)sourceApplication
+- (BOOL)isSSOWithSourceApplication:(NSString *)sourceApplication
 {
     // If using auth with web view, check that the source application bundle identifier is the same as the app bundle identifier.
-    NSString *bundleID = [[NSBundle mainBundle] bundleIdentifier];
-    BOOL isExpectedSourceApplication = [sourceApplication hasPrefix:@"com.twitter"] || [sourceApplication hasPrefix:@"com.apple"] || [sourceApplication hasPrefix:@"com.atebits"] || [sourceApplication isEqualToString:bundleID];
-    if (!isExpectedSourceApplication) {
-        // The source application for Mobile SSO is not from a valid bundle id
-        dispatch_async(dispatch_get_main_queue(), ^{
-            self.completion(nil, [TWTRErrors invalidSourceApplicationError]);
-        });
+    return [sourceApplication hasPrefix:@"com.twitter"] || [sourceApplication hasPrefix:@"com.atebits"];
+}
 
-        return NO;
-    } else {
-        return YES;
-    }
+- (BOOL)isWebWithSourceApplication:(NSString *)sourceApplication
+{
+    NSString *bundleID = [[NSBundle mainBundle] bundleIdentifier];
+    return [sourceApplication hasPrefix:@"com.apple"] || [sourceApplication isEqualToString:bundleID];
+}
+
+- (void)triggerInvalidSourceError
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.completion(nil, [TWTRErrors invalidSourceApplicationError]);
+    });
 }
 
 - (BOOL)verifyOauthTokenResponsefromURL:(NSURL *)url
@@ -95,9 +99,10 @@
         NSDictionary *parameters = [self.loginURLParser parametersForSSOURL:url];
         TWTRSession *newSession = [[TWTRSession alloc] initWithSSOResponse:parameters];
         TWTRSessionStore *store = [TWTRTwitter sharedInstance].sessionStore;
-        [store saveSession:newSession completion:^(id<TWTRAuthSession> session, NSError *error) {
-            self.completion(session, error);
-        }];
+        [store saveSession:newSession
+                completion:^(id<TWTRAuthSession> session, NSError *error) {
+                    self.completion(session, error);
+                }];
         return YES;
     }
 

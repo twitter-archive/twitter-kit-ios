@@ -99,24 +99,13 @@
 
 - (void)testVerifySourceApplication_validDomains
 {
-    XCTAssertTrue([self.mobileSSO verifySourceApplication:@"com.twitter.dogfood.internal"]);
-    XCTAssertTrue([self.mobileSSO verifySourceApplication:@"com.apple.SafariViewService"]);
-    XCTAssertTrue([self.mobileSSO verifySourceApplication:@"com.atebits.tweetie2"]);
+    XCTAssertTrue([self.mobileSSO isSSOWithSourceApplication:@"com.twitter.dogfood.internal"]);
+    XCTAssertTrue([self.mobileSSO isSSOWithSourceApplication:@"com.atebits.tweetie2"]);
 }
 
 - (void)testVerifySourceApplication_invalidDomain
 {
-    XCTestExpectation *errorExpectation = [self expectationWithDescription:@"Error has been raised."];
-
-    self.mobileSSO.completion = ^(TWTRSession *_Nullable session, NSError *_Nullable error) {
-        if (error) {
-            [errorExpectation fulfill];
-        }
-    };
-
-    XCTAssertFalse([self.mobileSSO verifySourceApplication:@"com.otherapp.appname"]);
-
-    [self waitForExpectations:@[errorExpectation] timeout:0.5];
+    XCTAssertFalse([self.mobileSSO isSSOWithSourceApplication:@"com.otherapp.appname"]);
 }
 
 @end

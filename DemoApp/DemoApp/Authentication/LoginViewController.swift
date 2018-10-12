@@ -37,13 +37,14 @@ class LoginViewController: UIViewController {
         return view
     }()
 
-    private lazy var loginButton: TWTRLogInButton = { [unowned self] in
+    private lazy var loginButton: TWTRLogInButton = { [weak self] in
         let button = TWTRLogInButton() { (session, error) in
+            guard let weakSelf = self else { return }
             if let error = error {
-                UIAlertController.showAlert(with: error, on: self)
+                UIAlertController.showAlert(with: error, on: weakSelf)
             } else if let session = session {
-                self.dismiss(animated: true) {
-                    self.delegate?.loginViewController(viewController: self, didAuthWith: session)
+                weakSelf.dismiss(animated: true) {
+                    weakSelf.delegate?.loginViewController(viewController: weakSelf, didAuthWith: session)
                 }
             }
         }

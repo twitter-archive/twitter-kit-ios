@@ -71,20 +71,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		377783821E95C71000BC4830 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 379A6D291E95B77C00625984 /* TwitterKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BFE8395F1ADF23590035CBA1;
-			remoteInfo = TwitterKit;
-		};
-		377783841E95CAD800BC4830 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 379A6D1D1E95B77600625984 /* TwitterCore.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9D5A92451AAA8D600039EFCC;
-			remoteInfo = TwitterCore;
-		};
 		377783EA1E96B7CA00BC4830 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 379A6D291E95B77C00625984 /* TwitterKit.xcodeproj */;
@@ -501,8 +487,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				377783851E95CAD800BC4830 /* PBXTargetDependency */,
-				377783831E95C71000BC4830 /* PBXTargetDependency */,
 			);
 			name = DemoApp;
 			productName = DemoApp;
@@ -800,16 +784,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		377783831E95C71000BC4830 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TwitterKit;
-			targetProxy = 377783821E95C71000BC4830 /* PBXContainerItemProxy */;
-		};
-		377783851E95CAD800BC4830 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TwitterCore;
-			targetProxy = 377783841E95CAD800BC4830 /* PBXContainerItemProxy */;
-		};
 		377783EB1E96B7CA00BC4830 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "TwitterKit Tests";

@@ -27,6 +27,7 @@
 #import "TWTRAPIErrorCode.h"
 #import "TWTRAuthConfig.h"
 #import "TWTRAuthSession.h"
+#import "TWTRColorUtil.h"
 #import "TWTRConstants.h"
 #import "TWTRCoreOAuthSigning.h"
 #import "TWTRGuestSession.h"
