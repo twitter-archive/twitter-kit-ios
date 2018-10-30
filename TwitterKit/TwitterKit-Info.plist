@@ -17,14 +17,14 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.4.1</string>
+	<string>3.4.2</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>iPhoneOS</string>
 		<string>iPhoneSimulator</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1031</string>
+	<string>1032</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright 2014 Twitter Inc.</string>
 </dict>

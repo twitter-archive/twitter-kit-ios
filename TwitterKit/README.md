@@ -1,3 +1,7 @@
+**As of October 31, 2018, Twitter Kit will no longer be supported by Twitter. Please read the [blog post](https://blog.twitter.com/developer/en_us/topics/tools/2018/discontinuing-support-for-twitter-kit-sdk.html) for more information.**
+
+---
+
 Twitter Kit is the easiest way to bring real-time conversational content to your apps. Growing an app’s user base and retaining end users can be a challenge for any developer. To keep users engaged, you need rich, unique content that feels natural to your app’s experience.
 
 To install, add `TwitterKit` to your `Podfile` and run `pod install`. If you already have `TwitterKit` just run `pod update TwitterKit`.
