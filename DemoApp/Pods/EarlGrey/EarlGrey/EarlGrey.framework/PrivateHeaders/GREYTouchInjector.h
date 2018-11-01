@@ -61,7 +61,7 @@ typedef NS_ENUM(NSInteger, GREYTouchInjectorState) {
  *
  *  @param touchInfo The info that is used to create the UITouch. If it represents a last touch
  *                   in a sequence, the specified @c point value is ignored and injector
- *                   automatically picks the previous point where touch occured to deliver
+ *                   automatically picks the previous point where touch occurred to deliver
  *                   the last touch.
  */
 - (void)enqueueTouchInfoForDelivery:(GREYTouchInfo *)touchInfo;

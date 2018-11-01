@@ -23,7 +23,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- Methods invoked by `TWTRSETweetShareViewController` to notify about events occured in the UI.
+ Methods invoked by `TWTRSETweetShareViewController` to notify about events occurred in the UI.
  All of these methods are called in the main thread.
  */
 @protocol TWTRSETweetShareViewControllerDelegate <NSObject>
