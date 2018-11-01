@@ -171,9 +171,9 @@ static void *TWTRSETableViewContentSizeKVOContext = &TWTRSETableViewContentSizeK
 static void *TWTRSEDataSourceCursorSelectionKVOCOntext = &TWTRSEDataSourceCursorSelectionKVOCOntext;
 static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
 
-@implementation TWTRSETweetComposerViewController {
-    dispatch_once_t _updateViewConstraintsToken;
-}
+static dispatch_once_t _updateViewConstraintsToken;
+
+@implementation TWTRSETweetComposerViewController
 
 - (CGRect)autoCompletionResultsViewControllerCalculatedFrame
 {

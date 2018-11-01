@@ -61,10 +61,14 @@ typedef TWTRSession *_Nonnull (^TWTRUserSessionProvider)(void);
 
 - (instancetype)init NS_UNAVAILABLE;
 
+NS_ASSUME_NONNULL_END
+
 /**
  * Subclasses must implement this method to return the signed request.
  */
-- (NSURLRequest *)signRequest:(NSURLRequest *)request;
+- (nullable NSURLRequest *)signRequest:(nonnull NSURLRequest *)request;
+
+NS_ASSUME_NONNULL_BEGIN
 
 @end
 

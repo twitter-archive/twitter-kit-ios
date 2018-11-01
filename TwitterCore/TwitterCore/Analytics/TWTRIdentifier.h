@@ -21,7 +21,7 @@
 
 #import <Foundation/Foundation.h>
 
-NSString *TWTRIdentifierForAdvertising();
+NSString *TWTRIdentifierForAdvertising(void);
 
 /**
  *  This class contains analytics code ported from Crashlytics.

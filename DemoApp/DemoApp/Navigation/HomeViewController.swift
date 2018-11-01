@@ -8,8 +8,8 @@
 
 import UIKit
 
-@objc protocol HomeViewControllerDelegate {
-    @objc func homeViewControllerDidTapProfileButton(viewController: HomeViewController)
+protocol HomeViewControllerDelegate : class {
+    func homeViewControllerDidTapProfileButton(viewController: HomeViewController)
 }
 
 class HomeViewController: DemoCollectionViewController {
@@ -43,7 +43,7 @@ class HomeViewController: DemoCollectionViewController {
 
     // MARK: - Actions
 
-    func didTapProfile() {
+    @objc func didTapProfile() {
         delegate?.homeViewControllerDidTapProfileButton(viewController: self)
     }
 }

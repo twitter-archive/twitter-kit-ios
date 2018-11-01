@@ -158,7 +158,9 @@ typedef void (^TWTRTweetActionAPIClientCompletion)(TWTRAPIClient *_Nullable APIC
 
             } else {  // Must revert assumed state
                 [self configureWithTweet:originalTweet];
-                [[TWTRTweetRepository sharedInstance] cacheTweet:originalTweet perspective:client.userID];
+                if (client.userID != nil) {
+                    [[TWTRTweetRepository sharedInstance] cacheTweet:originalTweet perspective:client.userID];
+                }
                 NSLog(@"[TwitterKit] Error attempting to %@: %@", attemptingToLike ? @"like" : @"unlike", [likeError localizedDescription]);
             }
         };

@@ -39,7 +39,7 @@
  *  @return Returns a dictionary filled with the contents of the JSON payload if
             successful or nil parsing failed.
  */
-+ (NSDictionary *)dictionaryFromData:(NSData *)responseData error:(NSError **)error __attribute__((nonnull));
++ (NSDictionary *)dictionaryFromData:(NSData *)responseData error:(NSError * __autoreleasing *)error __attribute__((nonnull));
 
 /**
  *  Parse a JSON response into an `NSArray` object.
@@ -51,6 +51,6 @@
  *  @return An array filled with the contents of the JSON payload if parsing is
  *          successful. nil if parsing fails for any reason.
  */
-+ (NSArray *)arrayFromData:(NSData *)responseData error:(NSError **)error __attribute__((nonnull));
++ (NSArray *)arrayFromData:(NSData *)responseData error:(NSError * __autoreleasing *)error __attribute__((nonnull));
 
 @end

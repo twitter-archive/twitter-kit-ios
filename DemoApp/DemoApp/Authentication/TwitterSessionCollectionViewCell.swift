@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc protocol TwitterSessionCollectionViewCellDelegate {
+protocol TwitterSessionCollectionViewCellDelegate : class {
     func sessionCollectionViewCell(collectionViewCell: TwitterSessionCollectionViewCell, didTapLogoutFor session: TWTRSession)
 }
 
@@ -112,7 +112,7 @@ class TwitterSessionCollectionViewCell: UICollectionViewCell {
 
     // MARK: - Actions
 
-    func logout() {
+    @objc func logout() {
         if let session = session {
             delegate?.sessionCollectionViewCell(collectionViewCell: self, didTapLogoutFor: session)
         }

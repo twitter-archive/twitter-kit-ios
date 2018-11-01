@@ -57,10 +57,10 @@ static const UIEdgeInsets kComposeTextViewTextContainerInsets = {.top = 8, .left
 
 @end
 
-@implementation TWTRSETweetTextViewContainer {
-    dispatch_once_t _containerConstraintsToken;
-    dispatch_once_t _attachmentViewConstraintsToken;
-}
+static dispatch_once_t _containerConstraintsToken;
+static dispatch_once_t _attachmentViewConstraintsToken;
+
+@implementation TWTRSETweetTextViewContainer
 
 @dynamic minNumberOfLinesToDisplay;
 

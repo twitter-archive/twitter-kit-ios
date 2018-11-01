@@ -107,7 +107,7 @@
  *  @param cacheHitCompletion  completion block to run on the main queue if image is found in cache
  *  @param cacheMissCompletion completion block to run on the default global queue if image is not found in cache
  */
-- (void)fetchCachedImageWithImageKey:(NSString *)imageKey cacheHitCompletion:(TWTRImageLoaderFetchCompletion)cacheHitCompletion cacheMissCompletion:(void (^)())cacheMissCompletion
+- (void)fetchCachedImageWithImageKey:(NSString *)imageKey cacheHitCompletion:(TWTRImageLoaderFetchCompletion)cacheHitCompletion cacheMissCompletion:(void (^)(void))cacheMissCompletion
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         UIImage *cachedImage = [self.cache fetchImageForKey:imageKey];

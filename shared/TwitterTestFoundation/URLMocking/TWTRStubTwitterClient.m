@@ -23,7 +23,7 @@
     return client;
 }
 
-- (NSURLRequest *)URLRequestWithMethod:(NSString *)method URLString:(NSString *)URLString parameters:(NSDictionary *)parameters error:(NSError **)error
+- (NSURLRequest *)URLRequestWithMethod:(NSString *)method URLString:(NSString *)URLString parameters:(NSDictionary *)parameters error:(NSError * __autoreleasing *)error
 {
     if (self.urlRequestError) {
         *error = self.urlRequestError;

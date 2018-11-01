@@ -23,13 +23,13 @@ typedef enum MPNativeAdErrorCode {
 extern NSString * const MoPubNativeAdsSDKDomain;
 
 NSError *MPNativeAdNSErrorForInvalidAdServerResponse(NSString *reason);
-NSError *MPNativeAdNSErrorForAdUnitWarmingUp();
-NSError *MPNativeAdNSErrorForNoInventory();
-NSError *MPNativeAdNSErrorForNetworkConnectionError();
-NSError *MPNativeAdNSErrorForInvalidImageURL();
-NSError *MPNativeAdNSErrorForImageDownloadFailure();
-NSError *MPNativeAdNSErrorForContentDisplayErrorMissingRootController();
-NSError *MPNativeAdNSErrorForContentDisplayErrorInvalidURL();
-NSError *MPNativeAdNSErrorForVASTParsingFailure();
-NSError *MPNativeAdNSErrorForVideoConfigInvalid();
-NSError *MPNativeAdNSErrorForRenderValueTypeError();
+NSError *MPNativeAdNSErrorForAdUnitWarmingUp(void);
+NSError *MPNativeAdNSErrorForNoInventory(void);
+NSError *MPNativeAdNSErrorForNetworkConnectionError(void);
+NSError *MPNativeAdNSErrorForInvalidImageURL(void);
+NSError *MPNativeAdNSErrorForImageDownloadFailure(void);
+NSError *MPNativeAdNSErrorForContentDisplayErrorMissingRootController(void);
+NSError *MPNativeAdNSErrorForContentDisplayErrorInvalidURL(void);
+NSError *MPNativeAdNSErrorForVASTParsingFailure(void);
+NSError *MPNativeAdNSErrorForVideoConfigInvalid(void);
+NSError *MPNativeAdNSErrorForRenderValueTypeError(void);

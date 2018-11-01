@@ -111,12 +111,11 @@
 
 - (void)resetKeychainItem
 {
-    OSStatus result = noErr;
     if (![self keychainItemData]) {
         [self setKeychainItemData:[[NSMutableDictionary alloc] init]];
     } else if ([self keychainItemData]) {
         NSMutableDictionary *tempDictionary = [self dictionaryToSecItemFormat:[self keychainItemData]];
-        result = [TWTRSecItemWrapper secItemDelete:(__bridge CFDictionaryRef)tempDictionary];
+        [TWTRSecItemWrapper secItemDelete:(__bridge CFDictionaryRef)tempDictionary];
     }
 
     // Default attributes for keychain item.

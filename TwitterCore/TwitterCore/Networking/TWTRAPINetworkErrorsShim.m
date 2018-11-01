@@ -125,7 +125,7 @@
 
 @implementation TWTRAPIResponseValidator
 
-- (BOOL)validateResponse:(NSHTTPURLResponse *)response data:(NSData *)data error:(NSError **)error
+- (BOOL)validateResponse:(NSHTTPURLResponse *)response data:(NSData *)data error:(NSError * __autoreleasing *)error
 {
     TWTRAPINetworkErrorsShim *shim = [[TWTRAPINetworkErrorsShim alloc] initWithHTTPResponse:response responseData:data];
     NSError *validationError = [shim validate];

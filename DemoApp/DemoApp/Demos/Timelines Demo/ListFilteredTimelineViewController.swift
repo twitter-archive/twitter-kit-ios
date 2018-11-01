@@ -24,7 +24,7 @@ class ListFilteredTimelineViewController: TWTRTimelineViewController, TWTRTimeli
         // filter the search timeline
         let filter = TWTRTimelineFilter()
         filter.handles = [ "newyorker", "benward", "mollie" ]
-        self.dataSource.timelineFilter = filter
+        self.dataSource?.timelineFilter = filter
 
         self.showTweetActions = true
         self.view.backgroundColor = .lightGray

@@ -153,7 +153,7 @@ typedef void (^TWTRRequestEmailCompletion)(NSString *_Nullable email, NSError *_
  *
  *  @note If the request is not sent with the -[TWTRAPIClient sendTwitterRequest:completion:] method it is the developers responsibility to ensure that there is a valid guest session before this method is called.
  */
-- (NSURLRequest *)URLRequestWithMethod:(NSString *)method URLString:(NSString *)URLString parameters:(nullable NSDictionary *)parameters error:(NSError **)error;
+- (NSURLRequest *)URLRequestWithMethod:(NSString *)method URLString:(NSString *)URLString parameters:(nullable NSDictionary *)parameters error:(NSError * __autoreleasing *)error;
 
 /**
  *  Sends a Twitter request.

@@ -444,7 +444,7 @@
     }
 }
 
-- (BOOL)validateResponse:(nullable NSURLResponse *)response data:(nullable NSData *)data error:(NSError **)error
+- (BOOL)validateResponse:(nullable NSURLResponse *)response data:(nullable NSData *)data error:(NSError * __autoreleasing *)error
 {
     if (self.responseValidator) {
         return [self.responseValidator validateResponse:response data:data error:error];

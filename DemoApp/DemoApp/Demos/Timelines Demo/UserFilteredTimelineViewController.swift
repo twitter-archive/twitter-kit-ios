@@ -19,7 +19,7 @@ class UserFilteredTimelineViewController: TWTRTimelineViewController {
         // filter the user timeline
         let filter = TWTRTimelineFilter()
         filter.urls = ["fabric.io", "twitter.com", "answers.io"]
-        self.dataSource.timelineFilter = filter;
+        self.dataSource?.timelineFilter = filter;
 
         self.title = "@fabric"
         self.showTweetActions = true

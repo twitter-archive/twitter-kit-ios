@@ -225,7 +225,7 @@ static const NSUInteger TWTRTweetCacheMaxSize = 5 * MB;
 
 #pragma mark - Request Builders
 
-- (NSURLRequest *)lookupRequestForTweetIDs:(NSArray *)tweetIDsStrings APIClient:(TWTRAPIClient *)client additionalParameters:(nullable NSDictionary *)additionalParams error:(NSError **)error
+- (NSURLRequest *)lookupRequestForTweetIDs:(NSArray *)tweetIDsStrings APIClient:(TWTRAPIClient *)client additionalParameters:(nullable NSDictionary *)additionalParams error:(NSError * __autoreleasing *)error
 {
     id<TWTRAPIServiceConfig> config = [[TWTRAPIServiceConfigRegistry defaultRegistry] configForType:TWTRAPIServiceConfigTypeDefault];
     NSURL *URL = TWTRAPIURLWithPath(config, TWTRAPIConstantsStatusLookUpURL);

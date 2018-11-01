@@ -70,7 +70,7 @@
     [super viewDidLoad];
 
     [self embedViewController:[self webController]];
-    self.title = @"Twitter";
+    self.title = NSLocalizedString(@"Twitter", nil);
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(handleCancelButton)];
 }
 

@@ -81,12 +81,11 @@
         [self loadImageWithShouldUpdateImageViewCallback:^BOOL {
             return mediaEntityConfiguration == self.mediaConfiguration;
         }];
+        [self updatePillViewWithMediaEntityConfiguration:mediaEntityConfiguration];
     }
-
-    [self updatePillViewWithMediaEntityConfiguration:mediaEntityConfiguration];
 }
 
-- (void)updatePillViewWithMediaEntityConfiguration:(TWTRMediaEntityDisplayConfiguration *)mediaEntityConfig
+- (void)updatePillViewWithMediaEntityConfiguration:(nonnull TWTRMediaEntityDisplayConfiguration *)mediaEntityConfig
 {
     [self.pillView configureWithMediaEntityConfiguration:mediaEntityConfig];
 

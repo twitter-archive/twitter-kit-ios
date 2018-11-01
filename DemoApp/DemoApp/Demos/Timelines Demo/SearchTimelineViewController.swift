@@ -8,7 +8,6 @@
 
 import UIKit
 
-@objc (SearchTimelineViewController)
 class SearchTimelineViewController: TWTRTimelineViewController, DZNEmptyDataSetSource {
 
     convenience init() {
@@ -30,8 +29,8 @@ class SearchTimelineViewController: TWTRTimelineViewController, DZNEmptyDataSetS
 
     func title(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString {
         let text = "Could not find Tweets.";
-        let attributes = [NSFontAttributeName: UIFont.boldSystemFont(ofSize: 18),
-                          NSForegroundColorAttributeName: UIColor.darkGray]
+        let attributes = [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 18),
+                          NSAttributedStringKey.foregroundColor: UIColor.darkGray]
 
         return NSAttributedString(string: text, attributes: attributes)
     }
