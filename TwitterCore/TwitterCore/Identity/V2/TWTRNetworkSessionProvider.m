@@ -31,6 +31,9 @@
 #import "TWTRTokenOnlyAuthSession.h"
 #import "TWTRUserAuthRequestSigner.h"
 
+#define kPOSIXErrorDomain @"NSPOSIXErrorDomain"
+#define kConnectionAbortErrorCode 53
+
 @implementation TWTRNetworkSessionProvider
 
 #if !TARGET_OS_TV
@@ -63,11 +66,20 @@
     NSURL *verifyURL = TWTRAPIURLWithPath(APIServiceConfig, TWTRAPIConstantsVerifyCredentialsURL);
     NSURLRequest *verifyRequest = [NSURLRequest requestWithURL:verifyURL];
     NSURLRequest *signedVerifyRequest = [TWTRUserAuthRequestSigner signedURLRequest:verifyRequest authConfig:authConfig session:userSession];
+	__weak typeof(self) weakSelf = self;
     NSURLSessionDataTask *verifySessionTask = [URLSession dataTaskWithRequest:signedVerifyRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *connectionError) {
         if (connectionError) {
-            NSLog(@"[TwitterKit] Cannot verify session credentials.");
-            completion(nil, connectionError);
-            return;
+			if ([connectionError.domain isEqualToString:kPOSIXErrorDomain] &&
+				connectionError.code == kConnectionAbortErrorCode &&
+				weakSelf != nil) {
+				// iOS 11.x & 12 bug. More info: https://github.com/AFNetworking/AFNetworking/issues/4279#issuecomment-447108981
+				typeof(weakSelf) strongSelf = weakSelf;
+				[strongSelf verifyUserSession:userSession withAuthConfig:authConfig APIServiceConfig:APIServiceConfig URLSession:URLSession completion:completion];
+			} else {
+				NSLog(@"[TwitterKit] Cannot verify session credentials.");
+				completion(nil, connectionError);
+				return;
+			}
         }
 
         completion(userSession, nil);
