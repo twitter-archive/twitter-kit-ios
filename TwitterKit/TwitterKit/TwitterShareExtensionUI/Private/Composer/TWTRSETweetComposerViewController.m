@@ -415,7 +415,7 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
     _contentViewHeightConstraint.active = NO;
     if (@available(iOS 11.0, *)) {
         _scrollViewTopConstraint.active = NO;
-        _scrollViewTopConstraint = [_scrollView.topAnchor constraintEqualToAnchor:self.view.topAnchor constant:self.navigationController.navigationBar.frame.size.height];
+        _scrollViewTopConstraint = [_scrollView.topAnchor constraintEqualToAnchor:self.view.topAnchor constant: 0];
         _scrollViewTopConstraint.active = YES;
     }
     _tableViewHeightConstraint.active = NO;
