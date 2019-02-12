@@ -384,7 +384,9 @@ static TWTRTwitter *sharedTwitter;
     BOOL isWeb = [self.mobileSSO isWebWithSourceApplication:sourceApplication];
 
     if (isSSOBundle) {
-        [self.mobileSSO processRedirectURL:url];
+        if ([self.mobileSSO processRedirectURL:url]){
+            return YES;
+        }
     } else if (isWeb) {
         BOOL isTokenValid = [self.mobileSSO verifyOauthTokenResponsefromURL:url];
         if (isTokenValid) {
